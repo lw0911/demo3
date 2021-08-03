@@ -1,0 +1,359 @@
+@media (min-width: 768px) {
+  
+}
+@media (max-width: 767px) {
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+
+@media (max-width: 1105px) {
+  body{
+  	background: #fff;
+  }
+  h4.indextitleh4{
+  	text-align: center;
+  }
+  .col-md-3{
+  	width: 100%;
+  	text-align: center;
+  	padding-left: 0;
+  	padding-right: 0;
+  	margin-bottom: 10px;
+  }
+  .section3 p{
+  	margin: 0 auto;
+  	text-align: center;
+  	width: 100%;
+  	text-indent: 0;
+  }
+  .section3 img{
+  	margin: 0 auto;
+  	width: 100%;
+  	height: auto;
+  }
+  .product_main li a{
+  	margin:0 auto;
+  	width: 100%;
+  	height: auto;
+  }
+  h4.indexsmallh4{
+  	padding-left: 0;
+  	background-position: center;
+    background-position-x: 20%;
+  }
+  .indexbanner>div{
+  	margin-left: 0;
+  	left: 0;
+  }
+  .product_main li p{
+  	width: 100%;
+  }
+  .col-md-4{
+  	width: 100%;
+  }
+  .product_fenye li{
+  	width: 44px;
+  	float: left
+  }
+  .sect2a,.sect2b,.sect2c{
+  	padding: 0;
+  }
+  .listbanner>div{
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+  	left: 0;
+  	height: 100%;
+  	top: 0;
+  }
+  
+  .contact_style .row div{
+  	text-align: left;
+  }
+  .contactus_main .col-xs-6{
+  	padding: 0;
+  	margin: 0;
+  	width: 100%;
+  	margin-top: 10px;
+  }
+  .c_table1 tr td:first-child+td{
+  	text-indent: 0;
+  }
+  .contactus_main .c_section1 .col-xs-6>img{
+  	margin: 0 auto;
+  	display: block;
+  	margin-top: 20px;
+  }
+  .w1150{
+  	width: 80%;
+  	margin: 0 auto;
+  }
+  .header .w1150{
+  	width: 100%;
+  	height: auto;
+  	overflow: hidden;
+  }
+  .headerrighttop{
+  	padding-left:23px;
+  }
+  .headerrighttop input,.headerrighttop span{
+  	float: left;
+  	padding-right: 5px;
+  }
+  .headerrighttop input{
+  	width: 80px;
+  	text-align: left;
+  	line-height: 25px;
+  	margin-top: 0;
+  	margin-left: 0;
+  	text-indent: 10px;
+  	text-align: left;
+  }
+  .headerrighttop>div{
+  	float: left;
+  	height: 25px;
+  	margin-left: 5px;
+  	margin-top: 5px;
+  }
+  .headerrighttop>div>a{
+  	float: left;
+  }
+  .headerrighttop>div>a img{
+  	vertical-align: inherit;
+  }
+  .banquan p{
+  	width: 80%;
+  	margin: 0 auto;
+  	padding: 17.5px 0;
+  }
+  .footer h3{
+  	margin-top: 30px;
+  }
+  .navbar-toggle{
+  	margin-top: 20px;
+  }
+  .article_btns{
+  	margin-bottom: 50px;
+  }
+  .product_img img{
+  	margin-right: 0;
+  }
+  .indexbanner>div{
+  	text-indent: 10px;
+  	width: 100%;
+  	height: 100%;
+  	top: 0;
+  	padding: 0;
+  	margin: 0;
+  	background: url(../img/listbannerbg.png);
+  }
+  .indexbanner>div h3{
+  	font-size: 22px;
+  	margin: 0;
+  	margin-top: 10px;
+  }
+  .indexbanner p{
+  	font-size: 18px;
+  }
+  .row{
+  	margin: 0;
+  	margin-top: 10px;
+  }
+  .sect2a img{
+  	width: 100%;
+  }
+  .section2 img{
+  	width: 100%;
+  	height: auto;
+  }
+  .sect2b>div>div{
+  	float: left;
+  	width: 100%;
+  }
+  .sect2c p{
+  	margin-bottom: 10px;
+  }
+  .sect2c a img{
+  	width: 100%;
+  	height: auto;
+  }
+  .sect2c li div{
+  	float: left;
+  	width: 100%;
+  }
+  .footer .footersect2{
+  	width: 100%;
+  	padding-right: 0;
+  }
+  .w1110{
+  	width: 80%;
+  	margin: 0 auto;
+  }
+  .footer .col-xs-6{
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+  	text-align: center;
+  }
+  .footersect2 ul{
+  	width: 33.33%;
+  	overflow: hidden;
+  	margin-right: 0;
+  }
+  .navbar-default .navbar-nav>li{
+  	border-bottom: 1px solid #ccc;
+  	margin: 0;
+  }
+  .navbar-default .navbar-nav>li>a{
+  	padding: 0;
+  	width: 90%;
+  	margin: 0 auto;
+  	padding-left: 10%;
+  	line-height: 40px;
+  }
+  .navbar-default .navbar-nav>li>a:active{
+  	background: #0068b7;
+  }
+  .listbanner h3{
+  	font-size: 22px;
+  	width: 80%;
+  	padding: 0;
+  	margin: 0;
+  	top: 0;left: 0;
+  	margin-left: 10%;
+  }
+  .listbanner p{
+  	width: 80%;
+  	margin: 0;
+  	padding: 0;
+  	top: 0;left: 0;
+  	margin-left: 10%;
+  }
+  .about_main li{
+  	height: auto;
+  	overflow: hidden;
+  	background: url(../img/a_3.png) no-repeat center right;
+  	background: none;
+  }
+  .about_main li .about_word p{
+  	width: 100%;
+  	margin: 0;
+  }
+  .about_main li .about_word_left{
+  	width: 80%;
+  	float: left;
+  }
+  .about_main li .about_time_right{
+  	width: 20%;
+  	padding: 0;
+  	float: left;
+  	text-align: right;
+  }
+  #about_main.about_main li .about_word_right p{
+  	float: left;
+  	margin: 0;
+  	width: 100%;
+  }
+  .about_main li .about_word_right{
+  	float: left;
+  	width: 80%;
+  }
+  .about_main li .about_time_left{
+  	padding: 0;
+  	text-align: right;
+  	float: left;
+  	width: 20%;
+  }
+  #about_main.about_main li .about_word_right img{
+  	float: left;
+  }
+  .about_main li .about_word img{
+  	width: 100%;
+  	height: auto;
+  }
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+  	margin: 0;
+  	padding: 0 10%;
+  }
+  .baoyang_top a{
+  	width: 100%;
+  }
+  .baoyang_top img{
+  	width: 100%;
+  }
+  .baoyang_top>div{
+  	width: 100%;
+  }
+  .baoyang_left a{
+  	width: 100%;
+  }
+  .baoyang_left>div{
+  	width: 100%;
+  }
+  .baoyang_right a{
+  	width: 100%;
+  }
+  .baoyang_right>div{
+  	width: 100%;
+  }
+  .news_main li{
+  	height: auto;
+  	overflow: hidden;
+  }
+  .media-body, .media-left, .media-right{
+  	width: 100%;
+  }
+  .news_main .media h4{
+  	margin-top: 10px;
+  }
+  .media-body{
+  	padding-left: 91px;
+  }
+  .news_main .media-left{
+  	display: block;
+  }
+  .product_img{
+  	width: 100%;
+  }
+  .product_info>div{
+  	width: 100%;
+  }
+  .product_name h3{
+  	margin: 0;
+  }
+  .product_result .table>tbody>tr>td{
+  	padding-left: 10px;
+  }
+  .product_result .table>tbody>tr>td.padding8{
+  	padding: 8px;
+  }
+  .product_result .product_style .row{
+  	padding: 8px;
+  }
+  .row.product_style p{
+  	line-height: 25px;
+  }
+  .pro_leftimg{
+  	margin: 0;
+  }
+  .product_btns{
+  	margin-bottom: 10px;
+  	margin-top: 20px;
+  }
+  .huanbao>div:first-child{
+  	margin-top: 10px;
+  }
+  .huanbao>div{
+  	margin-top: 10px;
+  }
+  .pro_rightimg{
+  	width: 100%;
+  }
+  .product_main ul{
+  	display: block;
+  	width: 100%;
+  }
+}

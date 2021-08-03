@@ -1,0 +1,73 @@
+.search-submit{
+    background-image: url('../img/search@2x.png');
+    background-size: 14px 13px;
+}
+.accordion .title::before{
+    background-image: url('../img/accordion-closed@2x.png');
+    background-size: 13px 13px;
+}
+
+.accordion .title.active::before{
+    background-image: url('../img/accordion-opened@2x.png');
+    background-size: 13px 5px;
+}
+
+.image-gallery a::after{
+    background-image: url('../img/expand@2x.png');
+    background-size: 17px 17px;
+}
+
+.information-boxes .close{
+    background: url('../img/close@2x.png') no-repeat;
+    background-size: 20px 20px;
+}
+
+.infobox p{
+    background: url('../img/info-box@2x.png') no-repeat 0 center;
+    background-size: 20px 20px;
+}
+
+.warning-box p{
+    background: url('../img/warning-box@2x.png') no-repeat 0 center;
+    background-size: 20px 20px;
+}
+
+.success-box p{
+    background: url('../img/success-box@2x.png') no-repeat 0 center;
+    background-size: 20px 20px;
+}
+
+.error-box p{
+    background: url('../img/error-box@2x.png') no-repeat 0 center;
+    background-size: 20px 20px;
+}
+
+.comment .comment-reply-link{
+    background: url('../img/icon-reply@2x.png') no-repeat 0 center;
+    background-size: 14px 14px;
+}
+
+.widget li{
+    background: url('../img/aside-arrow@2x.png') no-repeat 0 12px;
+    background-size: 4px 7px;
+}
+
+.tweet-list li {
+    background: url('../img/tweet@2x.png') no-repeat;
+    background-size: 23px 16px;
+}
+
+#recent_comments li::before{
+    background-image: url('../img/comments@2x.png');
+    background-size: 14px 11px;
+}
+
+.widget_search .search-submit{
+    background: url('../img/search.png') center center no-repeat;
+    background-size: 14px 13px;
+}
+
+.scroll-up{
+    background: url('../img/to-top@2x.png') no-repeat;
+    background-size: 40px 40px;
+}

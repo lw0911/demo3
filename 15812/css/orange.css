@@ -1,0 +1,97 @@
+a:focus, a:hover,  
+#top-bar .contact-info li a:hover, 
+#top-bar .contact-info li:hover i, 
+#top-bar .social-links li:hover a, 
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover, 
+.text-color, 
+.footer-widget-container .widget a:hover, 
+.footer-widget-container .pi_recent_posts .post h5 a:hover, 
+.breadcrumb.footer-breadcrumb .current a, 
+a.read-more, 
+.meta-container a:hover h3, 
+.meta-container a:hover h2, 
+.meta-container a:hover h1, 
+.meta-container a:hover h4, 
+.meta-container a:hover h5,
+#recent_comments li a:hover, 
+.dropdown > ul > li.current-menu-item a, 
+.post-author .info a:hover h5, 
+.comment-meta .author:hover,  
+.portfolio-img-container figcaption.portfolio-title a:hover h4, 
+#filters li.active a, 
+.portfolio-single-like .sharrre .box a:hover::before, 
+.team .position, 
+.team a:hover h4, 
+.pricing-table-col .head .title-container .title i, 
+.tabs.vertical li.active a{
+    color: #fb6148;
+}
+
+.navbar-default .navbar-nav>.current-menu-item>a, 
+.navbar-default .navbar-nav>.current-menu-item>a:focus, 
+.navbar-default .navbar-nav>.current-menu-item>a:hover, 
+.wpcf7-submit, 
+.nivo-prevNav, 
+.nivo-nextNav,
+.pagination li.active, 
+.pagination li:hover a, 
+#recent_comments li::before, 
+.widget_tag_cloud a:hover, 
+#respond #comment-reply, 
+.portfolio-hover .portfolio-links li a:hover, 
+.image-gallery a:hover::after, 
+.btn-default, 
+.company-history .year, 
+.tabs-team li.active .team-info-container, 
+.process-icon, 
+.tabs.history-tabs li.active a::after, 
+.expand, 
+.accordion .title::before, 
+.accordion .title::after, 
+.service-box:hover .icon, 
+.service-box-02 .icon, 
+.service-box-03:hover .icon,
+.pricing-table-col.selected .head .title-container, 
+.caption-button, 
+.rotate, 
+.social-links.presentation li:hover{
+    background-color: #fb6148;
+}
+
+.pi_recent_posts .date, 
+.post-info .date, 
+#page-title02 .breadcrumb-container{
+    border-bottom: 3px solid #fb6148;
+}
+
+blockquote{
+    border-left: 5px solid #fb6148;
+}
+
+.company-history .year p, 
+.process-icon p{
+    border: 10px solid #fb6148;
+}
+
+.service-box-02 i{
+    border: 5px solid #fb6148;
+}
+
+.service-box:hover .icon, 
+.btn.btn-empty:hover, 
+.service-box-03:hover .icon{
+    border: 1px solid #fb6148;
+}
+
+.tabs li.active{
+    border-top: 1px solid #fb6148;
+}
+
+.wpcf7-submit:hover, 
+#respond #comment-reply:hover, 
+.btn-default:hover{
+    background-color: #fa4427;
+}

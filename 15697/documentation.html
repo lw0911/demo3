@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic Space - Documentation</title>
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<!-- stylesheets -->
+	<link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+	<link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="css/base.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+
+	<!-- javascript-->
+	<script src="js/tabs.js"></script>
+	<script src="js/jquery.cycle.js"></script>
+	<script src="js/jquery.lightbox-0.5.min.js"></script>
+
+	<!-- google fonts -->
+
+	<!-- favicons -->
+	<link rel="shortcut icon" href="img/favicon.html" type="image/x-icon"> 
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	
+	<style>
+		body { /*background: url('img/960grid.png') center repeat-y; */}
+	</style>
+</head>
+<body>
+
+	<div class="header">
+
+		<div class="main-menu-container">
+			
+			<div class="container">
+				
+				<div class="sixteen columns">
+				
+					<a href="index.html"><img src="img/logo.png" class="logo" alt="Basic Space" /></a>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+	</div>
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="sixteen columns">
+			
+				<h1>documentation</h1>
+				
+			</div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="sixteen columns">
+				
+				<h2>Introduction</h2>
+				
+				<div class="image-with-comment float-right">
+					<img src="img/markup.png" alt="markup" />
+					<p>Indented, double-spaced markup</p>
+				</div>
+				
+				<p>Basic Space is a HTML template build on the <a href="http://www.getskeleton.com/">Skeleton grid system</a>. It naturally responds to screen resolutions making it ideal for designing for tablet and mobile devices. It uses HTML5/CSS3 techniques for animation and fade effects, these fallback gracefully if using an older browser.</p>
+			
+				<h2>Customization</h2>
+				
+				<h3>Homepage vertical scroll slideshow</h3>
+				<p>This slideshow by default only displays on the homepage but you can add it to any page you want (see markup and copy). The slideshow itself uses <a href="http://jquery.malsup.com/cycle/">jQuery Cycle</a> to display the images, and you have complete control over the desired effect. These include fade, horizontal sliding and zooming. The smaller component slideshow on the homepage also uses jQuery Cycle</p>
+				
+				<h3>Lightbox</h3>
+				<p>Basic Space uses <a href="http://leandrovieira.com/projects/jquery/lightbox/">jQuery Lightbox plugin</a> which is an easy to use, and easy to customize, tool. See the website or simply view the markup on the homepage for information.</p>
+			
+				<h3>Accordion</h3>
+				<p>The accordion uses jQuery UI and is very simple to use. You define which element is the container for the accordion and then seperate the items by divs. View the <a href="components.html">components page</a> for markup.</p>
+			
+				<h2>Google Maps</h2>
+				<p>Basic Space uses two Google maps; one in the footer and one on the contact page. The images are generated using the Google Maps API. This is achieved by passing some values to a URI which will generate the map image for you - in our example we simply pass the central location, the latitude and longitude, and where the marker is to be placed. For more information see the API website.</p>
+			
+				<h2>Browser Support</h2>
+				<p>Basic Space has been tried and tested in the following browsers:</p>
+				<ul class="square">
+				
+					<li>Internet Explorer 7+</li>
+					<li>Mozilla Firefox</li>
+					<li>Google Chrome</li>
+					<li>Opera</li>
+					<li>Major mobile/table browsers (Android, iPhone, iPad)</li>
+				
+				</ul>
+				
+				<h2>404 Page</h2>
+				
+				<p>There is a very basic <a href="404.html">404 error page</a> included. This is to ensure it doesn't get forgotten, like it so often does, in the build procress.</p>
+				
+				<h2>Responsive Design</h2>
+				
+				<p>As the theme is built on Skeleton, the responsive layout comes into play almost automatically as long as you follow the markup requirements when modifying the template (which is easy to follow). The only thing to bear in mind is that you need to maintain two menus - the list of menu items (.main-menu) and the mobile menu (.mobile-menu). When changing the mobile menu the page link is defined by the option value. For example value="index.html" links to the homepage and so on.</p>
+				
+				<h2>Help & Support</h2>
+				
+				<p>Free support is available by visiting <a href="http://www.webbymatt.co.uk/">www.webbymatt.co.uk</a> (if support is unavailable here, email matt [at] webbymatt [dot] co [dot] uk).</p>
+				
+			</div>
+		
+		</div>
+		
+		<div class="row">
+		
+			<div class="sixteen columns footer">
+			
+				<div class="twelve columns alpha">
+					
+					<p>Copyright &copy; 2012 Basic Space. Created by </p>
+					
+				</div>
+				
+				<div class="four columns omega social-icons">
+				
+					<ul>
+					
+						<li><a href="#" class="social_linkedin"></a></li>
+						
+						<li><a href="#" class="social_twitter"></a></li>
+						
+						<li><a href="#" class="social_facebook"></a></li>
+						
+						<li><a href="#" class="social_forrst"></a></li>
+					
+					</ul>
+					
+				</div>
+		
+			</div>
+			
+		</div>
+		
+	</div>
+	<script>
+	$(window).load(function() {
+		$('.hero-slideshow').cycle({
+			fx: 'scrollUp',
+		});
+		
+		$('.work-slideshow').cycle({
+			fx:     'fade', 
+			timeout: 3000, 
+			next:   '.slide-next', 
+			prev:   '.slide-prev'
+		});
+		
+		$('.work-slide a').lightBox();
+	});
+	</script>
+</body>
+
+</html>

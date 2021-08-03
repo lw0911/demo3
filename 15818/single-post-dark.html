@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- TITLE -->
+    <title>Gofar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/awe-booking-font.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    
+    <!-- CSS COLOR -->
+    <link id="colorreplace" rel="stylesheet" type="text/css" href="css/colors/blue.css">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10 single-post"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10 single-post"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10 single-post"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body class="single-post"> <!--<![endif]-->
+
+
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap" class="dark">
+        <!-- PRELOADER -->
+        <div class="preloader"></div>
+        <!-- END / PRELOADER -->
+
+        
+        <!-- HEADER PAGE -->
+        <header id="header-page">
+            <div class="header-page__inner">
+                <div class="container">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="index-dark.html"><img src="images/logo-dark.png" alt=""></a>
+                    </div>
+                    <!-- END / LOGO -->
+                    
+                    <!-- NAVIGATION -->
+                    <nav class="navigation awe-navigation" data-responsive="1200">
+                        <ul class="menu-list">
+                            <li class="menu-item-has-children">
+                                <a href="index.html">Home</a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html">Home 1</a></li>
+                                    <li><a href="index2.html">Home 2</a></li>
+                                    <li><a href="index3.html">Menu hamburger</a></li>
+                                    <li><a href="index-dark.html">Home 1 (Dark)</a></li>
+                                    <li><a href="index2-dark.html">Home 2 (Dark)</a></li>
+                                    <li><a href="index3-dark.html">Menu hamburger (Dark)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="destinations-list.html">Destinations</a>
+                                <ul class="sub-menu">
+                                    <li><a href="destinations-list.html">List</a></li>
+                                    <li><a href="destinations-grid.html">Grid</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="destinations-trip.html">Detail</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="destinations-trip.html">Trips in destination</a></li>
+                                            <li><a href="destinations-hotel.html">Hotels in destination</a></li>
+                                            <li><a href="destinations-attraction.html">Attraction in destination</a></li>
+                                            <li><a href="destinations-flight.html">Flights in destination</a></li>
+                                            <li><a href="destinations-train.html">Train in destination</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="destinations-list-dark.html">List (Dark)</a></li>
+                                    <li><a href="destinations-grid-dark.html">Grid (Dark)</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="destinations-trip.html">Detail (Dark)</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="destinations-trip-dark.html">Trips in destination</a></li>
+                                            <li><a href="destinations-hotel-dark.html">Hotels in destination</a></li>
+                                            <li><a href="destinations-attraction-dark.html">Attraction in destination</a></li>
+                                            <li><a href="destinations-flight-dark.html">Flights in destination</a></li>
+                                            <li><a href="destinations-train-dark.html">Train in destination</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="trip.html">Trips</a>
+                                <ul class="sub-menu">
+                                    <li><a href="trip.html">Trips</a></li>
+                                    <li><a href="trip-detail.html">Trips Detail</a></li>
+                                    <li><a href="trip-dark.html">Trips (Dark)</a></li>
+                                    <li><a href="trip-detail-dark.html">Trips Detail (Dark)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="hotel.html">Hotel</a>
+                                <ul class="sub-menu">
+                                    <li><a href="hotel.html">Hotel</a></li>
+                                    <li><a href="hotel-detail.html">Hotel Detail</a></li>
+                                    <li><a href="hotel-dark.html">Hotel (Dark)</a></li>
+                                    <li><a href="hotel-detail-dark.html">Hotel Detail (Dark)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="flight.html">Flight</a>
+                                <ul class="sub-menu">
+                                    <li><a href="flight.html">Flight</a></li>
+                                    <li><a href="flight-detail.html">Flight Detail</a></li>
+                                    <li><a href="flight-dark.html">Flight (Dark)</a></li>
+                                    <li><a href="flight-detail-dark.html">Flight Detail (Dark)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="train.html">Train</a>
+                                <ul class="sub-menu">
+                                    <li><a href="train.html">Train</a></li>
+                                    <li><a href="train-detail.html">Train Detail</a></li>
+                                    <li><a href="train-dark.html">Train (Dark)</a></li>
+                                    <li><a href="train-detail-dark.html">Train Detail (Dark)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="attraction.html">Attraction</a>
+                                <ul class="sub-menu">
+                                    <li><a href="attraction.html">Attraction</a></li>
+                                    <li><a href="attraction-detail.html">Attraction Detail</a></li>
+                                    <li><a href="attraction-dark.html">Attraction (Dark)</a></li>
+                                    <li><a href="attraction-detail-dark.html">Attraction Detail (Dark)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children current-menu-parent">
+                                <a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children current-menu-parent">
+                                        <a href="blog.html">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="single-post.html">Single Post</a></li>
+                                            <li><a href="blog-dark.html">Blog (Dark)</a></li>
+                                            <li class="current-menu-item"><a href="single-post-dark.html">Single Post (Dark)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="login.html">Log In</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="login.html">Log In</a></li>
+                                            <li><a href="register.html">Register</a></li>
+                                            <li><a href="login.html">Log In (Dark)</a></li>
+                                            <li><a href="register.html">Register (Dark)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="checkout-yourcart.html">Checkout</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="checkout-yourcart.html">Your cart</a></li>
+                                            <li><a href="checkout-customer.html">Customer</a></li>
+                                            <li><a href="checkout-complete.html">Complete</a></li>
+                                            <li><a href="checkout-yourcart-dark.html">Your cart (Dark)</a></li>
+                                            <li><a href="checkout-customer-dark.html">Customer (Dark)</a></li>
+                                            <li><a href="checkout-complete-dark.html">Complete (Dark)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="shortcode.html">Shortcode</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="contact.html">Contact</a>
+                                <ul class="sub-menu">
+                                    <li><a href="contact.html">Light</a></li>
+                                    <li><a href="contact-dark.html">Dark</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- END / NAVIGATION -->
+                    
+                    <!-- SEARCH BOX -->
+                    <div class="search-box">
+                        <span class="searchtoggle"><i class="awe-icon awe-icon-search"></i></span>
+                        <form class="form-search">
+                            <div class="form-item">
+                                <input type="text" value="Search &amp; hit enter">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END / SEARCH BOX -->
+
+
+                    <!-- TOGGLE MENU RESPONSIVE -->
+                    <a class="toggle-menu-responsive" href="#">
+                        <div class="hamburger">
+                            <span class="item item-1"></span>
+                            <span class="item item-2"></span>
+                            <span class="item item-3"></span>
+                        </div>
+                    </a>
+                    <!-- END / TOGGLE MENU RESPONSIVE -->
+                </div>
+            </div>
+        </header>
+        <!-- END / HEADER PAGE -->
+
+        <!-- HEADING PAGE -->
+        <section class="awe-parallax page-heading-demo">
+            <div class="awe-overlay"></div>
+            <div class="container">
+                <div class="blog-heading-content text-uppercase">
+                    <h2>TRAVEL BLOG</h2>
+                </div>
+            </div>
+        </section>
+        <!-- END / HEADING PAGE -->
+
+        
+        <section class="blog-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="blog-page__content blog-single">
+                            <!-- POST -->
+                            <div class="post">
+                                <div class="post-meta">
+                                    <div class="date">February 26th, 2020</div>
+                                    <div class="author">by <a href="#">Nomadic Matt</a></div>
+                                    <div class="cat">
+                                        <ul>
+                                            <li><a href="#">Travel Gear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment"><a href="#">8 Comments &raquo;</a></div>
+                                </div>
+                                <div class="post-title">
+                                    <h1>My 2020 Group Tours: Two Trips to Europe!</h1>
+                                </div>
+                                <div class="post-media">
+                                    <div class="image-wrap">
+                                        <img src="images/img/2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <div class="post-content">
+                                        <p>This year I’ll be offering two short tours in the fall: one to Paris and Amsterdam and one to PragOn the second Wednesday of the month, Kristin Addis from Be My Travel Muse writes a guest column featuring tips and advice on solo female travel. It’s an important topic I can’t cover so I brought in an expert to share her advice. This month her column is on safety tips, since it’s been a common question on my book tour stops. <br><br>One of the chief concerns for most would-be solo travelers is safety. Can I stay safe on my own? How can I convince my friends and family that I’ll be okay? The good news is: yes, you will be safe on the road. It’s easier than you think, because you already have the skills you need �?the same methods you use to stay safe at home are relevant abroad as well.ue and</p>
+                                        <br>
+                                        <h3>Trust your gut instincts</h3>
+                                        <br>
+                                        <p>This year I’ll be offering two short tours in the fall: one to Paris and Amsterdam and one to PragOn the second Wednesday of the month, Kristin Addis from Be My Travel Muse writes a guest column featuring tips and advice on solo female travel. It’s an important topic I can’t cover so I brought in an expert to share her advice. This month her column is on safety tips, since it’s been a common question on my book tour stops. <br><br>One of the chief concerns for most would-be solo travelers is safety. Can I stay safe on my own? How can I convince my friends and family that I’ll be okay? The good news is: yes, you will be safe on the road. It’s easier than you think, because you already have the skills you need �?the same methods you use to stay safe at home are relevant abroad as well.ue and</p>
+                                        <div class="shortcode-tour-map">
+                                            <div class="shortcode-tour-map__map">
+                                                
+                                            </div>
+                                            <div class="shortcode-tour-map__content">
+                                                
+                                            </div>
+                                        </div>
+                                        <p>Get on and go places! If you want to hit the most-visited spots in New York City, this is the one: CitySights NY’s Downtown Tour. You’ll get easy access to the most popular sites in town: the Statue of Liberty, the Empire State Building and “Ground Zero,�?where the World Trade Center once stood and where a stunning new skyscraper soars today. Narrated by licensed NYC tour guides who know the city inside and out, this hop on/hop off excursion on a double-decker bus takes you through Greenwich Village, Little Italy, Chinatown, Wall Street and the Financial District, Battery Park City, South Street Seaport, the Lower East Side, along with Rockefeller Center, the United Nations building, Carnegie Hall, the Broadway theater district and more.</p>
+                                    </div>
+                                </div>
+                                <div class="post-footer">
+                                    <div class="share-box">
+                                        <h4>Share</h4>
+                                        <div class="share">
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                                <span class="count">2</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-pinterest"></i>
+                                                <span class="count">43</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-facebook"></i>
+                                                <span class="count">124</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-google-plus"></i>
+                                                <span class="count">1.8k</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tag-box">
+                                        <h4>Tag</h4>
+                                        <div class="tag">
+                                            <a href="#">Hotel</a>
+                                            <a href="#">Motel</a>
+                                            <a href="#">Hostel</a>
+                                            <a href="#">Homestay</a>
+                                        </div>
+                                    </div>
+                                    <div class="cat-box">
+                                        <h4>Category</h4>
+                                        <div class="cat">
+                                            <a href="#">Hotel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / POST -->
+
+                            <!-- ABOUT AUTHOR -->
+                            <div class="about-author">
+                                <div class="image-thumb fl">
+                                    <div class="image-cover">
+                                        <img src="images/img/1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="author-info">
+                                    <div class="author-title">
+                                        <h4>About author</h4>
+                                    </div>
+                                    <div class="author-name">
+                                        <h3>Name of author</h3>
+                                    </div>
+                                    <div class="author-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet nulla sed venenatis vulputate. Nulla venenatis mi sed fermentum laoreet.</p>
+                                    </div>
+                                    <div class="author-social">
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ABOUT AUTHOR -->
+
+                            <!-- RELATED POSTS -->
+                            <div class="related-post">
+                                <h4>Related posts</h4>
+                                <div class="related-slider">
+                                    <div class="post">
+                                        <div class="post-media">
+                                            <div class="image-wrap">
+                                                <a href="single-post.html">
+                                                    <img src="images/img/3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="post-body">
+                                            <div class="post-meta">
+                                                <div class="date">February 26th, 2020</div>
+                                                <div class="author">by <a href="#">Nomadic Matt</a></div>
+                                                <div class="cat">
+                                                    <ul>
+                                                        <li><a href="#">Travel Gear</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="comment"><a href="#">8 Comments &raquo;</a></div>
+                                            </div>
+                                            <div class="post-title">
+                                                <h2>
+                                                    <a href="single-post.html">My 2020 Group Tours: Two Trips to Europe!</a>
+                                                </h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>This year I’ll be offering two short tours in the fall: one to Paris and Amsterdam and one to Prague and […]</p>
+                                            </div>
+                                            <div class="post-link">
+                                                <a href="single-post.html" class="awe-btn awe-btn-style2">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="post-media">
+                                            <div class="image-wrap">
+                                                <a href="single-post.html">
+                                                    <img src="images/img/4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="post-body">
+                                            <div class="post-meta">
+                                                <div class="date">February 26th, 2020</div>
+                                                <div class="author">by <a href="#">Nomadic Matt</a></div>
+                                                <div class="cat">
+                                                    <ul>
+                                                        <li><a href="#">Travel Gear</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="comment"><a href="#">8 Comments &raquo;</a></div>
+                                            </div>
+                                            <div class="post-title">
+                                                <h2>
+                                                    <a href="single-post.html">My 2020 Group Tours: Two Trips to Europe!</a>
+                                                </h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>This year I’ll be offering two short tours in the fall: one to Paris and Amsterdam and one to Prague and […]</p>
+                                            </div>
+                                            <div class="post-link">
+                                                <a href="single-post.html" class="awe-btn awe-btn-style2">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / RELATED POSTS -->
+
+                            <!-- COMMENTS -->
+                            <div id="comments">
+                                <!-- LEAVER YOUR COMMENT -->
+                                <div id="respond">
+                                    <div class="reply-title">
+                                        <h4>3 Comments</h4>
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-item form-textarea-wrapper">
+                                                    <textarea>Comment here</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-item form-name">
+                                                    <input type="text" value="Your name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-item form-email">
+                                                    <input type="text" value="Your email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-actions">
+                                                    <input type="submit" value="Post Comment">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- END / LEAVER YOUR COMMENT -->
+
+                                <div class="commentlist-wrapper">
+                                    <ul class="commentlist">
+                                        <li class="comment">
+                                            <div class="comment-box">
+                                                <div class="comment-author">
+                                                    <a href="#"><img src="images/img/demo-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="comment-body">
+                                                    <cite class="fn"><a href="#">Gofar</a></cite>
+                                                    <p>Mauris tincidunt, quam at feugiat efficitur, justo nunc efficitur justo, a hendrerit lectus neque eu nibh. Praesent eu sem erat. Fusce non sagittis lorem.</p>
+                                                    <div class="comment-meta">
+                                                        <span>5 days ago</span>
+                                                    </div>
+                                                    <div class="comment-abs">
+                                                        <a href="#" class="comment-edit-link">Edit</a> // 
+                                                        <a href="#" class="comment-reply-link">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="children">
+                                                <li class="comment bypostauthor">
+                                                    <div class="comment-box">
+                                                        <div class="comment-author">
+                                                            <a href="#"><img src="images/img/demo-thumb.jpg" alt=""></a>
+                                                        </div>
+                                                        <div class="comment-body">
+                                                            <cite class="fn">
+                                                                <a href="#">Gofar</a>
+                                                                <span class="byauthor">Author</span>
+                                                            </cite>
+                                                            <p>Aliquam volutpat elit non urna faucibus condimentum. Pellentesque nibh libero, consequat at nibh a, tincidunt rutrum magna. Curabitur in posuere risus, dictum euismod dolor. Vestibulum auctor orci sed elit ultricies tempus. Praesent facilisis tellus turpis, ac congue lorem consectetur ac.</p>
+                                                            <div class="comment-meta">
+                                                                <span>5 days ago</span>
+                                                            </div>
+                                                            <div class="comment-abs">
+                                                                <a href="#" class="comment-edit-link">Edit</a> // 
+                                                                <a href="#" class="comment-reply-link">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="comment">
+                                            <div class="comment-box">
+                                                <div class="comment-author">
+                                                    <a href="#"><img src="images/img/demo-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="comment-body">
+                                                    <cite class="fn"><a href="#">Gofar</a></cite>
+                                                    <p>Pellentesque nibh libero, consequat at nibh a, tincidunt rutrum magna. Curabitur in posuere risus, dictum euismod dolor. Vestibulum auctor orci sed elit ultricies tempus. Praesent facilisis tellus turpis, ac congue lorem consectetur ac.</p>
+                                                    <div class="comment-meta">
+                                                        <span>5 days ago</span>
+                                                    </div>
+                                                    <div class="comment-abs">
+                                                        <a href="#" class="comment-edit-link">Edit</a> // 
+                                                        <a href="#" class="comment-reply-link">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- END / COMMENTS -->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="page-sidebar">
+                            <!-- WIDGET -->
+                            <div class="widget widget_search">
+                                <h3>Search in Blog</h3>
+                                <form>
+                                    <input type="search" value="Search and hit enter">
+                                </form>
+                            </div>
+                            <!-- END / WIDGET -->
+
+                            <!-- WIDGET -->
+                            <div class="widget widget_follow_us">
+                                <h3>Follow us</h3>
+                                <div class="awe-social">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                            <!-- END / WIDGET -->
+                            
+                            <!-- WIDGET -->
+                            <div class="widget widget_categories">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><a href="#">All</a></li>
+                                    <li>
+                                        <a href="#">Uncategorized</a>
+                                        <ul>
+                                            <li><a href="#">Popular</a></li>
+                                            <li><a href="#">New</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Uncategorized</a></li>
+                                </ul>
+                            </div>
+                            <!-- END / WIDGET -->
+
+                            <!-- WIDGET -->
+                            <div class="widget widget_has_thumbnail">
+                                <h3>Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <div class="image-wrap image-cover">
+                                            <a href="single-post.html">
+                                                <img src="images/img/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#">How to Crteate Course in this theme? This is title of the blog</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image-wrap image-cover">
+                                            <a href="single-post.html">
+                                                <img src="images/img/2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#">Top 10 Design courses of October 2013</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image-wrap image-cover">
+                                            <a href="single-post.html">
+                                                <img src="images/img/3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#">How to Crteate Course in this theme? This is title of the blog</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END / WIDGET -->
+
+                            <!-- WIDGET -->
+                            <div class="widget widget_tag_cloud">
+                                <h3>Tags</h3>
+                                <div class="tagcloud">
+                                    <a href="#">Hotel</a>
+                                    <a href="#">Motel</a>
+                                    <a href="#">Hostel</a>
+                                    <a href="#">Homestay</a>
+                                </div>
+                            </div>
+                            <!-- END / WIDGET -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER PAGE -->
+        <footer id="footer-page">
+            <div class="container">
+                <div class="row">
+                    <!-- WIDGET -->
+                    <div class="col-md-3">
+                        <div class="widget widget_contact_info">
+                            <div class="widget_background">
+                                <div class="widget_background__half">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="widget_background__half">
+                                    <div class="bg"></div>
+                                </div>
+                            </div>
+                            <div class="logo">
+                                <img src="images/logo-footer.png" alt="">
+                            </div>
+                            <div class="widget_content">
+                                <p>XXX, XXX</p>
+                                <p>+XXX</p>
+                                <a href="#">contact@XXX.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-2">
+                        <div class="widget widget_about_us">
+                            <h3>About Us</h3>
+                            <div class="widget_content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim dolor. Ut risus orci, aliquam sit amet semper eget, egestas aliquam felis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-2">
+                        <div class="widget widget_categories">
+                            <h3>Categiries</h3>
+                            <ul>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Regions</a></li>
+                                <li><a href="#">Cities</a></li>
+                                <li><a href="#">Districts</a></li>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Airports</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Places of interest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-2">
+                        <div class="widget widget_recent_entries">
+                            <h3>Recent Blog</h3>
+                            <ul>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Regions</a></li>
+                                <li><a href="#">Cities</a></li>
+                                <li><a href="#">Districts</a></li>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Airports</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Places of interest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-3">
+                        <div class="widget widget_follow_us">
+                            <div class="widget_content">
+                                <p>For Special booking request, please call</p>
+                                <span class="phone">XXX</span>
+                                <div class="awe-social">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+                </div>
+                <div class="copyright">
+                    <p>2020 GOFAR travel All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- END / FOOTER PAGE -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.owl.carousel.js"></script>
+    <script type="text/javascript" src="js/lib/theia-sticky-sidebar.js"></script>
+    <script type='text/javascript' src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

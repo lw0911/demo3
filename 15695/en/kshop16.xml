@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="gb2312"?>
+<gallery>
+   <shop>
+     <link>#</link>
+      <filename>img/img1.jpg</filename>
+      <imgtitle>连杆系列</imgtitle>
+   </shop>
+
+   <shop>
+     <link>#</link>
+      <filename>img/img2.jpg</filename>
+      <imgtitle>平衡轴系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>img/img3.jpg</filename>
+      <imgtitle>曲轴系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>img/img4.jpg</filename>
+      <imgtitle>拉杆系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>img/img5.jpg</filename>
+      <imgtitle>球头系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>img/img6.jpg</filename>
+      <imgtitle>轮毂系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>img/img7.jpg</filename>
+      <imgtitle>机械系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>img/img8.jpg</filename>
+      <imgtitle>成品系列</imgtitle>
+   </shop>
+
+</gallery>

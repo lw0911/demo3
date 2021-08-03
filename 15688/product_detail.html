@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- 避免IE使用兼容模式 -->
+		<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="KEYWords" contect="" />
+		<meta name="Description" contect="" />
+		<meta name="Author" contect="fydhem" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/loading.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<title>XXX</title>
+	</head>
+
+	<body>
+		<div class="header" id="header">
+			<div class="headertop">
+				<div class="w1150">
+					<div class="headertopleft">手机微信XXX</div>
+					<div class="headerrighttop">
+						<span>维科微博</span> 
+						<div>
+							<input value="搜索" />
+							<a><img src="img/search.png"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" w1150">
+				<div class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a href="#"><img src="img/logo.png " /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="index.html">首页</a>
+								</li>
+								<li>
+									<a href="about_us.html">关于我们</a>
+								</li>
+								<li>
+									<a href="product.html">产品中心</a>
+								</li>
+								<li>
+									<a href="Installation.html">安装与保养</a>
+								</li>
+								<li>
+									<a href="news.html">新闻资讯</a>
+								</li>
+								<li>
+									<a href="contactus.html">联系我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="listbanner">
+			<a> <img src="img/product_banner.jpg" /> </a>
+			<script>
+				if( $(window).width() < 1150 ){
+					$(".listbanner a img").attr("src","img/product_banner2.jpg");
+				}
+			</script>
+		</div>
+		<div id="product_detail_main" class="product_detail_main">
+			<div class="w1150">
+				<div class="product_info row">
+					<div class="product_img col-xs-6 col-md-7">
+						<img src="img/d_product.png" />
+					</div>
+					<div class="product_name col-xs-6 col-md-5">
+						<h3>20kw-100kw发电机组</h3>
+						<p>功率范围：20kw-100kw</p>
+						<p>频率：50HZ/60HZ</p>
+						<p>转速：1500rpm/1800rpm</p>
+						<p>发动机制造商：康明斯，沃尔沃，帕金斯，玉柴</p>
+						<p>保修：从装运日起一年或1500个工作时间，以先到者为准</p>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("#product_btns a").click(function(){
+							if(!$(this).hasClass("active")){
+								$("#product_btns a").removeClass("active");
+								$(this).addClass("active");
+								$("#product_result>div").addClass("disno");
+								$("#product_result>div").eq($(this).index()).removeClass("disno");
+							}
+						});
+					});
+				</script>
+				<div id="product_btns" class="product_btns">
+					<a class="active">基本参数</a>
+					<a>可选配件</a>
+				</div>
+				<div id="product_result" class="product_result">
+					<div class="flag1">
+						<div class="row">
+							<table class="table table-bordered product_table1">
+								<tr>
+									<td>发电机组制造商：江苏优凯动力设备有限公司</td>
+									<td>型号：YKS-S80</td>
+								</tr>
+								<tr>
+									<td>备用功率（50HZ）</td>
+									<td>80KW</td>
+								</tr>
+								<tr>
+									<td>主用功率（50HZ）</td>
+									<td>68KW</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="padding8">
+										<p>主用功率：在一定功率范围内可以无限制运行，每运行12小时可累计1小时10%的过载。</p>
+										<p>备用功率：为应急使用的最大功率限值，不能超负荷，即为断油功率。</p>
+										<p>环境条件: 海拔高度:≤1000米(大于1000米时,需功率修正)，环境温度：40℃  相对湿度:≤60%。</p>
+									</td>
+								</tr>
+								<tr>
+									<td>功率因数：COSΦ=0.8（滞后）</td>
+									<td>输出电流: 144 A</td>
+								</tr>
+								<tr>
+									<td>输出电压：400V/230V</td>
+									<td>额定转速：1500rpm</td>
+								</tr>
+								<tr>
+									<td>电压整定范围：</td>
+									<td>≥+ 5%	频率波动率：≤0.5%</td>
+								</tr>
+								<tr>
+									<td>稳态电压调整率：</td>
+									<td>≤+ 1%	瞬态频率偏差（100%突减功率）：≤+12%</td>
+								</tr>
+								<tr>
+									<td>瞬态电压偏差（100%突减功率）：</td>
+									<td>≤+25	瞬态频率偏差（突加功率）：≤-10%</td>
+								</tr>
+								<tr>
+									<td>瞬态电压偏差（突加功率）：</td>
+									<td>≤-20%	频率恢复时间（100%突减功率）：≤5S</td>
+								</tr>
+								<tr>
+									<td>电压稳定时间（100%突减功率）：</td>
+									<td>≤6S	频率恢复时间（突加功率）：≤5S</td>
+								</tr>
+								<tr>
+									<td>电压稳定时间（突加功率）：</td>
+									<td>≤6S	稳态平率调整率：≤5%</td>
+								</tr>
+								<tr>
+									<td>尺寸：2300*920*1580 mm</td>
+									<td>重量:1200 kg</td>
+								</tr>
+							</table>
+						</div>
+						<div class="row product_style">
+							<div class="panel panel-default">
+								<div class="panel-body">总体描述</div>
+							</div>
+							<div class="row">
+								<p>满足环境温度40℃水箱散热器，皮带驱动冷却风扇，带风扇安全护罩</p>
+								<p>24V充电发电机</p>
+								<p>发电机：单轴承发电机，IP21防护等级，H级绝缘</p>
+								<p>内装高效能专用减震器</p>
+								<p>干式空气过滤器、燃油过滤器、机油过滤器</p>
+								<p>发电输出断路器</p>
+								<p>标准控制屏</p>
+								<p>24V启动电瓶2只及连接线一套</p>
+								<p>消声器一套</p>
+							</div>
+						</div>
+					</div>
+					<div class="huanbao flag2 disno">
+						<div>
+							<h3>环保</h3>
+							<div class="row">
+								<div class="pro_leftimg">
+									<img src="img/d_environmental.png" />
+								</div>
+								<p>从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间...</p>
+								<div class="connect">
+									<a>动力强劲的发动机</a>
+									<a>动力强劲的发动机</a>
+									<a>动力强劲的发动机</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3>环保</h3>
+							<div class="row">
+								<div class="pro_rightimg">
+									<img src="img/d_environmental.png" />
+								</div>
+								<p>从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间...</p>
+								<div class="connect">
+									<a>动力强劲的发动机</a>
+									<a>动力强劲的发动机</a>
+									<a>动力强劲的发动机</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3>环保</h3>
+							<div class="row">
+								<div class="pro_leftimg">
+									<img src="img/d_environmental.png" />
+								</div>
+								<p>从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时500个工作时间，以先到者为准从装运日起一年或1500个工作时间，以先到者为准从装运日起一年或1500个工作时间...</p>
+								<div class="connect">
+									<a>动力强劲的发动机</a>
+									<a>动力强劲的发动机</a>
+									<a>动力强劲的发动机</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="footer">
+			<div class="w1110">
+				<div class="row w1110">
+					<div class="col-xs-6 col-md-2 footersect1">
+						<h3>导航</h3>
+						<ul>
+							<li>
+								<a>关于我们</a>
+							</li>
+							<li>
+								<a>产品中心</a>
+							</li>
+							<li>
+								<a>安装与保养</a>
+							</li>
+							<li>
+								<a>新闻资讯</a>
+							</li>
+							<li>
+								<a>联系我们</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-md-3 footersect2">
+						<h3>产品中心</h3>
+						<ul>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+						</ul>
+						<ul class="noright">
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+							<li>
+								<a>二级栏目</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-md-3 footersect3">
+						<h3>新闻资讯</h3>
+						<ul>
+							<li>
+								<a>XXX...<span>06/28</span></a>
+							</li>
+							<li>
+								<a>XXX...<span>06/28</span></a>
+							</li>
+							<li>
+								<a>XXX...<span>06/28</span></a>
+							</li>
+							<li>
+								<a>XXX...<span>06/28</span></a>
+							</li>
+							<li>
+								<a>XXX...<span>06/28</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-md-3 footersect4">
+						<h3>联系我们</h3>
+						<ul>
+							<li>地址:0XXX</li>
+							<li>电话:XXX</li>
+							<li>传真: XXX </li>
+							<li>手机：+XXX</li>
+							<li>网址:XXX</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="banquan">
+				<p>版权所有@ 2020 江苏XXX设备有限公司 </p>
+			</div>
+		</div>
+	</body>
+
+</html>

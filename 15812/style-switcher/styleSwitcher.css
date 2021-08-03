@@ -1,0 +1,189 @@
+/* 
+    Document   : styleSwitcher
+    Created on : 11.08.2012., 16:41:51
+    Author     : Pixel Industry
+    Description:
+        Stylesheet for StyleSwitcher
+*/
+
+#style-switcher{
+    position: fixed;
+    left: -230px;
+    top: 80px;
+    background: #fff;
+    width: 230px;
+    height: 350px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 3px 3px 3px #eee;
+    border-top: 1px solid #ddd;
+    z-index: 1500;
+}
+
+.kreator-wide.active a, 
+.kreator-boxed.active a{
+    background: #eee;
+    color: #333;
+    font-weight: 600;
+    padding: 2px 8px;
+}
+
+#style-switcher #styles-container{
+    padding: 25px;
+}
+
+#style-switcher #styles-container div{
+    margin-bottom: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+
+#style-switcher h6{
+    font: 13px Arial, sans-serif;
+    line-height: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+#style-switcher p{
+    font: 12px Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+
+#style-switcher #styles-button{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: #333;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #222;
+}
+
+#style-switcher #styles-button #switcher-logo{
+    background: url('img/logo.png') no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+#style-switcher .styles-list{
+    overflow: hidden;
+}
+
+#style-switcher .styles-list li{
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    text-indent: -9999px;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#style-switcher .styles-list li:hover{
+    opacity: 0.9;
+}
+
+#style-switcher select{
+    background: #f8f8f8;
+    border: 1px solid #AAA;
+    color: #555;
+    font: 12px 'Droid Sans';
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+}
+
+/*************************
+    CUSTOM THEME STYLES
+**************************/
+
+
+/*  STYLES   */
+#style-switcher .styles-list .blue{
+    background: #0489cc;
+}
+
+#style-switcher .styles-list .brown{
+    background: #bb7843;
+}
+
+#style-switcher .styles-list .darkgreen{
+    background: #0CA094;
+}
+
+#style-switcher .styles-list .darkpink{
+    background: #ba053b;
+}
+
+#style-switcher .styles-list .darkred{
+    background: #C53545;
+}
+
+#style-switcher .styles-list .default-color{
+    background: #f55;
+}
+
+#style-switcher .styles-list .lightgreen{
+    background: #80ad41;
+}
+
+#style-switcher .styles-list .orange{
+    background: #fb6148;
+}
+
+#style-switcher .styles-list .red{
+    background: #ed2d2d;
+}
+
+#style-switcher .styles-list .yellow{
+    background: #edb602;
+}
+
+/*PATTERNS*/
+#style-switcher .pattern-list li{
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    text-indent: -9999px;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#style-switcher .pattern-list li:hover{
+    opacity: 0.9;
+}
+
+#style-switcher .pattern-list .pattern-1{
+    background: url('../img/patt1.png') no-repeat;
+}
+
+#style-switcher .pattern-list .pattern-2{
+    background: url('../img/patt2.png') no-repeat;
+}
+#style-switcher .pattern-list .pattern-3{
+    background: url('../img/patt3.png') no-repeat;
+}
+
+#style-switcher .pattern-list .pattern-4{
+    background: url('../img/patt4.png') no-repeat;
+}
+
+#style-switcher .pattern-list .pattern-5{
+    background: url('../img/patt5.png') no-repeat;
+}
+

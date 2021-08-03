@@ -1,0 +1,1396 @@
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+body img {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+	color: #323648;
+}
+li {
+    list-style-type: none;
+}
+p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-- header --*/
+
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+}
+
+
+#logo a {
+	float: left;
+    font-size: .8em;
+    text-transform: uppercase;
+    display: initial;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px 0;
+    border: none;
+}
+#logo a span.fa {
+    color: #ffc168;
+}
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	}
+
+/* Styling the links */
+nav a {
+    color: #ddd;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-left: 0;
+    padding-right: 0;
+	padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+
+nav ul li ul li:hover { background: #f8f9fa; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	color: #fff;	
+    border-bottom: 2px solid #fff;
+}
+.menu li.active  a{ 
+	color: #fff;	
+    border-bottom: 2px solid #fff;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 30px; 
+    background: #fff;
+    padding: 10px;
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+nav ul ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+.login-icon a {
+    background: none;
+    padding: 12px 20px;
+    color: #ffc168;
+    border: 2px solid #ffc168;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.login-icon a:hover {
+    color: #ffc168;
+    border: 2px solid #ffc168;
+    background: rgba(255, 193, 104, 0.2);
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 736px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	.login-icon a {
+		padding: 11px 15px;
+	}
+	nav {
+		margin: 0;
+	}
+	nav a {
+		color: #333;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		padding: 7px 15px;
+		font-size: 17px;
+		text-decoration: none;
+		border: none;
+		float: right;
+		background-color: #ffc168;
+		color: #333;
+		border-radius: 5px;
+	}
+	.menu .toggle {
+		float: none;
+		text-align: center;
+		margin: auto;
+		width: 30%;
+		padding: 5px;
+		font-weight: normal;
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+
+	.toggle:hover {
+		color:#333;
+		background-color: #fff;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+		background: #fff;
+		padding: 15px 0;
+		width:100%;
+		text-align: center;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		padding: 7px 0;
+		}
+	nav a{
+		padding: 5px 0;
+	}
+	nav a:hover {
+		color: #333;
+		border-bottom: 2px solid #333;
+	}
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: transparent;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+	nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #fff; 
+	}
+	nav ul ul li a {
+		font-size: 15px;
+	}
+	ul.inner-ul{
+		padding: 0!important;
+	}
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+.user span.fa {
+    font-size: 25px;
+    color: #fff;
+}
+/*-- //header --*/
+
+
+/*-- banner --*/
+.banner {
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+	position: relative;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+	background: #333;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #333, #transparent);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #333, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.slider-info {
+    position: relative;
+    width: 48%;
+}
+.agileinfo-logo h2 {
+    color: #fff;
+    display: inline-block;
+    font-size: 3.5em;
+    text-transform: capitalize;
+    line-height: 60px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+}
+.agileinfo-logo p {
+    color: #eee;
+    margin: 2em 0;
+}
+.slider-info a.btn {
+    background: none;
+    padding: 10px 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.slider-info a.btn:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+.banner-text {
+    padding: 13vw 0 8vw;
+}
+.banner ul.social li {
+    display: inline-block;
+    margin: 8px;
+}
+.banner  ul.social li  a{
+    font-size: 16px;
+    color: #eee;
+    line-height: 26px;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+/*-- //banner --*/
+
+/*-- popup --*/
+.popup-effect {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+}
+
+.popup-effect:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: #fff;
+    border-radius: 4px;
+    max-width: 500px;
+    position: relative;
+    margin: 8em auto;
+    padding: 3em 2em;
+    z-index: 999;
+}
+.popup p {
+    color: #777;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup .close:hover {
+    color: #ff6c5f;
+}
+/*-- //popup --*/
+
+
+/* -- banner bottom --*/
+.bot-grids h4 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.bot-grid {
+    background: rgba(0, 159, 77, 0.15);
+    padding: 30px 10px;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    color: #009f4d;
+    border-radius: 6px;
+    margin: auto;
+}
+.bot-grid h5 {
+    font-size: 22px;
+    color: #009f4d;
+}
+.bot-grid1 {
+    background: rgba(254, 80, 0, 0.15);
+    padding: 30px 10px;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    color: #fe5000;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.bot-grid1 h5 {
+    font-size: 22px;
+    color: #fe5000;
+}
+.bot-grid2 {
+    background: rgba(0, 188, 228, 0.15);
+    padding: 30px 10px;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    color: #00bce4;
+    border-radius: 6px;
+    margin: auto;
+}
+.bot-grid2 h5 {
+    font-size: 22px;
+    color: #00bce4;
+}
+.bot-grid1 {
+    left: 12%;
+    bottom: 9%;
+}
+.bot-grid2 {
+    right: 13%;
+    bottom: -16%;
+}
+.bot-grid span.fa ,.bot-grid1 span.fa ,.bot-grid2 span.fa {
+    font-size: 25px;
+}
+/* -- //banner bottom --*/
+
+/* -- services --*/
+h4.heading {
+    font-size: 40px;
+    letter-spacing: 1px;
+    width: 60%;
+    margin: auto;
+    line-height: 50px;
+}
+.service-grids h5 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.grid1 span.fa {
+    background: rgba(0, 159, 77, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #009f4d;
+    border-radius: 50%;
+}
+.grid2 span.fa {
+    background: rgba(254, 80, 0, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #fe5000;
+    border-radius: 50%;
+}
+
+.grid3 span.fa {
+    background: rgba(45, 222, 152, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #2dde98;
+    border-radius: 50%;
+}
+.grid4 span.fa {
+    background: rgba(255, 79, 129, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #ff4f81;
+    border-radius: 50%;
+}
+.grid5 span.fa {
+    background: rgba(142, 67, 231, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #8e43e7;
+    border-radius: 50%;
+}
+
+.grid6 span.fa {
+    background: rgba(51, 105, 231, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #3369e7;
+    border-radius: 50%;
+}
+.services .grid1,.services .grid2,.services .grid3,.services .grid4,.services .grid5,.services .grid6 {
+    box-shadow: 7px 7px 10px 0px rgba(103, 151, 179, 0.1);
+}
+/* -- //services --*/
+
+/*-- how it works --*/
+.about-grids h4 {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.about-grids p {
+    color: #777;
+}
+.about-grids h5 {
+    font-size: 25px;
+}
+.grid1 span.fa {
+    background: rgba(0, 159, 77, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #009f4d;
+    border-radius: 50%;
+}
+.grid2 span.fa {
+    background: rgba(254, 80, 0, 0.1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #fe5000;
+    border-radius: 50%;
+}
+/*-- //how it works --*/
+
+
+/*-- newsletter --*/
+.subscribe-main{
+	background: #ffc168;
+}
+.newsletter-info {
+    box-shadow: 0 20px 100px -20px rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    width: 70%;
+    margin: auto;
+}
+
+.newsletter-info input[type="email"] {
+    padding: 1em 1.5em;
+    font-size: 16px;
+    color: #666;
+    outline: none;
+    letter-spacing: 2px;
+    border: none;
+    border: 1px solid #dad8d8;
+    flex-basis: 100%;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.newsletter-info input[type="submit"] {
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    border: transparent;
+    background: #292929;
+    flex-basis: 30%;
+    margin-left: -2em;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.subscribe-main p{
+    width: 60%;
+    margin: auto;
+}
+/*-- //newsletter --*/
+
+/*-- pricing --*/
+.pricing{
+	margin-bottom:8em;
+}
+.pricing-grid,.pricing-grid1,.pricing-grid2 {
+    text-align: center;
+	padding: 1.5em 2em;
+	position: relative;
+    transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+}
+.price {
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+}
+.price:hover {
+    transform: scale(1.1);
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+}
+.pricing-grid p,.pricing-grid1 p,.pricing-grid2 p {
+    color: #888;
+    padding: 5px 0;
+    letter-spacing: 1px;
+}
+.pricing-grid p strong,.pricing-grid1 p strong,.pricing-grid2 p strong {
+    color: #333;
+}
+.head h3 {
+    margin: 0;
+    background: rgba(254, 80, 0, 0.1);
+    color: #fe5000;
+    padding: 18px 30px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.head h3 span {
+    float: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+.head1 h3 {
+    margin: 0;
+    background: rgba(0, 159, 77, 0.1);
+    color: #009f4d;
+    padding: 18px 30px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.head1 h3 span {
+    float: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+.head2 h3 {
+    margin: 0;
+    background: rgba(0, 188, 228, 0.1);
+    color: #00bce4;
+    padding: 18px 30px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.head2 h3 span {
+    float: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+.pricing-grid a {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    background: #fe5000;
+    border: 2px solid #fe5000;
+    padding: 8px 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.pricing-grid1 a {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    background: #009f4d;
+    border: 2px solid #009f4d;
+    padding: 8px 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.pricing-grid2 a {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    background: #00bce4;
+    border: 2px solid #00bce4;
+    padding: 8px 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.shadow {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+h3.heading {
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+/*-- //pricing --*/
+
+/*-- footer positioned text --*/
+h5.w3pvt-title {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin: 0 1em;
+    line-height: 50px;
+}
+.text {
+    background: #f8f9fa;
+    padding: 4em 15em;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.text p {
+    color: #777;
+    margin: 1.5em auto;
+}
+.text a.btn {
+    background: none;
+    padding: 13px 30px;
+    color: #333;
+    border: 2px solid #ffc168;
+	background: #ffc168;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    opacity:0.8;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.text a.btn:hover {
+    opacity:1;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.text-grid {
+    bottom: 30%;
+    left: 0%;
+    right: 0%;
+}
+/*-- //footer positioned text --*/
+
+/* -- footer --*/
+footer {
+    background: #292929;
+	padding-top:20em;
+}
+.footer-middle{
+	text-align:center;
+}
+.footer-right{
+	text-align:right;
+}
+.footer-right ul.social li {
+    display: inline-block;
+    margin: 0 8px;
+}
+.footer-right  ul.social li  a{
+    font-size: 14px;
+    color: #fff;
+    line-height: 26px;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+.footer-right  ul.social li  a:hover{
+    color: #ffc168;
+}
+.footer-left h2.logo a {
+    font-size: .9em;
+    text-transform: uppercase;
+    display: initial;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+.footer-left h2.logo a span.fa {
+    color: #ffc168;
+}
+
+.footer-middle p,.footer-middle p a{
+	color:#aaa;
+}
+.footer-middle p a:hover {
+    color: #ffc168;
+}
+/* -- //footer --*/
+
+/*-- inner banner --*/
+.inner-banner {
+    background: url(../images/bg.jpg) no-repeat 0px 0px;
+    background-size: cover;
+	position: relative;
+    height: 300px;
+}
+/*-- //inner banner --*/
+
+/*-- contact page--*/
+
+.w3layouts_mail_grid_right input[type="text"],
+.w3layouts_mail_grid_right input[type="email"],
+.w3layouts_mail_grid_right textarea {
+    outline: none;
+    padding: 14px 24px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #555;
+    width: 100%;
+}
+
+.w3layouts_mail_grid_right textarea {
+    min-height: 200px;
+    width: 100%;
+    resize: none;
+}
+
+.w3layouts_mail_grid_right input[type="submit"],
+.w3layouts_mail_grid_right input[type="reset"] {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    display: inline-block;
+    background: #ffc168;
+    padding: 12px 30px;
+    color: #333;
+    border: 2px solid #ffc168;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.w3layouts_mail_grid_right input[type="submit"]:hover,
+.w3layouts_mail_grid_right input[type="reset"]:hover {
+   
+}
+
+.contact-info h4 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.contact-info p span.fa {
+    color: #ffc168;
+    background: rgba(255, 193, 104, 0.3);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.contact-info p a {
+    font-size: 17px;
+    color: #888;
+}
+.mail{
+	margin-bottom: 8em;
+}
+/*-- //contact page --*/
+
+
+/*-- TO TOP --*/
+a.move-top span {
+    color: #ffc168;
+    width: 35px;
+    position: absolute;
+    z-index: 9;
+    background: #292929;
+    left: 49%;
+    bottom: 18%;
+    border-radius: 50%;
+    height: 35px;
+    border: 1px solid rgba(255, 193, 104, 0.2);
+    line-height: 1.9em;
+}
+/*-- // TO TOP --*/
+
+
+/*-- Responsive design --*/
+
+@media(max-width:1080px) {
+	.slider-info {
+		width: 56%;
+	}
+	.agileinfo-logo h2 {
+		font-size: 3.2em;
+	}
+	.banner-text {
+		padding: 16vw 0 6vw;
+	}
+	.bot-grid1 {
+		left: 4%;
+		bottom: 0%;
+	}
+	.bot-grids h4 {
+		font-size: 40px;
+	}
+	.about-grids h4 {
+		font-size: 30px;
+	}
+	.text {
+		padding: 4em 10em;
+	}
+	.service-grids h5 {
+		font-size: 23px;
+	}
+
+}
+
+@media(max-width:1024px) {
+	
+}
+
+@media(max-width:991px) {
+	.slider-info {
+		width: 70%;
+	}
+	.agileinfo-logo h2 {
+		font-size: 3em;
+	}	
+	.bot-grid {
+		float: left;
+	}
+	.bot-grid1 {
+		position: static !important;
+		float: left;
+		margin-left: 10px;
+	}
+	.bot-grid2 {
+		float: left;
+		position: static !important;
+		margin-left: 10px;
+	}
+	h4.heading {
+		font-size: 35px;
+		width: 90%;
+	}
+	.subscribe-main p,.newsletter-info {
+		width: 90%;
+	}
+	.text {
+		padding: 3em 3em;
+	}
+	h5.w3pvt-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.pricing {
+		margin-bottom: 2em;
+	}
+	.footer-grids,.footer-right {
+		text-align: center;
+	}
+	.footer-middle {
+		margin: 1em 0;
+	}
+	.text-grid {
+		bottom: 45%;
+	}
+	.top-icon {
+		text-align: center;
+	}
+	a.move-top span {
+		position: static;
+	}
+	.login-icon a {
+		font-size: 14px;
+		letter-spacing: 1.5px;
+	}
+	.contact-info h4 {
+		font-size: 25px;
+	}
+	.mail {
+		margin-bottom: 6em;
+	}
+	.inner-banner {
+		height: 250px;
+	}
+}
+
+@media(max-width:800px) {
+   .agileinfo-logo h2 {
+		font-size: 3em;
+		line-height: 55px;
+	}
+	.banner-text {
+		padding: 20vw 0 6vw;
+	}
+	h3.heading {
+		font-size: 45px;
+	}
+	.bot-grids h4 {
+		font-size: 35px;
+	}
+}
+@media(max-width:736px) {
+   
+	.login-icon {
+		position: absolute;
+		right: 16%;
+	}
+	.menu li.active a {
+		color: #333;
+		border-bottom: 2px solid #333;
+	}
+	.inner-banner {
+		height: 200px;
+	}
+}
+
+@media(max-width:736px) {
+    .login-icon {
+		right: 26%;
+	}
+	.slider-info {
+		width: 80%;
+	}
+	.bot-grid,.bot-grid1,.bot-grid2{
+		width:162px;
+		height:162px;
+	}
+	.bot-grid h5,.bot-grid1 h5,.bot-grid2 h5 {
+		font-size: 20px;
+	}
+	h4.heading {
+		font-size: 32px;
+		width: 100%;
+		line-height: 40px;
+	}
+	.subscribe-main p, .newsletter-info {
+		width: 100%;
+	}
+	.head h3,.head1 h3,.head2 h3 {
+		font-size: 23px;
+	}
+	.head h3 span,.head1 h3 span,.head2 h3 span {
+		font-size: 27px;
+	}
+	h5.w3pvt-title {
+		font-size: 27px;
+		line-height: 35px;
+	}
+	.text {
+		padding: 2em 2em;
+	}
+	.w3layouts_mail_grid_right textarea {
+		min-height: 150px;
+	}
+	.w3layouts_mail_grid_right input[type="text"], .w3layouts_mail_grid_right input[type="email"], .w3layouts_mail_grid_right textarea {
+		padding: 12px 18px;
+		font-size: 16px;
+	}
+	.contact-info h4 {
+		font-size: 23px;
+	}
+	.mail {
+		margin-bottom: 4em;
+	}
+
+}
+
+@media(max-width:667px) {
+	.login-icon {
+		right: 24%;
+	}
+}
+
+@media(max-width:600px) {
+	.login-icon {
+		right: 20%;
+	}
+}
+
+@media(max-width:568px) {
+	.login-icon {
+		right: 18%;
+	}
+	.agileinfo-logo h2 {
+		font-size: 2.6em;
+		line-height: 50px;
+	}
+	.banner-text {
+		padding: 25vw 0 6vw;
+	}
+	.agileinfo-logo p {
+		color: #eee;
+		margin: 1em 0;
+	}
+	.about-grids h4 {
+		font-size: 28px;
+	}
+	.about-grids h5 {
+		font-size: 23px;
+	}
+	.pricing-grids {
+		margin: 0em 5em;
+	}
+	.banner ul.social li {
+		margin: 0 8px;
+	}
+	.banner ul.social li a {
+		font-size: 15px;
+	}
+}
+
+@media(max-width:480px) {
+	.login-icon {
+		right: 20%;
+	}
+	.slider-info a.btn {
+		padding: 10px 25px;
+		font-size: 14px;
+	}
+	.bot-grids h4 {
+		font-size: 32px;
+	}
+	.bot-grid, .bot-grid1, .bot-grid2 {
+		width: 175px;
+		height: 175px;
+	}
+	.bot-grid2{
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+	h4.heading {
+		font-size: 28px;
+		line-height: 37px;
+	}
+	.about-grids h4 {
+		font-size: 26px;
+	}
+	.pricing-grids {
+		margin: 0em 3em;
+	}
+	p {
+		font-size: 16px;
+	}
+	.slider-info {
+		width: 90%;
+	}
+	.agileinfo-logo h2 {
+		font-size: 2.4em;
+		line-height: 45px;
+	}
+	.text a.btn {
+		padding: 12px 25px;
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.banner-text {
+		padding: 30vw 0 8vw;
+	}
+	.popup {
+		margin: 8em 1em;
+		padding: 2em 1em;
+	}
+	.popup .close {
+		top: 2px;
+	}
+	.newsletter-info input[type="submit"] {
+		flex-basis: 40%;
+	}
+	.inner-banner {
+		height: 160px;
+	}
+
+}
+@media(max-width:414px) {
+	#logo a {
+		font-size: .7em;
+	}
+	.login-icon a {
+		letter-spacing: 1px;
+		padding: 12px 15px;
+	}
+	.login-icon {
+		right: 23%;
+	}
+	.bot-grids h4 {
+		font-size: 26px;
+	}
+	h4.heading {
+		font-size: 24px;
+		line-height: 34px;
+	}
+	h3.heading {
+		font-size: 38px;
+	}
+	.pricing-grids {
+		margin: 0em 1em;
+	}
+	h5.w3pvt-title {
+		font-size: 25px;
+		line-height: 33px;
+		margin: 0 0em;
+	}
+}
+
+@media(max-width:384px) {
+    #logo a {
+		font-size: .6em;
+	}
+	.login-icon {
+		right: 24%;
+	}
+	.agileinfo-logo h2 {
+		font-size: 2.2em;
+		line-height: 40px;
+	}
+	.slider-info {
+		width: 100%;
+	}
+	.bot-grids h4 {
+		font-size: 24px;
+	}
+	.bot-grid, .bot-grid1, .bot-grid2 {
+		width: 162px;
+		height: 162px;
+	}
+	.about-grids h4 {
+		font-size: 24px;
+	}
+	.about-grids h5 {
+		font-size: 20px;
+	}
+	.subscribe-main form{
+		flex-direction: column !important;
+	}
+	.newsletter-info input[type="submit"] {
+		margin-left: 0em;
+	}
+	.footer-left h2.logo a {
+		font-size: .8em;
+	}
+	.newsletter-info input[type="email"] {
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width:375px) {
+	.bot-grid, .bot-grid1, .bot-grid2 {
+		width: 158px;
+		height: 158px;
+	}
+	h3.heading {
+		font-size: 36px;
+	}
+	.text {
+		padding: 2em 1em;
+	}
+	.text p {
+		margin: 1em auto;
+	}
+}
+@media(max-width:320px) {
+}
+
+
+/*-- //Responsive design --*/

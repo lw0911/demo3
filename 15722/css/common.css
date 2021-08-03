@@ -1,0 +1,532 @@
+﻿@charset "utf-8";
+
+/* CSS reset */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+li {
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+
+/* 基础样式 */
+html {
+	position: relative;
+	min-height: 100%;
+	max-width: 1600px;
+}
+@media (min-width: 1600px) {
+	html {
+		width: 1600px;
+		margin: 0 auto;
+		background: #f9f9f9;
+	}
+}
+body {
+	background-color: #EDEDED;
+	font-family: 'Helvetica Neue', 'Microsoft Yahei', Tahoma, sans-serif;
+	font-size: 14px;
+	margin-bottom: 164px;
+	min-height: 100%;
+}
+body, .footer {
+	min-width: 1200px;
+}
+a {
+	text-decoration: none;
+}
+:focus {
+	outline: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* 页眉样式 */
+.header .top {
+	height: 30px;
+	padding-top: 6px;
+	text-align: right;
+	border-bottom: 4px solid #8A8C8E;
+	background-color: #FFF;
+}
+.header .top a {
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFF;
+	display: inline-block;
+}
+.header .top a.login {
+	background: url(../images/top_con.jpg) left no-repeat;
+}
+.header .top a.reg {
+	margin: 0 35px 0 20px;
+	background: url(../images/top_con.jpg) right no-repeat;
+}
+.header .bar {
+	height: 68px;
+	background-color: #FFF;
+}
+.header .logo {
+	display: block;
+	width: 205px;
+}
+.header .logo h1 {
+	text-indent: -999px;
+	width: 205px;
+	height: 68px;
+	background: url(../images/logo.jpg) no-repeat scroll 0 0;
+}
+.header .nav {
+	float: right;
+	height: 68px;
+	line-height: 68px;
+	overflow: hidden;
+}
+.header .nav li {
+	float: left;
+	height: 68px;
+}
+.header .nav li a {
+	padding: 10px 38px;
+	color: #6e6d70;
+}
+.header .nav li a:hover {
+	color: #b52123;
+}
+.header .nav li a.active {
+	color: #b52123;
+}
+
+/* 主体样式 */
+.content {
+	background: url(../images/con_1.jpg) top no-repeat;
+	padding-bottom: 30px;
+}
+.content .content-title {
+	width: 1010px;
+	margin: 0 auto;
+	height: 153px;
+	line-height: 153px;
+	font-family: 'YouYuan', 'Microsoft Yahei', Tahoma, sans-serif;
+	font-size: 36px;
+	color: #fffff0;
+	text-shadow: 1px 1px rgba(100,100,100,.3);
+	font-weight: 600;
+	text-align: center;
+	background: url(../images/sy_bj.png) bottom no-repeat;
+}
+.content .content-main {
+	width: 1010px;
+	margin: 0 auto 45px;
+	padding: 10px 0 25px 0;
+	background: url(../images/scon_bj.png) bottom no-repeat;
+}
+.content .content-main .leader {
+	font-family: 'SimSun', Arial, serif;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	color: #535353;
+	line-height: 32px;
+}
+.content .content-main .featrues {
+	margin: 0 auto;
+	width: 842px;
+	line-height: 18px;
+	color: #969696;
+	overflow: hidden;
+}
+.content .content-main .featrues li .title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #747474;
+	line-height: 24px;
+	margin: 0;
+	padding-top: 10px;
+}
+.content .content-main .featrues li {
+	font-size: 14px;
+	float: left;
+	margin: 0 28px 36px;
+	width: 241px;
+	height: 110px;
+	padding-left: 124px;
+	background: no-repeat scroll 11px 4px;
+	overflow: hidden;
+}
+.content .content-main .featrues li.icon-turn {
+	background-image: url(../images/ysfx_1.jpg);
+}
+.content .content-main .featrues li.icon-orders {
+	background-image: url(../images/ysfx_2.jpg);
+}
+.content .content-main .featrues li.icon-management {
+	background-image: url(../images/ysfx_3.jpg);
+}
+.content .content-main .featrues li.icon-custom {
+	background-image: url(../images/ysfx_4.jpg);
+}
+.content .content-main .featrues li.icon-services {
+	background-image: url(../images/ysfx_5.jpg);
+}
+.content .content-main .featrues li.icon-system {
+	background-image: url(../images/ysfx_6.jpg);
+}
+.content .content-main .featrues li.icon-db {
+	background-image: url(../images/ysfx_7.jpg);
+}
+.content .content-main .featrues li.icon-coupon {
+	background-image: url(../images/ysfx_8.jpg);
+}
+.content .content-main .featrues li.icon-offline {
+	background-image: url(../images/ysfx_9.jpg);
+}
+.content .content-main .section-title {
+	margin-top: 30px;
+	line-height: 48px;
+	font-size: 24px;
+	color: #333;
+}
+.content .content-main .panel {
+	width: 950px;
+	margin: 0 auto 16px;
+	line-height: 24px;
+	color: #4f4f4f;
+	background: url(../images/faq_bj2.jpg) bottom no-repeat;
+}
+.content .content-main .panel .panel-title {
+	width: 950px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	text-indent: 18px;
+	color: #b52022;
+	background: url(../images/faq_bj1.jpg) no-repeat;
+}
+.content .content-main .panel .panel-content {
+	padding: 14px 35px;
+	font-size: 14px;
+}
+.content .content-main .timeline {
+	width: 808px;
+	line-height: 18px;
+	background: url(../images/dsj_x.jpg) left repeat-y;
+}
+.content .content-main .timeline li {
+	padding: 0 0 15px 48px;
+	width: 760px;
+	font-size: 14px;
+}
+.content .content-main .timeline li .title {
+	margin: 0 0 0 -48px;
+	padding: 0;
+	line-height: 24px;
+	text-indent: 48px;
+	font-size: 16px;
+	color: #b52022;
+	background: url(../images/dsj_con.jpg) left no-repeat;
+}
+.content .content-main .timeline li .title.current {
+	background: url(../images/dsj_con_current.jpg) left no-repeat;
+}
+.content .content-main .timeline li a {
+	color: inherit;
+	text-decoration: underline;
+}
+.content .content-main ul.hd {
+	width: 950px;
+	height: 53px;
+	margin: 0 auto;
+	border-bottom: 1px solid #999;
+	overflow: hidden;
+}
+.content .content-main ul.hd li {
+	float: left;
+	margin-right: 35px;
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #010101;
+	text-align: center;
+	cursor: pointer;
+}
+.content .content-main ul.hd li.on {
+	border-bottom: 3px solid #999;
+	color: #999;
+}
+.content .content-main ul.hd li h3 {
+	font-size: inherit;
+}
+.content .content-main .bd {
+	width: 950px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* 页脚样式 */
+.footer {
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.footer .footer-menu {
+	background-color: #393433;
+	border-top: 1px solid #696565;
+	padding: 32px 20px 0;
+	height: 35px;
+	color: #999;
+}
+.footer .footer-menu a {
+	color: #c9c9c9;
+}
+.footer .footer-address {
+	background-color: #393433;
+	border-top: 1px solid #494443;
+	padding: 17px 20px 0;
+	height: 78px;
+	line-height: 25px;
+	color: #cacaca;
+	font-style: normal;
+}
+.footer .footer-address img {
+	float: right;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+.footer .footer-address a {
+	color: inherit;
+}
+
+/* 首页 */
+.home-page .wrapper {
+	padding-bottom: 30px;
+}
+.home-page .wrapper .ban {
+	height: 490px;
+	background: url(../images/ban_bj.jpg) center no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+.home-page .wrapper .ban ul.bd, .home-page .wrapper .ban ul.bd li {
+	width: 100%;
+	height: 490px;
+	overflow: hidden;
+}
+.home-page .wrapper .ban ul.hd {
+	margin-left: -50px;
+	width: 100px;
+	height: 13px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	bottom: 36px;
+}
+.home-page .wrapper .ban ul.hd li {
+	float: left;
+	margin: 0 6px;
+	width: 13px;
+	height: 13px;
+	background: url(../images/ban_con.png) right no-repeat;
+	display: block;
+	cursor: pointer;
+}
+.home-page .wrapper .ban ul.hd li.on {
+	background-position: left;
+}
+.home-page .wrapper .main {
+	margin: 30px auto;
+	width: 1010px;
+	height: 770px;
+	overflow: hidden;
+}
+.home-page .wrapper .main .app {
+	width: 1010px;
+	height: 770px;
+	background: url(../images/home-ad-bg.jpg) no-repeat scroll 0 0;
+	text-align: center;
+	position: relative;
+}
+.home-page .wrapper .main .app .app-left {
+	width: 50%;
+	float: left;
+}
+.home-page .wrapper .main .app .app-right {
+	width: 30%;
+	float: left;
+}
+.home-page .wrapper .main .app .app-left .app-pc, .home-page .wrapper .main .app .app-right ul {
+	width: 244px;
+	height: 168px;
+	margin: 30px auto;
+}
+.home-page .wrapper .main .app .app-left .app-pc {
+	background: url(../images/pc.jpg) no-repeat scroll 0 0;
+}
+.home-page .wrapper .main .app h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #646464;
+	margin-top: 50px;
+}
+.home-page .wrapper .main .app p {
+	line-height: 32px;
+}
+.home-page .wrapper .main .app .app-left p {
+	font-size: 20px;
+	color: #808080;
+}
+.home-page .wrapper .main .app .app-left p span {
+	display: block;
+	font-size: 24px;
+	color: #B80106;
+	font-weight: bold;
+	background: url(../images/icno-phone.jpg) no-repeat scroll 135px 0;
+}
+.home-page .wrapper .main .app .app-right a {
+	text-indent: -9999px;
+	display: block;
+	width: 252px;
+	height: 60px;
+	margin: 10px auto;
+}
+.home-page .wrapper .main .app .app-right a.ios-download {
+	background: url(../images/download-ios.png) no-repeat scroll top;
+}
+.home-page .wrapper .main .app .app-right a.ios-download:active {
+	background: url(../images/download-ios.png) no-repeat scroll bottom;
+}
+.home-page .wrapper .main .app .app-right a.android-download {
+	background: url(../images/download-android.jpg) no-repeat scroll top;
+}
+.home-page .wrapper .main .app .app-right a.android-download:active {
+	background: url(../images/download-android.jpg) no-repeat scroll bottom;
+}
+.home-page .wrapper .main .app .app-right img {
+	position: absolute;
+	top: 111px;
+	right: 60px;
+}
+.home-page .wrapper .main .app .app-right p {
+	font-size: 18px;
+	color: #808080;
+}
+.home-page .wrapper .main .app .app-right p span {
+	display: block;
+	font-size: 24px;
+	color: #67BF00;
+	font-weight: bold;
+}
+
+/* 为什么选择我们 */
+.about-page .content .content-main .wrapper {
+	margin: 90px auto 44px;
+	width: 808px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #777;
+	overflow: hidden;
+}
+.about-page .content .content-main .wrapper p {
+	font-size: 14px;
+	color: #777;
+}
+.about-page .content .content-main .advantages {
+	min-height: 214px;
+	background: url(../images/xzwm_bj.jpg) right -30px no-repeat;
+}
+.about-page .content .content-main .advantages li {
+	padding-left: 30px;
+	background: url(../images/cpzx_d.jpg) 7px 12px no-repeat;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+/* 产品中心 */
+.products-page .content .content-main ul.product-list {
+	width: 950px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #7a7a7a;
+	overflow: hidden;
+}
+.products-page .content .content-main ul.product-list > li {
+	width: 885px;
+	margin-bottom: 110px;
+	padding: 0 30px 0 35px;
+	border-bottom: 1px solid #999;
+	overflow: hidden;
+}
+.products-page .content .content-main ul.product-list .product-item {
+	width: 390px;
+	overflow: hidden;
+}
+.products-page .content .content-main ul.product-list .product-item .title {
+	margin: 0;
+	font-weight: bold;
+	height: 60px;
+	line-height: 42px;
+	font-size: 30px;
+	color: #515151;
+	letter-spacing: 2px;
+}
+.products-page .content .content-main ul.product-list .product-item ul li {
+	padding-left: 30px;
+	background: url(../images/cpzx_d.jpg) 7px 12px no-repeat;
+}
+.products-page .content .content-main ul.schemes {
+	width: 950px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #7a7a7a;
+	overflow: hidden;
+}
+.products-page .content .content-main ul.schemes li {
+	margin-bottom: 85px;
+	padding-bottom: 85px;
+	width: 950px;
+	text-align: center;
+	border-bottom: 1px solid #999;
+	overflow: hidden;
+}
+.products-page .content .content-main ul.schemes li .title {
+	margin: 0;
+	font-weight: normal;
+	padding-bottom: 12px;
+	font-size: 30px;
+	color: #434343;
+}
+
+/* 合作商家 */
+.customers-page .content .content-main ul {
+	width: 955px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.customers-page .content .content-main ul li {
+	float: left;
+	margin: 12px 5px;
+	width: 181px;
+	height: 93px;
+}
+.customers-page .content .content-main ul li img {
+	width: 179px;
+	height: 91px;
+	border: 1px solid #e4e4e4;
+}

@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	background: #fff;
+}
+body, input, textarea {
+	font: 14px 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 23px;
+	color: #727272;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: #272727;
+	text-transform: uppercase;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 24px;
+	line-height: 23px;
+	margin-bottom: 10px;
+	font-style: normal;
+	margin-top: 10px;
+}
+h2 {
+	font-size: 27px;
+	line-height: 35px;
+	margin-bottom: 40px;
+	font-style: normal;
+}
+h2 strong {
+	font-weight: 600;
+}
+h3 {
+	font-size: 22px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	font-style: normal;
+	font-weight: 500;
+}
+h4 {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	font-style: normal;
+}
+h5 {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 18px;
+	font-style: normal;
+}
+h6 {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 16px;
+	font-style: normal;
+}
+h5.nomb {
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+h1.nocaps, h2.nocaps, h3.nocaps, h4.nocaps, h5.nocaps, h6.nocaps {
+	text-transform: none;
+}
+/* Text elements */
+p {
+	font: 14px 'Open Sans', sans-serif;
+	font-weight: normal;
+	line-height: 23px;
+}
+ul, ol {
+	margin: 0 0 20px 0;
+	list-style-position: inside;
+}
+ul {
+	list-style: none;
+}
+ul li {
+	list-style: none;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: normal;
+}
+blockquote {
+	margin: 20px 0 20px 36px;
+	font-size: 16px;
+	border-left: 5px solid #fc4242;
+	padding: 5px 20px 5px 20px;
+	font-family: 'Open Sans' !important;
+	font-weight: normal;
+	color: #454545;
+}
+pre {
+	background: #f4f4f4;
+	font-size: 13px;
+	font: 13px 'Open Sans', sans-serif;
+	line-height: 1.5;
+	margin-bottom: 40px;
+	overflow: auto;
+	padding: 0.75em 20px;
+}
+code, kbd {
+	font-size: 13px;
+	font: 13px 'Open Sans', sans-serif;
+}
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 40px;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup, sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+.dropcap {
+	display: block;
+	float: left;
+	font-size: 45px;
+	padding: 0;
+	margin: 0;
+	margin: 15px 8px 0 0;
+	text-transform: uppercase;
+}
+/* Links */
+a {
+	color: #b6b6b6;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #9b9b9b;
+}
+a.two {
+	color: #272727;
+	text-decoration: none;
+}
+a.two:hover {
+	text-decoration: none;
+	color: #fc4242;
+}
+a.three {
+	color: #454545;
+	text-decoration: none;
+}
+a.three:hover {
+	text-decoration: none;
+	color: #fc4242;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* Clear Fix Styles */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* close commented backslash hack */
+{
+ height:1%;
+}
+.clearfix {
+	display: block;
+}
+.less1 {
+	width: 75%;
+	margin: 0 auto;
+}
+.less2 {
+	width: 50%;
+	margin: 0 auto;
+}
+.white {
+	color: #fff;
+}
+.margin_t1 {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+.margin_t2 {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.margin_t3 {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+.margin_t4 {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+.margin_t5 {
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
+.margin_t6 {
+	float: left;
+	width: 100%;
+	margin-top: 60px;
+}
+.margin_t7 {
+	float: left;
+	width: 100%;
+	margin-top: 70px;
+}
+.margin_t8 {
+	float: left;
+	width: 100%;
+	margin-top: 80px;
+}
+.margin_t9 {
+	float: left;
+	width: 100%;
+	margin-top: 90px;
+}
+.margin_t10 {
+	float: left;
+	width: 100%;
+	margin-top: 100px;
+}
+.margin_t11 {
+	float: left;
+	width: 100%;
+	margin-top: 120px;
+}
+.margin_t12 {
+	float: left;
+	width: 100%;
+	margin-top: 140px;
+}
+.margin_b1 {
+	margin-bottom: 10px;
+}
+.margin_b2 {
+	margin-bottom: 20px;
+}
+.margin_b3 {
+	margin-bottom: 30px;
+}
+.margin_b4 {
+	margin-bottom: 40px;
+}
+.margin_b5 {
+	margin-bottom: 50px;
+}
+.margin_b6 {
+	margin-bottom: 60px;
+}
+.margin_b7 {
+	margin-bottom: 70px;
+}
+.margin_b8 {
+	margin-bottom: 80px;
+}
+.margin_b9 {
+	margin-bottom: 90px;
+}
+.margin_b10 {
+	margin-bottom: 100px;
+}
+.margin_b11 {
+	margin-bottom: 110px;
+}
+.margin_b12 {
+	margin-bottom: 120px;
+}
+.divider_line1 {
+	float: left;
+	width: 100%;
+	padding-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: 1px solid #eee;
+}
+/* image alignments */
+.img_left {
+	float: left;
+}
+
+.img_left2 {
+	float: left;
+	margin-right: 30px;
+}
+.img_left5 {
+	float: left;
+	margin-right: 70px;
+}
+
+.img_right {
+	float: right;
+}
+
+.img_left_mr {
+	float: left;
+	margin-right: 30px;
+}
+.img_left_mr2 {
+	float: left;
+	margin-right: 10px;
+}
+.img_left_mr3 {
+	margin-right: 20px;
+}
+.img_left_mr4 {
+	margin-right: 10px;
+}
+.img_left_mr5 {
+	margin-right: 14px;
+}
+
+.img_right_ml {
+	float: right;
+	margin-left: 30px;
+}
+.img_right_ml2 {
+	float: right;
+	margin-left: 10px;
+}
+
+.alicent {
+	text-align: center;
+}
+.aliright {
+	text-align: right;
+}
+/* responsive image */
+.rimg {
+	width: 100%;
+}

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?2fuvis');
+  src:  url('../fonts/icomoon.eot?2fuvis#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?2fuvis') format('truetype'),
+    url('../fonts/icomoon.woff?2fuvis') format('woff'),
+    url('../fonts/icomoon.svg?2fuvis#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-calendar_blog:before {
+  content: "\e902";
+}
+.icon-folder:before {
+  content: "\e903";
+}
+.icon-icon1:before {
+  content: "\e904";
+}
+.icon-icon2:before {
+  content: "\e905";
+}
+.icon-icon3:before {
+  content: "\e906";
+}
+.icon-icon4:before {
+  content: "\e907";
+}
+.icon-icon5:before {
+  content: "\e908";
+}
+.icon-icon6:before {
+  content: "\e909";
+}
+.icon-icon7:before {
+  content: "\e90a";
+}
+.icon-icon8:before {
+  content: "\e90b";
+}
+.icon-icon9:before {
+  content: "\e90c";
+}
+.icon-icon10:before {
+  content: "\e90d";
+}
+.icon-icon11:before {
+  content: "\e90e";
+}
+.icon-icon12:before {
+  content: "\e90f";
+}
+.icon-icon13:before {
+  content: "\e910";
+}
+.icon-icon14:before {
+  content: "\e911";
+}
+.icon-icon15:before {
+  content: "\e912";
+}
+.icon-icon16:before {
+  content: "\e913";
+}
+.icon-logo:before {
+  content: "\e914";
+}
+.icon-phone:before {
+  content: "\e915";
+}
+.icon-quotes:before {
+  content: "\e916";
+}
+.icon-shopping-cart:before {
+  content: "\e917";
+}
+.icon-tick:before {
+  content: "\e918";
+}
+.icon-user:before {
+  content: "\e919";
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="gb2312"?>
+<gallery>
+   <shop>
+     <link>#</link>
+      <filename>/skin/img/pro01.jpg</filename>
+      <imgtitle>曲轴系列</imgtitle>
+   </shop>
+
+   <shop>
+     <link>#</link>
+      <filename>/skin/img/pro02.jpg</filename>
+      <imgtitle>凸轮轴系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>/skin/img/pro03.jpg</filename>
+      <imgtitle>长轴系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>/skin/img/pro04.jpg</filename>
+      <imgtitle>花键轴系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>/skin/img/pro05.jpg</filename>
+      <imgtitle>拉杆球头系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>/skin/img/pro06.jpg</filename>
+      <imgtitle>轮毂法兰系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>/skin/img/pro07.jpg</filename>
+      <imgtitle>连杆系列</imgtitle>
+   </shop>
+
+   <shop>
+      <link>#</link>
+      <filename>/skin/img/pro08.jpg</filename>
+      <imgtitle>工具类</imgtitle>
+   </shop>
+
+</gallery>
