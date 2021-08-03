@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<script src="js/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/jquery183.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+		  // Slideshow 
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
+	
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+    
+</head>
+<body class="home-page">
+<div class="wrap-body">
+
+<!--////////////////////////////////////Header-->
+<header >
+	<div class="wrap-header zerogrid">
+		<div class="row">
+			<div id="cssmenu">
+				<ul>
+				   <li class='active'><a href="index.html">Home</a></li>
+				   <li><a href="about.html">About</a></li>
+				   <li><a href="projects.html">Projects</a></li>
+				   <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<a href='index.html' class="logo"><img src="images/logo.png" /></a>
+		</div>
+	</div>
+</header>
+<div class="slider">
+	<!-- Slideshow -->
+	<div class="callbacks_container" >
+		<ul class="rslides" id="slider">
+			<li>
+				<img src="images/slideshow-image1.jpg" alt="">
+				<div class="caption">
+					<h1>GREAT VILLA</h1>
+					<span > LOREM IPSUM DOLOR SIT AMET<br> CONSECTETUR ADIPISCING.</span>
+					<div class="price">$ 170,000</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/slideshow-image2.jpg" alt="">
+				<div class="caption">
+					<h1>GREAT VILLA</h1>
+					<span > LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING.</span>
+					<div class="price">$ 170,000</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+<!--////////////////////////////////////Container-->
+<section id="container">
+	<div class="wrap-container">
+		<!-----------------content-box-1-------------------->
+		<section class="content-box boxstyle-2 box-1">
+			<div class="zerogrid">
+				<div class="row wrap-box t-center"><!--Start Box-->
+					<h1>Hello There!</h1>
+					<span>WELCOME TO OUR SITE</span>
+					<p>MES CUML DIA SED INENIASINGE DOLOR IPSUM COMMETE IPSUM COMNETUS MES INENIASINGE DOLOR.DOLOR IPSUM COMMETE IPSUM COMNETUS MES INENIASINGE DOLOR. MES CUML DIA SED INENIASINGEINENIASINGE DOLOR IPSUM COMMETE IPSUM COMNETUS MES.</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------content-box-2-------------------->
+		<section class="content-box boxstyle-1 box-2">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<h2>Find the Home of Your Dream</h2>
+					<span>MES CUML DIA SED INENIASINGE DOLOR IPSUM COMMETE IPSUM COMNETUS MES INENIASINGE. DOLOR IPSUM COMMETE IPSUM COMNETUS MES INENIASINGE DOLOR.</span>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------content-box-3-------------------->
+		<section class="content-box box-3">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="row">
+						<div class="col-1-3">
+							<div class="wrap-col wrapper">
+								<h3>COMMERCIAL</h3>
+								<span>MES CUML DIA SED INENIAS CET INGER LOT ALIIQTES</span>
+								<p>Mes cuml dia sed in lacus ut eniascet ingerto aliiqt es site amet eismod ictor ut ligulate ameti dapibus ticdu nt mtsen lusto dolor ltissim. comes cuml dia sed inertio.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col wrapper">
+								<h3>LUXURY</h3>
+								<span>MES CUML DIA SED INENIAS CET INGER LOT ALIIQTES</span>
+								<p>Mes cuml dia sed in lacus ut eniascet ingerto aliiqt es site amet eismod ictor ut ligulate ameti dapibus ticdu nt mtsen lusto dolor ltissim. comes cuml dia sed inertio.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col wrapper">
+								<h3>RESIDENTIAL</h3>
+								<span>MES CUML DIA SED INENIAS CET INGER LOT ALIIQTES</span>
+								<p>Mes cuml dia sed in lacus ut eniascet ingerto aliiqt es site amet eismod ictor ut ligulate ameti dapibus ticdu nt mtsen lusto dolor ltissim. comes cuml dia sed inertio.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------content-box-4-------------------->
+		<section class="content-box boxstyle-2 box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<div class="wrapper">
+							<h2>FEATURED OFFERS</h2>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-1-4">
+							<div class="wrap-col post">
+								<img class="example-image" src="images/kids1-thumb.jpg" alt=""/>
+								<div class="price">$ 75,000</div>
+								<h3>MES CUML DIA SED LOTE DOLORMOD ICTOR.</h3>
+								<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col post">
+								<img class="example-image" src="images/kids2-thumb.jpg" alt=""/>
+								<div class="price">$ 45,000</div>
+								<h3>MES CUML DIA SED LOTE DOLORMOD ICTOR.</h3>
+								<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col post">
+								<img class="example-image" src="images/kids3-thumb.jpg" alt=""/>
+								<div class="price">$ 50,000</div>
+								<h3>MES CUML DIA SED LOTE DOLORMOD ICTOR.</h3>
+								<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col post">
+								<img class="example-image" src="images/kids4-thumb.jpg" alt=""/>
+								<div class="price">$ 25,000</div>
+								<h3>MES CUML DIA SED LOTE DOLORMOD ICTOR.</h3>
+								<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
+								<a class="button" href="single.html">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+	</div>
+</section>
+
+<!--////////////////////////////////////Footer-->
+<footer>
+	<div class='embed-container maps' style="margin: 0; padding: 0;">
+		<iframe src="" width="100%" height="250px" frameborder="0" style="border: 0;"></iframe>
+	</div>
+	<div class="wrap-footer">
+		<div class="zerogrid">
+			<div class="row">
+				<h3>Contact</h3>
+				<span>Phone / +XXX </span></br>
+				<span>Email / info@XXX  </span></br>
+				<span>Studio / XXXXXX </span></br>
+				<span><strong>Copyright &copy; 2020.Company name All rights reserved.<a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a></strong></span>
+				<ul class="social-buttons">
+					<li><a href="#"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<!-- Google Map -->
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+	
+</div>
+</body></html>

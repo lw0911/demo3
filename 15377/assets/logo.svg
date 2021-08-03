@@ -1,0 +1,22 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="92" height="41" viewBox="0 0 92 41">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        font-family: Merriweather;
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="take" class="cls-1" transform="translate(50.089 26.552) scale(0.873 0.867)">take</text>
+  <path class="cls-2" d="M336.5,56A20.5,20.5,0,1,0,357,76.5,20.524,20.524,0,0,0,336.5,56Zm0,37.835A17.334,17.334,0,1,1,353.834,76.5,17.353,17.353,0,0,1,336.5,93.834Zm0-25.223a7.889,7.889,0,1,0,7.889,7.889A7.9,7.9,0,0,0,336.5,68.611Zm0,12.612a4.722,4.722,0,1,1,4.722-4.722A4.728,4.728,0,0,1,336.5,81.222Z" transform="translate(-316 -56)"/>
+</svg>

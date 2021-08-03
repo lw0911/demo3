@@ -1,0 +1,62 @@
+/* Your custom color scheme */
+
+
+/* Font */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+h1, h2, h3, h4, h5, h6, .r-slider-container .description {
+    font-family: 'Droid Serif', Georgia, Times, serif;
+}
+
+
+/* Background */
+
+body {
+    background: url(../img/background/1.png) repeat;
+}
+
+
+/* Section title */
+.container-title {
+    border-left-color: #239cc3;
+}
+
+
+/* Links */
+
+a {
+    color: #239cc3;
+}
+
+a:hover {
+    color: #1A7490;
+}
+
+
+/* Header */
+
+#header-toolbar {
+    border-top-color: #239cc3;
+}
+
+
+/* Gallery */
+
+.gallery-item:hover .gallery-title a,
+.gallery-item:hover .gallery-title a .point-right {
+    color: #1A7490;
+}
+
+/* Items disabled by gallery filter */
+.disabled:hover .gallery-title a,
+.disabled:hover .gallery-title a .point-right {
+    color: #333;
+}
+
+
+/* Other */
+
+.underline {
+    background-color: #239CC3; /* underlines in sidebar and footer widgets */
+}

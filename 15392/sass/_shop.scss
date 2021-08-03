@@ -1,0 +1,125 @@
+/*---------------------
+  Shop
+-----------------------*/
+.shop__sidebar__item {
+  margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    color: $heading-color;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  ul {
+
+    li {
+      list-style: none;
+      font-size: 15px;
+      color: #727171;
+      line-height: 36px;
+
+      a {
+        font-size: 15px;
+        color: #727171;
+        line-height: 36px;
+        overflow: hidden;
+        display: block;
+
+        span {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.shop__pagination {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    font-size: 15px;
+    color: #727171;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-right: 8px;
+    @include transition(all, .3s);
+
+    &:hover {
+      border-color: $primary-color;
+      background: $primary-color;
+      color: $white-color;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    span {
+      font-size: 20px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.product__widget {
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .select__item {
+    display: inline-block;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    p {
+      display: inline-block;
+      margin-right: 14px;
+    }
+
+    .nice-select {
+      height: 36px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      line-height: 32px;
+      padding-left: 16px;
+      padding-right: 50px;
+      float: none;
+      display: inline-block;
+  
+      span {
+        font-size: 15px;
+        color: $heading-color;
+      }
+
+      .list {
+        margin-top: 0;
+        border-radius: 0;
+        width: 100%;
+      }
+  
+      &:after {
+        border-bottom: 1.5px solid #7D8184;
+        border-right: 1.5px solid #7D8184;
+        height: 6px;
+        right: 15px;
+        top: 48%;
+        width: 6px;
+      }
+    }
+  }
+}

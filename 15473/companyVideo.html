@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+
+
+    <title>XXX官网</title>
+    <!--<meta charset="utf-8">-->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta name="keywords"
+        content="XXX官网" />
+    <meta name="description"
+        content="XXX官网" />
+
+
+    <link type="image/x-icon" href="images/favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=1572311936">
+    <link rel="stylesheet" href="css/animate.min.css?v=1572311936">
+    <link rel="stylesheet" href="css/main.css?v=1572311936">
+
+    <link rel="stylesheet" href="css/swiper.min.css?v=1572311936">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/anime.min.js"></script>
+
+
+    <script src="js/swiper.min.js?v=1572311936"></script>
+
+    
+<link rel="stylesheet" href="css/companyVideo.css">
+
+</head>
+
+<body>
+    
+    <header id="header">
+        <div class="my-container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo_1.png" width="167" height="43">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">网站首页</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="member.html">XXX会员</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="shopService.html">小店创业者</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="supplierService.html">XXX供应商</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="news.html">公司动态</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="companyVideo.html">公司视频</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="masker"></div>
+    
+
+    
+<div class="main">
+        <!-- 视频区域 -->
+    <div class="video-area">
+        <div class="container nopadding">
+            <div class="left jq_btnChangeVideo" data-flag="pre">
+                <img class="icon" src="images/icon_left.png" alt="">
+            </div>
+            <div class="video-wrapper">
+                <video controls id="vvideo" x5-playsinline="" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5" x5-video-player-fullscreen="" x5-video-orientation="portraint" class="vvideo" src="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%82%9F%E7%A9%BA%E4%BA%BA%E7%9A%84%E6%98%A5%E8%8A%82%EF%BC%88%E7%BA%AA%E5%AE%9E%E7%AF%87%EF%BC%89%20tongshi.mp4" poster=""></video>
+                <div class="icon-play" id="btnPlay">
+                    <img class="play" src="images/icon_play.png" alt="">
+                    <img class="play-hover" src="images/icon_play_hover.png" alt="">
+                </div>
+            </div>
+            <div class="right jq_btnChangeVideo" data-flag="next">
+                <img class="icon" src="images/icon_right.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 中部新闻介绍 -->
+    <div class="desc">
+        <div class="container nopadding">
+            <p class="title jq_title">XXX人的春节（纪实篇）</p>
+            <p class="txt jq_introduction"> 春节是团聚的节日，每一位XXX人为了梦想而欢聚。</p>
+        </div>
+    </div>
+    <p hidden id="url" data-url="companyVideo.html"></p>
+    <!-- 视频列表 -->
+    <div class="video-list">
+        <div class="container nopadding">
+            <div class="filter-bar">
+                <p hidden data-url="companyvideo.html" id="url"></p>
+                <!--左边下拉选择-->
+                
+                <a class="link active" href="companyVideo.html#?type=all">全部视频</a>
+                                        <span class="circle"></span>
+                        <a class="link  " href="companyVideo.html#?c_name=%E6%82%9F%E7%A9%BA%E4%BE%9B%E5%BA%94%E5%95%86">XXX供应商</a>
+                                                            <span class="circle"></span>
+                        <a class="link  " href="companyVideo.html#?c_name=%E6%82%9F%E7%A9%BA%E4%BC%99%E4%BC%B4">XXX伙伴</a>
+                                                            <span class="circle"></span>
+                        <a class="link  " href="companyVideo.html#?c_name=%E5%B0%8F%E5%BA%97%E5%88%9B%E4%B8%9A%E8%80%85">小店创业者</a>
+                                                            <span class="circle"></span>
+                        <a class="link  " href="companyVideo.html#?c_name=%E6%82%9F%E7%A9%BA%E4%BC%9A%E5%91%98">XXX会员</a>
+                                                </div>
+            <div class="v-list">
+                                <!-- 需要替换data-vsrc -->
+                <div class="video-item" data-vsrc="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%82%9F%E7%A9%BA%E4%BA%BA%E7%9A%84%E6%98%A5%E8%8A%82%EF%BC%88%E7%BA%AA%E5%AE%9E%E7%AF%87%EF%BC%89%20tongshi.mp4" data-title="XXX人的春节（纪实篇）" data-introduction="春节是团聚的节日，每一位XXX人为了梦想而欢聚。">
+                    <div class="v">
+                        <img src="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%82%9F%E7%A9%BA%E4%BA%BA%E7%9A%84%E6%98%A5%E8%8A%82%EF%BC%88%E7%BA%AA%E5%AE%9E%E7%AF%87%EF%BC%89%20tongshi.mp4?vframe/jpg/offset/0/w/480/h/360" alt="">
+                        <img class="icon-play" src="images/icon_play.png" alt="">
+                        <div class="m-txt">
+                            <p class="m-title">XXX人的春节（纪实篇）</p>
+                            <span class="t">点击观看视频 <img class="small-icon" src="imgs/video/icon_play_small.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="mask"></div>
+                    <p class="txt">XXX人的春节（纪实篇）</p>
+                </div>
+                                <!-- 需要替换data-vsrc -->
+                <div class="video-item" data-vsrc="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%82%9F%E7%A9%BA%E6%8E%8C%E6%9F%9C%E4%B8%8E%E4%BD%A0%E4%B8%80%E8%B5%B7%E8%87%B4%E5%AF%8C%20gongyingshang.mp4" data-title="XXX与你一同致富" data-introduction="XXX以&ldquo;因需定产，快速周转&rdquo;为使命，与您一起开启致富新时代！">
+                    <div class="v">
+                        <img src="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%82%9F%E7%A9%BA%E6%8E%8C%E6%9F%9C%E4%B8%8E%E4%BD%A0%E4%B8%80%E8%B5%B7%E8%87%B4%E5%AF%8C%20gongyingshang.mp4?vframe/jpg/offset/0/w/480/h/360" alt="">
+                        <img class="icon-play" src="images/icon_play.png" alt="">
+                        <div class="m-txt">
+                            <p class="m-title">XXX与你一同致富</p>
+                            <span class="t">点击观看视频 <img class="small-icon" src="imgs/video/icon_play_small.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="mask"></div>
+                    <p class="txt">XXX与你一同致富</p>
+                </div>
+                                <!-- 需要替换data-vsrc -->
+                <div class="video-item" data-vsrc="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E5%9C%A8%E5%AE%B6%E9%87%8C%E7%95%99%E4%B8%8B%E4%BD%A0%E7%9A%84%E5%A7%93%E5%90%8D%20tongshi.m4v" data-title="在家里留下你的姓名" data-introduction="这里是每一位XXX人的家，我们在这里亲手写下梦想。">
+                    <div class="v">
+                        <img src="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E5%9C%A8%E5%AE%B6%E9%87%8C%E7%95%99%E4%B8%8B%E4%BD%A0%E7%9A%84%E5%A7%93%E5%90%8D%20tongshi.m4v?vframe/jpg/offset/0/w/480/h/360" alt="">
+                        <img class="icon-play" src="images/icon_play.png" alt="">
+                        <div class="m-txt">
+                            <p class="m-title">在家里留下你的姓名</p>
+                            <span class="t">点击观看视频 <img class="small-icon" src="imgs/video/icon_play_small.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="mask"></div>
+                    <p class="txt">在家里留下你的姓名</p>
+                </div>
+                                <!-- 需要替换data-vsrc -->
+                <div class="video-item" data-vsrc="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%8A%8A%E4%B8%80%E4%BA%BF%E4%BA%BA%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A5%BD%E4%B8%9C%E8%A5%BF%E9%80%81%E5%88%B0TA%E9%9D%A2%E5%89%8D%20zhanggui.m4v" data-title="把一亿人不知道的好东西送到TA面前" data-introduction="XXX严选好货，贴心服务，把一亿人不知道的好东西送到TA面前。">
+                    <div class="v">
+                        <img src="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E6%8A%8A%E4%B8%80%E4%BA%BF%E4%BA%BA%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A5%BD%E4%B8%9C%E8%A5%BF%E9%80%81%E5%88%B0TA%E9%9D%A2%E5%89%8D%20zhanggui.m4v?vframe/jpg/offset/0/w/480/h/360" alt="">
+                        <img class="icon-play" src="images/icon_play.png" alt="">
+                        <div class="m-txt">
+                            <p class="m-title">把一亿人不知道的好东西送到TA面前</p>
+                            <span class="t">点击观看视频 <img class="small-icon" src="imgs/video/icon_play_small.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="mask"></div>
+                    <p class="txt">把一亿人不知道的好东西送到TA面前</p>
+                </div>
+                                <!-- 需要替换data-vsrc -->
+                <div class="video-item" data-vsrc="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E2%80%9D%E7%B2%BD%E2%80%9C%E9%87%8C%E5%AF%BB%E5%AE%83%E5%8D%83%E7%99%BE%E9%81%8D%20xiaofeizhe.m4v" data-title="&rdquo;粽&ldquo;里寻它千百遍" data-introduction="XXX在端午节为各位家人千挑万选，带来了优质低价的好粽子！">
+                    <div class="v">
+                        <img src="https://static-video.wukongzhanggui.com/%EF%BC%88%E5%8F%91%EF%BC%89%E2%80%9D%E7%B2%BD%E2%80%9C%E9%87%8C%E5%AF%BB%E5%AE%83%E5%8D%83%E7%99%BE%E9%81%8D%20xiaofeizhe.m4v?vframe/jpg/offset/0/w/480/h/360" alt="">
+                        <img class="icon-play" src="images/icon_play.png" alt="">
+                        <div class="m-txt">
+                            <p class="m-title">&rdquo;粽&ldquo;里寻它千百遍</p>
+                            <span class="t">点击观看视频 <img class="small-icon" src="imgs/video/icon_play_small.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="mask"></div>
+                    <p class="txt">&rdquo;粽&ldquo;里寻它千百遍</p>
+                </div>
+                            </div>
+        </div>
+    </div>
+
+    <!-- 分页 -->
+    <div class="c-pagination"></div>
+    </div>
+
+
+
+
+    
+    <footer>
+        <div class="container sx-footer">
+            <div class="left">
+                <div class="cic">
+                    <a class="footer-link pl10" target="_back" href="XXX">公司网站</a>
+                    <a href="XXX" target="_blank">加入水熊</a>
+                    <a                         href=" service_agreement.html">服务协议</a>
+                    <a  href="privacy_agreement.html"
+                        style="border: none">隐私协议</a>
+                </div>
+                <p class="address">公司名称：XXX科技有限公司</p>
+                <p class="address">公司电话：XXX</p>
+                <p class="address">公司地址：XXX</p>
+                
+                </p>
+                <p><span class="beiantu"></span></p>
+            </div>
+            <div class="right">
+                                <p class="wx">官方微信</p>
+                <img src="http://static-source.wukongzhanggui.com/images/20190708/5d23338ed9511.png?imageMogr2/auto-orient/thumbnail/500x500" alt="微信二维码">
+                            </div>
+        </div>
+    </footer>
+    
+    
+<script>
+
+    function c_name(){
+        var c_name = $('#c_name option:selected').attr('value');
+        var url = $('#url').attr('data-url');
+        var new_url =url+'?c_name='+c_name;
+        $(window).attr('location',new_url);
+    }
+
+
+
+    $(function() {
+        var videoIndex = 0;
+        var video = document.querySelector("video");
+        console.log(video);
+        // 视频播放按钮
+        $('#btnPlay').on('click', function(e) {
+            e.stopPropagation();
+            console.log('我要播放啦');
+            if(video.paused) {
+                video.play();
+                $(this).css('display', 'none');
+            } else {
+                video.pause();
+            }
+            return false;
+        })
+
+        var vList = $('.v-list .video-item')
+        console.log(vList)
+        // 切换视频
+        $('.jq_btnChangeVideo').on('click', function(e) {
+
+            e.stopPropagation();
+            var flag = $(this).data('flag');
+            if (flag === 'pre') {
+                console.log('<------pre------>');
+                // 上一首
+                if (videoIndex === 0) {
+                    console.log('<------已经是第一首------>')
+                    return
+                }
+                videoIndex --;
+                console.log(videoIndex, '<------videoIndex------>')
+                var vSrc = $(vList[videoIndex]).data('vsrc')
+                var title = $(vList[videoIndex]).data('title');
+                var introduction = $(vList[videoIndex]).data('introduction');
+                console.log(vSrc)
+                // 设置video src
+                $(video).attr('src', vSrc);
+                $('.jq_title').html(title);
+                $('.jq_introduction').html(introduction);
+            } else if(flag === 'next') {
+                console.log('<------next------>');
+                // 下一首
+                if (videoIndex === vList.length - 1) {
+                    console.log('<------已经是最后一首------>')
+                    return;
+                }
+                videoIndex ++;
+                console.log(videoIndex, '<------videoIndex------>')
+                var vSrc = $(vList[videoIndex]).data('vsrc')
+                var title = $(vList[videoIndex]).data('title');
+                var introduction = $(vList[videoIndex]).data('introduction');
+                console.log(vSrc)
+                // 设置video src
+                $(video).attr('src', vSrc);
+                $('.jq_title').html(title);
+                $('.jq_introduction').html(introduction);
+            }
+        })
+
+        // 点击视频
+        vList.on('click', function(e) {
+            e.stopPropagation();
+            var vIndex = vList.index(this);
+            var vSrc = $(this).data('vsrc');
+            var title = $(this).data('title');
+            var introduction = $(this).data('introduction');
+            console.log(vIndex, '<-----vindex------>')
+            videoIndex = vIndex;
+            console.log(videoIndex, '<------videoIndex------>')
+            $(video).attr('src', vSrc)
+            video.play();
+            $('html,body').animate({
+                    scrollTop: 0
+                }, 10);
+            $('#btnPlay').css('display', 'none');
+            $('.jq_title').html(title);
+            $('.jq_introduction').html(introduction);
+        })
+    })
+</script>
+
+</body>
+<script>
+    $('.navbar-toggler').on('click', function (e) {
+        $('.masker').toggle();
+    })
+    $('.masker').on('click', function (e) {
+        $(this).css('display', 'none');
+        $('#navbarSupportedContent').toggleClass('show');
+    })
+</script>
+
+</html>

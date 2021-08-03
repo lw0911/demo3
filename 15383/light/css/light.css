@@ -1,0 +1,442 @@
+/* A. League Gothic Font-Face */
+
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('../lib/fonts/league-gothic.eot');
+	src: url('../lib/fonts/league-gothic_162a16fe.eot') format('embedded-opentype'),
+		url('../lib/fonts/league-gothic.woff') format('woff'),
+		url('../lib/fonts/league-gothic.ttf') format('truetype'),
+		url('../lib/fonts/league-gothic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* B. Hacks and fixes */
+
+/* HTML5 Fix */
+section, article, header, footer, nav, aside, hgroup { display: block; }
+
+/* Clear fix */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE5/Mac \*/
+* html .clearfix { height: 1px; }
+
+.clearfix { display: block; }
+/* End hide from IE5/Mac */
+
+
+/* 1. Generic */
+
+body {
+	margin: 0 auto;
+	font: normal normal 12px Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	color: #444;
+	background: #ddd url(../img/light/background.jpg) no-repeat top center;
+}
+
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+form input, form textarea { outline: none; font-family: Arial; }
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.last { margin-right: 0!important; }
+
+.left { float: left!important; }
+.right { float: right!important; }
+
+/* 1.1 Typography */
+
+a {
+	color: #de4830;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #ffa89b;
+}
+
+a img {
+	border: 0;
+}
+
+h2 {
+	font-size: 24px;
+	color: #179265;
+	margin: 1.6em 0 1em;
+}
+
+h3 {
+	font-size: 14px;
+	color: #179265;
+	margin: 1.6em 0 1em;
+}
+
+h2 span { color: #000; }
+
+h4 {
+	font-size: 12px;
+	color: #fff;
+	margin: 1.6em 0 1em;
+}
+
+.section-title { margin-top: 0; }
+
+.ruler-title {
+	background: url(../img/light/px-gray.png) repeat-x center left;
+	text-align: center;
+}
+
+.ruler-title span {
+	display: inline-block;
+	padding: 0 10px;
+	background: #ddd;
+}
+
+/* 2. Header */
+
+#header {
+	width: 930px;
+	padding: 40px 25px 10px 25px;
+}
+
+.domain-name { float: left; }
+
+.domain-name h1 {
+	font: normal normal 30px 'LeagueGothic', sans-serif;
+	text-shadow: 1px 1px 0px #fff;
+	margin: 0 0 5px 0;
+	line-height: 30px;
+	padding: 0;
+	color: #222;
+	text-transform: uppercase;
+}
+
+.domain-name p {
+	font: normal normal 14px 'LeagueGothic', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.cta {
+	float: right;
+}
+
+.cta a {
+	display: inline-block;
+	padding-right: 10px;
+	font: normal normal 30px 'LeagueGothic', sans-serif;
+	text-shadow: 1px 1px 0px #591d13;
+	color: #fff;
+	background: transparent url(../img/light/bg-cta-right.png) no-repeat top right;
+}
+
+.cta a span {
+	display: inline-block;
+	background: transparent url(../img/light/bg-cta-left.png) no-repeat top left;
+	padding-left: 10px;
+	line-height: 45px;
+	cursor: pointer;
+}
+
+.cta a:hover { background-position: bottom right; }
+.cta a:hover span { background-position: bottom left; }
+
+.top-message {
+	padding-top: 53px;
+	display: block;
+	font: normal bold 24px Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #999;
+}
+
+.top-message span { color: #000; }
+
+
+/* 3. Content */
+
+#content {
+	width: 930px;
+	padding: 25px 25px 50px 25px;
+	background: transparent url(../img/light/bg-content.png) repeat-x top center;
+}
+
+.ruler {
+	clear: both;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+
+/* 3.1 Stat boxes */
+
+#stat-boxes {
+	width: 930px;
+	overflow: hidden;
+}
+
+.stat-box {
+	float: left;
+	overflow: hidden;
+	width: 170px;
+	height: 77px;
+	padding: 13px 20px 0 20px;
+	margin-right: 30px;
+	background: transparent url(../img/light/bg-stat-box.png) no-repeat top left;
+}
+
+.stat-box p {
+	padding: 0;
+	margin: 0;
+}
+
+.stat-name {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 14px;
+	color: #777;
+}
+
+.stat-value {
+	font-size: 56px;
+	font-weight: bold;
+	letter-spacing: -3px;
+	line-height: 56px;
+	color: #000;
+}
+
+/* 3.2 Reasons */
+
+#reasons-wrap {
+	width: 450px;
+	float: left;
+	padding-top: 20px;
+}
+
+.icon-blocks {
+	width: 450px;
+	margin: 30px 0;
+	overflow: hidden;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+.icon-blocks:hover {
+	background: #eee;
+}
+
+.icon-block {
+	width: 150px;
+	padding: 15px 0 15px 60px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+
+table {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.full {
+	width: 100%;
+}
+
+th, td {
+	padding: 8px 8px;
+	border: 1px solid #ddd;
+	display: table-cell;
+	vertical-align: top;
+}
+
+th {
+	background: #c7c7c7 url(../img/light/bg-th.png) repeat-x top left;
+	color: #000;
+	font-size: 11px;
+}
+
+td {
+	background: #ddd url(../img/light/bg-td.png) repeat-x bottom left;
+	color: #000;
+}
+
+td.big-number {
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+/* 3.3 Contact form */
+
+#contact-form-wrap {
+	width: 410px;
+	padding: 20px;
+	float: right;
+	background: url(../img/light/bg-contact-form.png);
+}
+
+label {
+	clear: both;
+	float: left;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #888;
+	line-height: 35px;
+}
+
+.form-element {
+	float: right;
+	width: 310px;
+	padding: 0 10px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+
+.form-element:hover {
+	background: #eee;
+}
+
+.input-text {
+	width: 310px;
+	height: 35px;
+	background: none;
+	font-size: 11px;
+	font-style: italic;
+	color: #444;
+	line-height: 35px;
+	border: 0;
+}
+
+.input-textarea {
+	width: 310px;
+	min-width: 310px;
+	max-width: 310px;
+	height: 85px;
+	margin: 5px 0;
+	overflow: auto;
+	font-size: 11px;
+	font-style: italic;
+	color: #444;
+	line-height: 18px;
+	border: 0;
+	background: none;
+}
+
+.contact-submit {
+	display: inline-block;
+	padding-right: 10px;
+	margin-left: 80px;
+	font: normal normal 24px 'LeagueGothic', sans-serif;
+	text-shadow: 1px 1px 0px #591d13;
+	text-decoration: none;
+	color: #fff;
+	background: transparent url(../img/light/bg-submit-right.png) no-repeat top right;
+}
+
+.contact-submit span {
+	display: inline-block;
+	background: transparent url(../img/light/bg-submit-left.png) no-repeat top left;
+	padding-left: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.contact-submit:hover {
+	background-position: bottom right;
+	text-shadow: 1px 1px 0px #888;
+	text-decoration: none;
+	color: #000;
+}
+.contact-submit:hover span { background-position: bottom left; }
+
+
+/* 3.4 More domains */
+
+#more-domains {
+	margin-top: 30px;
+}
+
+.domain-column {
+	float: left;
+	width: 162px;
+	margin-right: 30px;
+	font-size: 11px;
+}
+
+.domain-title {
+	margin-top: 0;
+}
+
+.offer-button {
+	display: inline-block;
+	background: #222;
+	font-size: 11px;
+	color: #fff;
+	padding: 0 5px;
+	line-height: 20px;
+}
+
+.offer-button:hover {
+	background: #de4830;
+	color: #fff;
+}
+
+/* 4. Footer */
+
+#footer {
+	clear: both;
+	width: 930px;
+	margin: 0 25px 30px 25px;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #aaa;
+	font-size: 10px;
+	color: #555;
+}
+
+#footer .copyright {
+	float: left;
+}
+
+#footer .call-now {
+	float: right;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}

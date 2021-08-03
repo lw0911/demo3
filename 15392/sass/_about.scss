@@ -1,0 +1,209 @@
+/*---------------------
+  About
+-----------------------*/
+.about__text {
+  padding-top: 25px;
+
+  .section-title {
+    text-align: left;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 27px;
+    }
+  }
+
+  span {
+    font-size: 17px;
+    color: $heading-color;
+    display: block;
+    margin-bottom: 36px;
+  }
+}
+
+.about__pic {
+
+  img {
+    min-width: 100%;
+  }
+}
+
+/*---------------------
+  Vision
+-----------------------*/
+.vision {
+  background-image: url("../img/about/vision-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.vision__item {
+  overflow: hidden;
+  height: 660px;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:hover {
+    .vision__item__text {
+      bottom: 50px;
+      a,p {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.vision__item__text {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  width: 100%;
+  padding: 0 50px;
+  @include transition( all 0.3s);
+
+  h4 {
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $white-color;
+    margin-bottom: 28px;
+    visibility: hidden;
+    opacity: 0;
+    @include transition( all 0.3s ease 0.1s);
+  }
+
+  a {
+    font-size: 15px;
+    font-weight: 700;
+    color: $white-color;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    @include transition( all 0.3s ease 0.2s);
+
+    span {
+      font-size: 30px;
+      color: #5F67FF;
+      position: relative;
+      top: 10px;
+    }
+  }
+}
+
+/*---------------------
+  History
+-----------------------*/
+.history {
+  padding-bottom: 45px;
+
+  .section-title {
+    text-align: left;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.history__item {
+  margin-bottom: 48px;
+
+  span {
+    display: block;
+    font-size: 17px;
+    color: $primary-color;
+  }
+
+  h4 {
+    color: $heading-color;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 17px;
+    color: #747E8C;
+    margin-bottom: 0;
+  }
+}
+
+/*---------------------
+  Call
+-----------------------*/
+.call {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.call__text {
+
+  h2 {
+    font-size: 40px;
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+
+  .primary-btn {
+    padding: 14px 35px 12px;
+    border-radius: 2px;
+  }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+  padding-bottom: 60px;
+}
+
+.team__item {
+  margin-bottom: 40px;
+}
+
+.team__item__pic {
+  margin-bottom: 30px;
+
+  img {
+    min-width: 100%;
+  }
+}
+
+.team__item__text {
+
+  span {
+    font-size: 15px;
+    color: $primary-color;
+  }
+
+  h4 {
+    color: $heading-color;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 0;
+  }
+}

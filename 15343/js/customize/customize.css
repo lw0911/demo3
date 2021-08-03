@@ -1,0 +1,95 @@
+#dm3-options {
+    position: fixed;
+    left: -140px;
+    top: 115px;
+    width: 120px;
+    padding: 10px 10px 0 10px;
+    z-index: 999;
+    
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 0;
+}
+
+    #dm3-options-toggle {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: -31px;
+        top: -1px;
+        
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        background: #fff;
+        color: #888;
+        border: 1px solid #ddd;
+        border-left: 0;
+    }
+    
+    #dm3-options-toggle:hover {
+        color: #333;
+    }
+
+.colorpicker {
+    z-index: 1000;
+}
+
+.color-selector {
+    float: left;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    
+    line-height: 0;
+    font-size: 0;
+    background-color: #eee;
+}
+
+.color-selector:hover {
+    background-color: #e0e0e0;
+}
+
+    .color-selector > div {
+        height: 30px;
+        width: 30px;
+        
+        cursor: pointer;
+    }
+
+.color-title {
+    margin: 3px 0 0 43px;
+    
+    line-height: 16px;
+    font-size: 11px;
+}
+
+.option-wrapper {
+    clear: both;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.option-wrapper:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+
+    .dm3-option-title {
+        font-weight: bold;
+    }
+    
+    .dm3-option-description {
+        font-size: 11px;
+        line-height: 16px;
+        color: #888;
+    }
+
+    .option-wrapper input[type="text"] {
+        width: 110px;
+        border: 1px solid #ddd;
+        padding: 4px;
+        display: block;
+    }

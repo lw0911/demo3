@@ -1,0 +1,201 @@
+/*
+ Forms
+ v 1.0.1
+ 05.20.2012
+ */
+
+/* Common */
+
+.form input[type="text"],
+.form textarea,
+.form select,
+.form .ul-select-field {
+    border: 1px solid #d5d5d5;
+    padding: 5px;
+    display: inline-block;
+    width: 270px;
+    
+    *width: 258px;
+    
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.form textarea {
+    display: block;
+}
+
+.form input[type="text"]:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: #bbb;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form-element {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+    .form-element > label {
+        float: left;
+        width: 140px;
+    }
+    
+    .form-field {
+        margin-left: 160px;
+        *zoom: 1;
+    }
+    
+
+.form-block input[type="text"],
+.form-block textarea,
+.form-block select,
+.form-block .ul-select-field {
+    display: block;
+}
+
+.form-block .form-element > label {
+    float: none;
+    width: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-block .form-field {
+    margin-left: 0;
+}
+
+
+.form .required {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Form options */
+
+.form-options {
+    clear: both;
+    padding: 0 0 0 160px;
+}
+
+.form-options:after {
+    content: ' ';
+    clear: both;
+    display: block;
+    height: 0;
+    width: 0;
+    font-size: 0;
+}
+
+    .form-options button {
+        line-height: normal;
+        float: left;
+        margin-right: 10px;
+    }
+
+
+/* Select */
+
+.form select {
+    border: 1px solid #d5d5d5;
+    display: inline;
+    width: 270px;
+    margin: 0;
+}
+
+
+.form .ul-select-field {
+    padding: 0;
+    overflow-y: scroll;
+    *width: 268px;
+}
+
+    .ul-select-field li {
+        cursor: pointer;
+        padding: 5px;
+        margin: 0;
+        *zoom: 1;
+    }
+    
+    .ul-select-field li:hover {
+        background-color: #f9f9f9;
+    }
+
+    .ul-select-field .selected, .ul-select-field .selected:hover {
+        background-color: #f5f5f5;
+    }
+
+
+/* Radios */
+
+.form-radios > label {
+    display: block;
+    float: none;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+
+/* Checkboxes */
+
+.form-checkboxes > label {
+    display: block;
+    float: none;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+
+/* Input file */
+
+input[type="file"] {
+    border: 1px solid #d5d5d5;
+    border: initial;
+    padding: initial;
+    line-height: initial;
+    background: none;
+    height: 30px;
+    width: 270px;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .form-element {
+        margin-bottom: 15px;
+    }
+    
+    .form input[type="text"],
+    .form textarea,
+    .form select,
+    .form .ul-select-field {
+        width: 100% !important;
+    }
+    
+    .form-element > label {
+        float: none;
+        display: block;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .form-element > .form-field {
+        margin-left: 0;
+    }
+    
+    .form-options {
+        width: auto;
+        padding: 0;
+    }
+}

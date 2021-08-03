@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Your site title -->
+    <title>Picku</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Your site description" />
+
+    <!-- Favicon Image. -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Google Web Font. -->
+    <link href="//fonts.googleapis.com/css?family=Lato:700,300" rel="stylesheet" type="text/css">
+
+    <!-- Normalize v.3.0.0 - makes browsers render all elements more consistently. -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+
+    <!-- Stylesheet - to improve site's load speed, better use the minimized version.
+         The unminified version is also included in package. -->
+    <link rel="stylesheet" type="text/css" href="css/style.lite.min.css" />
+    
+</head>
+
+<body>
+
+    <!-- All content (menu, main-entry, and footer) goes inside this container. -->
+    <div class="main-container">
+
+        <!-- Logo and menu inside this container. -->
+        <div class="header">
+            <div class="clearfix">
+
+                <!-- Put your site logo here. Recommended size is 165px x 50px. -->
+                <div class="float-left logo">
+                    <h1>
+                        <!-- To close iframe -->
+                        <a href="#" class="closeframe">
+                            <img src="images/logo.png" alt="" />
+                        </a>
+                    </h1>
+                </div>
+
+                <!-- Top Menu Bar -->
+                <div class="float-right">
+                    <ul id="top-nav" class="slimmenu">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#" >Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Follow Us On</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pinterest</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- To close iframe -->
+                            <a href="#" class="closeframe tooltip" title="Close Frame"><span class="pictogram">&#xe800;</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Entry. 
+             All posts thumbnails and sliders go inside .main-entry div. All of them are grid based named sizeXX (XX represents number of column and row)
+
+                size11 = 1 column x 1 row 
+                size12 = 1 column x 2 rows
+                size21 = 2 columns x 1 row
+                size32 = 3 columns x 2 rows (I use this for inner page to show video or slideshow)
+
+             The basic code are these...
+
+                <div class="brick tint size11">
+
+                    <img src="images/5171071313_e4c110ccb2_b.jpg" alt="" />
+                    <div class="overlay">
+                        <h3 class="project-title">Your Project Title</h3>
+                        <p class="project-description">Your project description</p>
+                        <a href="URL" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                    </div>
+                </div>
+
+             Legend:
+             * Class:
+                    brick = The grid. Must be included.
+                    tint = To lighten the image. FYI, tint won't work on slideshow images. Optional.
+                    size12 = Size of the grid. You can change this to size11, size21, or size32. Must be included.
+             
+             You can vary them all you want. See examples below for better understanding.
+        -->
+        <div id="freewall" class="free-wall main-entry">
+            
+            <!-- The main grid for inner page. You can fill it with image sliders or embed a video -->
+            <div class="brick size32" data-fixpos="0-0">
+                
+                <!-- Wrap video embed in .videoWrapper div -->
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/RqLLFnqCw8I?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <!-- This page project description -->
+            <div class="brick size21" data-fixpos="2-0">
+                <div class="cover">
+                    <h1>
+                        Behind the Scenes | Fun Times at the Streetwear Photo Shoot
+                    </h1>
+                    <p>
+                        <a href="http://www.youtube.com/user/FrankieGatdula?feature=watch">Frankie Gatdula</a>
+                    </p>
+                    <p>
+                        A photo shoot was organized with my friends that bboy and model, along with some amateur photographers. With the help of Reiko, we got to experience working with a model. The pictures came out amazing and it was a fun experience!
+                    </p>
+                    <p>
+                        Filmed with:<br>
+                        iPhone 5 & Nikon D3100
+                    </p>
+                    <p>
+                        Music by:<br>
+                        Pheonix - "Trying To Be Cool (The Chainsmokers Remix)"
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Related post entry -->
+            <div class="brick tint size11">
+                <img src="images/5171071313_e4c110ccb2_b.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite1.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/1452336320_483f721d3d_o.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite2.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/4171682579_91f75f9a6a_o.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite1.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/1330348274_33c00c4886_o.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite2.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/4171682579_91f75f9a6a_o.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite1.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/1330348274_33c00c4886_o.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite2.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/5171071313_e4c110ccb2_b.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite1.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/1452336320_483f721d3d_o.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="single-page-lite2.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="float-right copyright">
+                <p>Copyright &copy; 2020.Company name All rights reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- The scripts -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/freewall.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimmenu.min.js"></script>
+    <script type="text/javascript" src="js/custom-script.min.js"></script>
+</body>
+
+</html>

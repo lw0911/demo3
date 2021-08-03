@@ -1,0 +1,12 @@
+.contact_box .row {
+	margin-top:60px;
+}
+.contact_box .contact_li{
+	width:20%;
+	float:left;
+	text-align: center;
+}
+.contact_box .contact_li p{
+	margin-top:10px;
+	font-size:14px;
+}

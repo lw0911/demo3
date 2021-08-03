@@ -1,0 +1,137 @@
+/*---------------------
+    Latest
+-----------------------*/
+.latest {
+    padding-bottom: 50px;
+}
+
+.latest__item {
+    margin-bottom: 45px;
+    
+    .latest__item__pic {
+        position: relative;
+        height: 210px;
+
+        p {
+            font-size: 13px;
+            background: $white-color;
+            display: inline-block;
+            padding: 5px 30px 2px 18px;
+            margin-bottom: 0;
+            position: absolute;
+            left: 30px;
+            bottom: -16px;
+
+            span {
+                color: $heading-color;
+            }
+        }
+    }
+
+    .latest__item__text {
+        padding-top: 35px;
+        padding-left: 30px;
+
+        h4 {
+            margin-bottom: 40px;
+            
+            a {
+                color: #323232;
+                font-weight: 700;
+            }
+        }
+        
+        p {
+            color: #8d8d8d;
+            margin-bottom: 35px;
+        }
+
+        .continue-btn {
+            font-size: 15px;
+            color: #8d8d8d;
+            display: inline-block;
+            padding-left: 40px;
+            position: relative;
+    
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 9px;
+                height: 2px;
+                width: 30px;
+                background: $primary-color;
+                content: "";
+            }
+        }
+    }
+}
+
+/*---------------------
+    Blog
+-----------------------*/
+.blog {
+    padding-bottom: 50px;
+}
+
+.blog__item {
+    margin-bottom: 45px;
+}
+
+.blog__item__pic {
+    height: 320px;
+    position: relative;
+
+    p {
+        margin-bottom: 0;
+        display: inline-block;
+        background: $white-color;
+        padding: 10px 45px 10px;
+        position: absolute;
+        left: 50px;
+        bottom: -21px;
+
+        span {
+            color: $heading-color;
+        }
+    }
+}
+
+.blog__item__text {
+    padding-top: 42px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h3 {
+        margin-bottom: 50px;
+
+        a {
+            color: $heading-color;
+            font-weight: 700;
+        }
+    }
+
+    p {
+        font-size: 17px;
+        color: #8d8d8d;
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+
+    .continue-btn {
+        font-size: 15px;
+        color: #727171;
+        display: inline-block;
+        padding-left: 55px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 9px;
+            height: 2px;
+            width: 40px;
+            background: $primary-color;
+            content: "";
+        }
+    }
+}

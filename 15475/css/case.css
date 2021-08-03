@@ -1,0 +1,240 @@
+
+.btn-default{
+	border:1px solid #41998c !important;
+	border-radius: none !important;
+	color:#41998c !important;
+	font-size:14px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.btn-default:hover{
+	background-color: #41998c !important;
+	color:#fff !important;
+}
+.btn{
+	border-radius: 0 !important;
+}
+
+.side_navbar{
+text-align: center;
+background: #eeeeee;
+}
+.side_navbar .side_tit{
+	height:60px;
+	border-bottom:1px solid #d6d6d6;
+	line-height: 60px;
+}
+.side_navbar ul{
+	border-top:1px solid #fff;
+
+}
+.side_navbar ul li{
+	height:40px;
+	line-height: 40px;
+	margin:10px 0;
+}
+.side_navbar ul li a{
+	color:#333;
+	text-decoration: none;
+		display: block;
+}
+.side_navbar ul li:hover{
+	background: #41998c;
+}
+.side_navbar ul li:hover a{
+	color:#fff;
+}
+.side_navbar ul li.active{
+	background: #41998c;
+}
+.side_navbar ul li.active a{
+	color:#fff;
+
+}
+.case_list{
+padding-left:40px;
+box-sizing: border-box;
+}
+.search_box{
+	padding:27px;
+	padding-bottom:0;
+	background: #fff;
+	border:1px solid #dcdcdc;
+}
+.search_box label{
+	margin-right:97px;
+	margin-bottom:40px;
+	color:#333;
+	font-weight: normal;
+}
+.search_box select{
+	width:130px;
+	height:30px;
+	border:1px solid #bebebe;
+	color:#333;
+}
+.search_box input{
+	width:130px;
+	height:30px;
+}
+.case_listbox{
+	margin-top:40px;
+}
+.case_listbox .case_li{
+margin-bottom:40px;
+text-align: center;
+}
+.case_listbox .case_li p{
+	padding-top:20px;
+	color:#333;
+}
+.case_listbox .case_li a{
+	text-decoration: none;
+}
+
+/*经典案例内容页*/
+.case_pic img{
+	width:100%;
+	max-width:570px;
+	
+}
+.case_data p{
+	font-size:24px;
+	color:#333;
+	margin-bottom:20px;
+}
+.case_data table{
+	border-top:1px solid #ccc;
+	width: 100%;
+	font-size:14px;
+}
+.case_data table tr{
+	border-bottom:1px solid #ccc;
+	height:40px;
+	line-height: 40px;
+}
+.case_data table tr td{
+	padding-left:20px;
+}
+.case_data table tr:last-child{
+	height:80px;
+}
+.case_data .case_name{
+	width:100px;
+	border-right:1px solid #ccc;
+	padding-left:0;
+}
+.case_pic_li{
+	
+	text-align: center;
+	padding:0 15px;
+}
+.case_pic_li img{
+	    width: 100%;
+	max-width:170px;
+}
+.case_pic_li .cas_position{
+	position: relative;
+}
+.case_pic_li p{
+	position: absolute;
+	bottom:5px;
+	z-index: 99;
+	text-align: center;
+	color:#fff;
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	background: rgba(0,0,0,0.5);
+}
+
+/*加入我们*/
+.join_list .job_requirement{
+	padding-left:40px;
+	margin-bottom:30px;
+}
+.join_list .job_requirement .job_name{
+	font-size:16px;
+	color:#41998c;
+	border-bottom:1px dashed #41998c;
+	padding-bottom:20px;
+	margin-bottom:25px;
+}
+.join_list .job_requirement .counts{
+	font-size:12px;
+	color:#333;
+	float: right;
+}
+.join_list .job_requirement .job_tit{
+	font-size:14px;
+	font-weight: bold;
+	padding-bottom:10px;
+}
+.join_list .job_requirement .jon_txt{
+	font-size:14px;
+	line-height:30px;
+	padding-bottom:20px;
+}
+/*合作与支持*/
+.partner_box .row{
+    margin:0;
+}
+.partner_box .partner_client{
+	margin-bottom:40px;
+	background: #fff;
+    padding: 50px 60px 80px 60px;
+      text-align: center;
+      position: relative;
+}
+.partner_box .partner_tit{
+	text-align: center;
+	color:#41998c;
+	font-size:24px;
+	margin-bottom:40px;
+}
+.partner_box .partner_partner{
+	margin-bottom:20px;
+	background: #fff;
+    padding: 80px 60px 50px 60px;
+    text-align: center;
+  
+}
+.logo_img{
+	position: absolute;
+	bottom:-100px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	width:193px;
+}
+.partner_client_list{
+	width:100%;
+	margin-top:60px;
+}
+.partner_client_list .client_li{
+	float:left;
+	width:25%;
+	max-width:262px;
+	height:150px;
+	text-align: center;
+	overflow: hidden;
+}
+.partner_client_list .client_li img{
+	max-width:250px;
+}
+.partner_partner_list{
+	width:100%;
+	margin-top:60px;
+}
+.partner_partner_list .partner_li{
+	float:left;
+	width:20%;
+	max-width:210px;
+	height:120px;
+	text-align: center;
+	overflow: hidden;
+
+}
+.partner_partner_list .partner_li img{
+	max-width:200px;
+}
