@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="plugin/bstable/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/echarts-all.js"></script>
+    <script src="js/statistical.js"></script>
+    <script>
+        $(function(){
+            salesProportionMyEcharts();
+            profitProportionMyEcharts();
+
+        });
+        function salesProportionMyEcharts(){
+            var profitProportion = echarts.init($("#salesProportion")[0]);
+            var option = {
+
+                tooltip : {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data:['种植类','畜牧类','加工类','运输类','仓储类','销售类']
+                },
+
+                calculable : true,
+                xAxis : [
+                    {
+                        type : 'category',
+                        boundaryGap : false,
+                        data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value',
+
+                    }
+                ],
+                series : [
+                    {
+                        name:'种植类',
+                        type:'line',
+                        data:[125, 302, 301, 434, 369, 330, 154,203, 698, 201, 334, 190]
+
+
+                    },
+                    {
+                        name:'畜牧类',
+                        type:'line',
+                        data:[125, 302, 301, 304, 290, 330, 333,190, 302, 325, 334, 190]
+
+
+                    },
+                    {
+                        name:'运输类',
+                        type:'line',
+                        data:[364, 206, 356, 334, 254, 330, 320,120, 302, 201, 334, 110]
+
+
+                    },
+                    {
+                        name:'加工类',
+                        type:'line',
+                        data:[365, 302, 301, 547, 369, 330, 320,120, 256, 201, 334, 256,],
+
+
+                    },
+                    {
+                        name:'仓储类',
+                        type:'line',
+                        data:[333, 302, 452, 334, 362, 330, 320,252, 302, 222, 334, 256,],
+
+
+                    },
+                    {
+                        name:'散装加油',
+                        type:'line',
+                        data:[452, 302, 256, 334, 390, 365, 352,230, 302, 201, 334, 254,],
+
+
+                    },
+                    {
+                        name:'销售类',
+                        type:'line',
+                        data:[365, 302, 458, 334, 365, 330, 254,352, 302, 254, 334, 365,],
+
+
+                    }
+
+                ]
+            };
+            profitProportion.setOption(option);
+        }
+        function profitProportionMyEcharts(){
+            var profitProportion = echarts.init($("#profitProportion")[0]);
+            var option = {
+
+                tooltip : {
+                    trigger: 'axis'
+                },
+
+                calculable : true,
+                xAxis : [
+                    {
+                        type : 'category',
+                        boundaryGap : false,
+                        data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value',
+
+                    }
+                ],
+                series : [
+                    {
+                        name:'产品上线数',
+                        type:'line',
+                        data:[125, 302, 301, 434, 369, 330, 154,203, 698, 201, 334, 190]
+
+
+                    }
+
+                ]
+            };
+            profitProportion.setOption(option);
+        }
+    </script>
+    <style>
+        .page-list{display: none !important;}
+        td{border: 1px #ccc solid !important;}
+        .charts span{margin-left: 10px}
+        .pagination{margin-right: 10px}
+        .pagination-detail{margin-top: 10px !important;}
+        .pagination-info{display: none !important;}
+        .matter .content .matter-content .matter-list li .matter-time{width: 46px}
+        .matter .content .matter-content1 .matter-list li .matter-time{width: 46px}
+        .rows h2,.rows h5{color: #fff ;margin-bottom: 10px}
+    </style>
+</head>
+<body>
+<div id="areascontent">
+    <div class="rows" style="margin-bottom: 0.8%; overflow: hidden;">
+        <div style="float: left; width: 100%;">
+            <div style="height: 100%; border: 1px solid #e6e6e6; overflow: hidden;">
+                <div class="dashboard-stats" onclick="unit()">
+                    <div class="dashboard-stats-item" style="background-color: #114f86;">
+                        <div class="stat-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <h2 class="m-top-none">234<span>家</span></h2>
+                        <h5>已上线企业数</h5>
+                    </div>
+                </div>
+                <div class="dashboard-stats" onclick="person()">
+                    <div class="dashboard-stats-item" style="background-color: #a73130;">
+                        <h2 class="m-top-none">36254<span>件</span></h2>
+                        <h5>已上线产品数</h5>
+                        <div class="stat-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-stats" onclick="car()">
+                    <div class="dashboard-stats-item" style="background-color: #199e95; margin-right: 10px;">
+                        <h2 class="m-top-none">25<span>（家）</span></h2>
+                        <h5>待审核企业数</h5>
+                        <div class="stat-icon">
+                            <i class="fa fa-file-text-o"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-stats" onclick="wareArea()">
+                    <div class="dashboard-stats-item" style="background-color: #0d6e94; margin-bottom: 0px;">
+                        <h2 class="m-top-none">526<span>件</span></h2>
+                        <h5>待审核产品数</h5>
+                        <div class="stat-icon">
+                            <i class="fa fa-file-text-o"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-stats" onclick="accident()">
+                    <div class="dashboard-stats-item" style="background-color: #465f88; margin-bottom: 0px;">
+                        <h2 class="m-top-none">635<span>（件）</span></h2>
+                        <h5>今日投诉量</h5>
+                        <div class="stat-icon">
+                            <i class="fa fa-file-text-o"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="article half notice">
+        <div class="wrap-l">
+            <div class="title ue-clear">
+                <h2>通知公告</h2>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <div class="content">
+                <ul class="notice-list">
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">关于公示散装加油的新规定</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">关于公示散装加油的新规定</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">关于公示散装加油的新规定</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策。</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="article half matter" style="margin-top: 7px">
+        <div class="wrap-r">
+            <div class="title ue-clear">
+                <h2 class="title-list">
+                    <ul class="ue-clear">
+                        <li class="current"><a href="javascript:;">待审核企业</a></li>
+                        <li><a href="javascript:;">已审核企业</a></li>
+                    </ul>
+                </h2>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <div class="content">
+                <div class="matter-content current ue-clear">
+                    <div class="today">
+                        <p class="year">2017年9月</p>
+                        <p class="date">19</p>
+                    </div>
+                    <ul class="matter-list">
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审核</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江有机蔬菜企业上线审核</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审核</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江有机蔬菜企业上线审核</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审核</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="matter-content ue-clear">
+                    <div class="today">
+                        <p class="year">2017年9月</p>
+                        <p class="date">15</p>
+                    </div>
+                    <ul class="matter-list">
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">綦江兴伟生态公司上线审请</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="clear"></div>
+    <div class="article half notice">
+        <div class="wrap-l">
+            <div class="title ue-clear">
+                <h2>投诉列表</h2>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <div class="content">
+                <ul class="notice-list">
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">兴伟企业土鸡上线申请</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">关于公示散装加油的新规定</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">关于公示散装加油的新规定</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">关于公示散装加油的新规定</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                    <li class="ue-clear">
+                        <a href="javascript:;" class="notice-title">针对腐蚀性化学物品新出了相关的管理政策。</a>
+                        <div class="notice-time">9-18</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="article half matter" style="margin-top: 7px">
+        <div class="wrap-r">
+            <div class="title ue-clear">
+                <h2 class="title-list1">
+                    <ul class="ue-clear">
+                        <li class="current"><a href="javascript:;">待审核产品</a></li>
+                        <li><a href="javascript:;">已审核产品</a></li>
+                    </ul>
+                </h2>
+                <a href="javascript:;" class="more">更多</a>
+            </div>
+            <div class="content">
+                <div class="matter-content1 current ue-clear">
+                    <div class="today">
+                        <p class="year">2017年9月</p>
+                        <p class="date">19</p>
+                    </div>
+                    <ul class="matter-list">
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江生态葡萄上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江有机蔬菜上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-19</span>
+                            <a href="javascript:;" class="matter-title">綦江生态葡萄上线申请</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="matter-content1 ue-clear" style="display: none">
+                    <div class="today">
+                        <p class="year">2017年9月</p>
+                        <p class="date">15</p>
+                    </div>
+                    <ul class="matter-list">
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                        <li class="ue-clear">
+                            <span class="matter-time">9-15</span>
+                            <a href="javascript:;" class="matter-title">兴伟企业土鸡上线申请</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <div class="e_chart">
+        <div class="charts l_left">
+            <p class="charts_p">各类企业入驻走势图<span class="r_right"></span></p>
+            <div id="salesProportion" style="height:350px;width: 98%"></div>
+        </div>
+        <div class="charts l_left last_charts">
+            <p class="charts_p">产品上线走势图<span class="r_right"></span></p>
+            <div id="profitProportion" style="height:250px;width: 780px"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+
+
+
+</div>
+</body>
+<script src="js/jquery/jQuery-2.2.0.min.js"></script>
+<script src="plugin/bstable/js/bootstrap.min.js"></script>
+<script src="plugin/bstable/js/bootstrap-table.js"></script>
+<script src="plugin/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript">
+    $('#table').bootstrapTable({
+        method: "get",
+        striped: true,
+        singleSelect: false,
+        url: "json/home2.json",
+        dataType: "json",
+        pagination: true, //分页
+        pageSize: 8,
+        pageNumber: 1,
+        search: false, //显示搜索框
+        contentType: "application/x-www-form-urlencoded",
+        queryParams:null,
+        columns: [
+            {
+                title: "序列号",
+                field: 'id',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: "事故名称",
+                field: 'name',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: '事故类型',
+                field: 'type',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: '事故时间',
+                field: 'time',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: '事故级别',
+                field: 'class',
+                align: 'center'
+            },
+            {
+                title: '事故单位',
+                field: 'unit',
+                align: 'center'
+            },
+            {
+                title: '伤亡情况',
+                field: 'num01',
+                align: 'center'
+            },{
+                title: '处理单位',
+                field: 'person01',
+                align: 'center'
+            },
+            {
+                title: '处理情况',
+                field: 'oper',
+                align: 'center'
+            },
+            {
+                title: '事故原因',
+                field: 'note',
+                align: 'center'
+            }
+        ]
+    });
+    $('#table1').bootstrapTable({
+        method: "get",
+        striped: true,
+        singleSelect: false,
+        url: "json/home4.json",
+        dataType: "json",
+        pagination: true, //分页
+        pageSize: 8,
+        pageNumber: 1,
+        search: false, //显示搜索框
+        contentType: "application/x-www-form-urlencoded",
+        queryParams:null,
+        columns: [
+            {
+                title: "序列号",
+                field: 'id',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: "问题描述",
+                field: 'name',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: '下派时间',
+                field: 'time',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: '下派单位',
+                field: 'person01',
+                align: 'center',
+                valign: 'middle'
+            },
+            {
+                title: '处理情况',
+                field: 'oper',
+                align: 'center'
+            },
+            {
+                title: '处理结果',
+                field: 'res',
+                align: 'center'
+            }
+        ]
+    });
+    $(".title-list ul").on("click","li",function(){
+        var aIndex = $(this).index();
+        $(this).addClass("current").siblings().removeClass("current");
+        $(".matter-content").removeClass("current").eq(aIndex).addClass("current");
+    });
+    $(".title-list1 ul").on("click","li",function(){
+        var aIndex = $(this).index();
+        $(this).addClass("current").siblings().removeClass("current");
+        $(".matter-content1").removeClass("current").eq(aIndex).addClass("current");
+    });
+</script>
+</html>

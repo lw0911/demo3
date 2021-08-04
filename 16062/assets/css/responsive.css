@@ -1,0 +1,371 @@
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .arkit-service-info-single {
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .arkit-service-info-single h2 {
+        padding-right: 120px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+
+    .header-style-1 #navbar,
+    .header-style-2 #navbar,
+    .header-style-3 #navbar {
+        width: calc(100% - 400px) !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .logo {
+        width: 200px;
+    }
+
+    .arkit-service-info-single {
+        margin-bottom: 30px;
+    }
+
+    .arkit-service-info .col-lg-4.col-md-6.col-xl-12:last-child .arkit-service-info-single {
+        margin-bottom: 0;
+    }
+
+    .arkit-member {
+        margin-bottom: 30px;
+    }
+
+    .contact-widget .submit-btn {
+        display: block !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .site-footer .display-flex {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .site-footer {
+        margin-top: 0;
+        padding-top: 100px;
+    }
+
+    .upper-footer {
+        padding-bottom: 100px;
+    }
+
+    .contact-widget {
+        background: #232222;
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .order-1 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .order-2 {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .order-3 {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .contact-widget .submit-btn {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .status-note {
+        right: 8%;
+    }
+
+    .site-footer .about-widget .logo {
+        min-height: 70px;
+    }
+
+    .site-footer .about-widget .logo img {
+        width: 120px;
+    }
+
+    .contact-widget .section-title h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .arkit-member {
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .about-img {
+        display: none;
+    }
+
+    .arkit-service .section-title {
+        margin-bottom: 35px;
+    }
+
+    .arkit-status:before {
+        top: auto;
+        right: 0;
+        height: 30%;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .status-right {
+        display: block;
+    }
+
+    .single-testimonial {
+        display: block;
+    }
+
+    .single-testimonial .feedback {
+        padding: 0;
+        text-align: center;
+    }
+
+    .single-testimonial .feedback .quote {
+        margin: auto;
+        display: table;
+    }
+
+    .single-testimonial .info {
+        width: unset;
+    }
+
+    .testimonial-slider.owl-theme .owl-dots {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .testimonial-slider {
+        padding: 50px 50px 90px 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .arkit-team .col-lg-3.col-sm-6.col-xl-12:last-child .arkit-member {
+        margin-bottom: 0;
+    }
+
+    .status-note {
+        right: 3%;
+    }
+
+    .status-right {
+        padding-left: 50px;
+    }
+
+    .about-widget {
+        margin-bottom: 50px;
+    }
+
+    .widget-title {
+        margin-bottom: 35px;
+    }
+
+    .site-footer .logo {
+        margin-left: 0;
+    }
+
+    .lower-footer {
+        text-align: center;
+    }
+
+    .social-icons ul {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+    .work-portfolio-slider .owl-nav .owl-prev {
+        margin-right: 50px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-next {
+        margin-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .arkit-service-info-single:before {
+        font-size: 98px;
+    }
+
+    .arkit-about-inner h2 {
+        font-size: 32px;
+    }
+
+    .testimonial-inner {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .status-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .status-note {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        right: 0 !important;
+        bottom: -80px;
+    }
+
+    .status-note h3 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .single-blog .display-flex {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .single-blog {
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    .single-blog img {
+        margin-bottom: 30px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .single-blog .read-more-btn {
+        margin: auto;
+    }
+
+    .site-footer .logo {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .work-portfolio-slider .owl-nav .owl-prev {
+        margin-right: 10px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-next {
+        margin-left: 10px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-prev span,
+    .work-portfolio-slider .owl-nav .owl-next span {
+        display: none;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-prev,
+    .work-portfolio-slider .owl-nav .owl-next {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .work-portfolio-slider .owl-nav .owl-prev i,
+    .work-portfolio-slider .owl-nav .owl-next i {
+        margin: 0;
+    }
+
+    .testimonial-inner {
+        padding-left: 0;
+    }
+
+    .testimonial-inner:before {
+        display: none;
+    }
+
+    .testimonial-inner .section-title {
+        text-align: center;
+    }
+
+    .testimonial-slider {
+        padding: 30px 30px 60px 30px;
+    }
+
+    .testimonial-slider.owl-theme .owl-dots {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .arkit-service-info-single:before {
+        display: none;
+    }
+
+    .arkit-service-info-single {
+        padding: 30px 15px;
+    }
+
+    .arkit-service-info-single h2 {
+        font-size: 28px;
+    }
+
+    .arkit-service-info-single p {
+        font-size: 14px;
+    }
+
+    .status-note {
+        padding: 30px 20px;
+    }
+
+    .testimonial-slider {
+        padding: 15px 15px 40px 15px;
+    }
+
+    .testimonial-slider.owl-theme .owl-dots {
+        bottom: 20px;
+    }
+
+    .single-blog {
+        padding: 0 15px;
+    }
+
+    .contact-widget {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .contact-widget .submit-btn {
+        min-width: 230px;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+    <style>
+        .extract-main{width: 96%;margin-right: 2%}
+        .extract-item-right input{width: 16px;height: 16px;border: 1px #ccc solid;border-radius: 4px;margin: 0}
+        .extract-item-right span{line-height: 16px;margin-left: 6px;color: #333}
+        .extract-item-right-ul{padding: 10px 20px;border: 1px #ccc solid;height: 280px;overflow-y: auto}
+        .extract-item-right-ul li{margin-bottom: 10px;margin-left: 20px;cursor: pointer; }
+        .extract-item-right-ul .extract-item-right-li{margin-left: 0}
+        .number{color: red !important;margin-left: 0 !important;}
+        .txt-p{display: none}
+    </style>
+</head>
+<body style="overflow: hidden;margin-top: 30px">
+<div class="extract-main">
+    <div class="extract-item">
+
+        <div class="extract-item-right">
+            勾选需要忽略的字段
+        </div>
+    </div>
+    <div class="extract-item">
+
+        <div class="extract-item-right">
+            <ul class="extract-item-right-ul">
+                <li class="extract-item-right-li">
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">全部</span>
+                    <div class="clear"></div>
+                </li>
+                <li class="extract-item-right-li">
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">case_criminal_current_state</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">case_id</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">hold_organization</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">node2_sign</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">node3_sign</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">id</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">case_id</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">hold_organization</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">node2_sign</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">node3_sign</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">id</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">case_id</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">hold_organization</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">node2_sign</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">node3_sign</span>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <input type="checkbox" class="l-left">
+                    <span class="l-left">id</span>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="extract-item">
+
+        <div class="extract-item-right">
+            <p class="txt-p">选中 <span class="number"></span> 项进行忽略</p>
+        </div>
+    </div>
+</div>
+<div class="extract-add-btn" style="margin: 40px auto 0 auto">
+    <button class="btn btn-primary">确认</button>
+    <button class="btn btn-danger" onclick="cancel()">取消</button>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    var count=0;
+    $(function(){
+        list()
+    });
+    function list(){
+        $(".extract-item-right-ul li").each(function(index){
+            $(this).click(function(){
+                if($(this).hasClass('extract-item-right-ul-active')){
+                    if(index<=1){
+                        count = 0;
+                        $(".extract-item-right-ul li").removeClass("extract-item-right-ul-active").find("input").attr("checked", false);
+                        $(".extract-item-right-ul li").find("span").css("text-decoration","none");
+                    }else{
+                        count--;
+                        $(this).removeClass("extract-item-right-ul-active");
+                        $(this).find("input").attr("checked", false);
+                        $(this).find("span").css("text-decoration","none");
+                    }
+                }else{
+                    if(index<=1){
+                        count = $(".extract-item-right-ul li").length;
+                        $(".extract-item-right-ul li").addClass("extract-item-right-ul-active").find("input").attr("checked", true);
+                        $(".extract-item-right-ul li").find("span").css("text-decoration","line-through")
+                    }else{
+                        count++;
+                        $(this).addClass("extract-item-right-ul-active");
+                        $(this).find("input").attr("checked", true);
+                        $(this).find("span").css("text-decoration","line-through")
+                    }
+
+                }
+                if(count == 0){
+                    $(".txt-p").hide()
+                }else{
+                    $(".txt-p").show()  ;
+                    $(".number").html(count);
+                }
+
+            })
+        })
+    }
+    function cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+</script>
+</html>

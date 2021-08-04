@@ -1,0 +1,189 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="overflow: hidden">
+<div class="warrant_nav">
+    <ul>
+        <li class="warrant_active"><span class="step"></span>车辆信息<span class="chevron"></span></li>
+        <li><span class="step"></span>联系人信息<span class="chevron"></span></li>
+    </ul>
+
+    <div class="clear"></div>
+</div>
+
+<div class="warrant_main">
+    <div class="tree_left" style="display: block">
+        <form>
+            <div class="top">
+                <div>
+                    <div class="top_out">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>车牌号码<span class="span">*</span></td>
+                                <td><input type="text" required   minlength ="2"></td>
+                                <td>车牌颜色<span class="span">*</span></td>
+                                <td>
+                                    <select class="">
+                                        <option>选择公司</option>
+                                        <option>成都分公司</option>
+                                        <option>杭州总部</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>开始时间<span class="span">*</span></td>
+                                <td><input type="text" required   ></td>
+                                <td>结束时间<span class="span">*</span></td>
+                                <td>
+                                    <input type="text" required   >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>车牌类型<span class="span"></span></td>
+                                <td>
+                                    <select>
+                                        <option>全部</option>
+                                        <option>Java工程师</option>
+                                        <option>前端工程师</option>
+                                    </select>
+                                </td>
+                                <td>车辆类型<span class="span"></span></td>
+                                <td>
+                                    <select>
+                                        <option>全部</option>
+                                        <option>Java工程师</option>
+                                        <option>前端工程师</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>车身颜色<span class="span"></span></td>
+                                <td>
+                                    <select>
+                                        <option>全部</option>
+                                        <option>Java工程师</option>
+                                        <option>前端工程师</option>
+                                    </select>
+                                </td>
+                                <td>布控性质<span class="span"></span></td>
+                                <td>
+                                    <select>
+                                        <option>全部</option>
+                                        <option>Java工程师</option>
+                                        <option>前端工程师</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>布控原因<span class="span"></span></td>
+                                <td>
+                                    <select>
+                                        <option>全部</option>
+                                        <option>Java工程师</option>
+                                        <option>前端工程师</option>
+                                    </select>
+                                </td>
+                                <td>优先级<span class="span"></span></td>
+                                <td>
+                                    <select>
+                                        <option>全部</option>
+                                        <option>Java工程师</option>
+                                        <option>前端工程师</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>报警预案<span class="span">*</span></td>
+                                <td><input type="text" required   minlength ="2"></td>
+                                <td>是否下发<span class="span">*</span></td>
+                                <td>
+                                    <select class="">
+                                        <option>是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="notice_bot">
+                    <div class="l_left"><input type="checkbox" checked="checked"/>保存并关闭窗口</div>
+                    <div class="r_right but_p"><button class="but_save" type="submit">保存</button><button class="but_close" onclick="Cancel()">关闭</button></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="tree_left">
+        <form>
+            <div class="top">
+                <div>
+                    <div class="top_out">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>联系人姓名<span class="span">*</span></td>
+                                <td><input type="text" required   minlength ="2"></td>
+                                <td>通知方式<span class="span">*</span></td>
+                                <td>
+                                    <select class="">
+                                        <option>选择公司</option>
+                                        <option>成都分公司</option>
+                                        <option>杭州总部</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>联系电话<span class="span">*</span></td>
+                                <td><input type="text" required   ></td>
+                                <td>联系邮箱<span class="span">*</span></td>
+                                <td>
+                                    <input type="text" required   >
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="notice_bot">
+                    <div class="l_left"><input type="checkbox" checked="checked"/>保存并关闭窗口</div>
+                    <div class="r_right but_p"><button class="but_save" type="submit">保存</button><button class="but_close" onclick="Cancel()">关闭</button></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="notice_bot">
+    <div class="l_left"><input type="checkbox" checked="checked"/>保存并关闭窗口</div>
+    <div class="r_right but_p"><button class="but_save"  onclick="Cancel()">保存</button><button class="but_close" onclick="Cancel()">关闭</button></div>
+</div>
+<script src="js/jquery/jQuery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        nav();
+        click();
+    });
+    function Cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+    function nav(){
+        $(".warrant_nav ul li").each(function(index){
+            $(this).click(function(){
+                $(".warrant_nav ul li").removeClass("warrant_active");
+                $(this).addClass("warrant_active");
+                $(".warrant_main .tree_left").eq(index).show().siblings(".tree_left").stop().hide();
+            })
+        })
+    }
+</script>
+
+</body>
+</html>

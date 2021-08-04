@@ -1,0 +1,24 @@
+
+{"data":
+[{"check":"","id":"001","title":"小时","type":"00:00","person":"每1小时","date":"2017-04-05","oper":"登录","result":"成功"},
+  {"check":"","id":"0002","title":"天","type":"00:00","person":"每1天","date":"2017-04-05","oper":"退出","result":"成功"},
+  {"check":"","id":"003","title":"月","type":"00:00","person":"1号、3号、10号","date":"2017-04-05","oper":"退出","result":"失败"},
+  {"check":"","id":"004","title":"周","type":"00:00","person":"周三","date":"2017-04-05","oper":"登录","result":"成功"},
+  {"check":"","id":"005","title":"周","type":"00:00","person":"周三、周五","date":"2017-04-05","oper":"登录","result":"成功"},
+  {"check":"","id":"006","title":"天","type":"00:00","person":"每1天","date":"2017-04-05","oper":"登录","result":"失败"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}

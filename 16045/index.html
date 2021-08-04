@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font -->
+<link href="" rel="stylesheet">
+<link href='' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+	<!-- start-smooth-scrolling -->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+			</script>
+	<!-- //start-smoth-scrolling -->
+		<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+</head>
+<body>
+<div class="header-top-w3layouts">
+	<div class="container">
+		<div class="indicat-w3">
+				<span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i></span>
+		</div>
+		<div class="detail-w3l">
+			<ul>
+				<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> + </li>
+				<li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Mon-Sun 8:00 am to 23:00 pm </li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="banner" id="banner">
+	<div class="ban-top ">
+		<div class="container">
+			<div class="ban-top-con">
+			<div class="top_nav_right">
+				<a href="#"><h1>Ambiance</h1></a>
+			</div>
+			<div class="top_nav_left">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+					  <ul class="nav navbar-nav menu__list">
+						<li class="active menu__item menu__item--current"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#about">About</a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#gallery">Gallery</a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#team">Team</a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#contact">contact</a></li>
+					  </ul>
+					</div>
+				  </div>
+				</nav>	
+			</div>
+			
+			<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="ban-bot text-center">
+		<script src="js/responsiveslides.min.js"></script>
+				<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						 // Slideshow 4
+						$("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+						$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+							}
+							});
+						});
+				</script>
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="ban-info">
+						<h3>Architecture is a visual art</h3>
+						<p>Neque porro quisquam est, qui do  quia dolor sit amet, consectetur</p>
+						<a class="hvr-rectangle-out" href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+					</div>		
+				</li>
+				<li>
+					<div class="ban-info">
+						<h3>We really care about your comfort</h3>
+						<p>Neque porro quisquam est, qui do  quia dolor sit amet, consectetur</p>
+						<a class="hvr-rectangle-out" href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+					</div>		
+				</li>
+				<li>
+					<div class="ban-info">
+						<h3>We love to design the best for you</h3>
+						<p>Neque porro quisquam est, qui do  quia dolor sit amet, consectetur</p>
+						<a class="hvr-rectangle-out"  href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+					</div>		
+				</li>			
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Nulla </h4>
+      </div>
+      <div class="modal-body">
+        <p>Sed bibendum, lacus quis efficitur efficitur, quam ligula rutrum justo, in lacinia diam  nec augue. Aliquam erat volutpat. Sed cursus nisi vitae arcu ultrices malesuada. Quisque et velit porta, pharetra enim ac, accumsan libero. Maecenas id feugiat arcu. Proin accumsan diam at nisi aliquet elementum. Aliquam erat volutpat. Nam malesuada augue dui, ac convallis dui ultrices vel.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="about-w3ls" id="about">
+	<div class="container">
+		<h2>About us</h2>
+		<div class="col-md-6 about-left-agileits">
+			<div class="bar_group">
+				<div class='bar_group__bar thin' label='HTML' show_values='true' tooltip='true' value='350'></div>
+				<div class='bar_group__bar thin' label='Java Script' show_values='true' tooltip='true' value='222'></div>
+				<div class='bar_group__bar thin' label='PHP' show_values='true' tooltip='true' value='475'></div>
+				<div class='bar_group__bar thin' label='Designing' show_values='true' tooltip='true' value='286'></div>
+			</div>
+			<script src="js/bars.js"></script>			
+		</div>
+		<div class="col-md-6 about-right-agileinfo">
+			<div class="col-md-6 about-right-icons about-right-icon1">
+				<i class="fa fa-heart" aria-hidden="true"></i>
+				<p>Phasellus ac maximus ligula, efficitur venenatis nisi.</p>
+			</div>
+			<div class="col-md-6 about-right-icons about-right-icon1">
+				<i class="fa fa-glass" aria-hidden="true"></i>
+				<p>Phasellus ac maximus ligula, efficitur venenatis nisi.</p>
+			</div>
+			<div class="col-md-6 about-right-icons about-right-icon1">
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<p>Phasellus ac maximus ligula, efficitur venenatis nisi.</p>
+			</div>
+			<div class="col-md-6 about-right-icons about-right-icon1">
+				<i class="fa fa-beer" aria-hidden="true"></i>
+				<p>Phasellus ac maximus ligula, efficitur venenatis nisi.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<div class="services-wthree">
+	<div class="container">
+		<h3>Services</h3>
+		<p>Neque porro quisquam est, qui do  quia dolor sit amet, consectetur,
+		adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+		magnam aliquam quaerat voluptatem.</p>
+		<div class="content-grids ">
+			<div class="col-md-3 wel-grid text-center wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+				<div class="btm-clr4">
+					<span></span>
+					<figure class="icon">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</figure>
+					<h4>Voluptatem</h4>
+				</div>
+			</div>
+			<div class="col-md-3 wel-grid btm-gre text-center wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+				<div class="btm-clr4 btm-clr1 yash-clr">
+					<span></span>
+					<figure class="icon">
+						<i class="fa fa-bell" aria-hidden="true"></i>
+					</figure>
+					<h4>Consectetur</h4>
+				</div>
+			</div>
+			<div class="col-md-3 wel-grid text-center wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+				<div class="btm-clr4 btm-clr1">
+					<span></span>
+					<figure class="icon">
+						<i class="fa fa-flag" aria-hidden="true"></i>
+					</figure>
+					<h4>Doque </h4>
+				</div>
+			</div>
+			<div class="col-md-3 wel-grid btm-gre text-center wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+				<div class="btm-clr btm-clr3">
+					<span></span>
+					<figure class="icon">
+						<i class="fa fa-gift" aria-hidden="true"></i>
+					</figure>
+					<h4>Laudantium</h4>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<h3>Our Designs</h3>
+		<div class="w3agile_gallery_grids">
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" href="images/g1.jpg" title="Ambiance">
+						<figure>
+							<img src="images/g1.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g2.jpg">
+						<figure>
+							<img src="images/g2.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g3.jpg">
+						<figure>
+							<img src="images/g3.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g4.jpg">
+						<figure>
+							<img src="images/g4.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g5.jpg">
+						<figure>
+							<img src="images/g5.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g6.jpg">
+						<figure>
+							<img src="images/g6.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g7.jpg">
+						<figure>
+							<img src="images/g7.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="Ambiance" href="images/g8.jpg">
+						<figure>
+							<img src="images/g8.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna</h4>
+								<p>
+									  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		   <div class="clearfix"> </div>
+		</div>
+		<script type="text/javascript" src="js/smoothbox.jquery2.js"></script>
+		<link rel="stylesheet" href="css/smoothbox.css" type='text/css' >
+	</div>
+<!-- //gallery -->
+<!--testimonial-->
+	<div class="col-md-6 testimonials-w3-agileits">
+		<div class="test-content-w3-agile">
+			<h3>Happy Customers</h3>
+							<div class="wmuSlider example1">
+					<div class="wmuSliderWrapper">
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<p><i class="fa fa-quote-left" aria-hidden="true"></i> Nulla vitae pretium est. Vivamus id placerat , non aliquam tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+								<img src="images/img6.png" alt=" " />
+								<h4>-Martina</h4>							
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;"> 
+							<div class="banner-wrap">
+								<p><i class="fa fa-quote-left" aria-hidden="true"></i> Phasellus ac maximus ligula, efficitur venenatis nisi. Cras eget purus vel  convallis sagittis. Vestibulum posuere sapien et est fermentum id placerat. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+								<img src="images/img7.png" alt=" " />
+								<h4>-Daniel Doe</h4>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<p><i class="fa fa-quote-left" aria-hidden="true"></i> Vestibulum tristique leo sed nunc pretium rutrum. Aenean et dui faucibus justo fringilla molestie a et arcu. Nullam tempus pellentesque orci, massa. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+								<img src="images/img8.png" alt=" " />
+								<h4>-Lisa Haydon</h4>
+							</div>
+						</article>
+					</div>
+				</div>
+							<script src="js/jquery.wmuSlider.js"></script> 
+								<script>
+									$('.example1').wmuSlider();         
+								</script> 
+
+		</div>
+	</div>
+	<div class="col-md-6 subscribe-agileits-w3layouts">
+		<h3>Subscribe</h3>
+		<form action="#" method="post">
+			<input type="text" name="Email" placeholder="Enter Your Email" required="">
+			<input type="submit" value="Subscribe">
+		</form>
+	</div>
+	<div class="clearfix"></div>
+	<!--//testimonial-->
+	<!-- team -->
+<div class="team" id="team">
+	<div class="container">
+		<h3> Team</h3>
+		<div class="team_gds">
+			<div class="col-md-3 team_gd1">
+				<div class="team_pos">
+					<div class="team_back"></div>
+					<img class="img-responsive" src="images/team1.jpg"  alt=" ">
+					<div class="team_info">
+						<a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<h4>Patrick</h4>
+				<p>Designer</p>
+			</div>
+		
+			<div class="col-md-3 team_gd1">
+				<div class="team_pos">
+					<div class="team_back"></div>
+					<img class="img-responsive" src="images/team3.jpg"  alt=" ">
+					<div class="team_info">
+						<a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<h4>Victoria</h4>
+				<p>Developer</p>
+			</div>
+			<div class="col-md-3 team_gd1">
+				<div class="team_pos">
+					<div class="team_back"></div>
+					<img class="img-responsive" src="images/team4.jpg"  alt=" ">
+					<div class="team_info">
+						<a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<h4>Federica</h4>
+				<p>Manager</p>
+			</div>
+			<div class="col-md-3 team_gd1">
+				<div class="team_pos">
+					<div class="team_back"></div>
+					<img class="img-responsive" src="images/team2.jpg"  alt=" ">
+					<div class="team_info">
+						<a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<h4>Thompson</h4>
+				<p>Assistant</p>
+			</div>
+			<div class="clearfix"></div>		
+		</div>
+	</div>
+</div>
+<!-- //team -->
+<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="col-md-6 w3agile_contact_left con-lef-content">
+				<h3>Contact Us</h3>
+				<p>Excepteur sint occaecat cupidatat non proident, sunt 
+					in culpa qui officia deserunt mollit anim id.</p>
+				<form action="#" method="post">
+					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+					<input type="submit" value="Send">
+				</form>
+		</div>
+		<div class="col-md-6 w3agile_contact_right">
+			<div class="con-rt-content">
+				<h3><a href="#banner">Ambiance</a></h3>
+				<div class="col-xs-6 w3agile_contact_right_agileinfo">
+					<h4>Address</h4>
+					<ul>
+						<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></li>
+						<li></li>
+					</ul>
+					<ul class="phone">
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+						<li>+</li>
+					</ul>
+					<ul>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
+						<li><a href="mailto:"></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 w3agile_contact_right_agileinfo">
+					<h4>Follow Us</h4>
+					<div class="agileits_social_icons">
+						<a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="w3_copy_right">
+					<p>Copyright &copy; 2020.Company name All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //contact -->
+</body>
+</html>

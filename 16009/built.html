@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新建模型</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+</head>
+<body style="overflow: hidden;margin-top: 30px">
+<div class="extract-main">
+    <div class="extract-item">
+        <div class="extract-item-left">
+            数据模型名称：
+        </div>
+        <div class="extract-item-right">
+            <input type="text">
+        </div>
+    </div>
+    <div class="built-list">
+        <ul>
+            <li class="built-total">
+                <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                <span>全部文件夹</span>
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                <span>默认文件夹1</span>
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                <span>默认文件夹2</span>
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                <span>默认文件夹3</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="extract-add-btn" style="margin: 40px auto 0 auto">
+    <button class="btn btn-primary" onclick="builtSave()">确认</button>
+    <button class="btn btn-danger" onclick="cancel()">取消</button>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        built()
+    });
+    function built(){
+        $(".built-list ul li").each(function(){
+            $(this).click(function(){
+                $(this).addClass("built-list-active").siblings("li").removeClass("built-list-active")
+            })
+        })
+    }
+    function builtSave(){
+
+        parent.addData();
+        cancel();
+    }
+    function cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+</script>
+</html>

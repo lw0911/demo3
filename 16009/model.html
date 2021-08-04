@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据模型</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="plugin/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/model.css">
+</head>
+<body style="background-color: #fff;font-family: 微软雅黑;color: #475059;min-width: 1000px;overflow-y: hidden">
+<div class="model">
+    <div class="model-left">
+        <h6 style="position: relative">数据模型
+            <button class="btn btn-primary r-right" onclick="add(event)">添加模型</button>
+            <ul id="add-model">
+                <li onclick="built()">新建模型</li>
+                <li onclick="book()">新建文件夹</li>
+            </ul>
+        </h6>
+        <div class="model-search">
+            <div class="select">
+                <select>
+                    <option>名称</option>
+                    <option>创建人</option>
+                    <option>类型</option>
+                </select>
+            </div>
+            <div class="input">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" placeholder="输入关键词搜索">
+            </div>
+        </div>
+        <div class="model-list">
+            <ul id="list">
+                <li class="list-li">
+                    <div class="list-item">
+                        <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                        <span class="l-left text">xxxx分析</span>
+                        <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="list-item-ul" style="display: none">
+                        <ul>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">XXXX违法高发区域分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">XXXX巡逻覆盖区域分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">XXXX违法趋势分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">XXXX人员效能评价分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">XXXX处理流程效能评价分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">XXXX人员异常行为分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-li">
+                    <div class="list-item">
+                        <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                        <span class="l-left text">自然相关</span>
+                        <span class="r-right glyphicon glyphicon-chevron-down"></span>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="list-item-ul" style="display: none">
+                        <ul>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">自然相关xxx分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">自然相关xxx分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">自然相关xxx超速违规分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-li">
+                    <div class="list-item">
+                        <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                        <span class="l-left text">行政审批</span>
+                        <span class="r-right glyphicon glyphicon-chevron-down"></span>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="list-item-ul" style="display: none">
+                        <ul>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">行政审批趋势分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">行政审批人员效能评价分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">行政审批部门效能评价分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">行政审批处理流程效能评价分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">行政审批人员异常行为分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-li">
+                    <div class="list-item">
+                        <span class="glyphicon glyphicon-folder-open icon l-left"></span>
+                        <span class="l-left text">其他</span>
+                        <span class="r-right glyphicon glyphicon-chevron-down"></span>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="list-item-ul" style="display: none">
+                        <ul>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">群众投诉高发区域分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">投诉处理人员效能评价模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="">
+                                    <span class="glyphicon glyphicon-oil icon l-left"></span>
+                                    <span class="l-left text">人员异常行为分析模型</span>
+                                    <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul id="list-btn">
+                <li>新建模型</li>
+                <li>重命名</li>
+                <li>删除</li>
+            </ul>
+            <ul id="list-btn-ul">
+                <li>复制模型</li>
+                <li>移动到</li>
+                <li>编辑模型</li>
+                <li>重命名</li>
+                <li>删除</li>
+            </ul>
+        </div>
+    </div>
+    <div class="model-right">
+        <div class="model-right-base">
+            <h6>
+                <span>root数据模型</span>
+                <button class="btn btn-primary" onclick="addModel()">编辑模型</button>
+                <button class="btn btn-success">刷新数据</button>
+            </h6>
+            <div class="model-right-main">
+                <div class="model-right-tabs">
+                    <input type="radio" checked="checked" class="l-left"> <span>直连</span>
+                </div>
+                <div class="model-right-content">
+                    <div class="model-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="model-right-extract">
+            <div class="table-dic">
+                <p>设置数据模型</p>
+            </div>
+            <div class="model-content">
+                <div class="model-content-left">
+                    <div class="table-dic">
+                        <p>维度</p>
+                    </div>
+                    <div class="model-content-list">
+                        <div class="dimension-list-item">
+                            <ul>
+                                <li>
+                                    <div class="dimension-nav">
+                                        <span class="glyphicon glyphicon-chevron-down l-left"></span>
+                                        <span class="">sys_area</span>
+                                    </div>
+                                    <div class="dimension-content">
+                                        <ul>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dimension-nav">
+                                        <span class="glyphicon glyphicon-chevron-down l-left"></span>
+                                        <span class="">sys_area</span>
+                                    </div>
+                                    <div class="dimension-content">
+                                        <ul>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="dimension-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="model-content-right">
+                    <div class="table-dic">
+                        <p>度量</p>
+                    </div>
+                    <div class="model-content-list">
+                        <div class="measure-list-item">
+                            <ul>
+                                <li>
+                                    <div class="measure-nav">
+                                        <span class="glyphicon glyphicon-chevron-down l-left"></span>
+                                        <span class="">sys_area</span>
+                                    </div>
+                                    <div class="measure-content">
+                                        <ul>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="measure-nav">
+                                        <span class="glyphicon glyphicon-chevron-down l-left"></span>
+                                        <span class="">sys_area</span>
+                                    </div>
+                                    <div class="measure-content">
+                                        <ul>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">ABC</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+                                            <li>
+                                                <span class="measure-icon">123</span>
+                                                <span >PARENTNODE</span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="plugin/bstable/js/bootstrap.min.js"></script>
+<script src="plugin/bstable/js/bootstrap-table.js"></script>
+<script src="plugin/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="plugin/layer_v2.1/layer/layer.js"></script>
+<script src="js/model.js"></script>
+</html>

@@ -1,0 +1,583 @@
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+a {
+  color: #de5b48;
+  text-decoration: none;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+
+header {
+  height: 80px;
+  position: relative;
+  padding-top: 40px;
+}
+header h1 {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 200px;
+    padding-top: 100px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* --------------------------------
+
+Cart button
+
+-------------------------------- */
+.qw-cart {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 16px;
+  height: 50px;
+  width: 50px;
+  background: url(../img/cd-icon-cart.svg) no-repeat center center;
+}
+.qw-cart span {
+  /* number of items added to the cart */
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  background-color: #7266BA;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  /* scale it down if no products have been added to the cart */
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s 0s;
+  -moz-transition: -moz-transform 0.2s 0s;
+  transition: transform 0.2s 0s;
+}
+.qw-cart.items-added span {
+  /* counter visible when a product is added to the cart */
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+@media only screen and (min-width: 1100px) {
+  .qw-cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* --------------------------------
+
+Gallery grid
+
+-------------------------------- */
+.qw-gallery {
+  margin: 1.5em auto !important;
+  width: 90%;
+}
+.qw-gallery > li {
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) {
+  .qw-gallery {
+    margin-top: 2em;
+  }
+  .qw-gallery::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .qw-gallery > li {
+    width: 50%;
+    float: left;
+    padding: 0 2% 6% 2%;
+  }
+
+}
+@media only screen and (min-width: 1100px) {
+  .qw-gallery {
+    margin-top: 2.5em;
+  }
+  .qw-gallery > li {
+    width: 33%;
+    float: left;
+    padding: 0 2% 5% 2%;
+  }
+
+}
+
+/* --------------------------------
+
+Single Item
+
+-------------------------------- */
+.qw-single-item {
+  position: relative;
+}
+.qw-single-item > a {
+  display: block;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 4px 0px rgb( 216, 216, 216 );
+}
+
+.no-touch .qw-single-item:hover .qw-customization, .qw-single-item.hover .qw-customization {
+  /* product customization visible */
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s 0s, visiblity 0s 0s;
+  -moz-transition: opacity 0.2s 0s, visiblity 0s 0s;
+  transition: opacity 0.2s 0s, visiblity 0s 0s;
+}
+.no-touch .qw-single-item:hover .qw-customization-trigger, .qw-single-item.hover .qw-customization-trigger {
+  /* this is the settings icon - visible on touch devices only */
+  display: none;
+}
+
+/* --------------------------------
+
+Product Slider
+
+-------------------------------- */
+.qw-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.qw-slider-wrapper li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* by default, move the product image on the right*/
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s;
+}
+.qw-slider-wrapper li.selected {
+  /* this is the visible product image */
+  position: relative;
+  visibility: visible;
+  z-index: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0s;
+}
+.qw-slider-wrapper li.move-left {
+  /* move the product image on the left */
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.qw-slider-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+/* --------------------------------
+
+Product Customization
+
+-------------------------------- */
+.qw-customization {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+.qw-customization::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.qw-customization .color, .qw-customization .size, .qw-customization .add-to-cart {
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+.qw-customization .color, .qw-customization .size {
+  /* these are the color and size options */
+  display: inline-block;
+  cursor: pointer;
+  /* Force Hardware Acceleration - fix a bug on Safari */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.qw-customization .color:hover, .qw-customization .size:hover {
+  box-shadow: inset 0 0 0 1px #cccccc;
+}
+.qw-customization .color ul, .qw-customization .size ul {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+
+.qw-customization .color ul{
+  border: 0;
+}
+.qw-customization .color li, .qw-customization .size li {
+  position: relative;
+  height: 45px;
+}
+.qw-customization .color ul li:first-of-type, .qw-customization .size ul li:first-of-type {
+  /* arrange list items according to the selected color/size option */
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  border-radius: 0;
+}
+.qw-customization .color ul li:nth-of-type(2), .qw-customization .size ul li:nth-of-type(2) {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-radius: 3px 3px 0 0;
+}
+.qw-customization .color ul li:nth-of-type(3), .qw-customization .size ul li:nth-of-type(3) {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  border-radius: 0 0 3px 3px;
+}
+.qw-customization .color.selected-2 ul li:first-of-type, .qw-customization .color.selected-2 ul li:nth-of-type(2), .qw-customization .color.selected-2 ul li:nth-of-type(3), .qw-customization .size.selected-2 ul li:first-of-type, .qw-customization .size.selected-2 ul li:nth-of-type(2), .qw-customization .size.selected-2 ul li:nth-of-type(3) {
+  /* second option selected in the ul.color/ul.size list*/
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.qw-customization .color.selected-2 ul li:first-of-type, .qw-customization .size.selected-2 ul li:first-of-type {
+  border-radius: 3px 3px 0 0;
+}
+.qw-customization .color.selected-2 ul li:nth-of-type(2), .qw-customization .size.selected-2 ul li:nth-of-type(2) {
+  border-radius: 0;
+}
+.qw-customization .color.selected-3 ul li:first-of-type, .qw-customization .size.selected-3 ul li:first-of-type {
+  /* third option selected in the ul.color/ul.size list */
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  border-radius: 3px 3px 0 0;
+}
+.qw-customization .color.selected-3 ul li:nth-of-type(2), .qw-customization .size.selected-3 ul li:nth-of-type(2) {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  border-radius: 0 0 3px 3px;
+}
+.qw-customization .color.selected-3 ul li:nth-of-type(3), .qw-customization .size.selected-3 ul li:nth-of-type(3) {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-radius: 0;
+}
+.qw-customization .color.is-open, .qw-customization .size.is-open {
+  /* color/size list open - make ul element visible */
+  overflow: visible;
+  box-shadow: none;
+  z-index: 222;
+}
+.qw-customization .color.is-open::after, .qw-customization .size.is-open::after {
+  /* remove the arrow icon for the size option element */
+  display: none;
+}
+.qw-customization .color.is-open ul{
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-color: #e5e5e5;
+  background-color: #ffffff;
+}
+.qw-customization .size.is-open ul {
+color: #fff;
+background-color: #f2a654;
+}
+.qw-customization .size.is-open li:hover, .qw-customization .size.is-open li.active {
+  background-color: #46be8a;
+}
+.qw-customization .color {
+  width: 45px;
+  margin-right: 10px;
+}
+.qw-customization .color li {
+  /* replace color name with colored circle */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+}
+.qw-customization .color li::before {
+  /* this is the colored circle */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  height: 100%;
+  width: 100%;
+}
+.qw-customization .color li.color-1::before {
+  background-color: #585C9C;
+}
+.qw-customization .color li.color-2::before {
+  background-color: #FF69B3;
+}
+.qw-customization .color li.color-3::before {
+  background-color: #F2A553;
+}
+.qw-customization .size {
+  width: calc(100% - 60px) !important;
+  width: -webkit-calc(100% - 60px) !important;
+  width: -moz-calc(100% - 60px) !important;
+  background-color: #f2a654;
+  color: #fff;
+}
+.qw-customization .size::after {
+  /* arrow icon for the size option element */
+  content: '\f078';
+  font-family: "FontAwesome";
+  color: #FFF;
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  margin-top: -12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+.qw-customization .size li {
+  padding: 0 1em;
+}
+.qw-customization .size, .qw-customization .add-to-cart {
+  width: 100%;
+}
+.qw-customization .size li, .qw-customization .add-to-cart {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+.qw-customization .add-to-cart {
+  color: #ffffff;
+  background-color: #7266BA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.no-touch .qw-customization .add-to-cart:hover {
+  background-color: #585B9C;
+}
+.qw-customization .add-to-cart em {
+  /* this is the button text message */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.qw-customization .add-to-cart svg {
+  /* this is the check icon */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  /* move the icon on the right - outside the button */
+  -webkit-transform: translateX(50%) translateY(-50%);
+  -moz-transform: translateX(50%) translateY(-50%);
+  -ms-transform: translateX(50%) translateY(-50%);
+  -o-transform: translateX(50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.qw-customization .add-to-cart.is-added em {
+  /* product added to the cart - hide text message on the left with no transition*/
+  color: transparent;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0s;
+  -moz-transition: -moz-transform 0s;
+  transition: transform 0s;
+}
+.qw-customization .add-to-cart.is-added svg {
+  /* product added to the cart - move the svg back inside the button */
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: -webkit-transform 0s;
+  -moz-transition: -moz-transform 0s;
+  transition: transform 0s;
+}
+
+/* --------------------------------
+
+Settings icon - touch devices only
+
+-------------------------------- */
+.qw-customization-trigger {
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  bottom: 0px;
+  height: 40px;
+  width: 40px;
+  /* replace text with an icon */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  background: url(../img/cd-icon-settings.svg) no-repeat center center;
+  display: none;
+}
+.touch .qw-customization-trigger {
+  display: block;
+}
+
+/* --------------------------------
+
+Product Info (title + price)
+
+-------------------------------- */
+.qw-item-info {
+  padding: 10px 10px 0;
+  color: #333;
+  font-size: 20px;
+}
+.qw-item-info::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.qw-item-info b {
+  float: left;
+  font-weight: 400;
+}
+.qw-item-info em {
+  float: right;
+  color: #ff69b4;
+}
+.qw-item-info a {
+  color: #314d5d;
+}
+.qw-item-info a:hover {
+  text-decoration: underline;
+}

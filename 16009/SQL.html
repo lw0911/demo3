@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+    <style>
+        .extract-main{width: 98%}
+        .extract-item-right input, .extract-item-right textarea{width: 80%;border: 1px #ccc solid;border-radius: 4px}
+        .extract-item-right textarea{height: 250px}
+    </style>
+</head>
+<body style="overflow: hidden;margin-top: 30px">
+<div class="extract-main">
+    <div class="extract-item">
+        <div class="extract-item-left">
+            视图名称：
+        </div>
+        <div class="extract-item-right">
+            <input type="text">
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+            SQL语句：
+        </div>
+        <div class="extract-item-right">
+            <textarea>
+
+            </textarea>
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+        </div>
+        <div class="extract-item-right">
+            <p>SQL里不能存在同名字段</p>
+        </div>
+    </div>
+</div>
+<div class="extract-add-btn" style="margin: 40px auto 0 auto">
+    <button class="btn btn-primary">确认</button>
+    <button class="btn btn-danger" onclick="cancel()">取消</button>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    function cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+</script>
+</html>

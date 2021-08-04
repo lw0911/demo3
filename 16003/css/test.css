@@ -1,0 +1,220 @@
+h6,*{margin: 0;padding: 0}
+p,ul{margin-bottom: 0 !important;}
+ul{list-style: none}
+.layui-layer-title{background-color: #3c8dbc !important;font-weight:bold;color:#fff !important; border:none !important;height: 33px;line-height: 33px;}
+.layui-layer-rim {border: 0px solid #8D8D8D !important;border-radius: 5px;box-shadow: 0 5px 15px rgba(0,0,0,.4)!important;  }
+
+::-webkit-scrollbar-track{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}/*滚动条的滑轨背景颜色*/
+::-webkit-scrollbar-thumb{background-color: rgba(0,0,0,0.05);border-radius: 10px;-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);}/*滑块颜色*/
+::-webkit-scrollbar-thumb{background-color: rgba(0,0,0,0.2);border-radius: 10px;-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);}
+::-webkit-scrollbar{width: 16px;height: 16px;}/* 滑块整体设置*/
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{border-radius: 999px;border: 5px solid transparent;}
+::-webkit-scrollbar-track{box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-thumb{min-height: 20px;background-clip: content-box;box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-corner{background: transparent;}/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+.notice_main{height: 94%;width: 100%;border: 1px #ccc solid;background-color: #fff;overflow: auto}
+.notice_check{padding: 8px 15px ;font-size: 12px}
+.notice_check p label{text-align: right;font-size: 12px;display: inline-block;width: 60px}
+.find_input01{
+    width: 16.5%;
+    height: 28px;
+    border:solid 1px #ccc;
+    border-radius: 3px;
+
+}
+.notice_check .check_btn{height: 30px;border: none;margin-left: 5px;width: 65px;border-radius: 4px;background-color: #337ab7;color: #fff;padding-left: 18px;
+    background-image: url(../img/1_03.png);background-repeat: no-repeat;background-position: 11px 8px}
+.div_close{
+    display: none;
+}
+#close{
+    margin-left: 10px;
+}
+#open{
+    margin-left: 10px;
+}
+.notice_check{padding: 8px 15px;font-size: 12px}
+.notice_check_last{padding:8px 15px 16px 15px !important}
+.car_list{
+    border-bottom: 1px solid #0D8BBD;
+    border-top: 1px solid #ccc;
+}
+.div_foot_left{
+    margin-left: 1%;
+    float: left;
+
+    border: 1px solid #EEEEEE;
+    margin-top: 10px;
+    height: 35px;
+    font-size: 12px;
+}
+.input_foot{
+    width: 40px;
+    height: 25px;
+    border: 1px solid #CCCCCC;
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+    margin-right: 5px;
+}
+.div_foot_left a{
+
+
+    color: #999999;
+    height: 35px;
+    line-height: 35px;
+
+    display: inline-block;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+.a_foot_line{
+    border-left: 1px solid #EEEEEE;
+
+}
+
+.div_foot_right{
+    width:50%;
+    margin: 0 auto;
+    bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+}
+.div_foot_right a{
+    color: #999999;
+    height: 35px;
+    line-height: 35px;
+
+    display: inline-block;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+.find_ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.find_ul li{
+    float: left;
+    width: 16%;
+    background-color: #DEECF8;
+    border-radius: 8px;
+    margin-left: 0.5%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    font-size: 12px;
+    text-align:center;
+    margin-bottom: 1%;
+    border: 1px solid #d2dce9;
+}
+
+.p_style{  text-align: center !important;margin-top:3px;
+}
+.p_style01{  text-align: center !important;font-size: 16px !important;color: #0f2740;
+}
+.li_div_down{
+    padding: 1%;
+}
+.li_div_down label{font-weight: 700;margin: 5px 0;font-size: 14px}
+.find_ul li img{
+    width: 98%;
+    margin-left: 1%;
+    height: 100px;
+
+}
+.find_ul li p{
+    text-align: left;
+   margin-bottom: -1px;
+}
+.find_ul li a{
+    text-decoration: none;
+    color: #337ab7;
+}
+.book_table{
+    width: 94%;
+    margin-left: 3%;
+    border-collapse:collapse;
+    font-size: 12px;
+
+
+}
+.book_table tr{
+
+    border:1px solid #ccc;
+}
+.book_table td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+
+}
+.list_input01{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    background-color: #e9b431;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.layui-layer-title{background-color: #3c8dbc !important;font-weight:bold;color:#fff !important; border:none !important;height: 33px;line-height: 33px;}
+*,th,td,table{padding: 0;margin: 0}
+
+
+.ts{margin-left: 16px}
+.ts li{color: #bb8940;line-height: 24px;font-size: 12px;}
+.ts li span{margin-right: 16px}
+h6{font-weight: bold;padding-left: 10px;line-height: 31px;border-bottom: 1px #ccc solid}
+
+/*passCar*/
+
+.passCar_left{width: 40%;float: left;height: 100%}
+.passCar_left img{width: 100%;;height: 100%}
+.passCar_right{width: 60%;float: left}
+.passCar_right td,.passCar_right th{font-size: 12px}
+.passCar_right th{background-color: #e7f0f6 !important;}
+.passCar_right input[type="text"]{width: 20%;border-radius: 4px;height: 28px;line-height: 28px;border: 1px #ccc solid;margin-right: 4px}
+.passCar_right>div:first-child{margin: 14px;line-height: 28px}
+.passCar_right input[type="radio"]{margin: 4px 4px 0 6px}
+.list_input{
+    margin-left: 16px;
+    padding:0 8px;
+    background-color: #00a0e9;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.list_input01{
+    padding:0 8px;
+    background-color: #e9b431;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+#table{
+    font-size: 12px;
+}
+.table_img{
+    width: 50px;
+    height: 50px;
+}
+.imgBix{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #CCCCCC;
+    /*display: none;*/
+    position: absolute;
+display: none;
+    z-index: 1999;
+
+    left: 50px;
+
+}

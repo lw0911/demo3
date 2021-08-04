@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>男士牛仔装、女士牛仔装、儿童牛仔装</title>
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/liscroll.js"></script>
+
+</head>
+
+<body>
+<div class="top_bg">
+	<div class="top">
+        <ul class="fl">
+            <li style="background:url(images/t_tel.jpg) 7px center no-repeat;">xxx</li>
+            <li style="background:url(images/t_mail.jpg) 7px center no-repeat;">xxx</li>
+        </ul>
+        <div class="share fr">
+      		<a href="" onclick="SetHome(this,window.location)">设为首页</a> 
+            <a href="" onclick="AddFavorite(window.location,document.title)">加入收藏</a>
+      	</div>
+        <form method="get" onsubmit="if(this.Keyword.value==this.Keyword.defaultValue){this.Keyword.value='';}">
+            <input type="text" name="Keyword" value="搜索" class="keyword" maxlength="20" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+            <input type="submit" value=" " class="submit" />
+        </form>
+   	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="nav_bg">
+	<div class="nav">
+   		<a class="fl" href=""><img src="images/logo.jpg" /></a>
+        <ul>
+            <li><a target="_self" href="index.html">首页</a></li>
+            <li><a target="_self" href="about_us.html">关于我们</a></li>
+            <li><a target="_self" href="products.html">产品中心</a></li>
+            <li><a target="_self" href="news.html">新闻资讯</a></li>
+            <li><a target="_self" href="">加盟合作</a></li>
+            <li><a target="_self" href="">客户留言</a></li>
+            <li><a target="_self" href="">联系我们</a></li>
+        </ul>   
+   </div>
+</div>
+
+<div class="banner">
+	<ul class="slides">
+		<li style="background:url(images/banner1.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(images/banner2.jpg) 50% 0 no-repeat;"></li>
+	</ul>
+</div>
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+$(function(){
+    $('.banner').flexslider({
+       directionNav: true,
+       pauseOnAction: false
+    });
+});
+</script>
+
+<div class="index_main">
+	<div class="ind_clients">
+		<div class="title">
+			<div class="tit fl">精品推荐</div>
+   			<div class="bg fl"></div>
+   			<div class="page fl">
+            	<img src="images/pre.jpg" class="ctrl"/>
+                <img src="images/next.jpg" class="ctrl"/>                 				  				
+   			</div>
+		</div>
+		<div class="clients_list" id="ScrollBox">
+			<ul>
+   	   			<li>
+     				<a href="" target="_blank">
+                    	<img src="images/1.jpg" width="218" height="198"/>
+                    	<span>男士牛仔装</span></a>
+      			</li>
+         		<li>
+     				<a href="" target="_blank">
+                    	<img src="images/2.jpg" width="218" height="198"/>
+                    	<span>儿童牛仔装</span></a>
+      			</li>
+         		<li>
+     				<a href="" target="_blank">
+                    	<img src="images/3.jpg" width="218" height="198"/>
+                    	<span>女士牛仔装</span></a>
+      			</li>
+         		<li>
+     				<a href="" target="_blank">
+                    	<img src="images/4.jpg" width="218" height="198"/>
+                    	<span>女士牛仔装</span></a>
+      			</li>
+         		<li>
+     				<a href="" target="_blank">
+                    	<img src="images/5.jpg" width="218" height="198"/>
+                    	<span>儿童牛仔装</span></a>
+      			</li>
+                <li>
+     				<a href="" target="_blank">
+                    	<img src="images/6.jpg" width="218" height="198"/>
+                    	<span>男士牛仔装</span></a>
+      			</li>
+         	</ul>
+		</div>
+	</div>
+	<div class="ind_pro">
+		<div class="title">产品中心</div>
+		<ul class="ind_cate_list">
+   			<li><a class="hover" href="">男士牛仔装系列</a></li>
+      		<li><a href="">女士牛仔装系列</a></li>
+      		<li><a href="">儿童牛仔装系列</a></li>
+   		</ul>
+		<div class="ind_pro_list">
+			<div class="pro_li">
+   				<a href=""><img width="280" height="254" src="images/a1.jpg" />
+                	<span>女士牛仔装系列</span></a>
+   			</div>
+			<div class="pro_li">
+   				<a href=""><img width="280" height="254" src="images/a2.jpg" />
+                	<span>儿童牛仔装系列</span></a>
+   			</div>
+            <div class="pro_li">
+   				<a href=""><img width="280" height="254" src="images/a4.jpg" />
+                	<span>儿童牛仔装系列</span></a>
+   			</div>
+			<div class="pro_li">
+   				<a href=""><img width="280" height="254" src="images/a3.jpg" />
+                	<span>男士牛仔装系列</span></a>
+   			</div>
+		</div>
+	</div>
+  	<div class="ind_c_n_f">	
+		<div class="item fl">
+	  		<div class="title">公司简介</div>
+	  		<dl>
+   				<dt><img src="images/b1.jpg" width="568" height="171" /></dt>
+          		<dd>
+           		  	<div class="text">某某牛仔有限公司始创于1999年，位于某某市某某县某某开发区，是一家专业设计，生产，加工，销售的牛仔服装厂。公司集中优势资源，专注于12～35岁的年轻、活力、时尚的牛仔服装的研发和生产，表达牛仔服装的独特精神...</div>
+           		  	<a class="detail" href="">联系我们</a>
+          		</dd>
+	  		</dl>
+		</div>
+		<div class="item fr">
+	  		<div class="title">新闻资讯</div>
+	  		<dl>
+   				<dt class="fl" style="margin-top:25px;"><img src="images/b4.jpg" width="180"/ height="270"></dt>
+          		<dd class="fr">
+                    <div class="min_item" style="margin-top:25px;">
+                    	<a href="">你选对了牛仔裤吗?1853年之后史上最好的发明</a>
+                    	<span class="date">2015-05-20</span>
+               		</div>
+                    <div class="min_item">
+                    	<a href="">【穿个明白】牛仔裤,和美国的牛仔文化并没有什么关系</a>
+                    	<span class="date">2015-04-01</span>
+               		</div>
+                    <div class="min_item">
+                    	<a href="">牛仔夹克如何穿出层次感 一粒扣都不要系</a>
+                    	<span class="date">2014-02-13</span>
+               		</div>
+                    <div class="min_item">
+                    	<a href="">【穿个明白】牛仔裤,和美国的牛仔文化并没有什么关系</a>
+                    	<span class="date">2015-04-01</span>
+               		</div>
+                    <div class="min_item">
+                    	<a href="">牛仔夹克如何穿出层次感 一粒扣都不要系</a>
+                    	<span class="date">2014-02-13</span>
+                   	</div>
+                    <div class="min_item">
+                    	<a href="">你选对了牛仔裤吗?1853年之后史上最好的发明</a>
+                    	<span class="date">2015-05-20</span>
+               		</div>
+          		</dd>
+	  		</dl>
+		</div>
+	</div>
+</div>
+
+<div class="youqing_bg">
+    <div class="youqing">
+        <span class="fl">友情链接:</span>
+        <span class="fr"><a href="">+MORE</a></span>
+        <a href="">百度</a>
+        <a href="">百度</a>
+        <a href="">百度</a>       
+    </div>
+</div>
+
+<div class="foot_bg">
+	<div class="foot">              
+        <div class="foot_nav">
+            <a href="">首页</a>
+            <a href="">关于我们</a>
+            <a href="">产品中心</a>
+            <a href="">新闻资讯</a>
+            <a href="">加盟合作</a>
+            <a href="">客户留言</a>
+            <a href="" style="border:none;">联系我们</a>               
+        </div>           
+        <div class="foot_lx">
+        	<span style="font-size:14px;">版权所有: </span><br> 
+        	<span style="background:url(images/f_tel.jpg) left center no-repeat;font-family:Arial;">
+                    xxx</span>
+            <span style="background:url(images/f_mail.jpg) left center no-repeat;font-family:Arial;">
+                    xxx</span>            
+            <span style="background:url(images/f_addr.jpg) left center no-repeat;">
+                    某某市某某县某某开发区</span>              
+        </div>            		   	
+   </div>
+</div>
+</body>
+</html>

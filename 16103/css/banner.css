@@ -1,0 +1,106 @@
+container {
+    display:block;
+    position:relative;
+    width: 100%;
+	padding-bottom: 33%;
+	border: none;
+	overflow: hidden;
+	height: 925px!important;
+}
+
+/* Normal slide in inactive state */
+slide {
+    transition-property: opacity, transform, z-index;
+	transition-duration: 0ms;
+	transition-function: linear;
+	transition-delay: 5000ms, 5000ms, 0ms;
+    display:block;
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    background-size: cover;
+	background-position: center;
+    opacity: 0;
+	transform: scale(2) rotate(10deg);
+	z-index: 1;
+}
+
+/* Active slide */
+slide.active {
+	transition-property: opacity, transform, z-index;
+	transition-duration: 5000ms, 5000ms, 0ms;
+	transition-function: linear;
+	transition-delay: 0ms;
+	transform: scale(1);
+	opacity: 1;
+	z-index: 10;
+}
+
+/* Slide activated by clicking next/prev navigation button.
+ * May have, for instance, faster transition time, or a completely differen effect */
+slide.activated {
+	transition-property: opacity, transform, z-index;
+	transition-duration: 1000ms, 1000ms, 0ms;
+	transition-function: linear;
+	transition-delay: 0ms;
+	transform: scale(1);
+	opacity: 1;
+	z-index: 10;
+}
+
+slide.deactivated {
+	transition-property: opacity, transform, z-index;
+	transition-duration: 1000ms, 1000ms, 0ms;
+	transition-function: linear;
+	transition-delay: 0ms;
+	transform: scale(2) rotate(10deg);
+	opacity: 0.0001;
+	z-index: 1;
+}
+/* Navigation buttons */
+.next,
+.prev {
+	transition: 150ms linear all;
+	position: absolute;
+	top: 46%;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.65);
+	color: #fff;
+	text-align: center;
+	vertical-align:middle;
+	font-size: 50px;
+	text-shadow: 0 0 1px #000;
+	cursor: pointer;
+	opacity: .5;
+}
+.next:hover,
+.next:active,
+.prev:hover,
+.prev:active {
+	opacity: 1;
+}
+.next {
+	right: 25px; z-index: 10;
+	padding:3px 5px 0px 3px;
+}
+.prev {
+	left: 25px; z-index: 10;
+	padding:3px 3px 0px 5px;
+}
+
+/*-- responsive design --*/
+@media(max-width:1600px){
+	container {
+	height: 795px!important;
+}
+}
+
+@media (max-width: 1366px) {
+container {
+    height: 769px!important;
+}
+}

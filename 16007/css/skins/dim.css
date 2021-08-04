@@ -1,0 +1,105 @@
+.preloader {
+  background: #ff948c !important;
+}
+
+body .breadcrumb li, body .breadcrumb li a, body .breadcrumb li + li:before {
+  color: #a28cc1;
+}
+
+body .wrap-content .header {
+  background: #a28cc1;
+}
+
+body .wrap-content .header .backet .backet-btn, body .wrap-content .header .backet .backet-title {
+  background-color: #ff948c;
+}
+
+body .wrap-content .header .btn-message.active, body .wrap-content .header .btn-email.active {
+  background-color: #8a78a5;
+}
+
+body .wrap-content .header .backet .backet-content > .unit {
+  background-color: #a28cc1;
+  border-right-color: #a28cc1;
+  border-bottom-color: #a28cc1;
+}
+
+body .wrap-content .header .backet .backet-content > .unit .btn-close:hover svg {
+  stroke: #a28cc1;
+}
+
+body .wrap-content .header .message .message-content .clear-all, body .wrap-content .header .email .mail-content .show-all {
+  background: #ff948c !important;
+}
+
+body .wrap-content .header .message .message-content .clear-all:active, body .wrap-content .header .email .mail-content .show-all:active {
+  box-shadow: inset 0 4px 1px #d97e77;
+}
+
+body .wrap-content .header .message .message-content .unit *[class*='icon-'] {
+  background: #8a78a5;
+}
+
+body .wrap-content .header .message .message-content .unit:hover, body .wrap-content .header .email .mail-content .unit:hover, body .wrap-content .header .message .message-content .percent .percent-value.color-1, body .wrap-content .header .message .message-content .percent .percent-value.color-2 {
+  background: #a28cc1;
+}
+
+body .aside {
+  background: #ff948c;
+}
+
+body .aside .btn-logo {
+  background-color: #8a78a5;
+}
+
+body .morphsearch-content, body .morphsearch.open .morphsearch-form, body .wrap-menu, body .wrap-content .header > .unit.morphsearch.open {
+  background-color: #8a78a5 !important;
+}
+
+body .dummy-media-object {
+  background-color: #a28cc1;
+}
+
+body .morphsearch.open .morphsearch-input {
+  border-bottom-color: #a28cc1;
+}
+
+body .menu li {
+  background-color: #a28cc1;
+  border-right-color: #8a78a5;
+  border-bottom-color: #8a78a5;
+}
+
+body .menu li:hover {
+  background: #ff948c;
+}
+
+body .visitors-stat .unit .scale {
+  background: #ef8b83;
+}
+
+body.mobile-view .aside {
+  background: #8A78A5 !important;
+}
+
+.decor-dim {
+  background: #ff948c;
+}
+
+.decor-dim-primary {
+  background: #a28cc1;
+}
+
+@media (max-width: 1200px) {
+  body .wrap-content .header > .unit.morphsearch {
+    background: #a28cc1 !important;
+  }
+}
+
+@media (min-width: 481px) {
+  .morphsearch {
+    background: #8a78a5 !important;
+  }
+}
+
+/*# sourceMappingURL=../maps/skins/dim.css.map */

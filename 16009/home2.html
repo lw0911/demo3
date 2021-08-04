@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="plugin/bstable/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <style>
+        .page-list{display: none !important;}
+        td{border: 1px #ccc solid !important;}
+        .charts span{margin-left: 10px}
+        .pagination{margin-right: 10px}
+        .pagination-detail{margin-top: 10px !important;}
+        .pagination>li>a, .pagination>li>span{padding: 2px 10px}
+
+    </style>
+</head>
+<body style="overflow-y: hidden">
+    <div id="areascontent" class="areascontent" style="position: relative;top: 20px;transition: 0.5s;display: none">
+        <div class="rows" style="margin-bottom: 0.8%; overflow: hidden;">
+            <div style="float: left; width: 100%;">
+                <div style="height: 100%; border: 1px solid #e6e6e6; overflow: hidden;">
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #114f86;">
+                            <div class="stat-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h2 class="m-top-none">75444<span>件</span></h2>
+                            <h5>总订单数</h5>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #a73130;">
+                            <h2 class="m-top-none">2548<span>万元</span></h2>
+                            <h5>总销售金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #199e95;">
+                            <h2 class="m-top-none">245<span>万元</span></h2>
+                            <h5>已提现金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #5b4484; margin-bottom: 10px;">
+                            <h2 class="m-top-none">4365<span>件</span></h2>
+                            <h5>7月订单数</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #2b343a; margin-right: 0px;">
+                            <h2 class="m-top-none">25.36<span>万元</span></h2>
+                            <h5>分润金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #0d6e94; margin-bottom: 0px;">
+                            <h2 class="m-top-none">1255.36<span>万元</span></h2>
+                            <h5>7月销售金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #465f88; margin-bottom: 0px;">
+                            <h2 class="m-top-none">23.65<span>万元</span></h2>
+                            <h5>7月体现金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #a7772c;">
+                            <div class="stat-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h2 class="m-top-none">63.32<span>万元</span></h2>
+                            <h5>7月分润金额</h5>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #b3495d; margin-bottom: 0px;">
+                            <h2 class="m-top-none">52.36<span>万元</span></h2>
+                            <h5>账户余额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #f29503; margin-right: 0px; margin-bottom: 0px;">
+                            <h2 class="m-top-none">83.25<span>万元</span></h2>
+                            <h5>冻结金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="e_chart">
+            <div class="charts charts_last">
+                <p class="charts_p">统计表<span class="r_right"></span></p>
+                <table id="table" class="table_style" style="margin: 10px auto;width: 98%" > </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="plugin/bstable/js/bootstrap.min.js"></script>
+<script src="plugin/bstable/js/bootstrap-table.js"></script>
+<script src="plugin/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".areascontent").show().css("top",0);
+        $('#table').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/role.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 7,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams:null,
+            columns: [
+                {
+                    checkbox: "true",
+                    field: 'check',
+                    align: 'center',
+                    valign: 'middle'
+                }
+                ,
+                {
+                    title: "角色编号",
+                    field: 'id',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '角色名称',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '创建时间',
+                    field: 'date',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '角色描述',
+                    field: 'person',
+                    align: 'center'
+                }
+            ]
+        });
+    });
+
+</script>
+</html>

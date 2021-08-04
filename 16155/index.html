@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<!-- //Custom Theme files -->
+<!-- Responsive Styles and Valid Styles -->
+<style type="text/css">    	
+	body{
+		width: 100%; 
+		background-color: #fff; 
+		margin:0; 
+		padding:0; 
+		-webkit-font-smoothing: antialiased;
+	}
+	html{
+		width: 100%; 
+	}
+	table{
+		font-size: 14px;
+		border: 0;
+	}
+	/* ----------- Response ----------- */
+	@media only screen and (max-width:1080px){
+		.banner-top {
+			height: 100px;
+		}
+	}
+	@media only screen and (max-width:800px){
+		.services-mdl {
+			width: 80%;
+		}
+	}
+	@media only screen and (max-width:786px){
+		.banner-top {
+			height: 90px;
+		}
+		.services-mdl {
+			width: 90%;
+		}
+	}
+	@media only screen and (max-width:667px){
+		.full {
+			width: 640px;
+		}
+		.container {
+			width: 640px;
+		}
+	}
+	@media only screen and (max-width:640px){
+		.container {
+			width: 500px;
+		}
+		.full {
+			width: 540px;
+		}
+		.services-text {
+			width: 240px;
+		}
+		td.scale-top {
+			height: 30px;
+		}
+		td.services-text-scale {
+			height: 0px;
+		}
+		.slid {
+			height: 200px;
+		}
+		.slid-title {
+			font-size: 20px !important;
+		}
+		.scale {
+			width: 560px;
+		}
+		.blog-grids {
+			width: 260px;
+		}
+		.social {
+			float: left;
+		}
+	}
+	@media only screen and (max-width:600px){
+		.banner-top {
+			height: 70px;
+		}
+		.bnr-title {
+			font-size: 2.5em !important;
+		}
+		table {
+			font-size: 13px;
+		}
+		.container {
+			width: 460px;
+		}
+		.team {
+			width: 540px;
+		}
+		.team-grids {
+			width: 165px;
+		}
+		table.team-scale {
+			width: 351px;
+		}
+		.scale {
+			width: 540px;
+		}
+	}
+	@media only screen and (max-width:480px){
+		.container {
+			width: 415px;
+		}
+		.team {
+			width: 410px;
+		}
+		.team-grids {
+			width: 130px;
+		}
+		table.team-scale {
+			width: 270px;
+		}
+		.team-text {
+			font-size: 14px !important;
+		}
+		.full,.scale {
+			width: 425px;
+		}
+		.services-img {
+			width: 200px;
+		}
+		.services-text {
+			width: 210px;
+		}
+		.blog-grids {
+			width: 200px;
+		}
+		.footer-scale {
+			height: 25px;
+		}
+		.footer.container {
+			text-align: center;
+		}
+		.social {
+			float: none;
+			margin: 0 auto;
+		}
+		.footer-left {
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width:414px){
+		.container {
+			width: 360px;
+		}
+		.logo a {
+			font-size: 2.5em !important;
+		}
+		.banner-top {
+			height: 50px;
+		}
+		.bnr-text {
+			letter-spacing: 1px !important;
+			font-size: 12px !important;
+		}
+		.scale-center-both {
+			font-size: 13px;
+		}
+		.scale-center-both.about-text {
+			padding: 15px 0px 35px 0px !important;
+		}
+		.buy {
+			font-size: 12px !important;
+			padding: 10px 20px !important;
+		}
+		.full, .scale {
+			width: 320px;
+		}
+		.blog-grids {
+			width: 190px;
+		}
+		.slid-title {
+			font-size: 17px !important;
+		}
+		.slid td {
+			font-size: 1.3em !important;
+		}
+		.slid {
+			height: 175px;
+		}
+		.team {
+		<!-- w3layouts -->
+		width: 250px;
+		}
+		.team-grids {
+			width: 210px;
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.team-text {
+			font-size: 13px !important;
+		}
+		.services-img {
+			width: 200px;
+			float: none !important;
+		}
+		.services-text {
+			width: 90%;
+			float: none !important;
+		}
+		.logo {
+			float: none;
+			text-align: center !important;
+			width: 100%;
+		}
+		.top-nav {
+			float: none;
+		}
+		.bnr-title {
+			font-size: 2.2em !important;
+		}
+		.footer-logo {
+			width: 100%;
+		}
+		.blog-grids {
+			width: 157px;
+		}
+		.blog-grids a {
+			padding: .6em 1.2em !important;
+		}
+		.scale-center {
+			font-size: .9em !important;
+		}
+		.banner a {
+			padding: .8em 1.5em !important;
+		}	
+	}
+	@media only screen and (max-width:375px){
+		.container {
+			width: 325px;
+		<!-- agileits -->
+			}
+		.banner-top {
+			height: 40px;
+		}
+	}
+	@media only screen and (max-width:320px){
+		.container {
+			width: 300px;
+		}
+		.full, .scale {
+			width: 250px;
+		}
+		.services-img {
+			width: 235px;
+		}
+		.services-text {
+			width: 100%;
+		}
+		.slid td {
+			font-size: 1.1em !important;
+		}
+		.slid {
+			height: 125px;
+		}
+		td.scale-top {
+			height: 15px;
+		}
+		.title {
+			font-size: 2.5em !important;
+		}
+		.title-scale {
+			height: 20px;
+		}
+		.team-grids {
+			width: 200px;
+		}
+		.blog-grids {
+			width: 100%;
+			float: none;
+			margin-bottom: 1em;
+		}
+		.bnr-title {
+			font-size: 1.8em !important;
+		}
+		.bnr-text {
+			letter-spacing: 0px !important;
+		}
+		.container {
+			width: 280px;
+		<!-- w3layouts -->
+			}
+		.banner-top {
+			height: 34px;
+		}
+		.top-nav .scale-center-both {
+			height: 35px;
+		}
+		.about .scale-center-both font {
+			font-size: 19px !important;
+		}
+		.scale-center-both.about-text {
+			padding: 10px 0px 20px 0px !important;
+		}
+		.top-nav {
+			width: 96%;
+		}
+	}
+</style>  
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<table border="0" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+            <td width="100%" align="center" valign="top">
+				<!-- header -->
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td height="20" style="background-color: #1D1D1D;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td height="50" style="background-color: #1D1D1D;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="container" width="620">
+									<tbody><tr>
+										<td>
+											<!--logo -->
+											<table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="logo">
+												<tr>
+													<td>
+														<a href="index.html" style="font-size:3em;color: #fff;text-decoration:none;font-family:Maiandra GD,serif;">Expert</a>
+													</td>
+												</tr>
+											</table>
+											<!--navigation-->
+											<table align="right" border="0" cellpadding="0" cellspacing="0" class="top-nav" style="font-family: Helvetica, Arial, sans-serif; font-size: 1.1em; color: #9b9b9b;" width="295">
+												<tbody>
+													<tr>
+														<td class="scale-center-both" height="50" style="color: rgb(255, 255, 255); text-align: right; font-family: Helvetica, Arial, sans-serif;"><singleline><a href="#" style="color:#fff; text-decoration:none;">About</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#" style="color:#fff; text-decoration:none;"> Gallery</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#" style="color:#fff; text-decoration:none;"> News</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#" style="color:#fff; text-decoration:none;"> Contact</a></singleline></td>
+													</tr>
+												</tbody>										
+												<!-- agileits -->
+												</table>
+										</td>
+									</tr></tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td height="20" style="background-color: #1D1D1D;">&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- banner -->
+				<table class="banner" align="center" border="0" cellpadding="0" cellspacing="0" style="-webkit-background-size: auto; background-size: auto; background-position: center top; background-repeat: no-repeat no-repeat; background-size: cover; background-image: url(images/banner.jpg);" width="100%">
+					<tbody>
+						<tr>
+							<td>
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="container" width="620">
+									<tbody>
+										<tr>
+											<td height="120" class="banner-top">&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="bnr-title" align="center" style="font-family: Maiandra GD,serif; font-size: 3em; color: rgb(255, 255, 255); text-align: center;">
+												WE ARE FOR YOU
+											</td>
+										</tr>
+										<tr>
+											<td height="20">&nbsp;</td>
+										</tr>
+										<tr>
+											<td class="bnr-text" height="20" style="font-family: Helvetica, Arial, sans-serif; color: #fff; line-height: 24px;text-align: center; letter-spacing: 2px;">Duis dictum lacinia turpis, non laoreet dolor commodo in. Curabitur lorem lectus, lobortis id augue vel, elementum pretium lacus</td>
+										</tr>
+										<tr>
+											<td height="30">&nbsp;</td>
+										</tr>
+										<tr style="text-align:center">
+											<td style="font-family: Helvetica, Arial, sans-serif; color: #fff;text-align: center; border: 1px solid #fff; display: inline-block;"><a href="#" style="padding: 0.8em 2em; color:#fff; text-decoration:none; display:block;">Read More</a></td>
+										</tr>
+										<tr>
+											<td height="120" class="banner-top">&nbsp;</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- banner-bottom -->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF" class="about">
+					<tbody>
+						<tr>
+							<td>
+								<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #9b9b9b;" class="container">
+									<tbody>
+										<tr><td height="70" class="scale-top"></td></tr>
+										<tr>
+											<td align="center" class="scale-center-both">
+												<font style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; color: #242424;"><singleline>Lorem ipsum dolor sit amet</singleline></font>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding: 15px 0px 54px 0px; line-height:1.8em;" class="scale-center-both about-text">
+												Consectetur adipiscing elit. Aenean consequat lacus ac turpis ullamcorper, ut ornare libero euismod. Mauris urna eros, tempus id eros vitae, accumsan tempor ligula. Maecenas gravida felis vitae dignissim porta. Quisque blandit velit vitae eros varius
+											</td>
+										</tr>
+										<tr>
+											<td align="center"><multiline>
+												<a class="buy" href="#" style="text-decoration: none; color: #FFFFFF; padding: 12px 21px 11px 21px; border-radius: 3px; background-color: #f15c5c; display: inline-block;">Buy Now</a>
+												</multiline>
+											</td>
+										</tr>
+										<tr><td height="70" class="scale-top"></td></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--team-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#3BB9EB">
+					<tbody>
+						<tr>
+							<td>
+								<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="team">
+									<tbody>
+										<tr><td height="70" class="scale-top"></td></tr>
+										<tr>
+											<td>
+												<table class="title" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: Maiandra GD,serif; font-size: 3em; color: #fff;">
+													<tbody>
+														<tr>
+															<td align="center"><singleline>Our Team</singleline></td>
+														</tr>
+														<tr>
+															<td class="title-scale" height="40"></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<table width="180" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #9b9b9b;" class="team-grids">
+													<tbody>
+														<tr>
+															<td class="scale-center">
+																<img src="images/t1.jpg" border="0" style="display: block;" class="reset" width="100%" editable="true">
+															</td>
+														</tr>
+														<tr>
+															<td style="padding: 30px 0px 4px 0px;" class="scale-center-both">
+																<font style="font-family: Maiandra GD,serif; font-size: 1.4em; color: #000;"><singleline>Michael Deo</singleline></font>
+															</td>
+														</tr>
+														<tr>
+															<td style="padding: 0 0 10px 0;" class="scale-center-both">
+																<font style="font-family: Maiandra GD,serif; font-size: .9em; color: #B4EFFF;"><singleline>Co-Founder</singleline></font>
+															</td>
+														</tr>
+														<tr>
+															<td class="team-text"><multiline>
+																
+																<font style="line-height: 30px; color:#fff;">Maecenas dictum enim at, interdum pharetra urna metus ullamcorper.</font>
+													
+															</multiline></td>
+														</tr>
+													</tbody>
+												</table>
+												<table width="390" border="0" cellspacing="0" cellpadding="0" align="right" class="team-scale">
+													<tbody>
+														<tr>
+															<td>
+																<table width="180" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #9b9b9b;" class="team-grids">
+																	<tbody>
+																		<tr>
+																			<td class="scale-center-top">
+																				<img src="images/t2.jpg" border="0" style="display: block;" class="reset" width="100%" editable="true">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td style="padding: 30px 0px 4px 0px;" class="scale-center-both">
+																				<font style="font-family: Maiandra GD,serif; font-size: 1.4em; color: #000;"><singleline>Jessica Wilson</singleline></font>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td style="padding: 0 0 10px 0;" class="scale-center-both">
+																				<font style="font-family: Maiandra GD,serif; font-size: .9em; color: #B4EFFF;"><singleline>Managing Partner</singleline></font>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="team-text"><multiline>
+																				<font style="line-height: 30px; color:#fff;">Maecenas dictum enim at, interdum pharetra urna metus ullamcorper.</font>
+																			</multiline></td>
+																		</tr>
+																	</tbody>
+																</table>
+																<table width="180" border="0" cellspacing="0" cellpadding="0" align="right" style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #9b9b9b;" class="team-grids">
+																	<tbody>
+																		<tr>
+																			<td class="scale-center-top">
+																				<img src="images/t3.jpg" border="0" style="display: block;" class="reset" width="100%" editable="true">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td style="padding: 30px 0px 4px 0px;" class="scale-center-both">
+																				<font style="font-family: Maiandra GD,serif; font-size: 1.4em; color: #000;"><singleline>Jefferson Ali</singleline></font>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td style="padding: 0 0 10px 0;" class="scale-center-both">
+																				<font style="font-family: Maiandra GD,serif; font-size: .9em; color: #B4EFFF;"><singleline>Programmer</singleline></font>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="team-text"><multiline>
+																				<font style="line-height: 30px; color:#fff;">Maecenas dictum enim at, interdum pharetra urna metus ullamcorper.</font>
+																			</multiline></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr><td height="70" class="scale-top"></td></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--services-->
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td valign="top" width="100%">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;" width="100%">
+									<tbody><tr>
+										<td style="background-color: #fff" width="100%">
+											<!-- Extra Wrapper For BG Responsive Color -->
+											<table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile" style="background-color: #fff; padding-bottom: 20px; padding-top: 20px" width="100%">
+												<tbody>
+													<tr>
+														<td height="70" class="scale-top"></td>
+													</tr>
+													<tr>
+														<td width="100%">
+															<table align="center" border="0" cellpadding="0" cellspacing="0" class="full" width="680">
+																<tbody><tr>
+																	<td>
+																		<table align="left" border="0" cellpadding="0" cellspacing="0" style="float: left; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="280" class="services-img">
+																			<tbody><tr>
+																				<td align="center"><img alt="" border="0" class="fullImage" src="images/img1.jpg" style="display: block;" width="100%" editable="true"></td>
+																			</tr></tbody>
+																		</table>
+																		<!-- Text -->
+																		<table align="right" border="0" cellpadding="0" cellspacing="0" style=" border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="350" class="services-text">
+																			<tbody>
+																				<tr>
+																					<td align="left" class="textCenterPad" style="font-size: 20px; color: #464646; text-align: left; font-family: Helvetica, Arial, sans-serif; line-height: 30px;" data-max-"32"=""><singleline>Latest Designs</singleline></td>
+																				</tr>
+																				<tr>
+																					<td height="15"></td>
+																				</tr>
+																				<tr>
+																					<td class="team-text" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #9b9b9b; text-align: left; font-weight: 100; line-height: 26px;" data-max-"26"=""><multiline>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat lacus ac turpis ullamcorper,  <a href="#" style="text-decoration: none; color: #51b6e7;">libero</a> ut ornare libero euismod. Mauris urna eros </multiline></td>
+																				</tr>
+																				<tr>
+																					<td height="40" class="services-text-scale"></td>
+																				</tr>
+																				<tr>
+																					<td height="10">&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr></tbody>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td height="30"></td>
+													</tr>
+													<tr>
+														<td>
+															<table align="center" border="0" cellpadding="0" cellspacing="0" width="800" class="services-mdl">
+																<tbody><tr>
+																	<td height="30" style="border-top:1px solid #E8E5E5;"></td>
+																</tbody></tr>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td width="100%">
+															<table align="center" border="0" cellpadding="0" cellspacing="0" width="680" class="full">
+																<tbody><tr>
+																	<td>
+																		<!-- Text -->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0" class="services-text" style="float: left; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="350">
+																			<tbody>
+																				<tr>
+																					<td align="left" class="textCenterPad" style="font-size: 20px; color: #464646; text-align: left; font-family: Helvetica, Arial, sans-serif; line-height: 30px;" data-max-"32"=""><singleline>Latest Designs</singleline></td>
+																				</tr>
+																				<tr>
+																					<td height="15"></td>
+																				</tr>
+																				<tr>
+																					<td class="team-text" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #9b9b9b; text-align: left; font-weight: 100; line-height: 26px;" data-max-"26"=""><multiline>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat lacus ac turpis ullamcorper,  <a href="#" style="text-decoration: none; color: #51b6e7;">libero</a> ut ornare libero euismod. Mauris urna eros </multiline></td>
+																				</tr>
+																				<tr>
+																					<td height="40" class="services-text-scale"></td>
+																				</tr>
+																				<tr>
+																					<td height="10">&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<table border="0" cellpadding="0" cellspacing="0" style="float: right; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="280" class="services-img">
+																			<tbody><tr>
+																				<td align="center"><img alt="" border="0" class="fullImage" src="images/img2.jpg" style="display: block;" width="100%" editable="true"></td>
+																			</tr></tbody>
+																		</table>
+																	</td>
+																</tr></tbody>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td height="70" class="scale-top"></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr></tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--slid-two-->
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="slid" height="250" style="background-color: #3BB9EB;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="slid-info" width="100%">
+									<tbody>
+										<tr>
+											<td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size: 1.8em; color: #fff;">
+												The
+											</td>
+										</tr>
+										<tr>
+											<td class="slid-title" align="center" style="font-family: Helvetica, Arial, sans-serif; font-size: 26px; color:#000; padding: 0.8em 0;"><multiline>
+												""</multiline>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" style="font-family: Helvetica, Arial, sans-serif; font-size: 1.8em; color: #fff;">
+												 Vel nec massa.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--blog-->
+				<table align="center" border="0" cellpadding="0" cellspacing="0" class="blog" width="100%">
+					<tbody>
+						<tr>
+							<td height="70" class="scale-top">&nbsp;</td>
+						</tr>
+						<tr>
+							<td>
+								<table class="title" border="0" cellspacing="0" cellpadding="0" align="center" width="100%" style="font-family: Maiandra GD,serif; font-size: 3em; color: #3BB9EB;" >
+									<tbody>
+										<tr>
+											<td align="center"><singleline>Latest Blog</singleline></td>
+										</tr>
+										<tr>
+											<td class="title-scale" height="40"></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" width="620">
+									<tbody>
+										<tr>
+											<td>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="blog-grids" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;" width="295">
+													<tbody>
+														<tr>
+															<td class="scale-center-both"><img src="images/img3.jpg" style="" width="100%" editable="true"></td>
+														</tr>
+														<tr>
+															<td height="20">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="scale-center" height="20" style="text-align: left; font-family: 'Proxima N W01 At Smbd', Helvetica, Arial, sans-serif; font-size: 1em; color: rgb(78, 78, 78);"><singleline>&nbsp;AENEAN SODALES<br></singleline></td>
+														</tr>
+														<tr>
+															<td height="10" style="font-size: 10px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="scale-center" height="20" style="text-align: left; line-height: 28px; font-size: 1em; font-family: 'Anivers W01 Italic', Helvetica, Arial, sans-serif; color: rgb(152, 152, 152);"><multiline>
+															&nbsp;Aenean lacinia bibendum nulla sed consectetur..</multiline></td>
+														</tr>
+														<tr>
+															<td height="20">&nbsp;</td>
+														</tr>
+														<tr style="text-align:left;">
+															<td style="font-family: Helvetica, Arial, sans-serif;text-align: left; border: 1px solid #3BB9EB; display: inline-block;"><a href="#" style="padding: 0.8em 2em; color:#3BB9EB; text-decoration:none; display:block; font-size: 0.8em;">Read More</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<table align="right" border="0" cellpadding="0" cellspacing="0" class="blog-grids" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;" width="295">
+													<tbody>
+														<tr>
+															<td class="scale-center-both"><img src="images/img4.jpg" style="" width="100%" editable="true"></td>
+														</tr>
+														<tr>
+															<td height="20">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="scale-center" height="20" style="text-align: left; font-family: Helvetica, Arial, sans-serif; font-size: 16px; color: rgb(78, 78, 78);"><singleline>&nbsp;RIO DE JANEIRO<br></singleline></td>
+														</tr>
+														<tr>
+															<td height="10" style="font-size: 10px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="scale-center" height="20" style="text-align: left; line-height: 28px; font-size: 1em; font-family: Helvetica, Arial, sans-serif; color: rgb(152, 152, 152);"><multiline>
+															&nbsp;Aenean lacinia bibendum nulla sed consectetur..</multiline></td>
+														</tr>
+														<tr>
+															<td height="20">&nbsp;</td>
+														</tr>
+														<tr style="text-align:left;">
+															<td style="font-family: Helvetica, Arial, sans-serif;text-align: left; border: 1px solid #3BB9EB; display: inline-block;"><a href="#" style="padding: 0.8em 2em; color:#3BB9EB; text-decoration:none; display:block; font-size: 0.8em;">Read More</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td height="70" class="scale-top" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgba(0, 0, 0, 0.117647);">&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--footer-->
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="footer-scale" height="40" style="background-color: #1D1D1D;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="background-color: #1D1D1D;">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" class="footer container" width="650">
+									<tbody>
+										<tr>
+											<td style="padding-bottom:1em;">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="footer-logo" width="400">
+													<tbody><tr>
+														<td height="35" style="font-family: Helvetica, Arial, sans-serif; font-size: 1em; color: #fff; line-height: 24px;" class="copy-right">Copyright &copy; 2016.Company name All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</td>
+													</tr></tbody>
+												</table>	
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

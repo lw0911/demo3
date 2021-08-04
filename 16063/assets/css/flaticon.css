@@ -1,0 +1,92 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/04/2020 06:49
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-style: normal;
+}
+
+.flaticon-home-1:before { content: "\f100"; }
+.flaticon-home:before { content: "\f101"; }
+.flaticon-open-email-message:before { content: "\f102"; }
+.flaticon-email:before { content: "\f103"; }
+.flaticon-clock:before { content: "\f104"; }
+.flaticon-clock-1:before { content: "\f105"; }
+.flaticon-send:before { content: "\f106"; }
+.flaticon-search:before { content: "\f107"; }
+.flaticon-loupe:before { content: "\f108"; }
+.flaticon-search-1:before { content: "\f109"; }
+.flaticon-air-freight:before { content: "\f10a"; }
+.flaticon-report:before { content: "\f10b"; }
+.flaticon-signature:before { content: "\f10c"; }
+.flaticon-letter:before { content: "\f10d"; }
+.flaticon-call:before { content: "\f10e"; }
+.flaticon-manager:before { content: "\f10f"; }
+.flaticon-management:before { content: "\f110"; }
+.flaticon-tie:before { content: "\f111"; }
+.flaticon-idea:before { content: "\f112"; }
+.flaticon-payment-method:before { content: "\f113"; }
+.flaticon-bill:before { content: "\f114"; }
+.flaticon-bank:before { content: "\f115"; }
+.flaticon-work:before { content: "\f116"; }
+.flaticon-employee:before { content: "\f117"; }
+.flaticon-flight:before { content: "\f118"; }
+.flaticon-accept:before { content: "\f119"; }
+.flaticon-form:before { content: "\f11a"; }
+.flaticon-document:before { content: "\f11b"; }
+.flaticon-copy:before { content: "\f11c"; }
+.flaticon-group-of-users-silhouette:before { content: "\f11d"; }
+.flaticon-globe:before { content: "\f11e"; }
+.flaticon-plane:before { content: "\f11f"; }
+.flaticon-visa:before { content: "\f120"; }
+.flaticon-geography:before { content: "\f121"; }
+.flaticon-flight-1:before { content: "\f122"; }
+.flaticon-airport:before { content: "\f123"; }
+.flaticon-flight-2:before { content: "\f124"; }
+.flaticon-bus-stop:before { content: "\f125"; }
+.flaticon-bus:before { content: "\f126"; }
+.flaticon-bus-1:before { content: "\f127"; }
+.flaticon-london:before { content: "\f128"; }
+.flaticon-bus-2:before { content: "\f129"; }
+.flaticon-visa-1:before { content: "\f12a"; }
+.flaticon-files:before { content: "\f12b"; }
+.flaticon-elearning:before { content: "\f12c"; }
+.flaticon-online-class:before { content: "\f12d"; }
+.flaticon-class:before { content: "\f12e"; }
+.flaticon-conversation:before { content: "\f12f"; }
+.flaticon-negociation:before { content: "\f130"; }
+.flaticon-boss:before { content: "\f131"; }
+.flaticon-seminar:before { content: "\f132"; }
+.flaticon-quote:before { content: "\f133"; }
+.flaticon-phone:before { content: "\f134"; }
+.flaticon-pin:before { content: "\f135"; }
+.flaticon-email-1:before { content: "\f136"; }
+.flaticon-email-2:before { content: "\f137"; }
+.flaticon-envelope:before { content: "\f138"; }
+.flaticon-checked:before { content: "\f139"; }
+.flaticon-tick:before { content: "\f13a"; }
+.flaticon-home-2:before { content: "\f13b"; }
+.flaticon-long-arrow-pointing-to-the-right:before { content: "\f13c"; }
+.flaticon-long-right-arrow:before { content: "\f13d"; }

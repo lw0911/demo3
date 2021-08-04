@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据连接</title>
+
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="plugin/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+</head>
+<body style="background-color: #fff;font-family: 微软雅黑;color: #475059;min-width: 1000px;overflow-y: hidden">
+<div class="connection" style="overflow-y: auto">
+    <div class="connection-right" style="display: block;border-bottom: none">
+        <div class="connection-right-extract">
+            <h6 style="background-color: #8a98ac;color: #fff">
+                <!--<span class="glyphicon glyphicon-arrow-left" style="display: inline-block;float: left;padding: 12px;cursor: pointer;font-size: 16px" ></span>-->
+                <span>role</span>
+            </h6>
+            <div class="extract-style">
+                <span>抽取方式：</span>
+                <span><input type="radio" name="extract">全量覆盖抽取</span>
+                <span><input type="radio" name="extract">全量追加抽取</span>
+                <span><input type="radio" name="extract">增量抽取</span>
+            </div>
+            <div class="table-dic">
+                <p>只支持针对日期型（Date）和数值型（Int）的字段做增值设置</p>
+            </div>
+            <div class="extract-btn">
+                <button class="btn btn-primary" onclick="addExtract()">添加</button>
+            </div>
+            <table id="table-extract" class="table_style" style="margin: 0 auto" ></table>
+        </div>
+        <div class="connection-right-extract">
+            <h6 style="background-color: #8a98ac;color: #fff">
+                <!--<span class="glyphicon glyphicon-arrow-left" style="display: inline-block;float: left;padding: 12px;cursor: pointer;font-size: 16px" ></span>-->
+                <span> module</span>
+            </h6>
+            <div class="extract-style">
+                <span>抽取方式：</span>
+                <span><input type="radio" name="extract">全量覆盖抽取</span>
+                <span><input type="radio" name="extract">全量追加抽取</span>
+                <span><input type="radio" name="extract">增量抽取</span>
+            </div>
+            <div class="table-dic">
+                <p>只支持针对日期型（Date）和数值型（Int）的字段做增值设置</p>
+            </div>
+            <div class="extract-btn">
+                <button class="btn btn-primary" onclick="addExtract()">添加</button>
+            </div>
+            <table id="table-extract1" class="table_style" style="margin: 0 auto" ></table>
+        </div>
+        <div class="connection-right-extract">
+            <h6 style="background-color: #8a98ac;color: #fff">
+                <!--<span class="glyphicon glyphicon-arrow-left" style="display: inline-block;float: left;padding: 12px;cursor: pointer;font-size: 16px" ></span>-->
+                <span>case_criminal_current_state</span>
+            </h6>
+            <div class="extract-style">
+                <span>抽取方式：</span>
+                <span><input type="radio" name="extract">全量覆盖抽取</span>
+                <span><input type="radio" name="extract">全量追加抽取</span>
+                <span><input type="radio" name="extract">增量抽取</span>
+            </div>
+            <div class="table-dic">
+                <p>只支持针对日期型（Date）和数值型（Int）的字段做增值设置</p>
+            </div>
+            <div class="extract-btn">
+                <button class="btn btn-primary" onclick="addExtract()">添加</button>
+            </div>
+            <table id="table-extract2" class="table_style" style="margin: 0 auto" ></table>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="plugin/bstable/js/bootstrap.min.js"></script>
+<script src="plugin/bstable/js/bootstrap-table.js"></script>
+<script src="plugin/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="plugin/layer_v2.1/layer/layer.js"></script>
+<script>
+    $(function(){
+        table()
+    });
+    function addExtract(){
+        layer.open({
+            type: 2,
+            title: '添加定时任务',
+            shade: 0.5,
+            skin: 'layui-layer-rim',
+            area: ['500px', '450px'],
+            shadeClose: true,
+            closeBtn: 2,
+            content: 'add-extract.html'
+        })
+    }
+    /************************界面表格功能****************************/
+    function table(){
+        $('#table-extract').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/table-extract.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 8,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams: null,
+            columns: [
+                {
+                    title: "序号",
+                    field: 'id',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '任务频率',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '任务日期',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+
+                {
+                    title: '任务时间',
+                    field: 'type',
+                    align: 'center'
+                },
+                {
+                    title: '开始日期',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '终止日期',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '操作',
+                    field: 'opear',
+                    width:200,
+                    align: 'center',
+                    formatter: function (value, row) {
+                        var e = '<button  href="javascript:void(0)"  class="btn btn-xs btn-primary" onclick="extract(\'' + row.id + '\')">编辑</button> ';
+                        var f = '<button  href="javascript:void(0)"  class="btn btn-xs btn-danger" onclick="tableDel(\'' + row.id + '\')">删除</button> ';
+                        return e+f ;
+                    }
+                }
+                //{
+                //    title: '执行结果',
+                //    field: 'result',
+                //    align: 'center',
+                //    formatter: function (cellval, row) {
+                //        if (cellval =='失败'){
+                //            return '<div  style="color:red">'+cellval+'</div>';
+                //        } else  if (cellval =='成功'){
+                //            return '<div  style="color:green">'+cellval+'</div>';
+                //        }else {
+                //            return cellval;
+                //        }}
+                //}
+            ]
+        });
+        $('#table-extract1').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/table-extract.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 8,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams: null,
+            columns: [
+                {
+                    title: "序号",
+                    field: 'id',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '任务频率',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '任务日期',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+
+                {
+                    title: '任务时间',
+                    field: 'type',
+                    align: 'center'
+                },
+                {
+                    title: '开始日期',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '终止日期',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '操作',
+                    field: 'opear',
+                    width:200,
+                    align: 'center',
+                    formatter: function (value, row) {
+                        var e = '<button  href="javascript:void(0)"  class="btn btn-xs btn-primary" onclick="extract(\'' + row.id + '\')">编辑</button> ';
+                        var f = '<button  href="javascript:void(0)"  class="btn btn-xs btn-danger" onclick="tableDel(\'' + row.id + '\')">删除</button> ';
+                        return e+f ;
+                    }
+                }
+                //{
+                //    title: '执行结果',
+                //    field: 'result',
+                //    align: 'center',
+                //    formatter: function (cellval, row) {
+                //        if (cellval =='失败'){
+                //            return '<div  style="color:red">'+cellval+'</div>';
+                //        } else  if (cellval =='成功'){
+                //            return '<div  style="color:green">'+cellval+'</div>';
+                //        }else {
+                //            return cellval;
+                //        }}
+                //}
+            ]
+        });
+        $('#table-extract2').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/table-extract.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 8,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams: null,
+            columns: [
+                {
+                    title: "序号",
+                    field: 'id',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '任务频率',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '任务日期',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+
+                {
+                    title: '任务时间',
+                    field: 'type',
+                    align: 'center'
+                },
+                {
+                    title: '开始日期',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '终止日期',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '操作',
+                    field: 'opear',
+                    width:200,
+                    align: 'center',
+                    formatter: function (value, row) {
+                        var e = '<button  href="javascript:void(0)"  class="btn btn-xs btn-primary" onclick="extract(\'' + row.id + '\')">编辑</button> ';
+                        var f = '<button  href="javascript:void(0)"  class="btn btn-xs btn-danger" onclick="tableDel(\'' + row.id + '\')">删除</button> ';
+                        return e+f ;
+                    }
+                }
+                //{
+                //    title: '执行结果',
+                //    field: 'result',
+                //    align: 'center',
+                //    formatter: function (cellval, row) {
+                //        if (cellval =='失败'){
+                //            return '<div  style="color:red">'+cellval+'</div>';
+                //        } else  if (cellval =='成功'){
+                //            return '<div  style="color:green">'+cellval+'</div>';
+                //        }else {
+                //            return cellval;
+                //        }}
+                //}
+            ]
+        });
+    }
+
+</script>
+</html>

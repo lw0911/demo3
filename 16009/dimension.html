@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+    <style>
+        .extract-main{width: 40%;float: left}
+        .extract-item-right input, .extract-item-right textarea{width: 80%;border: 1px #ccc solid;border-radius: 4px}
+        .extract-item-right textarea{height: 250px}
+        .extract-item-right select{width: 170px}
+        .extract-item-left ul{border: 1px #ccc solid;height: 296px;overflow: auto}
+        .extract-item-left ul li {text-align: left;padding-left: 10px;cursor: pointer}
+        .extract-item-left ul li.dimension-active{background-color:#40c0a8;color: #fff }
+        #extract-item-right{padding-right: 20px}
+    </style>
+</head>
+<body style="overflow: hidden;margin-top: -30px">
+<div class="extract-main" style="width: 60%">
+    <div class="extract-item">
+        <div class="extract-item-left">
+            名称：
+        </div>
+        <div class="extract-item-right">
+            <input type="text">
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+            表达式：
+        </div>
+        <div class="extract-item-right">
+            <select>
+                <option>插入维度</option>
+                <option>PARENTNODE</option>
+                <option>module</option>
+            </select>
+            <select>
+                <option>插入量度</option>
+                <option>PARENTNODE</option>
+                <option>module</option>
+            </select>
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+        </div>
+        <div class="extract-item-right">
+            <textarea>
+
+            </textarea>
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+        </div>
+        <div class="extract-item-right">
+            <p>SQL里不能存在同名字段</p>
+        </div>
+    </div>
+</div>
+<div class="extract-main">
+    <div class="extract-item">
+        <div class="extract-item-left">
+            <select>
+                <option>插入量度</option>
+                <option>PARENTNODE</option>
+                <option>module</option>
+            </select>
+            <ul>
+                <li>PARENTNODE</li>
+                <li>module</li>
+                <li>PARENTNODE</li>
+                <li>module</li>
+                <li>PARENTNODE</li>
+                <li>module</li>
+                <li>PARENTNODE</li>
+                <li>module</li>
+                <li>PARENTNODE</li>
+                <li>module</li>
+                <li>PARENTNODE</li>
+                <li>module</li>
+            </ul>
+        </div>
+        <div class="extract-item-right" id="extract-item-right">
+            <div>
+                <p style="padding-bottom: 10px;font-weight: bolder;">
+                    IF 条件 THEN 返回值1 ELSE 返回值2
+                </p>
+                <p style="padding-bottom: 10px;">当条件满足时，返回返回值1，否则返回返回值2。</p>
+                <p><span style="font-weight: bolder;">示例:</span> 简单用法：IF [销售额] > 100 THEN "优" ELSE "差" 。嵌套用法：IF [销售额] > 100 THEN "优" ELSE IF [销售额] > 50 THEN "良" ELSE "差</p>
+            </div>
+            <div style="display: none">
+                <p style="padding-bottom: 10px;font-weight: bolder;">
+                    表达式1 比较符 表达式2
+                </p>
+                <p style="padding-bottom: 10px;">比较两个表达式，返回布尔值，可用的比较符有：=, !=, >, <, >=, <=, 分别表示 等于，不等于，大于，小于，大于等于，小于等于</p>
+                <p><span style="font-weight: bolder;">示例:</span> [销售额] >= 8000</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="extract-add-btn" style="margin: 40px auto 0 auto">
+    <button class="btn btn-primary">确认</button>
+    <button class="btn btn-danger" onclick="cancel()">取消</button>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        dimension()
+    });
+    function dimension(){
+        $(".extract-item-left ul li").each(function(index){
+            $(this).click(function(){
+                $(this).addClass("dimension-active").siblings("li").removeClass("dimension-active");
+                $("#extract-item-right>div").eq(index%2).show().siblings("div").hide()
+            })
+        })
+    }
+    function cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+</script>
+</html>

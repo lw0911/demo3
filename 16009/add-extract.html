@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加定时任务</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+</head>
+<body style="overflow: hidden">
+<div class="extract-main">
+    <div class="extract-item">
+        <div class="extract-item-left">
+            任务频率：
+        </div>
+        <div class="extract-item-right">
+            <select onchange="selectChange()" id="extract-select">
+                <option value="0">小时</option>
+                <option value="1">天</option>
+                <option value="2">周</option>
+                <option value="3">月</option>
+            </select>
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+            任务日期：
+        </div>
+        <div class="extract-item-right" id="extract-date">
+            <div class="hour">
+                <span>每</span>
+                <div>
+                    <input type="text">
+                    <div class="hour-span">
+                        <span class="glyphicon glyphicon-triangle-top top"></span>
+                        <span class="glyphicon glyphicon-triangle-bottom bottom"></span>
+                    </div>
+                </div>
+                <span>小时</span>
+            </div>
+            <div class="day">
+                <span>每</span>
+                <div>
+                    <input type="text">
+                    <div class="day-span">
+                        <span class="glyphicon glyphicon-triangle-top top"></span>
+                        <span class="glyphicon glyphicon-triangle-bottom bottom"></span>
+                    </div>
+                </div>
+                <span>天</span>
+            </div>
+            <div class="week">
+                <input type="text" onclick="extractWeek(event)" id="week" readonly="readonly">
+                <ul class="week-list">
+                    <li>
+                        <p>星期一</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>星期二</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>星期三</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>星期四</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>星期五</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>星期六</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>星期天</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="month">
+                <input type="text" onclick="extractMonth(event)" id="month" readonly="readonly">
+                <ul class="month-list">
+                    <li>
+                        <p>1</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>2</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>3</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>4</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>5</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>6</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>7</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+
+                    <li>
+                        <p>8</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>9</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>10</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>11</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>12</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>13</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>14</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+
+                    <li>
+                        <p>15</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>16</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>17</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>18</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>19</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>20</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>21</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+
+                    <li>
+                        <p>22</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>23</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>24</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>25</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>26</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>27</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>28</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+
+
+                    <li>
+                        <p>29</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>30</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                    <li>
+                        <p>31</p>
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+            任务时间：
+        </div>
+        <div class="extract-item-right">
+            <div class="day">
+                <div>
+                    <input type="text" value="00">
+                    <div class="day-span">
+                        <span class="glyphicon glyphicon-triangle-top top"></span>
+                        <span class="glyphicon glyphicon-triangle-bottom bottom"></span>
+                    </div>
+                </div>
+                <span>:</span>
+                <div>
+                    <input type="text" value="00">
+                    <div class="day-span">
+                        <span class="glyphicon glyphicon-triangle-top top"></span>
+                        <span class="glyphicon glyphicon-triangle-bottom bottom"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+            开始时间：
+        </div>
+        <div class="extract-item-right">
+            <input type="text" id="start">
+        </div>
+    </div>
+    <div class="extract-item">
+        <div class="extract-item-left">
+            终止时间：
+        </div>
+        <div class="extract-item-right">
+            <input type="text" id="end">
+        </div>
+    </div>
+</div>
+<div class="extract-add-btn">
+    <button class="btn btn-primary">确认</button>
+    <button class="btn btn-danger" onclick="cancel()">取消</button>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="plugin/date/js/laydate.js"></script>
+<script src="js/add-extract.js"></script>
+<script>
+    laydate.skin('danlan');
+    laydate({elem: '#start',istime: true,format: 'YYYY/MM/DD'});
+    laydate({elem: '#end',istime: true,format: 'YYYY/MM/DD'});
+</script>
+</html>

@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!--web-fonts-->
+
+<!--//web-fonts-->
+<!-- start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->	
+</head>
+<body>
+	<!--top-navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#about" class="scroll">About</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#services" class="scroll">Services</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#portfolio" class="scroll">Portfolio</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#team" class="scroll">Team</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#contact" class="scroll">Contact Us</a></li>
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>	
+			</div>
+		</nav>		
+	</div>	
+	<!--//top-navigation-->
+	<!--banner-->
+	<div class="banner">		
+		<!--header-->
+		<div class="header">
+			<div class="container">
+				<div class="header-left">	
+					<h1><a href="index.html">Cropping</a></h1>
+				</div> 
+				<div class="header-right">	
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="banner-text">
+			<h2>Welcome</h2>
+			<!-- banner Slider starts Here -->
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				// You can also use "$(window).load(function() {"
+					$(function () {
+					// Slideshow 3
+						$("#slider3").responsiveSlides({
+						auto: false,
+						pager:true,
+						nav:true,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});	
+				});
+			</script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>					
+						<h3>GROW YOUR CROPS NATURALLY</h3>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident </p>
+						<a href="#" class="more btn-1b scroll" data-toggle="modal" data-target="#myModal1"> Read More</a>
+					</li>
+					<li>					
+						<h3> IS SIMPLY DUMMY</h3>
+						<p>Odio dignissimos ducimus qui blanditiis praesentium at vero eos et accusamus et iusto  voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident </p>
+						<a href="#" class="more btn-1b scroll" data-toggle="modal" data-target="#myModal1"> Read More</a>
+					</li>
+					<li>					
+						<h3>VESTIBULUM ULLAM CONSECTETUR</h3>
+						<p>Praesentium voluptatum deleniti at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident </p>
+						<a href="#" class="more btn-1b scroll" data-toggle="modal" data-target="#myModal1"> Read More</a>
+					</li>	
+					<li>					
+						<h3>BONORUM ET MALORUM   </h3>
+						<p>Dignissimos ducimus qui blanditiis at vero eos et accusamus et iusto odio praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident </p>
+						<a href="#" class="more btn-1b scroll" data-toggle="modal" data-target="#myModal1"> Read More</a>
+					</li>						
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--modal-sign-->
+	<div class="modal bnr-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body modal-spa">
+						<img class="img-responsive" src="images/img1.jpg" alt="">
+						<p>Uisque molestie cursus mi et congue consectetur adipiscing elit cras rutrum iaculis enim,  dolor sit amet, non convallis felis mattis at. Maecenas sodales tortor ac ligula ultrices dictum et quis urna. Etiam pulvinar metus neque, eget porttitor massa vulputate in. Fusce lacus purus, pulvinar ut lacinia id, sagittis eu mi. Vestibulum eleifend massa sem, eget dapibus turpis efficitur at. Aliquam viverra quis leo et efficitur. Nullam arcu risus, scelerisque quis interdum eget, fermentum viverra turpis. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut At vero eos </p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!--//modal-sign-->
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title">ABOUT US</h3>
+			<p> dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum lobortis. Fusce eu semper lacus, eget placerat mauris. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo sodales adipiscing. Praesent sit amet justo diam. Quisque sagittis egestas sem vitae vestibulum. Quisque nec lacus ornare, volutpat arcu in, lacinia dolor. Integer hendrerit enim ut mauris hendrerit condimentum. Donec ac enim urna. Donec gravida diam id pulvinar adipiscing.Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo sodales adipiscing. Praesent sit amet justo diam. Quisque sagittis egestas sem vitae vestibulum. Quisque nec lacus ornare, volutpat arcu in, lacinia dolor. Integer hendrerit enim ut mauris hendrerit condimentum. Donec ac enim urna. Donec gravida diam id pulvinar adipiscing. </p>
+		</div>
+	</div>
+	<!--//about-->
+	<!--features-->
+	<div class="features">
+		<div class="container">
+			<h3 class="title">Features</h3>
+			<div class="col-md-6 features-left">
+				<div class="video-img">
+					<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-play"></span></a>
+				</div>
+				<!--modal-video-->
+				<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--//modal-video-->
+			</div>
+			<div class="col-md-6 features-right bar_group">
+				<div class='bar_group__bar thin' label='Best Price ' value='200'></div>
+				<div class='bar_group__bar thin' label='Quality' value='250'></div>
+				<div class='bar_group__bar thin' label='Trust & Safety' value='180'></div>
+				<div class='bar_group__bar thin' label='Planning Growth' value='220'></div>
+			</div>
+			<!--bar-js-->
+			<script src="js/bars.js"></script>
+			<!--bar-js-->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//features-->
+	<!--services-->
+	<div id="services" class="services">
+		<div class="container">
+			<h3 class="title">Services</h3>
+			<div class="service-row">
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+					</div>
+					<h5>Nulla a congue est</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+					</div>
+					<h5>Claritas est etim</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</div>
+					<h5>Mirum est notare</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+					</div>
+					<h5>etiam processus</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+					</div>
+					<h5>Nulla a congue est</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+					</div>
+					<h5>Claritas est etim</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+					</div>
+					<h5>Mirum est notare</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="col-md-3 srvc-grids">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+					</div>
+					<h5>etiam processus</h5>
+					<p> dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue</p>
+				</div>
+				<div class="clearfix"> </div>				
+			</div>
+		</div>
+	</div>
+	<!--//services-->
+	<!--portfolio-->
+	<div id="portfolio" class="portfolio">
+		<h3 class="title">Our Portfolio</h3>
+		<div class="sap_tabs">			
+			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+				<ul class="resp-tabs-list">
+					<li class="resp-tab-item"><span>All</span></li>
+					<li class="resp-tab-item"><span>category 1</span></li>
+					<li class="resp-tab-item"><span>category 2</span></li>
+					<li class="resp-tab-item"><span>category 3</span></li>
+					<li class="resp-tab-item"><span>category 4</span></li>					
+				</ul>	
+				<div class="clearfix"> </div>	
+				<div class="resp-tabs-container">
+					<div class="tab-1 resp-tab-content">
+						<div class="tab_img">
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g1.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g1.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g2.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g2.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g3.jpg" class="swipebox" title="Consectetur adipiscing elit. Duis maximus tortor diam, dolor sit amet, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g3.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g4.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g4.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g5.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis.  dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g5.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g6.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g6.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g7.jpg" class="swipebox" title="Consectetur adipiscing elit. Duis maximus tortor diam,  dolor sit amet, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g7.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g8.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g8.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="tab-1 resp-tab-content">
+						<div class="tab_img">
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g3.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g3.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g1.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g1.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g5.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g5.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="tab-1 resp-tab-content">
+						<div class="tab_img">
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g8.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g8.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g2.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g2.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g4.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g4.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="tab-1 resp-tab-content">
+						<div class="tab_img">
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g5.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g5.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g6.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g6.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g7.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g7.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="tab-1 resp-tab-content">
+						<div class="tab_img">
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g8.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g8.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="col-md-3 portfolio-grids grid">
+								<div class="hover ehover14">
+									<a href="images/g2.jpg" class="swipebox" title=" dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+										<img src="images/g2.jpg" alt="" class="img-responsive" />
+										<div class="overlay">
+											<h4>Portfolio</h4>
+											<button class="info nullbutton" data-toggle="modal" data-target="#modal14">Show More
+											</button>
+										</div>
+									</a>	
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--ResponsiveTabs-->
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});		
+			</script>
+			<!--//ResponsiveTabs-->
+			<!-- swipe box js -->
+			<script src="js/jquery.swipebox.min.js"></script> 
+			<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+			<!-- //swipe box js -->
+		</div>
+	</div>
+	<!--//portfolio-->
+	<!--team-->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="title">Team</h3>
+			<div class="team-row">
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t1.jpg" alt="">
+						<div class="captn">
+							<p>Hi I'm <span>Michael Amet</span>  dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue. Integer gravida scelerisque purus quis interdum.</p>
+							<div class="social-icons">
+								<ul>
+									<li><a href="#"> </a></li>
+									<li><a href="#" class="pin"> </a></li>
+									<li><a href="#" class="in"> </a></li>
+									<li><a href="#" class="be"> </a></li>
+									<li><a href="#" class="vimeo"> </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<h4>Michael Amet</h4>
+					<h6>CEO-Founder</h6>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t2.jpg" alt="">
+						<div class="captn">
+							<p>Hi I'm <span>Mark Sophia</span>  dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue. Integer gravida scelerisque purus quis interdum.</p>
+							<div class="social-icons">
+								<ul>
+									<li><a href="#"> </a></li>
+									<li><a href="#" class="pin"> </a></li>
+									<li><a href="#" class="in"> </a></li>
+									<li><a href="#" class="be"> </a></li>
+									<li><a href="#" class="vimeo"> </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<h4>Mark Sophia</h4>
+					<h6>HR Manager</h6>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t3.jpg" alt="">
+						<div class="captn">
+							<p>Hi I'm <span>Daniel Nyari</span>  dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue. Integer gravida scelerisque purus quis interdum.</p>
+							<div class="social-icons">
+								<ul>
+									<li><a href="#"> </a></li>
+									<li><a href="#" class="pin"> </a></li>
+									<li><a href="#" class="in"> </a></li>
+									<li><a href="#" class="be"> </a></li>
+									<li><a href="#" class="vimeo"> </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<h4>Daniel Nyari</h4>
+					<h6>Chairman</h6>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t4.jpg" alt="">
+						<div class="captn">
+							<p>Hi I'm <span>Edwards Doe</span>  dolor sit amet, consectetur adipiscing elit. Quisque blandit non lorem at ultrices. Nulla tristique ex nec leo efficitur, non fermentum est congue. Integer gravida scelerisque purus quis interdum.</p>
+							<div class="social-icons">
+								<ul>
+									<li><a href="#"> </a></li>
+									<li><a href="#" class="pin"> </a></li>
+									<li><a href="#" class="in"> </a></li>
+									<li><a href="#" class="be"> </a></li>
+									<li><a href="#" class="vimeo"> </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<h4>Edwards Doe</h4>
+					<h6>Project Manager</h6>
+				</div>
+				<div class="cearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//team-->
+	<!--contact-->
+	<div class="contact" id="contact">
+		<div class="container">
+			<h3 class="title">Contact Us</h3>
+			<div class="contact-grids">
+				<div class="col-md-4 address">
+					<h4>Office Address</h4>
+					<p class="cnt-p"> dolor sit amet, consectetur adipisicing elit,sheets containing  passages sed do </p>
+					
+				</div>
+				<div class="col-md-7 contact-form">
+					<form action="#" method="post">
+						<input type="text" name="Name" placeholder="Name" required="">
+						<input class="email" type="text" name="Email" placeholder="Email" required="">
+						<textarea placeholder="Message" name="Message" required=""></textarea>
+						<input type="submit" value="SUBMIT">
+					</form>
+				</div>
+				<div class="clearfix"> </div>	
+			</div>
+		</div>
+	</div>
+	<!--//contact-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">			
+			<p>Copyright &copy; 2016.Company name All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+		</div>	
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

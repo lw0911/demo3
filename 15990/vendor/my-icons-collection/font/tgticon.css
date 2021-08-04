@@ -1,0 +1,194 @@
+	/*
+  	Tgticon icon font: Tgticon
+  	Creation date: 24/05/2020 10:37
+  	*/
+
+@font-face {
+  font-family: "Tgticon";
+  src: url("./Tgticon.eot");
+  src: url("./Tgticon.eot?#iefix") format("embedded-opentype"),
+       url("./Tgticon.woff2") format("woff2"),
+       url("./Tgticon.woff") format("woff"),
+       url("./Tgticon.ttf") format("truetype"),
+       url("./Tgticon.svg#Tgticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Tgticon";
+    src: url("./Tgticon.svg#Tgticon") format("svg");
+  }
+}
+
+[class^="tgticon-"]:before, [class*=" tgticon-"]:before,
+[class^="tgticon-"]:after, [class*=" tgticon-"]:after {   
+font-family: Tgticon;
+font-style: normal;
+}
+
+.tgticon-circular-saw:before { content: "\f100"; }
+.tgticon-drill:before { content: "\f101"; }
+.tgticon-paint-airbrush:before { content: "\f102"; }
+.tgticon-plug:before { content: "\f103"; }
+.tgticon-welding-machine:before { content: "\f104"; }
+.tgticon-plug-1:before { content: "\f105"; }
+.tgticon-excavator:before { content: "\f106"; }
+.tgticon-tall-crain:before { content: "\f107"; }
+.tgticon-electroscrew:before { content: "\f108"; }
+.tgticon-sliding-scale:before { content: "\f109"; }
+.tgticon-jigsaw:before { content: "\f10a"; }
+.tgticon-electric-gauge:before { content: "\f10b"; }
+.tgticon-open-pliers:before { content: "\f10c"; }
+.tgticon-ladder-open:before { content: "\f10d"; }
+.tgticon-two-spatulas:before { content: "\f10e"; }
+.tgticon-torch:before { content: "\f10f"; }
+.tgticon-paint-roller:before { content: "\f110"; }
+.tgticon-garden-trowel:before { content: "\f111"; }
+.tgticon-plane-controls:before { content: "\f112"; }
+.tgticon-paint-can-open:before { content: "\f113"; }
+.tgticon-jackhammer:before { content: "\f114"; }
+.tgticon-big-pliers:before { content: "\f115"; }
+.tgticon-left-glove:before { content: "\f116"; }
+.tgticon-big-saw:before { content: "\f117"; }
+.tgticon-hacksaw-with-handle:before { content: "\f118"; }
+.tgticon-nippers:before { content: "\f119"; }
+.tgticon-brush-for-painting:before { content: "\f11a"; }
+.tgticon-adjustable-wrench:before { content: "\f11b"; }
+.tgticon-screwdriver-pointing-up:before { content: "\f11c"; }
+.tgticon-light-bulb:before { content: "\f11d"; }
+.tgticon-plug-2:before { content: "\f11e"; }
+.tgticon-paint-roller-brush-inside-a-home:before { content: "\f11f"; }
+.tgticon-electricity:before { content: "\f120"; }
+.tgticon-wrench-tool-in-a-hand-inside-a-house-shape:before { content: "\f121"; }
+.tgticon-wrench-and-bolt-tool-and-screwdriver-outline:before { content: "\f122"; }
+.tgticon-painting-home:before { content: "\f123"; }
+.tgticon-paint-roller-1:before { content: "\f124"; }
+.tgticon-paint-spray-can-outline:before { content: "\f125"; }
+.tgticon-toolbox-outline:before { content: "\f126"; }
+.tgticon-tester:before { content: "\f127"; }
+.tgticon-wrench-in-a-hand-inside-a-house:before { content: "\f128"; }
+.tgticon-wood-chisel-used-to-carve-wood:before { content: "\f129"; }
+.tgticon-tools-and-utensils:before { content: "\f12a"; }
+.tgticon-settings:before { content: "\f12b"; }
+.tgticon-tools-and-utensils-1:before { content: "\f12c"; }
+.tgticon-set-square:before { content: "\f12d"; }
+.tgticon-settings-1:before { content: "\f12e"; }
+.tgticon-worker:before { content: "\f12f"; }
+.tgticon-worker-1:before { content: "\f130"; }
+.tgticon-worker-2:before { content: "\f131"; }
+.tgticon-worker-3:before { content: "\f132"; }
+.tgticon-paint-roller-2:before { content: "\f133"; }
+.tgticon-sink:before { content: "\f134"; }
+.tgticon-idea:before { content: "\f135"; }
+.tgticon-bathtub:before { content: "\f136"; }
+.tgticon-wrench:before { content: "\f137"; }
+.tgticon-shower:before { content: "\f138"; }
+.tgticon-trowel:before { content: "\f139"; }
+.tgticon-home-repair:before { content: "\f13a"; }
+.tgticon-house:before { content: "\f13b"; }
+.tgticon-calipers:before { content: "\f13c"; }
+.tgticon-drill-1:before { content: "\f13d"; }
+.tgticon-circular-saw-1:before { content: "\f13e"; }
+.tgticon-fretsaw:before { content: "\f13f"; }
+.tgticon-toolbox:before { content: "\f140"; }
+.tgticon-vector:before { content: "\f141"; }
+.tgticon-spray:before { content: "\f142"; }
+.tgticon-bucket:before { content: "\f143"; }
+.tgticon-ruler:before { content: "\f144"; }
+.tgticon-bucket-1:before { content: "\f145"; }
+.tgticon-paint-brush:before { content: "\f146"; }
+.tgticon-set-square-1:before { content: "\f147"; }
+.tgticon-pantone:before { content: "\f148"; }
+.tgticon-paint-roller-3:before { content: "\f149"; }
+.tgticon-trophy:before { content: "\f14a"; }
+.tgticon-medal:before { content: "\f14b"; }
+.tgticon-trophy-1:before { content: "\f14c"; }
+.tgticon-award:before { content: "\f14d"; }
+.tgticon-medal-1:before { content: "\f14e"; }
+.tgticon-medal-2:before { content: "\f14f"; }
+.tgticon-electrician:before { content: "\f150"; }
+.tgticon-painting-roller:before { content: "\f151"; }
+.tgticon-paint:before { content: "\f152"; }
+.tgticon-briefcase:before { content: "\f153"; }
+.tgticon-clock:before { content: "\f154"; }
+.tgticon-message:before { content: "\f155"; }
+.tgticon-call:before { content: "\f156"; }
+.tgticon-customer-service:before { content: "\f157"; }
+.tgticon-customer-service-agent:before { content: "\f158"; }
+.tgticon-support:before { content: "\f159"; }
+.tgticon-24-hours:before { content: "\f15a"; }
+.tgticon-wall-clock:before { content: "\f15b"; }
+.tgticon-smartphone:before { content: "\f15c"; }
+.tgticon-headset:before { content: "\f15d"; }
+.tgticon-ballot:before { content: "\f15e"; }
+.tgticon-checklist:before { content: "\f15f"; }
+.tgticon-tools:before { content: "\f160"; }
+.tgticon-maintenance:before { content: "\f161"; }
+.tgticon-maintenance-1:before { content: "\f162"; }
+.tgticon-repair:before { content: "\f163"; }
+.tgticon-paint-brushes:before { content: "\f164"; }
+.tgticon-broken-cable:before { content: "\f165"; }
+.tgticon-tool-box:before { content: "\f166"; }
+.tgticon-toolbox-1:before { content: "\f167"; }
+.tgticon-paint-roller-4:before { content: "\f168"; }
+.tgticon-leak:before { content: "\f169"; }
+.tgticon-welder:before { content: "\f16a"; }
+.tgticon-welding-machine-1:before { content: "\f16b"; }
+.tgticon-repairing:before { content: "\f16c"; }
+.tgticon-tools-1:before { content: "\f16d"; }
+.tgticon-driller:before { content: "\f16e"; }
+.tgticon-paint-roller-5:before { content: "\f16f"; }
+.tgticon-welding:before { content: "\f170"; }
+.tgticon-motor:before { content: "\f171"; }
+.tgticon-mechanic:before { content: "\f172"; }
+.tgticon-wire:before { content: "\f173"; }
+.tgticon-diy:before { content: "\f174"; }
+.tgticon-drill-2:before { content: "\f175"; }
+.tgticon-drill-3:before { content: "\f176"; }
+.tgticon-jackhammer-1:before { content: "\f177"; }
+.tgticon-circular-saw-2:before { content: "\f178"; }
+.tgticon-pipe:before { content: "\f179"; }
+.tgticon-industry:before { content: "\f17a"; }
+.tgticon-maintenance-2:before { content: "\f17b"; }
+.tgticon-shower-1:before { content: "\f17c"; }
+.tgticon-shower-2:before { content: "\f17d"; }
+.tgticon-fireman:before { content: "\f17e"; }
+.tgticon-electrician-1:before { content: "\f17f"; }
+.tgticon-electrician-2:before { content: "\f180"; }
+.tgticon-broken-cable-1:before { content: "\f181"; }
+.tgticon-carpenter:before { content: "\f182"; }
+.tgticon-carpenter-1:before { content: "\f183"; }
+.tgticon-saw:before { content: "\f184"; }
+.tgticon-saw-1:before { content: "\f185"; }
+.tgticon-drill-4:before { content: "\f186"; }
+.tgticon-air-conditioner:before { content: "\f187"; }
+.tgticon-air-conditioner-1:before { content: "\f188"; }
+.tgticon-air-conditioner-2:before { content: "\f189"; }
+.tgticon-air-conditioner-3:before { content: "\f18a"; }
+.tgticon-heat:before { content: "\f18b"; }
+.tgticon-water-heater:before { content: "\f18c"; }
+.tgticon-valve:before { content: "\f18d"; }
+.tgticon-phone-call:before { content: "\f18e"; }
+.tgticon-call-1:before { content: "\f18f"; }
+.tgticon-mobile-phone:before { content: "\f190"; }
+.tgticon-phone:before { content: "\f191"; }
+.tgticon-like:before { content: "\f192"; }
+.tgticon-like-1:before { content: "\f193"; }
+.tgticon-heart:before { content: "\f194"; }
+.tgticon-like-2:before { content: "\f195"; }
+.tgticon-like-3:before { content: "\f196"; }
+.tgticon-testimonial:before { content: "\f197"; }
+.tgticon-clock-1:before { content: "\f198"; }
+.tgticon-24-hours-1:before { content: "\f199"; }
+.tgticon-clock-2:before { content: "\f19a"; }
+.tgticon-mail:before { content: "\f19b"; }
+.tgticon-send:before { content: "\f19c"; }
+.tgticon-team:before { content: "\f19d"; }
+.tgticon-group:before { content: "\f19e"; }
+.tgticon-medal-3:before { content: "\f19f"; }
+.tgticon-trophy-2:before { content: "\f1a0"; }
+.tgticon-placeholder:before { content: "\f1a1"; }
+.tgticon-smile:before { content: "\f1a2"; }
+.tgticon-smile-1:before { content: "\f1a3"; }

@@ -1,0 +1,72 @@
+.preloader {
+  background: #c3c3c3 !important;
+}
+
+.preloader .loading-anim {
+  color: #7266ba !important;
+}
+
+body .wrap-content .header {
+  background: #fff;
+}
+
+body .wrap-content .header > .unit.title {
+  color: #333333;
+}
+
+body .wrap-content .header .btn-message:before {
+  background-image: url("../../img/icon-message-blue.svg");
+}
+
+body .wrap-content .header .btn-email:before {
+  background-image: url("../../img/icon-email-blue.svg");
+}
+
+body .aside {
+  background: #fff;
+}
+
+body .aside .menu-btn-open:before {
+  background-color: #39bee8;
+  border-top-color: #39bee8;
+  border-bottom-color: #39bee8;
+}
+
+body .morphsearch-content, body .morphsearch.open .morphsearch-form, body .wrap-content .header > .unit.morphsearch.open {
+  background-color: #ededed !important;
+}
+
+body .dummy-media-object {
+  background-color: #c3c3c3;
+}
+
+body .morphsearch.open .morphsearch-input {
+  border-bottom-color: #c3c3c3;
+}
+
+body .toggle-fixed {
+  color: #39bee8;
+}
+
+body.mobile-view .aside .menu-btn-open:before {
+  background-color: #fff;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  body .wrap-content .header > .unit.morphsearch {
+    background: #fff !important;
+  }
+  body .wrap-content .header > .unit.morphsearch .morphsearch-form:before {
+    background-image: url("../../img/icon-search-blue.svg");
+  }
+}
+
+@media (min-width: 481px) {
+  .morphsearch {
+    background: #ededed !important;
+  }
+}
+
+/*# sourceMappingURL=../maps/skins/light.css.map */

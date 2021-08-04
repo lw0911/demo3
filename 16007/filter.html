@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Iwiki - Filter</title>
+
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/vendors/sweetalert.css">
+  <link rel="stylesheet" href="css/vendors/loading.css">
+
+
+
+  <link rel="stylesheet" href="css/vendors/filter.css">
+  <link rel="stylesheet" href="css/product-filter.css">
+  <link rel="stylesheet" href="css/vendors/checkboxes.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/modernizr.js"></script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.src.js"></script>
+  <![endif]-->
+</head>
+
+
+
+<body>
+  <div id="wrap-content" class="wrap-content">
+      <div class="preloader">
+    <div class="preloader-anim la-animate"></div>
+    <div class="loading-anim">Loading</div>
+  </div>
+ <div class="aside">
+  <a href="index.html" class="btn-logo"></a>
+  <span class="menu-btn-open" id="menu-btn-open">Menu</span>
+  <span class="toggle-fixed fa fa-thumb-tack" data-toggle="tooltip" data-placement="top" title="Fixed top"></span>
+</div>
+<div class="header">
+  <div class="unit title">
+    <h5 class="primary font-weight-700">Filter</h5>
+    <h6 class="secondary">Filter</h6>
+  </div>
+  <div class="unit morphsearch" id="morphsearch">
+    <form class="morphsearch-form">
+      <input class="morphsearch-input" type="search" placeholder="Search..." />
+      <button class="morphsearch-submit" type="submit">Search</button>
+    </form>
+    <div class="morphsearch-content">
+      <div class="dummy-column">
+        <h2>People</h2>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Sara Soueidan" />
+          <h3>Sara Soueidan</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Sara Soueidan" />
+          <h3>Rachel Smith</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Peter Finlan" />
+          <h3>Peter Finlan</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Patrick Cox" />
+          <h3>Patrick Cox</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Tim Holman" />
+          <h3>Tim Holman</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Shaun Dona" />
+          <h3>Shaun Dona</h3>
+        </a>
+      </div>
+      <div class="dummy-column">
+        <h2>Popular</h2>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="PagePreloadingEffect" />
+          <h3>Page Preloading Effect</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="ArrowNavigationStyles" />
+          <h3>Arrow Navigation Styles</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="HoverEffectsIdeasNew" />
+          <h3>Ideas for Subtle Hover Effects</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="FreebieHalcyonDays" />
+          <h3>Halcyon Days Template</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="ArticleIntroEffects" />
+          <h3>Inspiration for Article Intro Effects</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="DraggableDualViewSlideshow" />
+          <h3>Draggable Dual-View Slideshow</h3>
+        </a>
+      </div>
+      <div class="dummy-column">
+        <h2>Recent</h2>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="TooltipStylesInspiration" />
+          <h3>Tooltip Styles Inspiration</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="AnimatedHeaderBackgrounds" />
+          <h3>Animated Background Headers</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="OffCanvas" />
+          <h3>Off-Canvas Menu Effects</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="TabStyles" />
+          <h3>Tab Styles Inspiration</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="ResponsiveSVGs" />
+          <h3>Make SVGs Responsive with CSS</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="NotificationStyles" />
+          <h3>Notification Styles Inspiration</h3>
+        </a>
+      </div>
+    </div>
+    <span class="morphsearch-close"><svg><use xlink:href="#icon-close"></use></svg></span>
+  </div>
+  <div class="unit email">
+    <span class="btn-email" id="email-btn"></span>
+    <div class="mail-content" id="email-content">
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60-2.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60-3.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60-4.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="show-all btn btn-danger">Show all mails</a>
+    </div>
+  </div>
+  <div class="unit message">
+    <span class="btn-message" id="message-btn"></span>
+    <div class="message-content" id="message-content">
+      <div class="percent">
+        <div class="percent-title">Database Repair</div>
+        <div class="percent-mark">70%</div>
+        <div class="percent-value color-1" style="width: 70%;"></div>
+      </div>
+      <div class="percent">
+        <div class="percent-title">Database Repair</div>
+        <div class="percent-mark">10%</div>
+        <div class="percent-value color-2" style="width: 10%;"></div>
+      </div>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-android"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-album"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-science"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-box"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="clear-all btn btn-danger">Clear all</a>
+
+      <div class="check-ok">
+        <i class="fa fa-check-circle"></i><br>
+        <span class="text-uppercase">Empty</span>
+      </div>
+    </div>
+  </div>
+  <div class="unit backet" id="backet">
+    <span class="backet-btn qw-cart" id="backet-btn"><span>0</span></span>
+    <div class="backet-title">Cart</div>
+    <div class="backet-content">
+     <div class="unit total">
+        <h6 class="total-title">Total</h6>
+        <div class="total-price">$17.50</div>
+        <button type="button" class="total-buy">Buy</button>
+        <span class="total-continue">continue shoping</span>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart1.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart3.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart3.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart4.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart3.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="somedialog" class="dialog">
+  <div class="dialog__overlay"></div>
+  <div class="dialog__content">
+    <h2><strong>Howdy</strong>, I'm a dialog box</h2>
+    <div>
+      <button type="button" class=" btn btn-danger action" data-dialog-close>Close</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="content container-fluid">
+      <div class="row row-broken">
+          <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+              <li>Pages</li>
+              <li class="active">Filter</li>
+            </ol>
+          </div>
+        </div>
+    </div>
+     <div class="filter">
+      <main class="cd-main-content">
+        <div class="cd-tab-filter-wrapper">
+          <div class="cd-tab-filter">
+            <ul class="cd-filters">
+              <li class="placeholder">
+                <a data-type="all" href="#0">All</a>
+                <!-- selected option on mobile -->
+              </li>
+              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+              <li class="filter" data-filter=".product-1"><a href="#0" data-type="product-1">Product 1</a></li>
+              <li class="filter" data-filter=".product-2"><a href="#0" data-type="product-2">Product 2</a></li>
+              <li class="filter" data-filter=".product-3"><a href="#0" data-type="product-3">Product 3</a></li>
+<!--
+              <li>
+                <a href="#0" class="qw-cart">
+                  <span>0</span>
+                </a>
+              </li>
+-->
+            </ul>
+            <!-- cd-filters -->
+          </div>
+          <!-- cd-tab-filter -->
+        </div>
+
+        <div class="cd-gallery">
+          <ul class="qw-gallery">
+            <li class="mix product-1 check1 radio2 option3">
+              <div class="qw-single-item">
+                <a href="#0">
+                  <ul class="qw-slider-wrapper">
+                    <li><img src="img/thumb-1.jpg" alt="Preview image"></li>
+                    <li class="selected"><img src="img/thumb-2.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+                  </ul>
+                </a>
+
+                <div class="qw-customization">
+                  <div class="color selected-2" data-type="select">
+                    <ul>
+                      <li class="color-1">color-1</li>
+                      <li class="color-2 active">color-2</li>
+                      <li class="color-3">color-3</li>
+                    </ul>
+                  </div>
+
+                  <div class="size" data-type="select">
+                    <ul>
+                      <li class="small active">Small</li>
+                      <li class="medium">Medium</li>
+                      <li class="large">Large</li>
+                    </ul>
+                  </div>
+
+                  <button type="button" class="add-to-cart">
+                    <em>Add to Cart</em>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- .cd-customization -->
+
+                <button type="button" class="qw-customization-trigger">Customize</button>
+              </div>
+              <!-- .cd-single-item -->
+
+              <div class="qw-item-info">
+                <b><a href="#0">Product Name</a></b>
+                <em>$9.99</em>
+              </div>
+              <!-- cd-item-info -->
+            </li>
+
+            <li class="mix product-2 check2 radio2 option2">
+              <div class="qw-single-item">
+                <a href="#0">
+                  <ul class="qw-slider-wrapper">
+                    <li class="selected"><img src="img/thumb-1.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+                  </ul>
+                </a>
+
+                <div class="qw-customization">
+                  <div class="color" data-type="select">
+                    <ul>
+                      <li class="color-1 active">color-1</li>
+                      <li class="color-2">color-2</li>
+                      <li class="color-3">color-3</li>
+                    </ul>
+                  </div>
+
+                  <div class="size" data-type="select">
+                    <ul>
+                      <li class="small active">Small</li>
+                      <li class="medium">Medium</li>
+                      <li class="large">Large</li>
+                    </ul>
+                  </div>
+
+                  <button type="button" class="add-to-cart">
+                    <em>Add to Cart</em>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- .cd-customization -->
+
+                <button type="button" class="qw-customization-trigger">Customize</button>
+              </div>
+              <!-- .cd-single-item -->
+
+              <div class="qw-item-info">
+                <b><a href="#0">Product Name</a></b>
+                <em>$9.99</em>
+              </div>
+              <!-- cd-item-info -->
+            </li>
+
+            <li class="mix product-2 check3 radio3 option2">
+              <div class="qw-single-item">
+                <a href="#0">
+                  <ul class="qw-slider-wrapper">
+                    <li><img src="img/thumb-1.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+                    <li class="selected"><img src="img/thumb-3.jpg" alt="Preview image"></li>
+                  </ul>
+                </a>
+
+                <div class="qw-customization">
+                  <div class="color selected-3" data-type="select">
+                    <ul>
+                      <li class="color-1">color-1</li>
+                      <li class="color-2">color-2</li>
+                      <li class="color-3 active">color-3</li>
+                    </ul>
+                  </div>
+
+                  <div class="size" data-type="select">
+                    <ul>
+                      <li class="small active">Small</li>
+                      <li class="medium">Medium</li>
+                      <li class="large">Large</li>
+                    </ul>
+                  </div>
+
+                  <button type="button" class="add-to-cart">
+                    <em>Add to Cart</em>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- .cd-customization -->
+
+                <button type="button" class="qw-customization-trigger">Customize</button>
+              </div>
+              <!-- .cd-single-item -->
+
+              <div class="qw-item-info">
+                <b><a href="#0">Product Name</a></b>
+                <em>$9.99</em>
+              </div>
+              <!-- cd-item-info -->
+            </li>
+
+            <li class="mix product-3 check3 radio3 option2">
+              <div class="qw-single-item">
+                <a href="#0">
+                  <ul class="qw-slider-wrapper">
+                    <li class="selected"><img src="img/thumb-1.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+                  </ul>
+                </a>
+
+                <div class="qw-customization">
+                  <div class="color" data-type="select">
+                    <ul>
+                      <li class="color-1 active">color-1</li>
+                      <li class="color-2">color-2</li>
+                      <li class="color-3">color-3</li>
+                    </ul>
+                  </div>
+
+                  <div class="size" data-type="select">
+                    <ul>
+                      <li class="small active">Small</li>
+                      <li class="medium">Medium</li>
+                      <li class="large">Large</li>
+                    </ul>
+                  </div>
+
+                  <button type="button" class="add-to-cart">
+                    <em>Add to Cart</em>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- .cd-customization -->
+
+                <button type="button" class="qw-customization-trigger">Customize</button>
+              </div>
+              <!-- .cd-single-item -->
+
+              <div class="qw-item-info">
+                <b><a href="#0">Product Name</a></b>
+                <em>$9.99</em>
+              </div>
+              <!-- cd-item-info -->
+            </li>
+
+            <li class="mix product-3 check1 radio2 option3">
+              <div class="qw-single-item">
+                <a href="#0">
+                  <ul class="qw-slider-wrapper">
+                    <li><img src="img/thumb-1.jpg" alt="Preview image"></li>
+                    <li class="selected"><img src="img/thumb-2.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+                  </ul>
+                </a>
+
+                <div class="qw-customization">
+                  <div class="color selected-2" data-type="select">
+                    <ul>
+                      <li class="color-1">color-1</li>
+                      <li class="color-2 active">color-2</li>
+                      <li class="color-3">color-3</li>
+                    </ul>
+                  </div>
+
+                  <div class="size" data-type="select">
+                    <ul>
+                      <li class="small active">Small</li>
+                      <li class="medium">Medium</li>
+                      <li class="large">Large</li>
+                    </ul>
+                  </div>
+
+                  <button type="button" class="add-to-cart">
+                    <em>Add to Cart</em>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- .cd-customization -->
+
+                <button type="button" class="qw-customization-trigger">Customize</button>
+              </div>
+              <!-- .cd-single-item -->
+
+              <div class="qw-item-info">
+                <b><a href="#0">Product Name</a></b>
+                <em>$9.99</em>
+              </div>
+              <!-- cd-item-info -->
+            </li>
+
+            <li class="mix product-1 check2 radio2 option2">
+              <div class="qw-single-item">
+                <a href="#0">
+                  <ul class="qw-slider-wrapper">
+                    <li class="selected"><img src="img/thumb-1.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+                    <li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+                  </ul>
+                </a>
+
+                <div class="qw-customization">
+                  <div class="color" data-type="select">
+                    <ul>
+                      <li class="color-1 active">color-1</li>
+                      <li class="color-2">color-2</li>
+                      <li class="color-3">color-3</li>
+                    </ul>
+                  </div>
+
+                  <div class="size" data-type="select">
+                    <ul>
+                      <li class="small active">Small</li>
+                      <li class="medium">Medium</li>
+                      <li class="large">Large</li>
+                    </ul>
+                  </div>
+
+                  <button type="button" class="add-to-cart">
+                    <em>Add to Cart</em>
+                    <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                      <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- .cd-customization -->
+
+                <button type="button" class="qw-customization-trigger">Customize</button>
+              </div>
+              <!-- .cd-single-item -->
+
+              <div class="qw-item-info">
+                <b><a href="#0">Product Name</a></b>
+                <em>$9.99</em>
+              </div>
+              <!-- cd-item-info -->
+            </li>
+          </ul>
+          <!-- cd-gallery -->
+
+        </div>
+
+        <div class="cd-filter view-1" id="filter1">
+          <h2>Content Filter</h2>
+          <a href="#0" class="cd-close">
+            <svg>
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </a>
+          <form>
+            <div class="cd-filter-block">
+              <h4>Search</h4>
+
+              <div class="cd-filter-content">
+                <input type="search" placeholder="Try product-1...">
+              </div>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Check boxes</h4>
+
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                  <label class="checkbox-label" for="checkbox1">Option 1</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                  <label class="checkbox-label" for="checkbox2">Option 2</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                  <label class="checkbox-label" for="checkbox3">Option 3</label>
+                </li>
+              </ul>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Select</h4>
+
+              <div class="cd-filter-content">
+                <div class="cd-select cd-filters">
+                  <select class="filter" name="selectThis" id="selectThis">
+                    <option value="">Choose an option</option>
+                    <option value=".option1">Option 1</option>
+                    <option value=".option2">Option 2</option>
+                    <option value=".option3">Option 3</option>
+                    <option value=".option4">Option 4</option>
+                  </select>
+                </div>
+                <!-- cd-select -->
+              </div>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Radio buttons</h4>
+
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                  <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                  <label class="radio-label" for="radio1">All</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                  <label class="radio-label" for="radio2">Choice 2</label>
+                </li>
+
+                <li>
+                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                  <label class="radio-label" for="radio3">Choice 3</label>
+                </li>
+              </ul>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+          </form>
+        </div>
+
+        <div class="cd-filter view-2" id="filter2">
+          <h2>Content Filter</h2>
+          <a href="#0" class="cd-close">
+            <svg>
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </a>
+          <form autocomplete="off">
+            <div class="cd-filter-block">
+              <h4>Search</h4>
+
+              <div class="cd-filter-content">
+                <input type="search" placeholder="Try product-1...">
+              </div>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Check boxes</h4>
+
+              <ul class="cd-filter-content cd-filters list ac-custom ac-checkbox ac-checkmark">
+                <li class="color-green-hue">
+                  <input class="filter" data-filter=".check1" type="checkbox" id="cb1">
+                  <label for="cb1">Option 1</label>
+                </li>
+
+                <li class="color-green-hue">
+                  <input class="filter" data-filter=".check2" type="checkbox" id="cb2">
+                  <label for="cb2">Option 2</label>
+                </li>
+
+                <li class="color-green-hue">
+                  <input class="filter" data-filter=".check3" type="checkbox" id="cb3">
+                  <label for="cb3">Option 3</label>
+                </li>
+              </ul>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Select</h4>
+
+              <div class="cd-filter-content">
+                <div class="cd-select cd-filters">
+                  <select class="filter" name="selectThis" id="selectThis2">
+                    <option value="">Choose an option</option>
+                    <option value=".option1">Option 1</option>
+                    <option value=".option2">Option 2</option>
+                    <option value=".option3">Option 3</option>
+                    <option value=".option4">Option 4</option>
+                  </select>
+                </div>
+                <!-- cd-select -->
+              </div>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Radio buttons</h4>
+
+              <ul class="cd-filter-content cd-filters list ac-custom ac-radio ac-fill">
+                <li class="color-blue">
+                  <input class="filter" data-filter="" type="radio" name="radioButton" id="rb1" checked>
+                  <label for="rb1">All</label>
+                </li>
+
+                <li class="color-blue">
+                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="rb2">
+                  <label for="rb2">Choice 2</label>
+                </li>
+
+                <li class="color-blue">
+                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="rb3">
+                  <label class="radio-label" for="rb3">Choice 3</label>
+                </li>
+              </ul>
+              <!-- cd-filter-content -->
+            </div>
+            <!-- cd-filter-block -->
+          </form>
+        </div>
+      </main>
+    </div>
+    <div class="footer">
+      © 2020 Copyright. 
+    </div>
+  </div>
+
+
+
+  <div id="wrap-menu" class="wrap-menu">
+  <span id="menu-btn-close" class="menu-btn-close">
+          <svg><use xlink:href="#icon-close"></use></svg>
+        </span>
+  <h1 class="menu-title">Navigation</h1>
+  <ul id="menu" class="menu">
+    <li id="menu-btn-back" class="back">
+      <span>Back</span>
+    </li>
+    <li class="profile">
+        <i class="fa fa-user"></i>
+        <a href="profile.html">User profile</a>
+    </li>
+    <li class="dashboard">
+        <i class="fa fa-bars more"></i>
+       <i class="fa fa-th"></i>
+      <span>Dashboard</span>
+      <ul class="menu">
+        <li><i class="fa fa-hashtag"></i><a href="index.html">Dashboard v1</a></li>
+        <li><i class="fa fa-cube"></i><a href="dashboard2.html">Dashboard v2</a></li>
+        <li><i class="fa fa-laptop"></i><a href="index-light.html">Light Skin</a></li>
+        <li><i class="fa fa-life-ring"></i><a href="index-dark.html">Dark Skin</a></li>
+        <li><i class="fa fa-image"></i><a href="index-dim.html">Dim Skin</a></li>
+      </ul>
+    </li>
+    <li class="mailbox">
+     <i class="fa fa-bars more"></i>
+     <i class="fa fa-envelope-o"></i>
+      <span>Mailbox</span>
+      <ul class="menu">
+        <li><i class="fa fa-list-ul"></i><a href="email-list.html">Email list</a></li>
+        <li><i class="fa fa-inbox"></i><a href="email-inbox.html">Email inbox</a></li>
+        <li><i class="fa fa-paper-plane-o"></i><a href="email-send.html">Email send</a></li>
+      </ul>
+    </li>
+    <li class="calendar">
+        <i class="fa fa-calendar"></i>
+        <a href="calendar.html">Calendar</a>
+    </li>
+    <li class="css">
+     <i class="fa fa-bars more"></i>
+     <i class="fa fa-desktop"></i>
+      <span>CSS</span>
+      <ul class="menu">
+        <li><i class="fa fa-font"></i><a href="typography.html">Typography</a></li>
+        <li><i class="fa fa-briefcase"></i><a href="buttons.html">Buttons</a></li>
+        <li><i class="fa fa-check-circle-o"></i><a href="checkboxes.html">Checkboxes</a></li>
+        <li><i class="fa fa-bell"></i><a href="notification.html">Notification</a></li>
+        <li><i class="fa fa-keyboard-o"></i><a href="input.html">Input Fields</a></li>
+        <li><i class="fa fa-spinner"></i><a href="loading.html">Loading</a></li>
+        <li><i class="fa fa-diamond"></i><a href="dialogs.html">Dialogs</a></li>
+      </ul>
+    </li>
+    <li class="widgets">
+     <i class="fa fa-th-list"></i>
+      <a href="widgets.html">Widgets</a>
+    </li>
+    <li class="charts">
+     <i class="fa fa-edit"></i>
+      <a href="charts.html">Charts</a>
+    </li>
+    <li class="pages">
+     <i class="fa fa-bars more"></i>
+     <i class="fa fa-file"></i>
+      <span>Pages</span>
+      <ul class="menu">
+        <li><i class="fa fa-crop"></i><a href="crop.html">Crop</a></li>
+        <li><i class="fa fa-sliders"></i><a href="filter.html">Filter</a></li>
+        <li><i class="fa fa-picture-o"></i><a href="gallery.html">Gallery</a></li>
+        <li><i class="fa fa-camera-retro"></i><a href="slider.html">Slider</a></li>
+        <li><i class="fa fa-list-alt"></i><a href="todo.html">To do list</a></li>
+        <li><i class="fa fa-comment"></i><a href="chat.html">Chat</a></li>
+        <li><i class="fa fa-mobile"></i><a href="contacts.html">Contacts</a></li>
+        <li><i class="fa fa-phone"></i><a href="contact.html">Contact</a></li>
+        <li><i class="fa fa-clock-o"></i><a href="timeline.html">Timeline</a></li>
+        <li><i class="fa fa-magic"></i><a href="wizard.html">Wizard</a></li>
+        <li><i class="fa fa-book"></i><a href="register.html">Register</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div id="overlay" class="overlay"></div>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" style="display: none;" xml:space="preserve">
+  <g id="icon-close">
+    <line x1="2" y1="2" x2="26" y2="26" />
+    <line x1="2" y1="26" x2="26" y2="2" />
+  </g>
+</svg>
+
+
+      <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+
+
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/product-filter.js"></script>
+  <script src="js/checkboxes.js"></script>
+
+  <script>
+    $(".unit.email").html('<a href="#0" class="cd-filter-trigger btn-filter" id="btn-filter1"><i class="fa fa-sliders"></i></a>');
+    $(".unit.message").html('<a href="#0" class="cd-filter-trigger btn-filter" id="btn-filter2"><i class="fa fa-sliders"></i></a>');
+  </script>
+</body>
+</html>
+

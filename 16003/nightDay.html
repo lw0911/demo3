@@ -1,0 +1,192 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title></title>
+    <link href="js/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="js/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="css/test.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #ecf0f5;font-family: 微软雅黑;color: #475059;min-width: 1000px;overflow: auto">
+<div class="notice_main">
+    <h6>昼伏夜出车辆查询</h6>
+    <div style="border-bottom: 1px #ccc solid;padding-bottom: 8px">
+        <p style="line-height: 24px;font-size: 14px;padding: 4px 0 0 36px ;color:#bb8940;background-image: url(img/ts_03.png);background-repeat: no-repeat;background-position: 10px 8px;font-weight: bold">温馨提示</p>
+        <ul class="ts">
+            <li><span>*</span>该页面主要显示的是昼伏夜出车辆查询的类容。</li>
+        </ul>
+    </div>
+    <div class="notice_check" style="padding: 16px 15px 8px 15px">
+        <label style="font-weight: normal">开始时间：</label>
+        <input type="text" class="find_input01">
+        <label style="font-weight: normal">结束时间：</label>
+        <input type="text" class="find_input01">
+        <label style="font-weight: normal">车牌号码：</label>
+        <input type="text" class="find_input01">
+        <label style="font-weight: normal">卡口名称：</label>
+        <select class="find_input01">
+            <option>东</option>
+            <option>南</option>
+            <option>西</option>
+            <option>北</option>
+        </select>
+    </div>
+    <div class="notice_check" style="padding: 16px 15px 8px 15px">
+        <label style="font-weight: normal">车辆品牌：</label>
+        <input type="text" class="find_input01">
+        <label style="font-weight: normal">车辆类型：</label>
+        <select class="find_input01">
+            <option>东</option>
+            <option>南</option>
+            <option>西</option>
+            <option>北</option>
+        </select>
+        <label style="font-weight: normal">车身颜色：</label>
+        <select class="find_input01">
+            <option>东</option>
+            <option>南</option>
+            <option>西</option>
+            <option>北</option>
+        </select>
+        <label style="font-weight: normal">车子品牌：</label>
+        <input type="text" class="find_input01">
+        <button class="check_btn" id="but01">查询</button>
+    </div>
+    <h6 class="car_list">检索结果</h6>
+    <p>
+    <table id="table" class="table_style" style="margin: 0 auto" > </table>
+    <img src="" class="imgBix"/>
+    </p>
+</div>
+<script src="js/jquery/jQuery-2.2.0.min.js"></script>
+<script src="js/bstable/js/bootstrap.min.js"></script>
+<script src="js/bstable/js/bootstrap-table.js"></script>
+<script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/layer_v2.1/layer/layer.js"></script>
+<script type="text/javascript">
+    function openTail() {
+        layer.open({
+            type: 2,
+            title: '昼伏夜出车辆详情',
+            shadeClose: true,
+            shade: 0.5,
+            skin: 'layui-layer-rim',
+            closeBtn: 1,
+            area: ['80%', '510px'],
+            content: 'carSearch_tail.html'
+        });
+    }
+</script>
+<script>
+    var imgY;
+    function getY(e) {
+        e=e||window.event;
+        return e.pageY||e.clientY+document.body.scrollTop;
+
+    }
+    function imgBig(e) {
+        var imgY=getY(e);
+        $(".imgBix").css("top",imgY);
+        $(".imgBix").fadeIn();
+        var path=$("#imgId").attr("src");
+        $(".imgBix").attr("src",path);
+
+
+
+
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        change();
+        $('#table').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/table4.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 10,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams:null,
+            columns: [
+                {
+                    checkbox: "true",
+                    field: 'check',
+                    align: 'center',
+                    valign: 'middle'
+                }
+                ,
+                {
+                    title: "车辆图片",
+                    field: 'imgid',
+                    align: 'center',
+                    formatter: function(value,row,index){
+
+                        return '<img  src="img/car01.png" class="table_img" onclick="imgBig()" id="imgId">';
+                    }
+                },
+                {
+                    title: '车牌号',
+                    field: 'title',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '车牌类型',
+                    field: 'type',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '车类型',
+                    field: 'big',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '车品牌',
+                    field: 'date',
+                    align: 'center'
+                },
+                {
+                    title: '车身颜色',
+                    field: 'person',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '特征描述',
+                    field: '',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '操作',
+                    field: 'opear',
+                    align: 'center',
+                    formatter: function (value, row) {
+                        var e = '<a  href="javascript:void(0)" title="车辆详情" onclick="addCarSearch(\'' + row.id + '\')">车辆详情</a> ';
+
+
+
+                        return e;
+                    }
+                }
+            ]
+        });
+
+    });
+    function change(){
+        $(".dropdown-menu>li").click(function(){
+            $(".change").html($(this).html())
+        })
+    }
+
+</script>
+
+</body>
+</html>

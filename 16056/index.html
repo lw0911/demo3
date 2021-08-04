@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="" rel="stylesheet">
+<link href="" rel="stylesheet">
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!--[if lt IE 9]>
+  
+<![endif]-->
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner jarallax">
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1>
+							<a href="index.html">Punch</a>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w3-header-bottom">
+			<div class="agileinfo-phone">
+				<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> </p>
+			</div>
+			<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="first-list"><a class="active" href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li class="dropdown">
+										<a href="codes.html" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown">Pages <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="icons.html">Icons</a></li>
+											<li><a href="codes.html">Short Codes</a></li>
+										</ul>
+									</li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+			</div>
+			<div class="agileinfo-social-grids">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					<li><a href="#"><i class="fa fa-vk"></i></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-info">
+			<div class="container">
+				<div class="w3-banner-info">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>
+									<div class="w3layouts-banner-info">
+										<h3>Vivamus</h3>
+										<p> dolor sit amet</p>
+										<div class="w3ls-button">
+											<a href="single.html">Read More</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="w3layouts-banner-info">
+										<h3>Donec</h3>
+										<p>Fusce varius id lectus at</p>
+										<div class="w3ls-button">
+											<a href="single.html">Read More</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+									<script>
+										// You can also use "$(window).load(function() {"
+										$(function () {
+										  // Slideshow 4
+										  $("#slider4").responsiveSlides({
+											auto: true,
+											pager:true,
+											nav:false,
+											speed: 400,
+											namespace: "callbacks",
+											before: function () {
+											  $('.events').append("<li>before event fired.</li>");
+											},
+											after: function () {
+											  $('.events').append("<li>after event fired.</li>");
+											}
+										  });
+									
+										});
+									 </script>
+									<!--banner Slider starts Here-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- welcome --> 
+	<div class="welcome"> 
+		<div class="container">
+			<div class="agile-title">
+				<h2>Welcome</h2> 
+			</div>
+			<div class="w3ls-row">
+				<div class="col-md-6 welcome-left">
+					<div class="welcome-img">
+						<img src="images/2.jpg" class="img-responsive zoom-img" alt=""/>
+					</div>
+					<p> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  laboris nisi ut aliquip ex ea commodo consequat</p>
+					
+				</div>
+				<div class="col-md-6 welcome-right"> 
+					<div class="open-hours-row">
+						<div class="col-md-3 open-hours-left">
+							<h4>OPENING HOURS </h4>
+						</div>
+						<div class="col-md-3 open-hours-left">
+							<h6>Every Day</h6>
+							<h5>7am - 12am</h5> 
+						</div>
+						<div class="col-md-3 open-hours-left">
+							<h6>Sunday</h6>
+							<h5>10am - 1pm</h5> 
+						</div>
+						<div class="col-md-3 open-hours-left">
+							<h6>Night Time</h6>
+							<h5>12am - 9am</h5> 
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 welcome-left-grids">
+						<div class="welcome-img">
+							<img src="images/3.jpg" class="img-responsive zoom-img" alt=""/>
+						</div>
+					</div>
+					<div class="col-md-6 welcome-left-grids">
+						<div class="welcome-img">
+							<img src="images/4.jpg" class="img-responsive zoom-img" alt=""/>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div> 
+		</div>
+	</div>
+	<!-- //welcome --> 
+	<!-- services -->
+	<div class="services">
+		<div class="container">
+			<div class="agile-title">
+				<h3>Our Services</h3> 
+			</div>
+			<div class="w3-services-grids">
+				<div class="col-md-3 w3l-services-grid">
+					<div class="w3ls-services-img">
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</div>
+					<div class="agileits-services-info">
+						<h4>Praesent tempor purus</h4>
+						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit. </p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l-services-grid">
+					<div class="w3ls-services-img">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+					</div>
+					<div class="agileits-services-info">
+						<h4>Praesent tempor purus</h4>
+						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit. </p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l-services-grid">
+					<div class="w3ls-services-img">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</div>
+					<div class="agileits-services-info">
+						<h4>Praesent tempor purus</h4>
+						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit. </p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l-services-grid">
+					<div class="w3ls-services-img">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</div>
+					<div class="agileits-services-info">
+						<h4>Praesent tempor purus</h4>
+						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit. </p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //services -->
+	<!-- history -->
+	<div class="jarallax history">
+		<div class="container">
+			<div class="agileinfo-history-grids">
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides" id="slider3">
+							<li>
+								<div class="wthree-history-info">
+									<h4> dolor sit amet, consectetur</h4>
+									<p>Mauris mollis, libero id ornare condimentum, erat mi iaculis libero, bibendum dictum leo tortor a magna. Aenean porta non nunc in semper. Fusce eget tempus metus, sit amet posuere lectus. Morbi cursus ante a felis ultrices scelerisque. Nullam cursus odio est, in pellentesque neque elementum nec. Pellentesque a egestas erat.</p>
+									<a href="single.html">Read More</a>
+								</div>
+							</li>
+							<li>
+								<div class="wthree-history-info">
+									<h4>Fusce congue neque quis dui porttitor</h4>
+									<p>Nullam tristique faucibus pharetra. Ut ultricies, dui a tincidunt placerat, urna augue pellentesque leo, et posuere velit neque quis justo. Vivamus vel nulla vel tellus pretium maximus. Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+									<a href="single.html">Read More</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:false,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script>
+							<!--banner Slider starts Here-->
+			</div>
+		</div>
+	</div>
+	<!-- //history -->
+	<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<div class="agile-title">
+				<h3>Testimonials</h3> 
+			</div>
+			<div class="agileits-testimonials-grids">
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides" id="slider5">
+							<li>
+								<div class="w3_testimonials_grid">
+									<img src="images/14.jpg" alt=" " class="img-responsive" />
+									<h4>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
+										impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</h4>
+									<h5>John Frank</h5>
+									<p>Founder</p>
+								</div>
+							</li>
+							<li>
+								<div class="w3_testimonials_grid">
+									<img src="images/15.jpg" alt=" " class="img-responsive" />
+									<h4>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
+										impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</h4>
+									<h5>John Frank</h5>
+									<p>Founder</p>
+								</div>
+							</li>
+							<li>
+								<div class="w3_testimonials_grid">
+									<img src="images/16.jpg" alt=" " class="img-responsive" />
+									<h4>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
+										impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</h4>
+									<h5>John Frank</h5>
+									<p>Founder</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<script>
+										// You can also use "$(window).load(function() {"
+										$(function () {
+										  // Slideshow 4
+										  $("#slider5").responsiveSlides({
+											auto: true,
+											pager:true,
+											nav:false,
+											speed: 400,
+											namespace: "callbacks",
+											before: function () {
+											  $('.events').append("<li>before event fired.</li>");
+											},
+											after: function () {
+											  $('.events').append("<li>after event fired.</li>");
+											}
+										  });
+									
+										});
+									 </script>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonials -->
+	<!-- specials -->
+	<div class="jarallax specials">
+		<div class="specials-dot">
+			<div class="container">
+				<div class="agile-title specials-heading">
+					<h3>Our Specials</h3>
+				</div>
+				<div class="agileits-specials-grids">
+					<div class="col-md-3 agileits-specials-grid">
+						<div class="specials-info">
+							<img src="images/7.jpg" alt="">
+							<div class="specials-caption"> 
+								<h4>01.</h4>
+								<p>Martial Arts</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-specials-grid">
+						<div class="specials-info">
+							<img src="images/8.jpg" alt="">
+							<div class="specials-caption specials-info1"> 
+								<h4>02.</h4>
+								<p>Kickboxing</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-specials-grid">
+						<div class="specials-info">
+							<img src="images/10.jpg" alt="">
+							<div class="specials-caption"> 
+								<h4>03.</h4>
+								<p>Karate</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-specials-grid">
+						<div class="specials-info">
+							<img src="images/9.jpg" alt="">
+							<div class="specials-caption specials-info1"> 
+								<h4>04.</h4>
+								<p>Boxing</p>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //specials -->
+	<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="agile-title">
+				<h3>Newsletter</h3>
+			</div>
+			<div class="newsletter-info">	
+				<form action="#" method="post">
+					<input type="text" placeholder="Name" name="Name"  required="">
+					<input type="email" placeholder="Email" name="Email"  required="">
+					<input type="submit" value="Submit">
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- //newsletter -->
+	<!-- footer -->
+	<footer>
+			<div class="w3ls-footer-grids">
+				<div class="container">
+					<div class="col-md-3 w3l-footer one">
+						<h3>Punch</h3>
+						<p> Contrary to popular belief,  is not simply random text. It has roots in a piece of Latin at Hampden-Sydney College in Virginia from a  passage, undoubtable source.</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 w3l-footer agileinfo_footer_grid">
+						<h3>Navigation</h3>					
+						<div class="nav-w3-l">
+							<ul>
+								<li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Home</a></li>
+								<li><a href="about.html"><i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a></li>
+								<li><a href="gallery.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Gallery</a></li>
+								<li><a href="icons.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Icons</a></li>
+								<li><a href="codes.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Short Codes</a></li>
+								<li><a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 w3l-footer two">
+						<h3>Keep Connected</h3>
+						<ul>
+							<li><a class="fb" href="#"><i class="fa fa-facebook"></i>Like us on Facebook</a></li>
+							<li><a class="fb1" href="#"><i class="fa fa-twitter"></i>Follow us on Twitter</a></li>
+							<li><a class="fb2" href="#"><i class="fa fa-google-plus"></i>Add us on Google Plus</a></li>
+							<li><a class="fb3" href="#"><i class="fa fa-dribbble"></i>Follow us on Dribbble</a></li>
+							<li><a class="fb4" href="#"><i class="fa fa-pinterest-p"></i>Follow us on Pinterest</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 w3l-footer three">
+						<h3>Address</h3>
+						<ul>
+							<li><i class="fa fa-map-marker"></i><p>The company name <span> dolor,</span>New York,Morris Park. </p><div class="clearfix"></div> </li>
+							<li><i class="fa fa-phone"></i><p>1234567890</p> <div class="clearfix"></div> </li>
+							<li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com">mail@example.com</a> <div class="clearfix"></div></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="copy-right-grids">
+				<div class="container">
+					<div class="copy-left">
+						<p class="footer-gd">Copyright &copy; 2020.Company name All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+	</footer>
+	<!-- //footer -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>	
+</html>

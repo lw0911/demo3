@@ -1,0 +1,24 @@
+
+{"data":
+[{"check":"","id":"case_criminal","title":"是","type":"192.168.1.107","person":"--","date":"2017-04-05","oper":"登录","result":"成功"},
+  {"check":"","id":"case_criminal_current_state","title":"否","type":"192.168.1.107","person":"全量","date":"2017-04-05","oper":"退出","result":"成功"},
+  {"check":"","id":"case_document","title":"否","type":"192.168.1.107","person":"全量","date":"2017-04-05","oper":"退出","result":"失败"},
+  {"check":"","id":"case_file","title":"是","type":"192.168.1.107","person":"--","date":"2017-04-05","oper":"登录","result":"成功"},
+  {"check":"","id":"case_file_category","title":"否","type":"192.168.1.107","person":"全量","date":"2017-04-05","oper":"登录","result":"成功"},
+  {"check":"","id":"case_flow","title":"是","type":"192.168.1.107","person":"--","date":"2017-04-05","oper":"登录","result":"失败"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}

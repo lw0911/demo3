@@ -1,0 +1,43 @@
+/* 58（dede58.com）做最好的整站模板下载网站 */
+.mCustomScrollBox>.mCSB_scrollTools {
+	width: 7px;
+	height: 100%;
+	top: 0;
+	right: 0px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: auto;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+	width: 7px;
+	height: 100%;
+}
+.mCSB_scrollTools .mCSB_dragger {
+	cursor: pointer;
+	width: 7px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 7px;
+	height: 100%;
+}
+/* horizontal scrollbar */
+
+.mCSB_horizontal.mCustomScrollBox>.mCSB_scrollTools {
+	width: 7px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: none;
+	background: none;
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background: none;
+	background: none;
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background: none;
+}

@@ -1,0 +1,241 @@
+.ac-custom h2 {
+  font-size: 3em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0 0 30px;
+}
+
+.ac-custom ul,
+.ac-custom ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.ac-custom li {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.ac-custom li:last-child {
+  margin-bottom: 0;
+}
+
+.ac-custom li.color-green {
+  background-color: #46be8a;
+}
+
+.ac-custom li.color-green-hue {
+  background-color: #41b181;
+}
+
+.ac-custom li.color-blue {
+  background-color: #7266ba;
+}
+
+.ac-custom li.color-red {
+  background-color: #ff69b4;
+}
+
+.ac-custom li.color-gold {
+  background-color: #f2a654;
+}
+
+.ac-custom li.color-aqua {
+  background-color: #39bee8;
+}
+
+.ac-custom label {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  line-height: 36px;
+  min-height: 52px;
+  padding: 8px 0 8px 60px;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 15px;
+  margin-top: -15px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+  opacity: 0;
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.ac-custom label::before {
+  content: '';
+  border: 2px solid transparent;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.ac-radio label::before {
+  border-radius: 50%;
+}
+
+.ac-custom input[type="checkbox"]:checked + label::before,
+.ac-custom input[type="radio"]:checked + label::before {
+  opacity: 0.8;
+}
+
+/* General SVG and path styles */
+.ac-custom svg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  left: 15px;
+  pointer-events: none;
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.ac-custom svg path {
+  stroke-width: 13px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Specific input, SVG and path styles */
+/* Circle */
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  left: 15px;
+  position: absolute;
+}
+
+.ac-circle label::before {
+  border: none;
+}
+
+.ac-circle svg {
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  left: -2px;
+}
+
+.ac-circle svg path {
+  stroke-width: 5px;
+}
+
+/* Box Fill */
+.ac-boxfill svg path {
+  stroke-width: 8px;
+}
+
+/* Swirl */
+.ac-swirl svg path {
+  stroke-width: 8px;
+}
+
+/* List */
+.ac-list ol {
+  list-style: decimal;
+  list-style-position: inside;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  text-indent: 18px;
+}
+
+.ac-list ol li label {
+  padding: 0;
+  font-weight: 400;
+  text-indent: 0;
+}
+
+.ac-list ol li label span {
+  display: block;
+  line-height: 52px;
+}
+
+.ac-list label::before {
+  display: none;
+}
+
+.ac-list svg {
+  width: calc(100% - 24px);
+  height: 52px;
+  left: 12px;
+  top: 0;
+  margin-top: 0px;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.ac-list svg path {
+  stroke-width: 4px;
+}
+
+.ac-custom label, .ac-custom ol {
+  color: #333333;
+}
+
+.ac-custom label::before {
+  border-color: gray;
+}
+
+.ac-custom svg path {
+  stroke: #333333;
+}
+
+.ac-custom.ac-circle label::before {
+  background-color: gray;
+}
+
+.ac-custom *[class^="color-"] label {
+  color: #ffffff;
+}
+
+.ac-custom *[class^="color-"] label::before {
+  border-color: #ffffff;
+}
+
+.ac-custom *[class^="color-"] svg path {
+  stroke: #ffffff;
+}
+
+.ac-custom.ac-circle *[class^="color-"] label::before {
+  background-color: #ffffff;
+}
+
+.ac-custom.ac-list ol *[class^="color-"] {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=../maps/vendors/checkboxes.css.map */

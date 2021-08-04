@@ -1,0 +1,156 @@
+::-webkit-scrollbar-track{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
+::-webkit-scrollbar-thumb{background-color: rgba(0,0,0,0.05);border-radius: 10px;-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);}
+::-webkit-scrollbar-thumb{background-color: rgba(0,0,0,0.2);border-radius: 10px;-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);}
+::-webkit-scrollbar{width: 16px;height: 16px;}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{border-radius: 999px;border: 5px solid transparent;}
+::-webkit-scrollbar-track{box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-thumb{min-height: 20px;background-clip: content-box;box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-corner{background: transparent;}
+
+*,p,ul,h6,div,select,input{padding: 0 ;margin: 0;}
+ul,li{list-style: none}
+a{text-decoration: none}
+html,body{height: 100%}
+.l-left{float: left}
+.r-right{float: right}
+.clear{clear:both}
+.layui-layer-title{background-color: #3c8dbc !important;font-weight:500;color:#fff !important; border:none !important;height: 36px !important;line-height: 36px !important;}
+.layui-layer-rim {border: 0 solid #8D8D8D !important;border-radius: 5px;box-shadow: 0 5px 15px rgba(0,0,0,.4)!important;  }
+
+
+.connection{display: flex;height: 98%}
+.connection h6{font-weight: bold;padding-left: 10px;line-height: 40px;border-bottom: 1px #ccc solid}
+.connection h6 button{margin: 5px 5px 0 0}
+.connection-left{flex: 0 0 300px;border: 1px #ccc solid;height: 100%;margin-right: 20px}
+.connection-right{flex: 1;border: 1px #ccc solid;height:100%;display: none;position: relative}
+
+/**************connection-left******************/
+.connection-search{padding: 10px 15px;border-bottom: 1px #ccc solid}
+.connection-search .select,.connection-search .input{display: inline-block;border: 1px #ccc solid}
+.connection-search .select select{width: 80px;height: 28px;border: none}
+.connection-search .input{border-left: none;margin-left: -4px;background-color: #fff;color: #b5b0b0}
+.connection-search .input input{width: 150px;height: 28px;border: none;color: #b5b0b0}
+.connection-search .input span{display: inline-block;padding: 0 4px 0 6px;cursor: pointer}
+
+.connection-list{position: relative;padding-top: 4px}
+.connection-list #list li{padding: 8px 8px 8px 15px;color: #fff;cursor: pointer}
+.connection-list #list li .icon{font-size: 15px;color: #1881dc;margin-top: 2px;}
+.connection-list #list li .text{color: #282828;margin-left: 6px}
+.connection-list #list li .r-right{margin-top: 2px}
+.connection-list #list li.list-active{background-color: #1881dc}
+.connection-list #list li.list-active .icon,.connection-list #list li.list-active .text{color: #fff}
+#list-btn{display:none;position: absolute;background: #fff;  border: 1px solid #ccc;  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);  border-radius: 2px;z-index: 9}
+#list-btn li{
+    cursor: default;
+    position: relative;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 18px;
+    height: 32px;
+    line-height: 32px;
+    min-width: 180px;
+    background-color: #fff;
+}
+#list-btn li:hover{background-color: #e0e0e0}
+
+/**************connection-right******************/
+.connection-right-tabs{background-color: #f5f5f5;border-bottom: 1px #ccc solid}
+.connection-right-tabs ul li{float: left;padding: 6px 22px;cursor: pointer;position: relative}
+.connection-right-tabs ul li:after{content: "";position: absolute;left: 0;bottom: 0;width: 100%;height: 2px;background-color:#f5f5f5 }
+.connection-right-tabs ul .tabs-active:after{background-color: #1881dc}
+.connection-right-content .right-content-items{display: none}
+.connection-right-content .right-content-base{display: block}
+.right-content-base .base-items{display: flex;margin: 16px 0}
+.base-items-left{flex: 0 0 150px}
+.base-items-right{flex: 0 0 40%;position: relative}
+.base-items-left{height: 32px;line-height: 32px;padding-left: 16px}
+.base-items-left .star{color: red}
+.base-items-right button{height: 32px}
+.base-items-right input{width: 100%;border: 1px #ccc solid;height: 32px;line-height: 32px;padding-left: 10px;border-radius: 2px}
+.base-items-right select{width: 49%;border: 1px #ccc solid;height: 32px;line-height: 32px;padding-left: 10px;border-radius: 2px}
+.base-bottom{margin-top: 40px}
+.time-list{width: 50%;border: 1px #ccc solid;border-radius: 2px;height: 32px;line-height: 32px;cursor: pointer}
+.time-list span{color: #8f8f8f;display: inline-block;height: 30px;line-height: 30px;padding: 0 6px;cursor: pointer}
+.list-ul{display: none;font-size: 12px;  background: #fff;  max-height: calc(100vh - 30px);  overflow: auto;  border: 1px solid #ccc;  position: absolute;  width: 50%;  bottom: 36px;  }
+.list-ul li {  position: relative;  height: 28px;  line-height: 28px;  padding: 0 9px;  cursor: pointer;  }
+.list-ul li:hover{background-color: #e0e0e0}
+
+/**************connection-right第二个界面的css样式文件******************/
+.table-btn{margin: 10px 0 0 0;border-bottom: 1px #ccc solid;padding:0 0 10px 10px}
+.table-btn ul li{float: left;padding: 6px 12px;border: 1px #eee solid;cursor: pointer}
+.table-btn ul li:first-child{border-right: none}
+.table-btn-active{background-color: #337ab7;color: #fff}
+.table-dic{padding: 10px}
+.table-dic select{width: 200px;height: 32px;border: 1px #ccc solid;border-radius: 4px;margin-right: 6px}
+.table-dic p{color: #999;line-height: 32px}
+.table-content>div{display: none}
+
+/**************connection-right抽取设置extract界面的css样式文件******************/
+.extract-style{padding: 10px;border-bottom: 1px #ccc solid}
+.extract-style span{margin-right: 10px}
+.extract-style input{width: 16px;  height: 16px;  vertical-align: text-top;margin-right: 3px;font-size: 14px}
+.connection-right-extract .table-dic{border-bottom: 1px #ccc solid}
+.connection-right-extract .table-dic p{line-height: 20px}
+.extract-btn{padding: 6px 10px}
+.extract-btn button{padding: 4px 12px !important;}
+.extract-save{position: absolute;width: 100%;background-color: #e1e1e1;left:0;bottom: 0;padding: 6px}
+.extract-save button{padding: 4px 50px !important;margin-left: 40%}
+
+
+/**************add-connection界面的css样式文件******************/
+.add-connection{display: flex;padding: 10px}
+.add-connection .add-connection-item{flex: 1;margin-right: 20px; box-shadow: 0 2px 4px #cacaca;cursor: pointer}
+.add-connection .add-connection-item:last-child{margin-right: 0}
+.add-connection-img{width: 100%;height: 104px;text-align: center;background-color: #4b8d6a;line-height: 104px;color: #fff;font-weight: bold;font-size: 18px}
+.two{background-color: #5ec429}
+.three{background-color: #5e9cbd}
+.four{background-color: #fc3333}
+.add-connection-item p{text-align: center;line-height: 36px;font-size: 12px}
+
+
+/**************add-extract界面的css样式文件******************/
+.extract-main{margin: 10px auto;width: 400px}
+.extract-item{display: flex;margin: 10px 0}
+.extract-item-left{flex:0 0 120px;text-align: right;line-height: 30px}
+.extract-item-right{flex: 1;margin-left: 20px}
+.extract-item-right select,.extract-item-right input,.extract-item-left select{    width: 200px;  height: 30px;  line-height: 30px;;border: 1px #ccc solid;border-radius: 4px}
+#extract-date>div{display: none}
+#extract-date .hour{display: block}
+.hour>div,.day>div{display: inline-block;position: relative;width: 94px}
+.hour>div input,.day>div input{width: 94px;border-radius: 0}
+.hour-span,.day-span{display: inline-block;position: absolute;right: 0;top: 0;border-left:1px #ccc solid;padding: 3px 0;color: #333}
+.hour-span span,.day-span span{display: block;cursor: pointer;padding: 0 6px;font-size: 12px;}
+.extract-add-btn{width: 112px;margin: 30px auto}
+.week{position: relative}
+#week{font-size: 12px}
+.week-list{display: none;font-size: 12px;  background: #fff;  max-height: calc(100vh - 30px);  overflow: auto;  border: 1px solid #ccc;  position: absolute;  width: 200px; z-index: 999 }
+.week-list li {  position: relative;  height: 28px;  line-height: 28px;  padding: 0 9px;  cursor: pointer;  }
+.week-list li p{display: inline-block}
+.week-list li span{float: right;line-height: 28px;display: none}
+.week-list li:hover{background-color: #e0e0e0}
+.week-list li.week-list-active{  background-color: #e0e0e0  }
+.week-list li.week-list-active span{color: #5cb85c}
+
+.month{position: relative}
+#month{font-size: 12px}
+.month-list{display: none;font-size: 12px;  background: #fff;  max-height: calc(100vh - 30px);  overflow: auto;  border: 1px solid #ccc;  position: absolute;  width: 200px; z-index: 999 ;height: 300px }
+.month-list li {  position: relative;  height: 28px;  line-height: 28px;  padding: 0 9px;  cursor: pointer;  }
+.month-list li p{display: inline-block}
+.month-list li span{float: right;line-height: 28px;display: none}
+.month-list li:hover{background-color: #e0e0e0}
+.month-list li.month-list-active{  background-color: #e0e0e0  }
+.month-list li.month-list-active span{color: #5cb85c}
+
+/**************built界面的css样式文件******************/
+.built-list{width: 100%;height: 200px;border: 1px #ccc solid;border-radius: 4px;overflow: auto}
+.built-list ul li{padding: 0 20px;line-height: 28px;color: #333;font-size: 12px;cursor: pointer}
+.built-list ul li:hover{background-color: #1881dc;color: #fff}
+.built-list ul li.built-total{padding: 0 10px;}
+.built-list ul li .l-left{margin: 6px 10px 0 0;color: #999}
+.built-list ul li.built-list-active{background-color: #1881dc;color: #fff}

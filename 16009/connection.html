@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据连接</title>
+
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="plugin/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+</head>
+<body style="background-color: #fff;font-family: 微软雅黑;color: #475059;min-width: 1000px;overflow-y: hidden">
+<div class="connection">
+    <div class="connection-left">
+        <h6>数据连接<button class="btn btn-primary r-right" onclick="add()">添加连接</button></h6>
+        <div class="connection-search">
+            <div class="select">
+                <select>
+                    <option>名称</option>
+                    <option>创建人</option>
+                    <option>类型</option>
+                </select>
+            </div>
+            <div class="input">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" placeholder="输入关键词搜索">
+            </div>
+        </div>
+        <div class="connection-list">
+            <ul id="list">
+                <li>
+                    <div class="list-item">
+                        <span class="glyphicon glyphicon-list-alt icon l-left"></span>
+                        <span class="l-left text">预定数据</span>
+                        <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-item">
+                        <span class="glyphicon glyphicon-list-alt icon l-left"></span>
+                        <span class="l-left text">自定义数据</span>
+                        <span class="r-right glyphicon glyphicon-chevron-down"></span>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="list-btn">
+                <li>重命名</li>
+                <li>删除</li>
+            </ul>
+        </div>
+    </div>
+    <div class="connection-right">
+        <div class="connection-right-base">
+            <h6><span>root</span><span>(类型：MySQL)</span></h6>
+            <div class="connection-right-main">
+                <div class="connection-right-tabs">
+                    <ul>
+                        <li class="tabs-active">基本信息</li>
+                        <li>表信息</li>
+                        <li>相关内容</li>
+                        <li>操作记录</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="connection-right-content">
+                    <div class="right-content-items right-content-base">
+                        <div class="base-top">
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span>基本设置</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <button class="btn btn-primary">导入数据源</button>
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span class="star">*</span>
+                                    <span>数据源名称</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span class="star">*</span>
+                                    <span>服务器</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span class="star">*</span>
+                                    <span>端口</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span class="star">*</span>
+                                    <span>用户名</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span class="star">*</span>
+                                    <span>密码</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                </div>
+                                <div class="base-items-right">
+                                    <button class="btn btn-primary">连接</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-bottom">
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                    <span>缓存有效期</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <div class="time-list" onclick="timeOpen(event)">
+                                        <span class="time-text"></span>
+                                        <span class="glyphicon glyphicon-chevron-down r-right"></span>
+                                    </div>
+                                    <div class="list-ul">
+                                        <ul>
+                                            <li name="0">永久</li>
+                                            <li name="1">1天</li>
+                                            <li name="2">12小时</li>
+                                            <li name="3">6小时</li>
+                                            <li name="4">1小时</li>
+                                            <li name="5">30分钟</li>
+                                            <li name="6">10分钟</li>
+                                            <li name="7">5分钟</li>
+                                            <li name="8">1分钟</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="base-items base-items-time">
+                                <div class="base-items-left">
+                                    <span>缓存失效点</span>
+                                </div>
+                                <div class="base-items-right">
+                                    <select>
+                                        <option>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                    </select>
+                                    <select>
+                                        <option>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="base-items">
+                                <div class="base-items-left">
+                                </div>
+                                <div class="base-items-right">
+                                    <button class="btn btn-primary">手动刷新数据</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content-items">
+                        <div class="table-btn">
+                            <ul>
+                                <li class="table-btn-active">原始表</li>
+                                <li>自定义表</li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="table-content">
+                            <div style="display: block">
+                                <div class="table-dic">
+                                    <select>
+                                        <option>XXXXX</option>
+                                        <option>XXXXX</option>
+                                        <option>XXXXX</option>
+                                        <option>XXXXX</option>
+                                        <option>XXXXX</option>
+                                        <option>XXXXX</option>
+                                    </select>
+                                    <input type="checkbox">只显示抽取的表
+                                </div>
+                                <table id="table-old" class="table_style" style="margin: 0 auto" ></table>
+                            </div>
+                            <div>
+                                <div class="table-dic">
+                                    <p>列表展示当前数据连接下，各数据模型中添加的所有自定义SQL视图及自定义表</p>
+                                </div>
+                                <table id="table-myself" class="table_style" style="margin: 0 auto" ></table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="right-content-items">
+                        <div class="table-dic">
+                            <p>数据连接相关信息</p>
+                        </div>
+                        <table id="table-person" class="table_style" style="margin: 0 auto" ></table>
+                    </div>
+                    <div class="right-content-items">
+                        <div class="table-dic">
+                            <p>只显示最近7天的操作记录</p>
+                        </div>
+                        <table id="table-log" class="table_style" style="margin: 0 auto" ></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="connection-right-extract" style="display: none">
+            <h6><span class="glyphicon glyphicon-arrow-left" style="display: inline-block;float: left;padding: 12px;cursor: pointer;font-size: 16px" onclick="extractBack()"></span><span>case_criminal_current_state</span></h6>
+            <div class="extract-style">
+                <span>抽取方式：</span>
+                <span><input type="radio" name="extract">全量覆盖抽取</span>
+                <span><input type="radio" name="extract">全量追加抽取</span>
+                <span><input type="radio" name="extract">增量抽取</span>
+            </div>
+            <div class="table-dic">
+                <p>只支持针对日期型（Date）和数值型（Int）的字段做增值设置</p>
+            </div>
+            <div class="extract-btn">
+                <button class="btn btn-primary" onclick="addExtract()">添加</button>
+            </div>
+            <table id="table-extract" class="table_style" style="margin: 0 auto" ></table>
+            <div class="extract-save">
+                <button class="btn btn-success" onclick="extractBack()">完成</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="plugin/bstable/js/bootstrap.min.js"></script>
+<script src="plugin/bstable/js/bootstrap-table.js"></script>
+<script src="plugin/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="plugin/layer_v2.1/layer/layer.js"></script>
+<script src="js/connection.js"></script>
+</html>

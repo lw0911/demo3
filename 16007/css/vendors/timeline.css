@@ -1,0 +1,210 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-timeline {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cd-timeline:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 1200px) {
+  .cd-timeline {
+    width: 100%;
+  }
+}
+
+.cd-timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: -20px 0 0 -35px;
+  height: 100%;
+  width: 70px;
+  background: #ffffff;
+  border-left: 35px solid #7266ba;
+  border-right: 34px solid #7266ba;
+  border-radius: 0 0 34px 35px;
+}
+
+@media (max-width: 992px) {
+  .cd-timeline:before {
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+.cd-timeline-img:before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 51px;
+  height: 51px;
+  margin: -10px 0 0 -25px;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .cd-timeline-img:before {
+    left: 0;
+    margin-left: 8px;
+  }
+}
+
+.cd-timeline-img.img-default:before {
+  background: #ffffff;
+}
+
+.cd-timeline-img.img-warning:before {
+  background: #f2a654;
+}
+
+.cd-timeline-img.img-success:before {
+  background: #46be8a;
+}
+
+.cd-timeline-img.img-info:before {
+  background: #39bee8;
+}
+
+.cd-timeline-block {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 40px 0 0;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform false false, 0.25s false false, cubic-bezier(0, 0.42, 0.4, 1.21) false false;
+  -moz-transition: -moz-transform false false false, 0.25s false false false, cubic-bezier(0, 0.42, 0.4, 1.21) false false false;
+  -o-transition: -o-transform false false false, 0.25s false false false, cubic-bezier(0, 0.42, 0.4, 1.21) false false false;
+  transition: transform, 0.25s, cubic-bezier(0, 0.42, 0.4, 1.21);
+  -webkit-transition: all false false, 0.5s false false;
+  -moz-transition: all false false false, 0.5s false false false;
+  -o-transition: all false false false, 0.5s false false false;
+  transition: all, 0.5s;
+}
+
+.cd-timeline-block:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 992px) {
+  .cd-timeline-block {
+    padding-left: 80px;
+  }
+}
+
+.cd-timeline-block .cd-timeline-date, .cd-timeline-block .cd-timeline-content {
+  width: 45%;
+}
+
+@media (max-width: 992px) {
+  .cd-timeline-block .cd-timeline-date, .cd-timeline-block .cd-timeline-content {
+    width: 100%;
+    float: none !important;
+    text-align: left !important;
+  }
+}
+
+.cd-timeline-block:nth-child(odd) .cd-timeline-date {
+  float: left;
+  text-align: right;
+}
+
+.cd-timeline-block:nth-child(odd) .cd-timeline-content {
+  float: right;
+}
+
+.cd-timeline-block:nth-child(odd).is-hidden {
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  transform: translateY(-20%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cd-timeline-block:nth-child(odd).bounce-in {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.cd-timeline-block:nth-child(even) .cd-timeline-date {
+  float: right;
+}
+
+.cd-timeline-block:nth-child(even) .cd-timeline-content {
+  float: left;
+  text-align: right;
+}
+
+.cd-timeline-block:nth-child(even).is-hidden {
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  transform: translateY(-20%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cd-timeline-block:nth-child(even).bounce-in {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.cd-timeline-block .cd-timeline-date .date {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url("../../img/icon-37.png") no-repeat 0 50%;
+}
+
+.cd-timeline-block h2 {
+  color: #333333;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.cd-timeline-block p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cd-timeline-block .scope {
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 0 8px 0 30px;
+}
+
+.cd-timeline-block .scope.likes {
+  background: url("../../img/icon-38.png") no-repeat 0 50%;
+}
+
+.cd-timeline-block .scope.comments {
+  background: url("../../img/icon-39.png") no-repeat 0 50%;
+}
+
+/*# sourceMappingURL=../maps/vendors/timeline.css.map */

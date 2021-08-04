@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="./css/x-admin.css" media="all">
+<link rel="stylesheet" href="css/pag.css" media="all">
+
+</head>
+<body>
+<div class="x-nav"> <span class="layui-breadcrumb"> <a><cite>首页</cite></a> <a><cite>网站信息管理</cite></a> <a><cite>关于我们</cite></a> </span> <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"  href="javascript:location.replace(location.href);" title="刷新"><i class="layui-icon" style="line-height:30px">ဂ</i></a> </div>
+<div class="x-body">
+<form class="layui-form x-center" action="" style="width:500px">
+  <div class="layui-form-pane">
+    <div class="layui-form-item">
+      <div class="layui-input-inline" style="width:400px">
+        <input type="text" name="username"  placeholder="搜索内容" autocomplete="off" class="layui-input">
+      </div>
+      <div class="layui-input-inline" style="width:80px">
+        <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="tools">
+    <ul class="toolbar">
+      <li><span><img src="images/t03.png" /></span>批量删除</li>
+      <li onclick="about_us_add('添加用户','about_us_add.html','600','500')"><span><img src="images/t01.png" /></span>添加</li>
+    </ul>
+    <span class="x-right" style="line-height:25px">共有数据：88 条</span></xblock>
+  </div>
+<table class="tablelist">
+  <thead>
+    <tr>
+      <th width="5%"> <input onclick="selectAll()" type="checkbox"   name="controlAll" style="controlAll" id="controlAll">
+      </th>
+      <th width="9%"> 标题 </th>
+      <th width="13%"> 图片 </th>
+      <th width="57%"> 文字信息 </th>
+      <th width="8%"> 显示状态 </th>
+      <th width="8%"> 操作 </th>
+    </tr>
+  </thead>
+  <tbody id="x-img">
+    <tr>
+      <td><input type="checkbox" value="1" name="selected"></td>
+      <td>中心介绍</td>
+      <td align="center"><img src="images/img1.jpg" width="100" alt=""></td>
+      <td > 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 </td>
+      <td class="td-status"><button class="sp">已显示</button></td>
+      <td class="td-manage"><a title="修改" href="javascript:;" onclick="about_us_edit('修改','about_us_edit.html','4','','510')"
+                            class="ml-5" style="text-decoration:none"> <i class="layui-icon">&#xe642;</i> </a> <a title="删除" href="javascript:;" onclick="banner_del(this,'1')" 
+                            style="text-decoration:none"> <i class="layui-icon">&#xe640;</i> </a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="2" name="selected"></td>
+      <td> 中心资质 </td>
+      <td align="center"><img src="images/img1.jpg" width="100" alt=""></td>
+      <td >文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 </td>
+      <td class="td-status"><button class="sp">已显示</button></td>
+      <td class="td-manage"><a title="修改" href="javascript:;" onclick="about_us_edit('修改','about_us_edit.html','4','','510')"
+                            class="ml-5" style="text-decoration:none"> <i class="layui-icon">&#xe642;</i> </a> <a title="删除" href="javascript:;" onclick="banner_del(this,'1')" 
+                            style="text-decoration:none"> <i class="layui-icon">&#xe640;</i> </a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="3" name="selected"></td>
+      <td> 中心文化 </td>
+      <td align="center"><img src="images/img1.jpg" width="100" alt=""></td>
+      <td >文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 文字信息 </td>
+      <td class="td-status"><button class="sp">已显示</button></td>
+      <td class="td-manage"><a title="修改" href="javascript:;" onclick="about_us_edit('修改','about_us_edit.html','4','','510')"
+                            class="ml-5" style="text-decoration:none"> <i class="layui-icon">&#xe642;</i> </a> <a title="删除" href="javascript:;" onclick="banner_del(this,'1')" 
+                            style="text-decoration:none"> <i class="layui-icon">&#xe640;</i> </a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="4" name="selected"></td>
+      <td>团队力量/咨询师介绍</td>
+      <td align="center"><img src="images/t2.jpg" width="101" height="109"></td>
+      <td > 咨询师一 </td>
+      <td class="td-status"><button class="sp">已显示</button></td>
+      <td class="td-manage"><a title="修改" href="javascript:;" onclick="about_us_edit('修改','about_us_edit.html','4','','510')"
+                            class="ml-5" style="text-decoration:none"> <i class="layui-icon">&#xe642;</i> </a> <a title="删除" href="javascript:;" onclick="banner_del(this,'1')" 
+                            style="text-decoration:none"> <i class="layui-icon">&#xe640;</i> </a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="5" name="selected"></td>
+      <td>合作伙伴-机构</td>
+      <td align="center"> - </td>
+      <td > 建设中 </td>
+      <td class="td-status"><button class="sp">已显示</button></td>
+      <td class="td-manage"><a title="修改" href="javascript:;" onclick="about_us_edit('修改','about_us_edit.html','4','','510')"
+                            class="ml-5" style="text-decoration:none"> <i class="layui-icon">&#xe642;</i> </a> <a title="删除" href="javascript:;" onclick="banner_del(this,'1')" 
+                            style="text-decoration:none"> <i class="layui-icon">&#xe640;</i> </a></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="6" name="selected"></td>
+      <td>合作伙伴-伙伴</td>
+      <td align="center"> - </td>
+      <td > 建设中 </td>
+      <td class="td-status"><button class="sp">已显示</button></td>
+      <td class="td-manage"><a title="修改" href="javascript:;" onclick="about_us_edit('修改','about_us_edit.html','4','','510')"
+                            class="ml-5" style="text-decoration:none"> <i class="layui-icon">&#xe642;</i> </a> <a title="删除" href="javascript:;" onclick="banner_del(this,'1')" 
+                            style="text-decoration:none"> <i class="layui-icon">&#xe640;</i> </a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="page"  v-show="show">
+  <div class="pagelist"> <span class="jump">上一页</span> <span class="jump">1</span> <span class="jump">2</span> <span class="jump">3</span> <span class="jump">4</span> <span class="jump">5</span> <span class="jump">6</span> <span class="ellipsis">...</span> <span class="jump">下一页</span> <span class="jumppoint">跳转到：</span> <span class="jumpinp">
+    <input type="text">
+    </span> <span class="jump gobtn">GO</span> </div>
+</div>
+</div>
+<br />
+<br />
+<br />
+<script src="./lib/layui/layui.js" charset="utf-8"></script> 
+<script src="./js/x-layui.js" charset="utf-8"></script> 
+<script src="js/jquery2.js" charset="utf-8"></script> 
+<script src="js/js.js" charset="utf-8"></script>
+<script>
+            layui.use(['laydate','element','laypage','layer'], function(){
+                $ = layui.jquery;
+              lement = layui.element();
+              laypage = layui.laypage;
+              layer = layui.layer;
+            });
+
+            
+             /*添加*/
+            function about_us_add(title,url,w,h){
+                x_admin_show(title,url,w,h);
+            }
+            
+            // 编辑
+            function about_us_edit (title,url,id,w,h) {
+                x_admin_show(title,url,w,h); 
+            }
+           
+	$('.tablelist tbody tr:odd').addClass('odd');
+            </script>
+</body>
+</html>

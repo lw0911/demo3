@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Iwiki - Slider</title>
+
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/vendors/sweetalert.css">
+  <link rel="stylesheet" href="css/vendors/loading.css">
+
+
+
+    <link rel="stylesheet" href="css/vendors/slider.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/modernizr.js"></script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.src.js"></script>
+  <![endif]-->
+</head>
+
+
+<body>
+    <div id="wrap-content" class="wrap-content">
+
+          <div class="preloader">
+    <div class="preloader-anim la-animate"></div>
+    <div class="loading-anim">Loading</div>
+  </div>
+ <div class="aside">
+  <a href="index.html" class="btn-logo"></a>
+  <span class="menu-btn-open" id="menu-btn-open">Menu</span>
+  <span class="toggle-fixed fa fa-thumb-tack" data-toggle="tooltip" data-placement="top" title="Fixed top"></span>
+</div>
+<div class="header">
+  <div class="unit title">
+    <h5 class="primary font-weight-700">Slider</h5>
+    <h6 class="secondary">Slider</h6>
+  </div>
+  <div class="unit morphsearch" id="morphsearch">
+    <form class="morphsearch-form">
+      <input class="morphsearch-input" type="search" placeholder="Search..." />
+      <button class="morphsearch-submit" type="submit">Search</button>
+    </form>
+    <div class="morphsearch-content">
+      <div class="dummy-column">
+        <h2>People</h2>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Sara Soueidan" />
+          <h3>Sara Soueidan</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Sara Soueidan" />
+          <h3>Rachel Smith</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Peter Finlan" />
+          <h3>Peter Finlan</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Patrick Cox" />
+          <h3>Patrick Cox</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Tim Holman" />
+          <h3>Tim Holman</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img class="round" src="img/images/search/50.png" alt="Shaun Dona" />
+          <h3>Shaun Dona</h3>
+        </a>
+      </div>
+      <div class="dummy-column">
+        <h2>Popular</h2>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="PagePreloadingEffect" />
+          <h3>Page Preloading Effect</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="ArrowNavigationStyles" />
+          <h3>Arrow Navigation Styles</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="HoverEffectsIdeasNew" />
+          <h3>Ideas for Subtle Hover Effects</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="FreebieHalcyonDays" />
+          <h3>Halcyon Days Template</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="ArticleIntroEffects" />
+          <h3>Inspiration for Article Intro Effects</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-2.png" alt="DraggableDualViewSlideshow" />
+          <h3>Draggable Dual-View Slideshow</h3>
+        </a>
+      </div>
+      <div class="dummy-column">
+        <h2>Recent</h2>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="TooltipStylesInspiration" />
+          <h3>Tooltip Styles Inspiration</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="AnimatedHeaderBackgrounds" />
+          <h3>Animated Background Headers</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="OffCanvas" />
+          <h3>Off-Canvas Menu Effects</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="TabStyles" />
+          <h3>Tab Styles Inspiration</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="ResponsiveSVGs" />
+          <h3>Make SVGs Responsive with CSS</h3>
+        </a>
+        <a class="dummy-media-object" href="#">
+          <img src="img/images/search/50-3.png" alt="NotificationStyles" />
+          <h3>Notification Styles Inspiration</h3>
+        </a>
+      </div>
+    </div>
+    <span class="morphsearch-close"><svg><use xlink:href="#icon-close"></use></svg></span>
+  </div>
+  <div class="unit email">
+    <span class="btn-email" id="email-btn"></span>
+    <div class="mail-content" id="email-content">
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60-2.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60-3.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <img src="img/images/mail-widget/60-4.png" alt="mail" />
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="show-all btn btn-danger">Show all mails</a>
+    </div>
+  </div>
+  <div class="unit message">
+    <span class="btn-message" id="message-btn"></span>
+    <div class="message-content" id="message-content">
+      <div class="percent">
+        <div class="percent-title">Database Repair</div>
+        <div class="percent-mark">70%</div>
+        <div class="percent-value color-1" style="width: 70%;"></div>
+      </div>
+      <div class="percent">
+        <div class="percent-title">Database Repair</div>
+        <div class="percent-mark">10%</div>
+        <div class="percent-value color-2" style="width: 10%;"></div>
+      </div>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-android"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-album"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-science"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="unit">
+        <span class="icon-box"></span>
+        <p>It is a long esta blished fact that a reader distracted by the readable content of</p>
+      </a>
+      <a href="javascript:void(0);" class="clear-all btn btn-danger">Clear all</a>
+
+      <div class="check-ok">
+        <i class="fa fa-check-circle"></i><br>
+        <span class="text-uppercase">Empty</span>
+      </div>
+    </div>
+  </div>
+  <div class="unit backet" id="backet">
+    <span class="backet-btn qw-cart" id="backet-btn"><span>0</span></span>
+    <div class="backet-title">Cart</div>
+    <div class="backet-content">
+     <div class="unit total">
+        <h6 class="total-title">Total</h6>
+        <div class="total-price">$17.50</div>
+        <button type="button" class="total-buy">Buy</button>
+        <span class="total-continue">continue shoping</span>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart1.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart3.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart3.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart4.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart3.jpg" alt="Product" />
+        </div>
+      </div>
+      <div class="unit text-color-white">
+        <span class="trigger btn-close">
+                          <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+        <div class="unit-bg">
+          <div class="name">Dress</div>
+          <div class="price">$17.50</div>
+        </div>
+        <div class="img">
+          <img src="img/images/cart/cart2.jpg" alt="Product" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="somedialog" class="dialog">
+  <div class="dialog__overlay"></div>
+  <div class="dialog__content">
+    <h2><strong>Howdy</strong>, I'm a dialog box</h2>
+    <div>
+      <button type="button" class=" btn btn-danger action" data-dialog-close>Close</button>
+    </div>
+  </div>
+</div>
+
+
+          <div class="content container-fluid">
+
+          <div class="row row-broken">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li>Pages</li>
+                <li class="active">Slider</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row row-broken">
+                <div class="col-sm-12">
+                    <div class="svg-wrap" style="display: none;">
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-left-1" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-right-1" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-left-2" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-right-2" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-left-3" d="M44.797 17.28l0.003 29.44-25.6-14.72z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-right-3" d="M19.203 17.28l-0.003 29.44 25.6-14.72z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-left-4" d="M15.946 48l0.003-10.33 47.411 0.003v-11.37h-47.414l0.003-10.304-15.309 16z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-right-4" d="M48.058 48l-0.003-10.33-47.414 0.003v-11.37h47.418l-0.003-10.304 15.306 16z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-left-5" d="M48 10.667q1.104 0 1.885 0.781t0.781 1.885-0.792 1.896l-16.771 16.771 16.771 16.771q0.792 0.792 0.792 1.896t-0.781 1.885-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.771-0.771-1.896t0.771-1.896l18.667-18.667q0.771-0.771 1.896-0.771zM32 10.667q1.104 0 1.885 0.781t0.781 1.885-0.792 1.896l-16.771 16.771 16.771 16.771q0.792 0.792 0.792 1.896t-0.781 1.885-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.771-0.771-1.896t0.771-1.896l18.667-18.667q0.771-0.771 1.896-0.771z" />
+                        </svg>
+                        <svg width="64" height="64" viewBox="0 0 64 64">
+                            <path id="arrow-right-5" d="M29.333 10.667q1.104 0 1.875 0.771l18.667 18.667q0.792 0.792 0.792 1.896t-0.792 1.896l-18.667 18.667q-0.771 0.771-1.875 0.771t-1.885-0.781-0.781-1.885q0-1.125 0.771-1.896l16.771-16.771-16.771-16.771q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76zM13.333 10.667q1.104 0 1.875 0.771l18.667 18.667q0.792 0.792 0.792 1.896t-0.792 1.896l-18.667 18.667q-0.771 0.771-1.875 0.771t-1.885-0.781-0.781-1.885q0-1.125 0.771-1.896l16.771-16.771-16.771-16.771q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z" />
+                        </svg>
+                    </div>
+
+                    <div id="slider" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Slide</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-slide">
+                        <a class="prev" href="#slider" data-slide="next" role="button">
+                            <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-1"></use></svg></span>
+                            <div class="decor-warning">
+                                <h3 class="color-info">Nothing to Loose <span class="color-info">by Zach Wallis</span></h3>
+                                <img src="img/images/slider/100.png" alt="Previous thumb"/>
+                            </div>
+                        </a>
+
+                        <a class="next" href="#slider" data-slide="next" role="button">
+                            <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
+                            <div class="decor-warning">
+                                <h3 class="color-info">Metro Love Stories <span class="color-info">by Andrea Satorini</span></h3>
+                                <img src="img/images/slider/100.png" alt="Next thumb"/>
+                            </div>
+                        </a>
+                      </nav>
+                    </div>
+
+
+                    <div id="slider2" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Image Bar</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-imgbar">
+                        <a class="prev" href="#slider2" data-slide="prev" role="button">
+                            <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-2"></use></svg></span>
+                            <img src="img/images/slider/135.png" alt="Previous thumb"/>
+                        </a>
+                        <a class="next" href="#slider2" data-slide="next" role="button">
+                            <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-2"></use></svg></span>
+                            <img src="img/images/slider/135.png" alt="Next thumb"/>
+                        </a>
+                      </nav>
+                    </div>
+
+
+                    <div id="slider3" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Circle Pop</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-circlepop">
+                          <a class="prev" href="#slider3" data-slide="prev" role="button">
+                              <span class="wrap-icon"></span>
+                          </a>
+                          <a class="next" href="#slider3" data-slide="next" role="button">
+                              <span class="wrap-icon"></span>
+                          </a>
+                      </nav>
+                    </div>
+
+
+                    <div id="slider4" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Round Slide</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-roundslide">
+                          <a class="prev" href="#slider4" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-4"></use></svg></span>
+                              <h3>Hannah Leigh</h3>
+                          </a>
+                          <a class="next" href="#slider4" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-4"></use></svg></span>
+                              <h3>Greg Kennedy</h3>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider5" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Split</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-1.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-slit">
+                          <a class="prev" href="#slider5" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-left-1"></use></svg></span>
+                              <div>
+                                  <h3 class="decor-primary">City Lights</h3>
+                                  <img src="img/images/slider/200.png" alt="Previous thumb"/>
+                              </div>
+                          </a>
+                          <a class="next" href="#slider5" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
+                              <div>
+                                  <h3 class="decor-primary">Street Hills</h3>
+                                  <img src="img/images/slider/200.png" alt="Next thumb"/>
+                              </div>
+                          </a>
+                      </nav>
+                    </div>
+
+                   <div id="slider6" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Reveal</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-reveal">
+                          <a class="prev" href="#slider6" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-3"></use></svg></span>
+                              <div>
+                                  <h3>Moments of Freedom and Other Stories <span>by Marina Wasilovna</span></h3>
+                                  <img src="img/images/slider/100.png" alt="Previous thumb"/>
+                              </div>
+                          </a>
+                          <a class="next" href="#slider6" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-3"></use></svg></span>
+                              <div>
+                                  <h3>Garage Rocket Ships for Sarah and Ben<span>by Aldous Morrison</span></h3>
+                                  <img src="img/images/slider/100.png" alt="Next thumb"/>
+                              </div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider7" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Thumb Flip</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-thumbflip">
+                          <a class="prev" href="#slider7" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-5"></use></svg></span>
+                              <img src="img/images/slider/145.png" alt="Previous thumb"/>
+                          </a>
+                          <a class="next" href="#slider7" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-5"></use></svg></span>
+                              <img src="img/images/slider/145.png" alt="Next thumb"/>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider8" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Double Flip</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-doubleflip">
+                          <a class="prev" href="#slider8" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-5"></use></svg></span>
+                              <div>
+                                  <img src="img/images/slider/145.png" alt="Previous thumb"/>
+                                  <h3>Only Party Girl</h3>
+                              </div>
+                          </a>
+                          <a class="next" href="#slider8" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-5"></use></svg></span>
+                              <div>
+                                  <img src="img/images/slider/145.png" alt="Next thumb"/>
+                                  <h3>Only True Honey</h3>
+                              </div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider9" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Multi Thumb</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-multithumb">
+                          <a class="prev" href="#slider9" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-3"></use></svg></span>
+                              <div>
+                                  <img src="img/images/slider/64.png" alt="Thumb 1"/>
+                                  <img src="img/images/slider/48.png" alt="Thumb 2"/>
+                                  <img src="img/images/slider/32.png" alt="Thumb 3"/>
+                              </div>
+                          </a>
+                          <a class="next" href="#slider9" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-3"></use></svg></span>
+                              <div>
+                                  <img src="img/images/slider/64.png" alt="Thumb 1"/>
+                                  <img src="img/images/slider/48.png" alt="Thumb 2"/>
+                                  <img src="img/images/slider/32.png" alt="Thumb 3"/>
+                              </div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider10" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Circle Slide</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-circleslide">
+                          <a class="prev" href="#slider10" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-1"></use></svg></span>
+                              <div><img src="img/images/slider/70.png" alt="Previous thumb"/></div>
+                          </a>
+                          <a class="next" href="#slider10" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
+                              <div><img src="img/images/slider/70.png" alt="Next thumb"/></div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider11" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Grow Pop</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-growpop">
+                          <a class="prev" href="#slider11" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-left-2"></use></svg></span>
+                              <div>
+                                  <h3>Child full of grace saviour of the human race</h3>
+                                  <p>by Holly Brighton</p>
+                                  <img src="img/images/slider/120.png" alt="Previous thumb"/>
+                              </div>
+                          </a>
+                          <a class="next" href="#slider11" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-right-2"></use></svg></span>
+                              <div>
+                                  <h3>Ancient rulage of grains and the trees of the night</h3>
+                                  <p>by Mark Ustinov</p>
+                                  <img src="img/images/slider/120.png" alt="Next thumb"/>
+                              </div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider12" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Diamond</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-diamond">
+                          <a class="prev" href="#slider12" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="28" height="28" viewBox="0 0 64 64"><use xlink:href="#arrow-left-1"></use></svg></span>
+                              <div><img src="img/images/slider/100.png" alt="Previous thumb"/></div>
+                          </a>
+                          <a class="next" href="#slider12" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="28" height="28" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
+                              <div><img src="img/images/slider/100.png" alt="Next thumb"/></div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider13" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Fill Slide</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-5.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-fillslide">
+                          <a class="prev" href="#slider13" data-slide="prev" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-left-4"></use></svg></span>
+                              <div>
+                                  <h3>Hunger at her heels freedom in her eyes</h3>
+                                  <span>by Maria S. Walton</span>
+                                  <img src="img/images/slider/104.png" alt="Previous thumb"/>
+                              </div>
+                          </a>
+                          <a class="next" href="#slider13" data-slide="next" role="button">
+                              <span class="wrap-icon"><svg class="icon" width="24" height="24" viewBox="0 0 64 64"><use xlink:href="#arrow-right-4"></use></svg></span>
+                              <div>
+                                  <h3>She dances on her knees pirate prince at her side</h3>
+                                  <span>by Emily Van Groen</span>
+                                  <img src="img/images/slider/104.png" alt="Next thumb"/>
+                              </div>
+                          </a>
+                      </nav>
+                    </div>
+
+                    <div id="slider14" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                      <h2>Fill Path</h2>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/images/slider/2560x900-3.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-4.png" class="img-responsive" alt="slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/images/slider/2560x900-2.png" class="img-responsive" alt="slider">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <nav class="nav-fillpath">
+                          <a class="prev" href="#slider14" data-slide="prev" role="button">
+                              <span class="wrap-icon"></span>
+                              <h3><strong>Danny</strong> Fleming</h3>
+                          </a>
+                          <a class="next" href="#slider14" data-slide="next" role="button">
+                              <span class="wrap-icon"></span>
+                              <h3><strong>Susan</strong> Walter</h3>
+                          </a>
+                      </nav>
+                    </div>
+
+                </div>
+          </div>
+
+        </div>
+        <div class="footer">
+            © 2020 Copyright. 
+        </div>
+    </div>
+
+   <div id="wrap-menu" class="wrap-menu">
+  <span id="menu-btn-close" class="menu-btn-close">
+          <svg><use xlink:href="#icon-close"></use></svg>
+        </span>
+  <h1 class="menu-title">Navigation</h1>
+  <ul id="menu" class="menu">
+    <li id="menu-btn-back" class="back">
+      <span>Back</span>
+    </li>
+    <li class="profile">
+        <i class="fa fa-user"></i>
+        <a href="profile.html">User profile</a>
+    </li>
+    <li class="dashboard">
+        <i class="fa fa-bars more"></i>
+       <i class="fa fa-th"></i>
+      <span>Dashboard</span>
+      <ul class="menu">
+        <li><i class="fa fa-hashtag"></i><a href="index.html">Dashboard v1</a></li>
+        <li><i class="fa fa-cube"></i><a href="dashboard2.html">Dashboard v2</a></li>
+        <li><i class="fa fa-laptop"></i><a href="index-light.html">Light Skin</a></li>
+        <li><i class="fa fa-life-ring"></i><a href="index-dark.html">Dark Skin</a></li>
+        <li><i class="fa fa-image"></i><a href="index-dim.html">Dim Skin</a></li>
+      </ul>
+    </li>
+    <li class="mailbox">
+     <i class="fa fa-bars more"></i>
+     <i class="fa fa-envelope-o"></i>
+      <span>Mailbox</span>
+      <ul class="menu">
+        <li><i class="fa fa-list-ul"></i><a href="email-list.html">Email list</a></li>
+        <li><i class="fa fa-inbox"></i><a href="email-inbox.html">Email inbox</a></li>
+        <li><i class="fa fa-paper-plane-o"></i><a href="email-send.html">Email send</a></li>
+      </ul>
+    </li>
+    <li class="calendar">
+        <i class="fa fa-calendar"></i>
+        <a href="calendar.html">Calendar</a>
+    </li>
+    <li class="css">
+     <i class="fa fa-bars more"></i>
+     <i class="fa fa-desktop"></i>
+      <span>CSS</span>
+      <ul class="menu">
+        <li><i class="fa fa-font"></i><a href="typography.html">Typography</a></li>
+        <li><i class="fa fa-briefcase"></i><a href="buttons.html">Buttons</a></li>
+        <li><i class="fa fa-check-circle-o"></i><a href="checkboxes.html">Checkboxes</a></li>
+        <li><i class="fa fa-bell"></i><a href="notification.html">Notification</a></li>
+        <li><i class="fa fa-keyboard-o"></i><a href="input.html">Input Fields</a></li>
+        <li><i class="fa fa-spinner"></i><a href="loading.html">Loading</a></li>
+        <li><i class="fa fa-diamond"></i><a href="dialogs.html">Dialogs</a></li>
+      </ul>
+    </li>
+    <li class="widgets">
+     <i class="fa fa-th-list"></i>
+      <a href="widgets.html">Widgets</a>
+    </li>
+    <li class="charts">
+     <i class="fa fa-edit"></i>
+      <a href="charts.html">Charts</a>
+    </li>
+    <li class="pages">
+     <i class="fa fa-bars more"></i>
+     <i class="fa fa-file"></i>
+      <span>Pages</span>
+      <ul class="menu">
+        <li><i class="fa fa-crop"></i><a href="crop.html">Crop</a></li>
+        <li><i class="fa fa-sliders"></i><a href="filter.html">Filter</a></li>
+        <li><i class="fa fa-picture-o"></i><a href="gallery.html">Gallery</a></li>
+        <li><i class="fa fa-camera-retro"></i><a href="slider.html">Slider</a></li>
+        <li><i class="fa fa-list-alt"></i><a href="todo.html">To do list</a></li>
+        <li><i class="fa fa-comment"></i><a href="chat.html">Chat</a></li>
+        <li><i class="fa fa-mobile"></i><a href="contacts.html">Contacts</a></li>
+        <li><i class="fa fa-phone"></i><a href="contact.html">Contact</a></li>
+        <li><i class="fa fa-clock-o"></i><a href="timeline.html">Timeline</a></li>
+        <li><i class="fa fa-magic"></i><a href="wizard.html">Wizard</a></li>
+        <li><i class="fa fa-book"></i><a href="register.html">Register</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div id="overlay" class="overlay"></div>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" style="display: none;" xml:space="preserve">
+  <g id="icon-close">
+    <line x1="2" y1="2" x2="26" y2="26" />
+    <line x1="2" y1="26" x2="26" y2="2" />
+  </g>
+</svg>
+
+
+       <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+
+
+
+    <script>
+        // For Demo purposes only
+        [].slice.call( document.querySelectorAll('nav > a') ).forEach( function(el) {
+            el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+        } );
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新建模型</title>
+    <link href="plugin/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/connection.css">
+    <style>
+        .built-list ul li{color: #333;padding: 4px 20px}
+        .built-list ul li:first-child{color: #3495e9}
+        .built-list ul li:hover{background-color: #e6e6e6;color: #333}
+        .built-list ul li:first-child:hover{color: #3495e9 !important;}
+        .built-list ul li.built-list-active{background-color: #e6e6e6;color: #333 }
+        .built-list ul li:first-child.built-list-active{color: #3495e9}
+    </style>
+</head>
+<body style="overflow: hidden;margin-top: 30px">
+<div class="extract-main">
+    <div class="extract-item">
+        <div class="extract-item-left">
+            数据连接名称：
+        </div>
+        <div class="extract-item-right">
+            <input type="text">
+        </div>
+    </div>
+    <div class="built-list">
+        <ul>
+            <li onclick="newData()">
+                <!--<span class="glyphicon glyphicon-folder-open icon l-left"></span>-->
+                <span>新建数据连接</span>
+            </li>
+            <li>
+                <!--<span class="glyphicon glyphicon-folder-open icon l-left"></span>-->
+                <span>未命名数据连接</span>
+            </li>
+            <li>
+                <span>root</span>
+            </li>
+            <li>
+                <span>默认数据</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="extract-add-btn" style="margin: 40px auto 0 auto">
+    <button class="btn btn-primary" onclick="builtSave()">确认</button>
+    <button class="btn btn-danger" onclick="cancel()">取消</button>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        built()
+    });
+    function built(){
+        $(".built-list ul li").each(function(){
+            $(this).click(function(){
+                $(this).addClass("built-list-active").siblings("li").removeClass("built-list-active")
+            })
+        })
+    }
+    function newData(){
+        parent.newBuiltData();
+        cancel();
+    }
+    function builtSave(){
+        parent.addModel();
+        cancel();
+    }
+    function cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+</script>
+</html>

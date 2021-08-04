@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+<title>Banjaar</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/superfish.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href='http://fonts.useso.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie-fixes.css">
+<![endif]-->
+<script src="js/custom.modernizr.js"></script>
+<script>
+Modernizr.load({
+    // test if browser understands media queries
+    test: Modernizr.mq('only all'),
+    // if not load ie8-grid
+    nope: 'css/ie8-grid-foundation-4.css'
+});
+</script>
+</head>
+<body>
+<div class="header-outter">
+  <div class="row header">
+    <div class="columns large-12">
+      <div class="row header-inner">
+        <div class="columns large-3">
+          <div class="logo"> <a href="index.html"><img src="images/logo.png" alt=""></a> </div>
+        </div>
+        <div class="columns top-menu large-9 top-nav plr0">
+          <nav>
+            <section>
+              <ul class="sf-menu large-12">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="has-dropdown"><a href="services.html">Services</a>
+                  <ul class="dropdown">
+                    <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Dropdown Level 2a</a></li>
+                        <li><a href="#">Dropdown Level 2b</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Dropdown Level 1b</a></li>
+                    <li><a href="#">Dropdown Level 1c</a></li>
+                    <li><a href="#">Dropdown Level 1d</a></li>
+                    <li><a href="#">See all &rarr;</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="columns large-12 small-top-menu">
+      <div class="row">
+        <div class="columns large-12 plr0 top-nav">
+          <form name="dropdown" class="dropdown" action="#">
+            <nav>
+              <section>
+                <select name="selected" id="target" accesskey="E" onChange="goToNewPage(document.dropdown.selected)">
+                  <option value="index.html">home</option>
+                  <option value="about.html">about us</option>
+                  <option value="blog.html">blog</option>
+                  <option value="gallery.html">gallery</option>
+                  <option value="services.html">services</option>
+                  <option value="contact.html">contact us</option>
+                </select>
+              </section>
+            </nav>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row content-wrapper call-to-action">
+  <div class="columns large-12">
+    <div class="row content-wrapper-inner">
+      <div class="columns large-7"> </div>
+      <div class="columns large-5 action-box">
+        <div class="action-box-inner">
+          <h2>porttitor porttitor scelerisque dapibus tristique</h2>
+          <p>Nunc placerat, purus mid tincidunt dictumst, duis ultrices porttitor porttitor scelerisque, dapibus, tristique! Et hac eu est? Integer ac rhoncus placerat ut augue placerat sed cum</p>
+          <p><a class="button black">check details</a><a class="button orange">shop now</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row content-wrapper">
+  <div class="columns large-12 plr0">
+    <div class="row content-wrapper-inner front-service-boxes">
+      <div class="columns content large-4 front-service-box"> <img src="images/homeimg1.jpg" alt="">
+        <div class="center">
+          <h4>lorem ipsum sit dolor </h4>
+          <p>dapibus dignissim dictumst parturient</p>
+        </div>
+        <hr>
+      </div>
+      <div class="columns content large-4 front-service-box"> <img src="images/homeimg2.jpg" alt="">
+        <div class="center">
+          <h4>lorem ipsum sit dolor </h4>
+          <p>dapibus dignissim dictumst parturient</p>
+        </div>
+        <hr>
+      </div>
+      <div class="columns content large-4 front-service-box"> <img src="images/homeimg3.jpg" alt="">
+        <div class="center">
+          <h4>lorem ipsum sit dolor </h4>
+          <p>dapibus dignissim dictumst parturient</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row content-wrapper welcome-service-row plr0">
+  <div class="columns large-12 plr0">
+    <div class="row content-wrapper-inner">
+      <div class="columns content service-box large-4">
+        <h2>Our Services</h2>
+        <ul class="bullet">
+          <li><a>placerat eros lorem enim</a></li>
+          <li><a>ridiculus elementum auctor ultricies</a></li>
+          <li><a>placerat eros lorem enim</a></li>
+          <li><a>ridiculus elementum auctor ultricies</a></li>
+          <li><a>placerat eros lorem enim</a></li>
+          <li><a>ridiculus elementum auctor ultricies</a></li>
+          <li><a>placerat eros lorem enim</a></li>
+          <li><a>ridiculus elementum auctor ultricies</a></li>
+        </ul>
+      </div>
+      <div class="columns content welcome-box large-8">
+        <h2>Welcome to our website</h2>
+        <p class="subheader"> <b>Sociis tortor odio eu ridiculus dignissim et porttitor quis. Diam pulvinar porta ut, tortor! Est duis rhoncus dictums Dictumst, amet nunc. Lundium? Dictumst scelerisque arcu amet ut phasellus</b></p>
+        <div class="row">
+          <div class="columns large-6"> <img src="images/office.jpg" alt=""> </div>
+          <div class="columns large-6"> Cum magna diam Duis ac, magna augue natoque odio nisi sedmag nascetur? Turpis, in et sed parturient velit, lacus Magnafacilisiset cursus montes Turpis magnis parturient turpis, magnaturpis habit, integer ultricies odio adipiscing eros nisi nuncaliquet Cum magna diam Duis ac, magna augue natoque odio nisi sed magna nascetur Turpis, in et sed parturient velit, lacusMagna facilisiset cursus montes Turpis magnis parturient turpismagna turpis habitasse, integer ultricies odio adipiscing eros nisi nunc aliquet urpis, in et sed parturient velit, lacus Magnafacilisiset cursus montes Turpis magnis parturient turpis, magnaturpis habitasse, integer ultricies odio adipiscing eros nisi nuncaliquet Cum magna diam Duis ac, magna augue natoque odio nisi sed magna nascetur? Turpis, in et sed </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="row footer">
+  <div class="columns large-12">
+    <div class="row content-wrapper-inner">
+      <div class="columns large-8">
+        <div class="row">
+          <div class="columns large-12">
+            <h3>testimonials</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns large-3"><img src="images/test1.jpg" alt="" class="test-img"></div>
+          <div class="columns content large-9 testimonials-text">Massa pulvinar magna integer aliquam? Urna ut! Lacus facilisis dolor arcu, lorem sitpellentesque duis eros odio vel! Augue natoque, nisi in magna turpis pid Nisi dolorvut tempor nec magnis Habitasse magna placerat Massa pulvinar magna integer alipellentesque duis eros odio vel! Augue natoque, nisi in magna turpis pid Nisi dolorvut tempor nec magnis Habitasse magna placerat
+            <p><span class="credit"><span class="name">Robert Jones</span><span class="profession">Web Consultant, New York</span></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="columns content large-4 whychooseus">
+        <h3>why choose us</h3>
+        <p>Turpis magnis parturient turpis, magna turpis habitasse, integer ultricies odio adipiscing eros nisi nunc aliquet Cum magna diam Duis ac, magna augue natoque odio nisi sed magna nascetur? Turpis sed parturient velit, </p>
+        <a class="button grey">learn more</a> </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-meta">
+  <div class="row">
+    <div class="columns large-4">
+      <ul class="large-block-grid-4">
+        <li><a class="media-wrapper" href="#"><img src="images/facebook1.png" alt=""></a></li>
+        <li><a class="media-wrapper" href="#"><img src="images/twitter1.png" alt=""></a></li>
+        <li><a class="media-wrapper" href="#"><img src="images/youtube1.png" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="columns content large-8">
+      <p>&copy; Copyright. All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a> Banjaar. </p>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script>
+Modernizr.load({
+    test: Modernizr.placeholder,
+    nope: 'js/placeholder.min.js'
+});
+function goToNewPage() {
+    if (document.getElementById('target').value) {
+        window.location.href = document.getElementById('target').value;
+    }
+}
+</script>
+<script>
+$(document).ready(function () {
+    $('ul.sf-menu').superfish({
+        animation: {
+            height: 'show'
+        },
+        delay: 400
+    });
+});
+</script>
+</body>
+</html>

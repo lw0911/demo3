@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>男士牛仔装、女士牛仔装、儿童牛仔装</title>
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+<div class="top_bg">
+	<div class="top">
+        <ul class="fl">
+            <li style="background:url(images/t_tel.jpg) 7px center no-repeat;">xxx</li>
+            <li style="background:url(images/t_mail.jpg) 7px center no-repeat;">xxx</li>
+        </ul>
+        <div class="share fr">
+      		<a href="" onclick="SetHome(this,window.location)">设为首页</a> 
+            <a href="" onclick="AddFavorite(window.location,document.title)">加入收藏</a>
+      	</div>
+        <form action="/search.php" method="get" onsubmit="if(this.Keyword.value==this.Keyword.defaultValue){this.Keyword.value='';}">
+            <input type="text" name="Keyword" value="搜索" class="keyword" maxlength="20" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+            <input type="submit" value=" " class="submit" />
+        </form>
+   	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="nav_bg">
+	<div class="nav">
+   		<a class="fl" href=""><img src="images/logo.jpg" /></a>
+      	<ul>
+          	<li><a target="_self" href="index.html">首页</a></li>
+          	<li><a target="_self" href="about_us.html">关于我们</a></li>
+          	<li><a target="_self" href="products.html">产品中心</a></li>
+          	<li><a target="_self" href="news.html">新闻资讯</a></li>
+          	<li><a target="_self" href="">加盟合作</a></li>
+          	<li><a target="_self" href="">客户留言</a></li>
+          	<li><a target="_self" href="">联系我们</a></li>
+       	</ul>
+   </div>
+</div>
+
+<div class="vbanner">
+	<ul class="slides">
+		<li style="background:url(images/banner1a.jpg) 50% 0 no-repeat;"></li>
+	</ul>
+</div>
+     
+<div class="art_main_bg">
+	<div class="center">
+        <div class="l_bg">
+            <div class="l">      		
+                <div id="subnavs">
+                    <div class="title">产品中心</a></div>
+                    <ul class="expmenu">
+                        <li>
+                            <div class="header">
+                                <span class="arrow down"></span>
+                                <h3><a href="">男士牛仔装</a></h3>
+                            </div>
+                            <ul class="menu" style="display:'';">
+                                <li><a href="" >衬衫</a></li>
+                                <li><a href="" >裤子</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="header">
+                                <span class="arrow up"></span>
+                                <h3><a href="">女士牛仔装</a></h3>
+                            </div>
+                            <ul class="menu" style="display:none;" >
+                                <li><a href="" >衬衫</a></li>
+                                <li><a href="" >裤子</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="header">
+                                <span class="arrow up"></span>
+                                <h3><a href="">儿童牛仔装</a></h3>
+                            </div>
+                            <ul class="menu" style="display:none;" >
+                                <li><a href="" >女孩牛仔装</a></li>
+                                <li><a href="" >男孩牛仔装</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <dl class="l_contact">
+                    <dt>联系我们</dt>
+                    <dd style="background:url(images/l_addr.jpg) left 12px no-repeat;">某某市某某县某某开发区</dd>
+                    <dd style="background:url(images/l_tel.jpg) left 12px no-repeat;">xxx</dd>
+                    <dd style="background:url(images/l_fax.jpg) left 12px no-repeat;">xxx</dd>
+                    <dd style="background:url(images/l_mail.jpg) left 12px no-repeat;">xxx</dd>
+                </dl>      
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="r_bg">
+            <div class="r">
+                <div class="r_webpath">
+                    <span class="fl">产品中心</span>
+                    <span class="fr">
+                        <a href=""><img src="images/home.jpg" /></a> >
+                        <a href="">牛仔装</a>
+                    </span>
+                    <div class="clear"></div>
+                </div>
+                <div class="pro_list">
+                    <dl class="pro_item line_first">
+                        <dt>
+                            <a href=""><img src="images/1.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">男士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/2.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">儿童牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/3.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">女士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/4.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">女士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item line_first">
+                        <dt>
+                            <a href=""><img src="images/5.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">儿童牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/6.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">男士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/2.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">儿童牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/3.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">女士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item line_first">
+                        <dt>
+                            <a href=""><img src="images/4.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">女士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/5.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">儿童牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/6.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">男士牛仔装</a></dd>
+                    </dl>
+                    <dl class="pro_item">
+                        <dt>
+                            <a href=""><img src="images/1.jpg" width="222" height="203" /></a>
+                        </dt>
+                        <dd><a href="">男士牛仔装</a></dd>
+                    </dl>			               
+                    <div class="clear"></div>
+                    <div class="Page">
+                        <span>46 条记录 1/6 页</span>  
+                        <a href="">下一页</a>     
+                        <a class="current">1</a>
+                        <a href="">&nbsp;2&nbsp;</a>
+                        <a href="">&nbsp;3&nbsp;</a>
+                        <a href="">&nbsp;4&nbsp;</a>
+                        <a href="">&nbsp;5&nbsp;</a>
+                        <a href="">下5页</a>
+                        <a href="">末页</a> 
+                    </div>	
+                </div>            
+            </div>
+        </div>
+    </div>    
+	<div class="clear"></div>
+</div>
+
+<div class="foot_bg">
+	<div class="foot">              
+        <div class="foot_nav">
+            <a href="">首页</a>
+            <a href="">关于我们</a>
+            <a href="">产品中心</a>
+            <a href="">新闻资讯</a>
+            <a href="">加盟合作</a>
+            <a href="">客户留言</a>
+            <a href="" style="border:none;">联系我们</a>               
+        </div>           
+        <div class="foot_lx">
+        	<span style="font-size:14px;">版权所有: </span><br> 
+        	<span style="background:url(images/f_tel.jpg) left center no-repeat;font-family:Arial;">
+                    xxx</span>
+            <span style="background:url(images/f_mail.jpg) left center no-repeat;font-family:Arial;">
+                    xxx</span>            
+            <span style="background:url(images/f_addr.jpg) left center no-repeat;">
+                    某某市某某县某某开发区</span>              
+        </div>            		   	
+   </div>
+</div>
+
+<script type="text/javascript">
+window.onload=function(){
+ x=$(".r_bg").height();
+ $(".l_bg").height(x+27);	
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加数据连接</title>
+    <link rel="stylesheet" href="css/connection.css">
+</head>
+<body>
+<div class="add-connection">
+    <div class="add-connection-item">
+        <div class="add-connection-img">PLSQL</div>
+        <p>PLSQL</p>
+    </div>
+    <div class="add-connection-item">
+        <div class="add-connection-img two">MYSQL</div>
+        <p>MYSQL</p>
+    </div>
+    <div class="add-connection-item">
+        <div class="add-connection-img three">SERVER</div>
+        <p>SERVER</p>
+    </div>
+    <div class="add-connection-item">
+        <div class="add-connection-img four">ORACLE</div>
+        <p>ORACLE</p>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        $(".add-connection-item").each(function(){
+            $(this).click(function(){
+                if(parent.sett() == 1){
+                    parent.addModel();
+                    cancel()
+                }else{
+                    parent.rightShow();
+                    cancel()
+                }
+            })
+        })
+    });
+    function cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+</script>
+</html>

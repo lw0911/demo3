@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="plugin/bstable/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/echarts-all.js"></script>
+    <script src="js/statistical.js"></script>
+    <script>
+        $(function(){
+            salesProportionMyEcharts();
+            profitProportionMyEcharts();
+        });
+        function salesProportionMyEcharts(){
+            var salesProportion = echarts.init($("#salesProportion")[0]);
+            var option = {
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient : 'vertical',
+                    x : 'left',
+                    data:['销售收入','三级分销分润','推荐奖励']
+                },
+                toolbox: {
+                    show : true,
+                    feature : {
+                        mark : {show: true},
+                        dataView : {show: true, readOnly: false},
+                        magicType : {
+                            show: true,
+                            type: ['pie', 'funnel'],
+                            option: {
+                                funnel: {
+                                    x: '25%',
+                                    width: '50%',
+                                    funnelAlign: 'left',
+                                    max: 1548
+                                }
+                            }
+                        },
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                series : [
+                    {
+                        name:'（万元）',
+                        type:'pie',
+                        radius : '55%',
+                        center: ['50%', '60%'],
+                        data:[
+                            {
+                                value:124,
+                                name:'销售收入',
+                                itemStyle:{
+                                    normal:{
+                                        color:""
+                                    }
+                                }
+                            },
+                            {
+                                value:86,
+                                name:'三级分销分润'
+                            },
+                            {
+                                value:9,
+                                name:'推荐奖励'
+                            }
+
+                        ]
+                    }
+                ]
+            };
+            salesProportion.setOption(option);
+        }
+        function profitProportionMyEcharts(){
+            var profitProportion = echarts.init($("#profitProportion")[0]);
+            var option = {
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient : 'vertical',
+                    x : 'left',
+                    data:['冻结金额','提现金额','分润金额','账户余额']
+                },
+                toolbox: {
+                    show : true,
+                    feature : {
+                        mark : {show: true},
+                        dataView : {show: true, readOnly: false},
+                        magicType : {
+                            show: true,
+                            type: ['pie', 'funnel'],
+                            option: {
+                                funnel: {
+                                    x: '25%',
+                                    width: '50%',
+                                    funnelAlign: 'left',
+                                    max: 1548
+                                }
+                            }
+                        },
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                series : [
+                    {
+                        name:'（万元）',
+                        type:'pie',
+                        radius : '55%',
+                        center: ['50%', '60%'],
+                        data:[
+                            {
+                                value:124,
+                                name:'冻结金额',
+                                itemStyle:{
+                                    normal:{
+                                        color:""
+                                    }
+                                }
+                            },
+                            {
+                                value:86,
+                                name:'提现金额'
+                            },
+                            {
+                                value:9,
+                                name:'分润金额'
+                            },
+                            {
+                                value:39,
+                                name:'账户余额'
+                            }
+
+                        ]
+                    }
+                ]
+            };
+            profitProportion.setOption(option);
+        }
+    </script>
+</head>
+<body>
+    <div id="areascontent">
+        <div class="rows" style="margin-bottom: 0.8%; overflow: hidden;">
+            <div style="float: left; width: 100%;">
+                <div style="height: 100%; border: 1px solid #e6e6e6; overflow: hidden;">
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #114f86;">
+                            <div class="stat-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h2 class="m-top-none">75444<span>件</span></h2>
+                            <h5>总订单数</h5>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #a73130;">
+                            <h2 class="m-top-none">2548<span>万元</span></h2>
+                            <h5>总销售金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #199e95;">
+                            <h2 class="m-top-none">245<span>万元</span></h2>
+                            <h5>已提现金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #5b4484; margin-bottom: 10px;">
+                            <h2 class="m-top-none">4365<span>件</span></h2>
+                            <h5>7月订单数</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #2b343a; margin-right: 0px;">
+                            <h2 class="m-top-none">25.36<span>万元</span></h2>
+                            <h5>分润金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #0d6e94; margin-bottom: 0px;">
+                            <h2 class="m-top-none">1255.36<span>万元</span></h2>
+                            <h5>7月销售金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #465f88; margin-bottom: 0px;">
+                            <h2 class="m-top-none">23.65<span>万元</span></h2>
+                            <h5>7月体现金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #a7772c;">
+                            <div class="stat-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h2 class="m-top-none">63.32<span>万元</span></h2>
+                            <h5>7月分润金额</h5>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #b3495d; margin-bottom: 0px;">
+                            <h2 class="m-top-none">52.36<span>万元</span></h2>
+                            <h5>账户余额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stats-item" style="background-color: #f29503; margin-right: 0px; margin-bottom: 0px;">
+                            <h2 class="m-top-none">83.25<span>万元</span></h2>
+                            <h5>冻结金额</h5>
+                            <div class="stat-icon">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="e_chart">
+            <div class="charts l_left">
+                <p class="charts_p">收入比例<span class="r_right"></span></p>
+                <div id="salesProportion" style="height:350px;width: 98%"></div>
+            </div>
+            <div class="charts l_left last_charts">
+                <p class="charts_p">资金比例<span class="r_right"></span></p>
+                <div id="profitProportion" style="height:350px;width: 98%"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</body>
+</html>

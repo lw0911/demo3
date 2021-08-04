@@ -1,0 +1,160 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+    <title>统计分析</title>
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #ecf0f5;font-family: 微软雅黑;color: #475059;min-width: 1000px;overflow: auto">
+<div class="from_main" >
+    <div class="news_check">
+        <div class="check_left l_left">
+            <label>时间段：</label><input type="text" placeholder="" style="margin-right: 10px"><input type="text" placeholder="">
+        </div>
+        <div class="top_btn l_left">
+            <a class="btn btn-default active">今天</a>
+            <a class="btn btn-default">近7天</a>
+            <a class="btn btn-default">近1个月</a>
+            <a class="btn btn-default">近3个月</a>
+        </div>
+        <div class="check_right r_right">
+            <a class="btn btn-default"><span class=" glyphicon glyphicon-circle-arrow-down l_left"></span>打印</a>
+            <a class="btn btn-default"><span class=" glyphicon glyphicon-download-alt l_left"></span>导出</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div style="padding: 0 10px 0 10px ;border: 1px #ccc solid;background-color: #fff;height: 88%;overflow: auto">
+        <h1 class="form_h1">分析任务管理</h1>
+        <p class="from_p">日期：2015-12-30 至 2016-12-30</p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>案件名称</th>
+                <th>分析类型</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            <tr>
+
+                <td>1</td>
+                <td>斗殴案件001</td>
+                <td>民事类型</td>
+                <td>2017-02-01</td>
+                <td>2017-05-01</td>
+                <td>结案</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+</body>
+<script src="js/jquery/jQuery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        $(".top_btn>a").each(function(index){
+            $(this).click(function(){
+                $(".top_btn>a").removeClass("active");
+                $(this).addClass("active")
+            })
+        });
+    })
+</script>
+</html>

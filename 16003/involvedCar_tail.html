@@ -1,0 +1,139 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="js/bstable/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="js/bstable/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+</head>
+<body style="overflow: hidden">
+<div class="warrant_nav">
+    <ul>
+        <li class="warrant_active"><span class="step"></span>车辆基本信息<span class="chevron"></span></li>
+        <li><span class="step"></span>车主信息<span class="chevron"></span></li>
+    </ul>
+
+    <div class="clear"></div>
+</div>
+
+<div class="warrant_main carSearch_main">
+    <div class="tree_left" style="display: block">
+        <table class="table table-bordered">
+            <tbody>
+            <tr>
+                <td class="bold">车牌号</td>
+                <td>贵JSA012</td>
+                <td class="bold">品牌</td>
+                <td>大众宝来</td>
+                <td class="bold">排量</td>
+                <td>2.0T</td>
+            </tr>
+            <tr>
+                <td class="bold">车型</td>
+                <td>贵JSA012</td>
+                <td class="bold">箱数</td>
+                <td>大众宝来</td>
+                <td class="bold">座位</td>
+                <td>2.0T</td>
+            </tr>
+            <tr>
+                <td class="bold">车型</td>
+                <td>贵JSA012</td>
+                <td class="bold">箱数</td>
+                <td>大众宝来</td>
+                <td class="bold">座位</td>
+                <td>2.0T</td>
+            </tr>
+            <tr>
+                <td class="bold">车型</td>
+                <td>贵JSA012</td>
+                <td class="bold">箱数</td>
+                <td>大众宝来</td>
+                <td class="bold">座位</td>
+                <td>2.0T</td>
+            </tr>
+            <tr>
+                <td class="bold">车型</td>
+                <td>贵JSA012</td>
+                <td class="bold">箱数</td>
+                <td>大众宝来</td>
+                <td class="bold">座位</td>
+                <td>2.0T</td>
+            </tr>
+            <tr>
+                <td class="bold">车型</td>
+                <td>贵JSA012</td>
+                <td class="bold">箱数</td>
+                <td>大众宝来</td>
+                <td class="bold">座位</td>
+                <td>2.0T</td>
+            </tr>
+            <tr>
+                <td class="bold">购买保险</td>
+                <td colspan="5">交通险，意外险，车损险</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="tree_left">
+        <table class="table table-bordered">
+            <tbody>
+            <tr>
+                <td class="bold">姓名</td>
+                <td>张三</td>
+                <td class="bold">年龄</td>
+                <td>36</td>
+                <td class="bold">性别</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td class="bold">联系电话</td>
+                <td>18140127521</td>
+                <td class="bold">出生年月</td>
+                <td>1985-9-1</td>
+                <td class="bold">籍贯</td>
+                <td>贵州</td>
+            </tr>
+            <tr>
+                <td class="bold">联系地址</td>
+                <td  colspan="5">贵州独山县兴华路301号</td>
+            </tr>
+            <tr>
+                <td class="bold">身份证号</td>
+                <td  colspan="5">522130196101216359</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="notice_bot">
+    <div class="l_left"><input type="checkbox" checked="checked"/>点击关闭按钮关闭窗口</div>
+    <div class="r_right but_p"><button class="but_close" onclick="Cancel()">关闭</button></div>
+</div>
+<script src="js/jquery/jQuery-2.2.0.min.js"></script>
+<script>
+    $(function(){
+        nav();
+        click();
+    });
+    function Cancel() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    }
+    function nav(){
+        $(".warrant_nav ul li").each(function(index){
+            $(this).click(function(){
+                $(".warrant_nav ul li").removeClass("warrant_active");
+                $(this).addClass("warrant_active");
+                $(".warrant_main .tree_left").eq(index).show().siblings(".tree_left").stop().hide();
+            })
+        })
+    }
+</script>
+
+</body>
+</html>
