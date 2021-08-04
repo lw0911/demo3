@@ -1,0 +1,127 @@
+/*---------------------- public style ----------------------------*/
+body{background:url(images/bottom_bg.jpg) no-repeat right bottom; font-size:12px; font-family:"ËÎÌå",Verdana, Arial; line-height:150%; margin:0px; padding:0; color:#231916;}
+div{margin:0 auto; padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{margin:0; padding:0; border:none; list-style-type:none;}
+select, input, button, textarea ,em, cite,dfn{font-family:arial,helvetica,clean,sans-serif;font-size:99%;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;}
+.block , .container , .foot {width:968px; height:auto;}
+.clear {display:block; clear:both;}
+.clearfix:after{content:"."; display:block; height:0; clear:both;visibility:hidden;}
+*html .clearfix{height:1%;}
+*+html .clearfix{height:1%;}
+a { color:#231916; text-decoration:none;}
+a:hover {color:#231916; text-decoration:underline;}
+.area_l {float:left;}
+.area_m {float:left;}
+.area_r {float:right;}
+/*---------------------------- page blank --------------------------*/
+.blank10{height:10px; line-height:10px; clear:both; visibility:hidden;}
+.blank5{height:5px; line-height:5px; clear:both; visibility:hidden;}
+
+/*--------------- top style ---------------*/
+.top { background:url(images/top_bg.jpg) no-repeat right top;}
+	.logo {width:968px; height:92px; position:relative;}
+		.l_g { margin-top:25px;}
+		.adv_font { margin-left:40px; display:inline;margin-top:25px;}
+		.telephone { position:absolute; right:63px; top:50px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; display:block;}
+	
+	.meun { width:968px; margin-top:10px;}	
+		.meun li { float:left; margin-right:3px;}
+		.meun li a { display:block; width:82px; height:31px; line-height:31px; text-align:center; background:url(images/meun.gif) no-repeat -82px 0px; text-decoration:none; color:#D4B785; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå";}
+		.meun li a:hover , .meun li a.cur { background:url(images/meun.gif) 0 0; text-decoration:none; color:#fff;}
+		.meun .left_bg { height:31px; width:100px; background:#231f20;}
+		.meun .right_bg { height:31px; width:100px; background:#231f20; margin:0px; padding:0px;}
+	
+	.banner { margin-top:10px; width:968px; overflow:hidden;}	
+
+/*--------------- container style -------------------*/	
+	/*------------- container left -------------------*/
+.c_l { width:313px;}
+	.all_title h2 { font-size:12px; position:relative; height:31px; border-bottom:solid 1px #211f20; font-weight:lighter;}
+	.all_title h2 .title { width:82px; height:31px; line-height:31px; display:inline-block; background:url(images/meun.gif) -82px 0; color:#D4B785; text-align:center;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; margin-top:1px;}
+	.all_title h2 .title_right { width:82px; height:31px; line-height:31px; display:inline-block; background:url(images/meun.gif) 0px 0; color:#fff; text-align:center;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; margin-top:1px;}
+	.all_title h2 .arrow { position:absolute; top:11px; left:100px; background:url(images/arrow.gif); width:40px; height:11px;}
+	.all_title h2 .more { position:absolute; top:9px; right:0px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+	.all_title .pic { padding-top:10px;}
+	.all_title .main { padding-top:10px; line-height:24px; letter-spacing:0.4px;}
+	.all_title dl dt { line-height:28px; font-family:Arial, Helvetica, sans-serif;}
+	.all_title dl dd { line-height:24px; font-family:Arial, Helvetica, sans-serif;}
+		.link { padding:10px 0;}
+		.link li { float:left; height:24px; line-height:24px; position:relative; width:156px;}
+		.link li .arrow {background:url(images/arrow.gif) no-repeat -40px 0px; width:7px; height:10px; display:inline-block; margin-left:10px;}
+	/*------------- container right -------------------*/
+.c_r { width:621px;}
+		
+		.explain { padding:10px 0;}
+		.explain dl { padding-bottom:30px;}
+		.explain dl dt { font-size:12px; font-weight:bold; padding-top:5px;}
+		.explain dl dd { font-size:12px; line-height:28px;}
+		
+		.explain li { height:28px; line-height:28px; position:relative;}
+		.explain li .date { position:absolute; top:0px; right:0px;}
+		.explain p { line-height:24px;}
+/*---------------- foot style -------------*/
+.foot_line { background:#231f20; height:20px; margin-top:20px;}	
+.foot_main { text-align:center; padding:20px 0;}
+	.foot_main li { line-height:24px; font-family:Arial, Helvetica, sans-serif;}
+
+/*-------------------- product style --------------------*/
+.proudct { padding:10px 0 60px 0;}
+	.proudct li { float:left; width:294px; margin-right:43px; padding-bottom:20px;}
+	.proudct li.right_product { float:right; padding:0px; margin:0px;}
+	.proudct li dl { height:150px; overflow:hidden;}
+	.proudct li dl dt { line-height:28px;}
+	.proudct li dl dd { line-height:24px;}
+
+.page { text-align:center; font-size:14px; padding-top:10px;}	
+	.page a { margin:0 10px;}
+	.page a:hover , .page a.cur{ color:#C40F24;}
+
+.form { margin-top:10px; background:#e8e8ea; padding:30px 0 80px 0;}	
+	.form .text , .p_m_form .text{ width:152px; border:solid 1px #57585a;}
+	.form .l_text { width:317px; height:102px; border:solid 1px #57585a;}
+	
+.news { padding-bottom:10px;}
+	.tab01 { position:relative; border-bottom:solid 1px #000; height:32px;}
+	.tab01 .more { position:absolute; top:8px; right:0px; font-family:Arial, Helvetica, sans-serif;}
+	.tab01 .more em { margin:0 10px;}
+	.tab01 .m_p { position:absolute; top:2px; left:0px;}
+	.tab01 li , .tab01 li a { float:left; background:url(images/meun.gif) no-repeat -82px 0px; width:82px; _width:79px;  height:31px; line-height:31px; color:#D4B785; cursor:pointer; text-align:center; margin-right:3px; _margin-right:2px; display:inline;}	
+	.tab01 li.active , .tab01 li.active a  {background:url(images/meun.gif) no-repeat 0px 0px;width:82px; _width:79px; height:31px; cursor:pointer; color:#fff; display:inline; margin-right:3px;}
+	.tab01 li a { font-family:"Î¢ÈíÑÅºÚ","ºÚÌå";display:block;}
+	.tab01 li a:hover { font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; text-decoration:none;}
+	
+	.cont01 { padding-top:10px;}
+		.news_main_l { width:320px;}
+			.news_main_l dl { padding-bottom:10px;}
+			.news_main_l dl dt { line-height:24px;}
+			.news_main_l dl dd { line-height:20px; letter-spacing:0.5px;}
+		
+		.product_main li { float:left; padding-bottom:10px; margin-right:22px; display:inline;}	
+		.product_main li.right_product_main { float:right; margin:0px;}
+		.product_main li span { display:block; text-align:center; padding:10px 0;}
+		.product_main dl { padding-bottom:20px;}
+		.product_main dl dt { line-height:28px;}
+		.product_main dl dd { line-height:24px;}
+		.product_main p { padding-bottom:30px;}
+
+.p_m_l { width:670px;}	
+	.p_m_l p { padding-bottom:10px;}
+
+.p_m_r { width:269px;}	
+	.p_m_r p { padding:0px; margin:0px;}	
+	.p_m_r .p_m_form { background:#e7e7e9; padding:10px 0; height:1190px;}
+
+.man_mian { padding:10px 0;}	
+.man_mian p { line-height:24px; padding-top:5px;}
+
+	.man_mian_r { width:185px;}
+	.man_mian_r dl dt { padding-bottom:36px; line-height:22px;}
+	.man_mian_r dl dd { line-height:22px;}
+
+.company { margin:0px; padding:0px; height:auto;}
+	.company p { line-height:24px;}
+	.company li { padding-bottom:15px;}
+	
+	.company_r { width:520px;}
+		.company_r dl dt { font-weight:bold; padding-bottom:3px;font-family:Arial, Helvetica, sans-serif;}
+		.company_r dl dd { line-height:22px; font-family:Arial, Helvetica, sans-serif;}

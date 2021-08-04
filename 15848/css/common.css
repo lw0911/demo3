@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+
+/**==源码之家 www.mycodes.net==**/
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, p, table, caption, tbody, tfoot, thead, tr, th, td, form {
+	margin:0;
+	padding:0;
+}
+html, body {
+	height:100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	/*width:100%;*/
+}
+img, button {
+	border:0 none;
+}
+ul, ol {
+	list-style:none;
+}
+caption, th {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+}
+a {
+	color:#333;
+	text-decoration:none;
+	outline:none;
+}
+a:hover {
+	color:#db0010;
+	text-decoration:none;
+}
+input, button, select, textarea {
+	font-size:12px;
+	vertical-align:middle;
+}
+button {
+	cursor:pointer;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+.clearfix {
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+}
+.blank10 {
+	display:block;
+	clear:both;
+	height:10px;
+	overflow:hidden;
+}
+.blank5 {
+	display:block;
+	clear:both;
+	height:5px;
+	overflow:hidden;
+}
+.txtRight {
+	text-align:right
+}
+.txtCenter {
+	text-align:center
+}
+.txtLeft {
+	text-align:left
+}
+body {
+	background:#fff;
+	color:#000;
+	margin-right:0px;
+	font-family:宋体,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 24px;
+}
+/****通用样式****/
+.last {
+	margin-right:0!important;
+	padding-right:0!important;
+}
+.lastb {
+	padding-bottom:0!important;
+	margin-bottom:0!important;
+}
+.lastbg {
+	background:none!important;
+}
+.ggw {
+	margin-bottom:10px;
+}
+
+
+.cgery{color:#818181;}
+.cred, a.cred{color:#c00;}
+a.cred:hover{color:#db0010;}
+
+.red{ color:#C30000;}
+a.red:link,a.red:visited{ color:#C30000; text-decoration:none;}
+a.red:hover{ color:#C30000;text-decoration:none;}
+
+.ash{ color:#343434;}
+a.ash:link,a.ash:visited{ color:#343434; text-decoration:none;}
+a.ash:hover{ color:#343434;text-decoration:none;}
+.fB{ font-weight:bold;}
+.f14{ font-size:14px; line-height:27px;}

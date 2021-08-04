@@ -1,0 +1,756 @@
+/* Feature section css start
+	============================================================================================ */
+.card-feature{
+  border-color: transparent;
+  border-radius: 0;
+  padding: 25px 16px 35px 16px;
+  background: #fff9f7;
+  transition: all .4s ease;
+
+  &.border-style{
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: 10px solid #F7F7F7;
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+
+  &__icon{
+    display: inline-block;
+    line-height: 80px;
+
+    i,span{
+      color: $primary-color;
+      font-size: 60px;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+      font-size: 60px;
+    }
+  }
+
+  &__title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &:hover{
+    background: #fff;
+    border-color: #E0CAC4;
+
+    i,span{
+      color: $title-color;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+      color: $title-color;
+    }
+  }
+}
+/* feature section css end
+	============================================================================================ */
+
+
+/* service section css start
+	============================================================================================ */
+.card-service{
+  border-color: transparent;
+  border-radius: 0;
+  padding: 40px 38px 35px 38px;
+  background: #fff9f7;
+  transition: all .4s ease;
+
+  &-wrapper{
+
+    & [class*="col-"]:nth-child(even){
+      margin-top: 50px;
+    }
+    
+    & [class*="col-"]:last-child{
+      margin-top: 100px;
+    }
+  }
+
+  &.border-style{
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: 10px solid #F7F7F7;
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+
+  &__icon{
+    display: inline-block;
+    line-height: 80px;
+
+    i,span{
+      color: $primary-color;
+      font-size: 90px;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+      font-size: 90px;
+    }
+  }
+
+  &__title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    margin-top: 15px;
+  }
+
+  p{
+    margin-bottom: 42px;
+  }
+
+  &:hover{
+    background: #fff;
+    border-color: #E0CAC4;
+
+    i,span{
+      color: $title-color;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+      color: $title-color;
+    }
+    
+    .button{
+      background-color: $title-color;
+      border-color: $title-color;
+      color: $white;
+    }
+  }
+}
+
+/* service section css end
+	============================================================================================ */
+
+
+
+/* about section css start
+	============================================================================================ */
+.about{
+
+  &-wrapper{
+    overflow: hidden;
+
+    @media(min-width: 1200px){
+      padding-top: 75px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__img{
+    position: relative;
+    @media(min-width: 1200px){
+      left: 165px;
+    }
+
+    &--small{
+      position: absolute;
+      bottom: -55px;
+      right: 50px;
+
+      @media(min-width: 992px){
+        left: -180px;
+      }
+    }
+  }
+
+  &__content{
+    @media(min-width: 992px){
+      margin-top: 60px;
+    }
+
+    p{
+      margin-top: 18px;
+      margin-bottom: 35px;
+    }
+  }
+}
+/* about section css end
+	============================================================================================ */
+
+
+
+
+/* video section css start
+	============================================================================================ */
+.video-area{
+  background: url('../img/home/video-bg.png') left center no-repeat;
+  background-size: cover;
+  padding: 50px 10px;
+  position: relative;
+  z-index: 1;
+
+  @media(min-width: 750px){
+    padding: 90px 10px;
+  }
+
+  @media(min-width: 1000px){
+    padding: 190px 10px;
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 10, 52, 0.7);
+    z-index: -1;
+  }
+
+  h3{
+    font-family: $text-font;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @media(min-width: 1000px){
+      margin-bottom: 50px;
+    }
+
+    @media(min-width: 600px){
+      font-size: 42px;
+    }
+  }
+
+  p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+}
+/* video section css end
+	============================================================================================ */
+
+/* Start Video Play css
+============================================================================================ */
+.video-play-button {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 46px 8px 18px 28px;
+  transform: scale(.8);
+
+  img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media(min-width: 800px){
+    transform: scale(1);
+    margin-bottom: 10px;
+  }
+
+  &:before,
+  &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include transform(translate(-50%, -50%));
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  }
+  &:before {
+      z-index: 0;
+      @include animation(pulse-border 2000ms ease-out infinite);
+  }
+  &:after {
+      z-index: 1;
+      @include transition(all 200ms ease);
+  }
+  span {
+      display: block;
+      position: relative;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-left: 16px solid $primary-color;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+  }
+  &:hover {
+      &:after {
+          background-color: darken($primary-color, 10%);
+      }
+  }
+}
+
+@include keyframes(pulse-border) {
+  0% {
+      @include transform(translate(-50%, -50%) translateZ(0) scale(1));
+      opacity: 0.7;
+  }
+  100% {
+      @include transform(translate(-50%, -50%) translateZ(0) scale(1.5));
+      opacity: 0.1;
+  }
+}
+
+/* End Video Play css
+============================================================================================ */
+
+
+/* team section css start
+	============================================================================================ */
+.card-team{
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+
+  &__img{
+    position: relative;
+    overflow: hidden;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 8, 21, 0.4);
+      position: absolute;
+      bottom: 0;
+      transform: translateY(80px);
+      opacity: 0;
+      z-index: -1;
+      transition: all .6s ease;
+    }
+  }
+
+  &__position{
+
+    @media(min-width: 1200px){
+      margin-left: 25px;
+    }
+  }
+
+  .card-footer{
+    border: 0;
+    padding: 20px;
+    background: #fff;
+
+    @media(min-width: 1200px){
+      padding: 33px 30px;
+    }
+  }
+
+  &__bio{
+
+    h4{
+      font-size: 20px;
+      color: $title-color;
+      font-weight: 600;
+      margin-bottom: 6px;
+
+      a{
+        color: $title-color;
+        transition: color .4s ease;
+      }
+    }
+
+    p{
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__social{
+    
+    li{
+      display: inline-block;
+
+      a{
+        font-size: 13px;
+        color: $title-color;
+        transition: color .4s ease;
+
+        &:hover{
+          color: $primary-color;
+        }
+      }
+
+      &::after{
+        content: "|";
+        margin: 0 10px;
+      }
+
+      &:last-child::after{
+        display: none;
+      }
+    }
+  }
+
+
+  &:hover{
+
+    .card-team__img::after{
+      transform: translateY(0);
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .card-team__bio h4{
+      color: $primary-color;
+
+      a{
+        color: $primary-color;
+      }
+    }
+  }
+}
+/* team section css end
+	============================================================================================ */
+
+
+/* pricing section css start
+	============================================================================================ */
+.card-pricing{
+  border-color: transparent;
+  border-radius: 0;
+  // padding: 40px 38px 35px 38px;
+  background: #fff9f7;
+  transition: all .4s ease;
+
+  &.border-style{
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: 10px solid #F7F7F7;
+      position: absolute;
+      top: -17px;
+      left: 17px;
+      z-index: -1;
+    }
+  }
+
+  &__header{
+    padding: 35px 0;
+
+    h3{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+  }
+
+  &__price{
+    background: #f7f7f7;
+    padding: 25px 0;
+
+    h2{
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      transition: all .4s ease;
+    }
+  }
+
+  &__list{
+    margin: 30px 0;
+
+    li{
+      color: #797979;
+      margin-bottom: 8px;
+    }
+  }
+
+  
+
+  &:hover{
+    background: #fff;
+    border-color: #E0CAC4;
+
+    i,span{
+      color: $title-color;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+      color: $title-color;
+    }
+    
+    .button{
+      background-color: $title-color;
+      border-color: $title-color;
+      color: $white;
+    }
+
+    .card-pricing__price h2{
+      color: $primary-color;
+    }
+  }
+}
+/* pricing section css start
+	============================================================================================ */
+
+
+/* blog section css start
+	============================================================================================ */
+.card-blog{
+  border: 0;
+  background: transparent;
+  background: transparent;
+
+  &__info{
+    margin-bottom: 15px;
+
+    li{
+      display: inline-block;
+      font-size: 14px;
+      color: #777777;
+      margin-right: 35px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      a{
+        color: #777777;
+      }
+
+      i,span{
+        font-size: 12px;
+        color: #777777;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__title{
+    font-size: 20px;
+    font-weight: 600;
+    color: $title-color;
+    margin-bottom: 13px;
+
+    a{
+      color: $title-color;
+      transition: all .4s ease;
+    }
+  }
+
+  &__link{
+    font-size: 16px;
+    color: $title-color;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: inline-block;
+      min-width: 54px;
+      height: 1px;
+      background-color: $title-color;
+      position: absolute;
+      top: 50%;
+      margin-left: 10px;
+    }
+  }
+
+  .card-body{
+    background: #fff9f7;
+    padding: 32px 30px;
+    border: 1px solid transparent;
+    border-top: 0;
+    transition: all .4s ease;
+
+    p{
+      margin-bottom: 22px;
+    }
+  }
+
+  &:hover{
+
+    .card-body{
+      background: #fff;
+      border-color: #E0CAC4;
+    }
+
+    .card-blog__link,.card-blog__title a{
+      color: $primary-color;
+    }
+
+    .card-blog__link::after{
+      background-color: $primary-color;
+    }
+  }
+}
+/* blog section css end
+	============================================================================================ */
+
+
+/* testimonial section css start
+	============================================================================================ */
+.testimonial{
+  background: url('../img/home/testimonial-bg.png') left center no-repeat;
+  background-size: cover;
+  padding: 100px 0 115px 0;
+  position: relative;
+  // z-index: 1;
+
+  @media(min-width: 991px){
+    padding: 260px 0 215px 0;
+  }
+
+  &-position{
+
+    @media(min-width: 991px){
+      position: relative;
+      bottom: 260px;
+      margin-bottom: -260px;
+      z-index: 5;
+    }
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    background: rgba(5, 10, 52, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // z-index: -1;
+  }
+}
+
+
+.testi_slider {
+  // margin: auto;
+  max-width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 80%;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+  }
+  .testi_item {
+    text-align: center;
+    img {
+      width: auto;
+      margin: auto;
+    }
+
+    p{
+      color: #fff;
+
+      i,span{
+        font-size: 30px;
+        color: #525869;
+        position: relative;
+        bottom: 4px;
+        right: 3px;
+      }
+    }
+
+    &_content{
+      padding: 25px 10px;
+
+      @media(min-width: 991px){
+        padding: 25px 65px;
+      }
+
+      h4{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+
+  .owl-dots{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -45px;
+    margin: 0;
+
+    @media(min-width: 991px){
+      bottom: -95px;
+    }
+
+    .owl-dot{
+
+      span{
+        background: rgba(255, 255, 255, .6);
+        margin: 5px 10px;
+      }
+
+      &.active{
+
+        span{
+          width: 12px;
+          height: 12px;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+.pricing-relative{
+  position: relative;
+  z-index: 50;
+}
+
+/* testimonial section css end
+	============================================================================================ */

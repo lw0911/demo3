@@ -1,0 +1,28 @@
+/* section intro start
+	============================================================================================ */
+.section-intro{
+
+  &__title{
+    font-size: 20px;
+    color: $primary-color;
+    padding-left: 80px;
+    position: relative;
+    margin-bottom: 10px;
+
+    &::after{
+      content: "";
+      display: block;
+      height: 1px;
+      min-width: 65px;
+      background-color: #3a414e;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+/* section intro end
+	============================================================================================ */
+
+

@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.main2{ width:980px; margin:0 auto; margin-top:20px;}
+.main2 .left{ width:248px; float:left; background:#e6e6e6; min-height:400px;}
+.lm_fl{ width:248px; height:40px; background:#F00; font-size:16px; text-align:center; line-height:40px; color:#fff; font-weight:bold;}
+.lm_fll{ margin-top:20px;}
+.lm_fll ul li{ height:40px; line-height:40px; text-align:center;}
+.lm_fll ul li a:hover{ background:#f00; width:248px; height:40px; display:block; color:#fff;}
+.lm_fll ul li a.ys{ background:#f00; width:248px; height:40px; display:block; color:#fff;}
+.fwrx{ margin-left:40px; padding-top:40px;}
+.right{ width:732px; float:left;}
+.right .dqw{ height:40px; width:732px; background:#e6e6e6; line-height:40px;}
+.right .dqw span{ margin-left:20px;}
+
+.content_ab{ margin-top:20px; width:680px; margin-left:30px; line-height:30px;}
+
+#cp{ background:url(../img/cpbj.gif) repeat-y; width:980px; margin:0 auto; height:600px;}
+#cp .cp_left{ margin-left:28px; width:180px; float:left;}
+#cp .cp_left .cp_lm .cp_fl{ border-bottom:2px solid #f00; height:40px; text-align:center; line-height:40px; font-size:16px; font-weight:bold;}
+#cp .cp_left .cp_lm .cp_fll{ margin-top:20px; text-align:center;}
+#cp .cp_left .cp_lm .cp_fll ul li{ line-height:40px; border-bottom:1px solid #ccc; width:180px;}
+#cp .cp_left .cp_lm .cp_fll ul li a:hover{ background:#f00; display:block; color:#fff;}
+#cp .cp_left .cp_lm .cp_fll ul li a.ys{ background:#f00; display:block; color:#fff;}
+
+
+#cp .cp_right{ float:left; width:690px; margin-left:50px;}
+#cp .cp_right .dqw{ height:40px; width:680px; line-height:40px;}
+#cp .cp_right .cp_ti{ height:40px; margin-top:20px; background:#e6e6e6; width:660px; color:#f00; line-height:40px; font-size:14px; font-weight:bold;}
+#cp .cp_right .cp_ti span{ margin-left:15px;}
+
+#cp .cp_right .cp_tu{ margin-top:20px;}
+#cp .cp_right .cp_tu ul li{ width:220px; float:left; text-align:center; line-height:40px;}
+#cp .cp_right .cp_tu ul li img{ width:200px; height:150px;}
+
+.pages{ float:right; margin-bottom:30px;}
+.pages a{margin-right:10px; display:inline;}
+
+.cp_tu1{ width:280px; float:left;}
+.cp_tu1 img{ width:230px;}
+.cp_js{ width:300px; float:left;}
+.cp_xx{ width:660px; height:40px; background:#e6e6e6; line-height:40px; margin-top:20px; color:#f00;}
+.cp_xx span{ margin-left:16px; font-size:14px; font-weight:bold;}
+.cp_xx1{ width:660px; margin-top:20px; margin-bottom:20px;}
+.cp_xx1 img{ width:660px;}
+
+.content1 ul li{ width:680px; height:180px;}
+.xw_t{ width:170px; height:115px; float:left;}
+.xw_tc{ width:450px; float:right; margin-right:20px;}
+.xw_tc .xw_ti{ font-size:14px; font-weight:bold;}
+.xw_tc .xw_ck a{ color:#f00;}
+
+
+.content2{ clear:both; margin-bottom:20px;}
+.xw_title{ text-align:center; font-size:16px; font-weight:bold;}
+.show1{ margin-top:20px;}
+.xw_content{ margin-top:20px; line-height:30px;}
+.gj{ font-size:14px; font-weight:bold; padding-top:20px; padding-bottom:20px; border-bottom:2px solid #ccc; }
+.xg{ padding-top:10px;}
+.xg ul li{float:left; line-height:25px; list-style:inside; font-weight:bold;list-style-type:none;}
+.xg ul li a{ text-decoration:none; color:#333;}
+.xg .xg-title{ font-size:14px; color:#000; font-weight:bold; height:25px;}

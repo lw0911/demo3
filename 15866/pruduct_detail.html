@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品详情 - XXX</title>
+<link rel="stylesheet" href="css/global.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+//选项卡
+function setTab(m,n){
+var tli=document.getElementById("menu"+m).getElementsByTagName("li");
+var mli=document.getElementById("main"+m).getElementsByTagName("ul");
+for(i=0;i<tli.length;i++){
+tli[i].className=i==n?"hover":"";
+mli[i].style.display=i==n?"block":"none";
+}
+}
+</script>
+</head>
+
+<body>
+<!--头部-->
+<div class="head">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+$(function () {
+	var navLi=$(".menu .nav li");
+	navLi.mouseover(function () {
+		$(this).find("a").addClass("current");
+		$(this).find(".box").stop().slideDown();
+	})
+	navLi.mouseleave(function(){
+		$(this).find("a").removeClass("current");
+		$(this).find(".box").stop().slideUp();
+	})
+})
+</script>
+<div class="menu">
+	<div class="logo"></div>
+    	<!--搜索-->
+        	<div class="top_h_info">
+            <p><label class="i1">全国服务热线&nbsp;<b>XXX</b></label><label class="i0">&nbsp;&nbsp;|&nbsp;&nbsp;</label><label class="i2"><a href="">搜索</a></label></p>
+            </div>
+		<ul class="nav">
+        	<li><a href="index.html" class="f1">首页</a></li>
+			<li>
+				<a href="about.html" class="f1">XXX概况</a>
+				<div class="box">
+					<a href="">公司简介</a>
+                    <a href="news.html">董事长寄语</a>
+                    <a href="news.html">经营理念</a>
+                    <a href="news.html">组织架构</a>
+                    <a href="news.html">企业荣誉</a>
+                    <a href="contact.html">联系我们</a>
+				</div>
+			</li>
+			<li>
+            	<a href="" class="f1">品牌文化</a>
+            	<div class="box">
+                    <a href="">企业文化</a>
+                    <a href="">品牌内涵</a>
+                    <a href="">品牌文化</a>
+                    <a href="">标志诠释</a>
+                    <a href="">品牌故事</a>
+                    <a href="">品牌战略</a>
+                    <a href="">品牌活动</a>
+    			</div>
+            </li>
+			<li>
+            	<a href="news.html" class="f1">新闻</a>
+				<div class="box">
+					<a href="">XXX新闻</a>
+                    <a href="">行业资讯</a>
+                    <a href="">睡眠常识</a>
+				</div>
+			</li>
+			<li>
+            	<a href="product_list.html" class="f1">产品展示</a>
+				<div class="box">
+					<a href="">床垫</a>
+                    <a href="">软床</a>
+                    <a href="">床品</a>
+                    <a href="">其它</a>
+				</div>
+			</li>
+			<li><a href="" class="f1">营销网络</a></li>
+			<li>
+            	<a href="" class="f1">加盟经销</a>
+            	<div class="box">
+                    <a href="">加盟流程</a>
+                    <a href="">加盟优势</a>
+                    <a href="">服务承诺</a>
+                    <a href="">质量反馈</a>
+                    <a href="">打假热线</a>
+                    <a href="">网络营销</a>
+                </div>
+            </li>
+            <li><a href="" class="f1">在线留言</a></li>
+			<li><a href="contact.html" class="f1">联系我们</a></li>
+		</ul>
+	</div>
+    <div class="clears"></div>
+</div>
+<div class="clears"></div>
+
+<div class="banners">
+	<div class="ban"><a href="">企业文化</a><a href="">品牌内涵</a><a href="">品牌文化</a><a href="">标志诠释</a><a href="">品牌故事</a><a href="">品牌战略</a><a href="">品牌活动</a></div></div>
+
+<!--中间-->
+<div class="con3" style="padding-top:10px;">
+    <div class="conter">
+    <div class="path">当前位置：首页 » 公司产品 » 3D床垫</div>
+    
+    <!--产品列表-->
+    <div class="products_1">
+    	
+        <div class="products_1_right">
+        
+        
+        <div class="tab1">
+        <h3>最新产品</h3>
+        <ul class="cp_t">
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        </ul>
+        </div>
+        
+        
+        <div class="tab1">
+        <h3>热销产品</h3>
+        <ul class="cp_mc">
+        <li><a href="">
+        <img src="img/4.jpg" width="196" />
+        <p>产品名称</p></a></li>
+        <li><a href="">
+        <img src="img/4.jpg" width="196" />
+        <p>产品名称</p></a></li>
+        <li><a href="">
+        <img src="img/4.jpg" width="196" />
+        <p>产品名称</p></a></li>
+        <li><a href="">
+        <img src="img/4.jpg" width="196" />
+        <p>产品名称</p></a></li>
+        </ul>
+        </div>
+
+        </div>
+        
+    	<div class="products_1_left">
+        
+        
+        	<div style="height:1%;overflow:hidden;">
+            <h1><span>产品分类： <a href="">乳胶床垫</a></span>儿童床垫 独立弹簧加乳胶(型号:903)</h1>
+            
+            <div class="cleft">
+                <div class="tp"><img src="img/4.jpg" width="397" /></div>
+                <p class="btn"><a href="">客户留言</a><a href="" class="btnn2">立即咨询</a><div class="clears"></div></p>
+                
+                <p><div class="bdsharebuttonbox"><a class="bds_more" href="index.html" data-cmd="more"></a><a class="bds_qzone" title="分享到QQ空间" href="index.html" data-cmd="qzone"></a><a class="bds_tsina" title="分享到新浪微博" href="index.html" data-cmd="tsina"></a><a class="bds_tqq" title="分享到腾讯微博" href="index.html" data-cmd="tqq"></a><a class="bds_renren" title="分享到人人网" href="index.html" data-cmd="renren"></a><a class="bds_weixin" title="分享到微信" href="index.html" data-cmd="weixin"></a><a class="bds_bdxc" title="分享到百度相册" href="index.html" data-cmd="bdxc"></a><a class="bds_douban" title="分享到豆瓣网" href="index.html" data-cmd="douban"></a><a class="bds_tqf" title="分享到腾讯朋友" href="index.html" data-cmd="tqf"></a><a class="bds_kaixin001" title="分享到开心网" href="index.html" data-cmd="kaixin001"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","bdxc","douban","tqf","kaixin001"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","bdxc","douban","tqf","kaixin001"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></p>
+            </div>
+            
+            <div class="cright">
+            	
+                <p>　　全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+                <p>　　全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+                <p>　　全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+                <p>　　全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+                <p>　　全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+                <p>　　全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+            </div>
+            <div class="clears"></div>
+            </div>
+            
+            <!--与此相关的产品-->
+          <div class="gz_pu">
+            <h3><label>跟此产品相关的产品</label></h3>
+                <div class="lis1">
+                <ul>
+                <li><a href=""><img src="img/4.jpg" width="194" height="141" /><p>全独立袋装弹簧加天然乳胶</p></a></li>
+                <li><a href=""><img src="img/4.jpg" width="194" height="141" /><p>全独立袋装弹簧加天然乳胶</p></a></li>
+                <li><a href=""><img src="img/4.jpg" width="194" height="141" /><p>全独立袋装弹簧加天然乳胶</p></a></li>
+                <li><a href=""><img src="img/4.jpg" width="194" height="141" /><p>全独立袋装弹簧加天然乳胶</p></a></li>
+                </ul>
+                <div class="clears"></div>
+            </div>
+          </div>
+            
+            <!--评论-->
+            <div class="guestbook">
+            <label>共有 <strong>0</strong> 条评论  <a href="">【我要评论】</a></label>
+            <p>暂无评论</p>
+            
+            <div class="gb_s">
+            	<h3><span>2014-12-10</span>网友： <tt>Admin</tt></h3>
+                <p>全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+            </div>
+            
+            <div class="gb_s">
+            	<h3><span>2014-12-10</span>网友： <tt>Admin</tt></h3>
+                <p>全独立袋装弹簧加天然乳胶，透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。透气性针织面料，整个床垫显得柔软有弹力，面层可拆开，乳胶可随意取出，方便实用，自然环保。</p>
+            </div>
+            
+            </div>
+            
+            
+            <!--上下一页-->
+            <div class="page"><span><a href="">下一页：产品名称</a></span><a href="">上一页：产品名称</a></div>
+            <div class="clears"></div>
+        </div>
+        <div class="clears"></div>
+    </div>
+    
+    
+    
+    
+    </div>
+</div>
+
+<!--底部-->
+<div class="flooter">
+	<div class="flooter_c">
+	<div class="flooter_left links">
+        <ul>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">公司产品</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="flooter_right">
+    	<div class="flooter_con"></div>
+        <p class="tel">联系电话：XXX  XXX</p>
+        <p>XXX</p>
+        <p class="icon2"><a href="" class="ico1"></a><a href="" class="ico2"></a><a href="" class="ico3"></a><div class="clears"></div></p>
+        <p class="copy">Copyright XXX寝具   </p>
+    </div>
+    <div class="clears"></div>
+    </div>
+</div>
+</body>
+</html>

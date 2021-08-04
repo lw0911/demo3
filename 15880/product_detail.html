@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>自动化科技模板</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/web.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js" ></script>
+<!--点击弹开JQ-->
+<link rel="stylesheet" href="css/slimbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/slimbox.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <div class="h_top">
+        <p><span><a href="#" title="中文版" class="zh">中文</a>|&nbsp;<a href="#" title="English" class="en">English</a></span><i>欢迎来到XXX自动化科技有限公司网站！服务热线：XXX</i></p>
+    </div>
+    <div class="h_con">
+        <h1 class="logo"><a href="#" title=""><img src="images/logo.jpg" alt="" title="XXX有限公司"/></a></h1>
+        <div class="search">
+						  <script language="Javascript">
+                                                  function fn_searchForm()
+                                                  {
+                                                      if (document.listform.key.value=="" || document.listform.key.value=="(请输入搜索关键字)"){
+                                                          alert("(请输入搜索关键字)");
+                                                          document.listform.skeyword.focus();
+                                                      }else{
+                                                          listform.action="#";
+                                                          document.listform.submit();
+                                                      }
+                                                  }</script>
+                          <form action="search.html">
+                                                       <input name="key" type="text"  class="read"  id="key" value="(请输入搜索关键字)" size="35"  onFocus="this.value=''"/>
+                                                       <input name="" type="submit" value=""  class="bt"/>
+                                                       <input name="act" type="hidden" value="seartch" />
+                                                   </form>   
+                    </div>
+    </div>
+    <div class="h_nav">
+        <ul>
+            <li><a href="index.html" title="网站首页" >网站首页</a></li>
+            <li><a href="about.html"title="公司简介">公司简介</a></li>
+            <li><a href="products.html" title="产品中心" class="cur">产品中心</a></li>
+            <li><a href="cases.html" title="合作案例">合作案例</a></li>
+            <li><a href="news.html" title="新闻资讯">新闻资讯</a></li>
+            <li><a href="download.html" title="资料下载">资料下载</a></li>
+            <li><a href="zhao.html" title="人才招聘">人才招聘</a></li>
+            <li><a href="message.html" title="在线留言">在线留言</a></li>
+            <li class="nobot"><a href="contact.html" title="联系我们" >联系我们</a></li>
+        </ul>
+    </div>
+    <div id="flash">
+                     <div class="flash_box">
+                     <SCRIPT type=text/javascript>
+                             	
+    imgUrl1="images/banner_25.jpg";
+    imgtext1="11"
+    imgLink1=escape("#");
+    //imgLink1="";
+    
+    imgUrl2="flash/banner_15.jpg";
+    imgtext2="22"
+    imgLink2=escape("#");
+    //imgLink2="";
+    
+  
+    imgUrl3="images/banner_25.jpg";
+    imgtext3="33"
+    imgLink3=escape("#");
+    //imgLink3="";
+	
+
+     var focus_width=993
+     var focus_height=307
+     var text_height=0
+     var swf_height = focus_height+text_height
+     
+     var pics=imgUrl1+"|"+imgUrl2+"|"+imgUrl3
+     var links=imgLink1+"|"+imgLink2+"|"+imgLink3
+     var texts=imgtext1+"|"+imgtext2+"|"+imgtext3
+     var flashCode = '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/hotdeploy/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">';
+     flashCode = flashCode + '<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="focus2.swf"><param name="quality" value="high"><param name="bgcolor" value="#F0F0F0">';
+     flashCode = flashCode + '<param name="menu" value="false"><param name=wmode value="opaque">';
+     flashCode = flashCode + '<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">';
+     flashCode = flashCode + '<embed src="focus2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="'+ focus_width +'" height="'+ swf_height +'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'"></embed>';
+     flashCode = flashCode + '</object>';
+     document.write(flashCode)
+                             </SCRIPT>
+                     </div>
+           </div><!--flash end-->
+</div>
+<div class="clear"></div>
+<div class="main">
+	<div id="left">
+    	<div class="menu">
+            <h2>产品分类</h2>
+            <ul class="part">
+                <li><a href="#">机器视觉检测设备</a></li>
+                <li><a href="#">专用光学检测设备</a></li>
+                <li><a href="#">机器视觉光源</a></li>
+                <li><a href="#">光源控制器</a></li>
+                <li><a href="#">图像采集卡</a></li>
+                <li><a href="#">工业相机</a></li>
+                <li><a href="#">工业镜头</a></li>
+                <li><a href="#">其 它</a></li>
+             </ul>
+        </div><!--menu-->
+        <div class="contact_left">
+       <h2>联系我们</h2>
+           <div class="tel" >
+             <p>地　址：XXX</p>
+             <p>电　话：XXX</p>
+             <p>传　真：XXX</p>
+             <p> 联系人：李先生 XXX </p>
+             <p>业务邮箱：XXX</p>
+             <p>技术邮箱：XXX </p>
+             <p>主　页：XXX</p>
+             <p>主　营：机器视觉检测系统、线材颜色检
+　　　　测系统、机器视觉光源的生产等</p>
+            </div>
+    </div>
+    </div><!--left-->
+    <div id="right">
+    	<div class="position"><span>您的位置：<a href="index.html">首页&nbsp;></a>蚀刻工艺</span>机器视觉检测设备</div>
+        <div class="web_box">	
+            <div class="content">
+               <div class="all-list">
+                  <div class="left_img"><a href="images/index_35.jpg" rel="lightbox[]"><img src="images/p_25.jpg" width="240" height="180" /></a><br/><font color="#0570A7"><strong>注：点击上图可查看大图</strong></font></div>
+                  <div class="w_right">
+                        <div class="title">DS-CA-F581EP-A  </div>
+                        <div class="intro">
+                             <h2>700线ICR日夜型超宽动态枪型摄像机</h2>
+                              <p>DS-CA-F581EP-A </p>
+                              <p>支持宽动态范围达75dB，适合逆光环境监控；</p>
+                              <p>图像清晰，分辨率700TVL；</p>
+                              <p>支持自动白平衡功能，色彩还原度高，图像逼真；</p> 
+                              <p>具备图像冻结，数字宽动态,高亮度补偿、背光补偿；</p>
+                              <p>支持OSD菜单控制，适合客户自定义设置；</p>
+                          </div>
+                </div>
+               </div><!--all-list-->
+               <dl class="bottom_e ">
+                    <dt class="title">产品信息</dt>
+                        <dd class="products">
+                           <p>东莞市腾旭五金制品有限公司成立于2000年，是专业生产加工精密金属元件的加工制造与贸易相结合的工贸高新科技企业。公司现拥有先进的自动化光电蚀刻工艺生产线。</p>
+                <p>公司拥有四条先进的蚀刻生产线及ISO9001:2008的品质管控体系，产品广泛应用于：家电、电子通讯、精密五金、医疗、石油化工、军工、精密工 程应用元件 等行业，能足客户临时的和超大量的订单，日蚀刻面积达1000平方 米，月生产能力达5000万只（片）{视产品类型而定}。在质量管控方面，公司拥 有一批敬岗爱业的专业技术人员，各道工序专人把关，确保产品质量能达到....</p>
+                        </dd>
+                  </dl>
+           </div><!--content end-->
+      </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="subnav"><p><a href="index.html" title="网站首页" class="cur">网站首页</a><a href="about.html"title="公司简介">公司简介</a><a href="products.html" title="产品中心">产品中心</a><a href="cases.html" title="合作案例">合作案例</a><a href="news.html" title="新闻资讯">新闻资讯</a><a href="download.html" title="资料下载">资料下载</a><a href="zhao.html" title="人才招聘">人才招聘</a><a href="message.html" title="在线留言">在线留言</a><a href="contact.html" title="联系我们" class="last" >联系我们</a></p></div>
+    <div class="copyright">
+    	<p>XXX自动化科技有限公司　版权所有 2020   </p>
+        <p>电话：XXX　传真：XXX　联系人：李先生</p>
+        
+        
+    </div>
+</div>
+</body>
+</html>

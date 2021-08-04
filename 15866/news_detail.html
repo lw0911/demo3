@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻详情  - XXX</title>
+<link rel="stylesheet" href="css/global.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+//选项卡
+function setTab(m,n){
+var tli=document.getElementById("menu"+m).getElementsByTagName("li");
+var mli=document.getElementById("main"+m).getElementsByTagName("ul");
+for(i=0;i<tli.length;i++){
+tli[i].className=i==n?"hover":"";
+mli[i].style.display=i==n?"block":"none";
+}
+}
+</script>
+</head>
+
+<body>
+<!--头部-->
+<div class="head">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+$(function () {
+	var navLi=$(".menu .nav li");
+	navLi.mouseover(function () {
+		$(this).find("a").addClass("current");
+		$(this).find(".box").stop().slideDown();
+	})
+	navLi.mouseleave(function(){
+		$(this).find("a").removeClass("current");
+		$(this).find(".box").stop().slideUp();
+	})
+})
+</script>
+<div class="menu">
+	<div class="logo"></div>
+    	<!--搜索-->
+        	<div class="top_h_info">
+            <p><label class="i1">全国服务热线&nbsp;<b>XXX</b></label><label class="i0">&nbsp;&nbsp;|&nbsp;&nbsp;</label><label class="i2"><a href="">搜索</a></label></p>
+            </div>
+		<ul class="nav">
+        	<li><a href="index.html" class="f1">首页</a></li>
+			<li>
+				<a href="about.html" class="f1">XXX概况</a>
+				<div class="box">
+					<a href="">公司简介</a>
+                    <a href="news.html">董事长寄语</a>
+                    <a href="news.html">经营理念</a>
+                    <a href="news.html">组织架构</a>
+                    <a href="news.html">企业荣誉</a>
+                    <a href="contact.html">联系我们</a>
+				</div>
+			</li>
+			<li>
+            	<a href="" class="f1">品牌文化</a>
+            	<div class="box">
+                    <a href="">企业文化</a>
+                    <a href="">品牌内涵</a>
+                    <a href="">品牌文化</a>
+                    <a href="">标志诠释</a>
+                    <a href="">品牌故事</a>
+                    <a href="">品牌战略</a>
+                    <a href="">品牌活动</a>
+    			</div>
+            </li>
+			<li>
+            	<a href="news.html" class="f1">新闻</a>
+				<div class="box">
+					<a href="">XXX新闻</a>
+                    <a href="">行业资讯</a>
+                    <a href="">睡眠常识</a>
+				</div>
+			</li>
+			<li>
+            	<a href="product_list.html" class="f1">产品展示</a>
+				<div class="box">
+					<a href="">床垫</a>
+                    <a href="">软床</a>
+                    <a href="">床品</a>
+                    <a href="">其它</a>
+				</div>
+			</li>
+			<li><a href="" class="f1">营销网络</a></li>
+			<li>
+            	<a href="" class="f1">加盟经销</a>
+            	<div class="box">
+                    <a href="">加盟流程</a>
+                    <a href="">加盟优势</a>
+                    <a href="">服务承诺</a>
+                    <a href="">质量反馈</a>
+                    <a href="">打假热线</a>
+                    <a href="">网络营销</a>
+                </div>
+            </li>
+            <li><a href="" class="f1">在线留言</a></li>
+			<li><a href="contact.html" class="f1">联系我们</a></li>
+		</ul>
+	</div>
+    <div class="clears"></div>
+</div>
+<div class="clears"></div>
+
+<div class="banners">
+	<div class="ban"><a href="">企业文化</a><a href="">品牌内涵</a><a href="">品牌文化</a><a href="">标志诠释</a><a href="">品牌故事</a><a href="">品牌战略</a><a href="">品牌活动</a></div></div>
+
+<!--中间-->
+<div class="con3" style="padding-top:10px;">
+    <div class="conter">
+	<div class="path">当前位置：首页 » XXX新闻 » 3D床垫的好处</div>
+    
+    <div class="news_nr_right">
+    	<div class="tab1">
+        <h3>最新产品</h3>
+        <ul>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        <li><a href="">新闻页需要有背景</a></li>
+        </ul>
+        </div>
+        
+        <div class="tab1">
+        <h3>同类文章排序</h3>
+        <ul>
+        <li><b class="r">1</b><a href="">新闻页需要有背景</a></li>
+        <li><b class="r">2</b><a href="">新闻页需要有背景</a></li>
+        <li><b class="r">3</b><a href="">新闻页需要有背景</a></li>
+        <li><b>4</b><a href="">新闻页需要有背景</a></li>
+        <li><b>5</b><a href="">新闻页需要有背景</a></li>
+        <li><b>6</b><a href="">新闻页需要有背景</a></li>
+        <li><b>7</b><a href="">新闻页需要有背景</a></li>
+        <li><b>8</b><a href="">新闻页需要有背景</a></li>
+        <li><b>9</b><a href="">新闻页需要有背景</a></li>
+        <li><b>10</b><a href="">新闻页需要有背景</a></li>
+        </ul>
+        </div>
+        
+        <div class="tab1">
+        <h3>最新资讯文章</h3>
+        <ul>
+        <li><b class="r">1</b><a href="">新闻页需要有背景</a></li>
+        <li><b class="r">2</b><a href="">新闻页需要有背景</a></li>
+        <li><b class="r">3</b><a href="">新闻页需要有背景</a></li>
+        <li><b>4</b><a href="">新闻页需要有背景</a></li>
+        <li><b>5</b><a href="">新闻页需要有背景</a></li>
+        <li><b>6</b><a href="">新闻页需要有背景</a></li>
+        <li><b>7</b><a href="">新闻页需要有背景</a></li>
+        <li><b>8</b><a href="">新闻页需要有背景</a></li>
+        <li><b>9</b><a href="">新闻页需要有背景</a></li>
+        <li><b>10</b><a href="">新闻页需要有背景</a></li>
+        </ul>
+        </div>
+    </div>
+  	<div class="news_nr_left">
+    	<h1>XXX</h1>
+        <p class="news_inf">发表时间：2014-12-12 12:12</p>
+    	<div class="news_nrn">
+    	  <p>圳市凯冉投资发展有限公司，坐落于中国家具的核心中枢深圳市龙岗区，占地面积约数万平米。拥有一流的现代化生产厂房、精良的高科技生产设备，以研发、生产、销售XXX系列睡眠寝具为主，具有国际视野高度的现代化企业集团。</p>
+          <p>　　从2009年成立之日，就前瞻性的提出&quot;满足品质家居价值需求，铸造优雅时尚生活方式&quot;企业使命，并以&quot;诚信待人、创新先行、品质为王、文化取胜&quot;的企业精神，由此确定了&quot;优雅、时尚、浪漫&quot;的品牌DNA。并首创行业&quot;整体睡眠管家&quot;理念，将&quot;清洁、安逸、健康、和谐、舒适&quot;的行业首创&quot;5C&quot;原则导入到整体睡眠理念中，让全球消费者品享XXX独特的睡眠理念；独创&quot;优雅时尚生活方式&quot;的标准，遵从&quot;健康与舒适并举、优雅与时尚同步&quot;的产品开发理念，成为引领家具睡眠业的璀璨巨星。</p>
+          <p align="center"><img src="img/3.jpg" /></p>
+          <p>　　其以消费者健康为己任，先后荣&quot;&quot;2010年中国家具最佳健康品牌&quot;、&quot; 2010年中国家具环保低碳科技金奖&quot;、&quot; 第27届深圳国际家具展软床质量环保金奖&quot;、&quot;第27届深圳国际家具展床垫质量环保金奖&quot;等环保大奖的获得，使XXX成为家具业引领低碳环保科技新生活的品牌企业。同时获&quot;2011年中国家具十佳软床品牌&quot;、&quot;中国百强优秀企业&quot;、&quot;全国消费者放心满意品牌&quot;、&quot;十佳创新品牌企业&quot;、&quot;2011中国家具新锐品牌&quot;等国家级重大荣誉。使XXX成为2010年以来，中国家具行业一道最耀眼的光芒！ </p>
+          <p>　　集团下属深圳市兴荣化纤棉（锏棉）制品有限公司，为华南最大锏棉企业之一，不但拥有大量从国外引进的高科技锏棉生产设备，而且还拥有自主的外观设计专利权。其服务领域涉及到服装、手袋、手套、鞋帽、睡袋、家私、床上用品、旅游用品等多个行业，为客户提供各种款式的锏棉加工之余，能够按照客户的需求加工各种喷胶棉等，现已与国内外上千家知名企业建立了密切的战略合作伙伴关系。</p>
+          <p>　　XXX，一个寓意优雅、时尚、浪漫， 积极追求美好生活的文化品牌，是优雅家庭时尚家、尊贵家庭舒适家、时尚家庭价值家，是整体睡眠管家，&quot;优雅时尚&quot;生活方式的提供者和倡导者，更具艺术修养和创新意识的艺术家和创新家！</p>
+          <p>　　XXX：绽放·优雅生活！</p>
+          <p class="others"><a href="">【返回目标】</a>&nbsp;&nbsp;<a href="">【打印此文】</a>&nbsp;&nbsp;<a href="">【关闭窗口】</a></p>
+    	</div>
+        <div class="next"><a href="" class="f_r">下一篇：生活的乐童</a><a href="">上一篇：生活的乐童</a></div>
+        <div class="type_info">所属类别：&nbsp;<a href="">XXX新闻</a><br/>
+        该资讯关系词：&nbsp;<a href="">XXX</a>&nbsp;&nbsp;&nbsp;<a href="">床垫专卖</a>
+        </div>
+    </div>
+    <div class="clears"></div>
+    
+    </div>
+</div>
+
+<!--底部-->
+<div class="flooter">
+	<div class="flooter_c">
+	<div class="flooter_left links">
+        <ul>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">公司产品</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="flooter_right">
+    	<div class="flooter_con"></div>
+        <p class="tel">联系电话：XXX  XXX</p>
+        <p>XXX</p>
+        <p class="icon2"><a href="" class="ico1"></a><a href="" class="ico2"></a><a href="" class="ico3"></a><div class="clears"></div></p>
+        <p class="copy">Copyright XXX寝具   </p>
+    </div>
+    <div class="clears"></div>
+    </div>
+</div>
+</body>
+</html>

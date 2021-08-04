@@ -1,0 +1,63 @@
+/*=================== custo button rule start ====================*/
+.button{
+  display: inline-block;
+  border: 1px solid $primary-color;
+  font-weight: 500;
+  padding: 10px 24px;
+  background-color: $primary-color;
+  color: #fff;
+  transition: all .4s ease;
+
+  @media(min-width: 900px){
+    padding: 12px 34px;
+  }
+  &:hover{
+    background-color: #61382b;
+    color: #fff;
+  }
+
+
+  &-postComment{
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 12px 50px;
+  }
+
+  &-hero{
+    padding: 12px 50px;
+    box-shadow: 0px 10px 20px 0px rgba(58, 65, 78, 0.2);
+  }
+
+  &-blog{
+    font-size: 14px;
+    font-weight: 600;
+    color: $black;
+    background: #fff;
+    border: 0;
+    padding: 8px 36px;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+
+  &-service{
+    padding: 6px 32px;
+  }
+
+  &-pricing{
+    letter-spacing: 1px;
+    padding: 12px 48px;
+  }
+  
+  &--transparent{
+    background-color: transparent;
+    border: 0;
+    color: $title-color;
+
+    &:hover{
+      background-color: transparent;
+      color: $title-color;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+/* CSS BASE Document */
+/* owner:cyy */
+@charset=utf-8
+
+/*css reset*/
+*{font-family:"microsoft yahei";}
+body,div,dl,dt,dd,ul,ol,li,p,h1,h2,h3,h4,h5,h6,pre,form,fieldset,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0}
+ol,ul,li{list-style:none;}
+h1,h2,h3,h4,h5,h6,input,select,textarea,option,button{font-size:100%}
+a{text-decoration:none}
+textarea{resize:none;}/*禁止改变大小*/
+/*解决firefox按钮文字难以垂直居中问题*/
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{border:none;padding:0;}
+input,textarea,select,option,button,form,fieldset{margin:0;padding:0;border-width:1px;outline:none;
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+-o-box-sizing: content-box;
+-ms-box-sizing: content-box;
+box-sizing: content-box;
+}
+
+/* common */
+.txthide{text-indent:-9999px;overflow:hidden;}
+.rightmore:after {content:' >>';font-weight:bold;}
+.leftmore:before {content:' >>';font-weight:bold;}
+
+/*about pisition*/
+.fl{float:left;display:inline;}/*浮动bug*/
+.fr{float:right;display:inline;}
+.clearfix:after{content:".";height:0;display:block;visibility:hidden;clear:both;}/*IE6>*/*html .clearfix{*zoom:1}/*IE7>*/*:first-child + html .clearfix{zoom:1}
+.zoom{*zoom:1}
+.pr{position:relative}
+.inblock-wrap{font-size:0;*word-spacing:-1px;}
+.inblock-wrap .inblock{font-size:12px;letter-spacing:normal;word-spacing:normal;vertical-align:top;}
+.inblock{display:inline-block;*display:inline;*zoom:1;}
+

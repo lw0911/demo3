@@ -1,0 +1,22 @@
+/*Normal display*/
+@media (min-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+/*Wider display*/
+@media (min-width: 1680px) {
+  .container {
+    width: 1600px;
+  }
+  #products .item .itemhover {
+    padding: 33.5% 25%;
+  }
+}
+@media (max-width: 991px) {
+  #funfact .col-md-3.item-style-2,
+  #funfact .col-md-3.item-style-3,
+  #funfact .col-md-3.item-style-4 {
+    width: 100%;
+  }
+}
